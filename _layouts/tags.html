@@ -1,0 +1,71 @@
+---
+layout: minimal
+---
+
+{% assign date_format = site.date_format | default: "%m/%d/%Y" %}
+
+{% assign all_keywords_str = "" %}
+{% assign all_intended_str = "" %}
+
+{% for post in site.posts %}
+  {% if post.keywords %}
+    {% for keyword in post.keywords %}
+      {% unless all_keywords_str contains keyword %}
+        {% if all_keywords_str == "" %}
+          {% assign all_keywords_str = keyword %}
+        {% else %}
+          {% assign all_keywords_str = all_keywords_str | append: "|" | append: keyword %}
+        {% endif %}
+      {% endunless %}
+    {% endfor %}
+  {% endif %}
+  {% if post.intended %}
+    {% for word in post.intended %}
+      {% unless all_intended_str contains word %}
+        {% if all_intended_str == "" %}
+          {% assign all_intended_str = word %}
+        {% else %}
+          {% assign all_intended_str = all_intended_str | append: "|" | append: word %}
+        {% endif %}
+      {% endunless %}
+    {% endfor %}
+  {% endif %}
+{% endfor %}
+
+{% assign all_keywords = all_keywords_str | split: "|" %}
+{% assign all_intended = all_intended_str | split: "|" %}
+
+<div class="tags">
+  {% for keyword in all_keywords %}
+    <a href="#{{ keyword | slugify }}">#{{ keyword }}</a>
+  {% endfor %}
+  {% for word in all_intended %}
+    <a class="intended" href="#{{ word | slugify }}">#{{ word }}</a>
+  {% endfor %}
+</div>
+
+<div>
+  {% for keyword in all_keywords %}
+    <h3 class="tag-display" id="{{ keyword | slugify }}">{{ keyword }}</h3>
+    <ul>
+    {% for post in site.posts %}
+      {% if post.keywords contains keyword %}
+        <li><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+      {% endif %}
+    {% endfor %}
+    </ul>
+  {% endfor %}
+</div>
+
+<div>
+  {% for word in all_intended %}
+    <h3 class="tag-display" id="{{ word | slugify }}">{{ word }}</h3>
+    <ul>
+    {% for post in site.posts %}
+      {% if post.intended contains word %}
+        <li><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+      {% endif %}
+    {% endfor %}
+    </ul>
+  {% endfor %}
+</div>

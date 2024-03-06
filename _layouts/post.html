@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="{{ site.language }}" class="no-js">
+    {% include head.html %}
+    <body class="has-push-menu">
+        {% include minutes-to-read.html %}
+        {% include svg-icons.html %}
+        {% include header.html %}
+
+        <section class="post {% if site.two_columns_layout %}two-columns{% else %}one-column{% endif %}">
+            <article role="article" class="post-content">
+                <header>
+                    <h3>
+                        {% assign fields = page.field | remove: '[' | remove: ']' | remove: '"' %}
+                            {% assign field_list = fields | split: ", " %}
+                            {% for field in field_list %}
+                                {{ field }}{% unless forloop.last %}, {% endunless %}
+                            {% endfor %}
+                    </h3>
+                    <h1 class="post-title">{{ page.title }}</h1>
+                    <p class="post-author" style="color:rgb(83, 83, 83); margin-top:0; padding-top: 0;">
+                        {% assign authors = page.author | remove: '[' | remove: ']' | remove: '"' %}
+                        {% assign author_list = authors | split: ", " %}
+                        {% for author in author_list %}
+                            {{ author }}{% unless forloop.last %}, {% endunless %}
+                        {% endfor %}
+                    </p>     
+                    <p class="post-info">
+                        <svg id="clock" class="icon-clock"><use xlink:href="#icon-clock"></use></svg>
+                        <span>{{ minutesText }}</span>
+                    </p>
+                </header>
+                <section>
+                    <div class="box-info">
+                        <div class="tags">
+                            {% for tag in page.keywords %}
+                                {% if tag != "" %}
+                                    <a href="{{ site.baseurl }}/tags/#{{ tag | slugify }}">#{{ tag }}</a>
+                                {% endif %}
+                            {% endfor %}
+                            {% for tag in page.intended %}
+                                {% if tag != "" %}
+                                    <a class="intended" href="{{ site.baseurl }}/tags/#{{ tag | slugify }}">#{{ tag }}</a>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                    {% if page.image %}
+                        <img style="margin-bottom: 0;" src="{{ page.image }}" alt="Featured image" class="post-cover">
+                        <span style="padding-top: 0; font-style: italic;">Vir: {{ page.image }}</span>
+                    {% endif %}
+                    <p class="post-description">{{ page.description }}</p>
+                    {{ content }}
+                    <table style="margin-bottom: 1%; padding-top: 0%; align-items: center;">
+                        <tr>
+                            <th>Vrsta izobraževanja</th>
+                            <td>{{ page.type }}</td>
+                        </tr>
+                        <tr>
+                            <th>Področje</th>
+                            <td>{{ page.field }}</td>
+                        </tr>
+                        <tr>
+                            <th>Težavnost</th>
+                            <td>{{ page.difficulty }}</td>
+                        </tr>
+                        <tr>
+                            <th>Priporočena predhodnja delavnica</th>
+                            <td>{% if page.requisite != '' %}{{ page.requisite }}{% else %}➖{% endif %}</td>
+                        </tr>
+                        <tr>
+                            <th>Stanje</th>
+                            <td>{{ page.state }}</td>
+                        </tr>
+                        <tr>
+                            <th>Vrsta izvedbe</th>
+                            <td>{{ page.execution }}</td>
+                        </tr>
+                        <tr>
+                            <th>Obseg izobraževanja v ECTS*</th>
+                            <td>{{ page.ects }}</td>
+                        </tr>
+                        <tr>
+                            <th>Kontakt poučevanja</th>
+                            <td>{{ page.contact }}</td>
+                        </tr>
+                    </table>
+                    <span style="padding-left: 10%; font-style: italic;">*ECTS enota predvideva 25-30 ur dela</span>
+                </section>                
+                {% include pagination-post.html %}
+            </article>
+
+            {% if site.two_columns_layout %}
+            <aside class="see-also">
+                <h3>Poglej tudi</h3>
+                {% assign related_posts_count = 0 %}
+                {% for post in site.posts %}
+                    {% unless post.url == page.url %}
+                        {% assign shared_keywords = false %}
+                        {% for keyword in page.keywords %}
+                            {% if post.keywords contains keyword %}
+                                {% assign shared_keywords = true %}
+                                {% break %}
+                            {% endif %}
+                        {% endfor %}
+                        {% if shared_keywords %}
+                            {% if related_posts_count < 3 %}
+                                <div class="side-post">
+                                    <a style="text-decoration: none;" href="{{ post.url | prepend: site.baseurl }}">
+                                        <div class="related-article-item">
+                                            <h3>{{ post.title }}</h3>
+                                            <img src="{{ post.image }}" alt="{{ post.title }} image" class="related-article-image">
+                                            <p>
+                                                {% assign authors = page.author | remove: '[' | remove: ']' | remove: '"' %}
+                                                {% assign author_list = authors | split: ", " %}
+                                                {% for author in author_list %}
+                                                    {{ author }}{% unless forloop.last %}, {% endunless %}
+                                                {% endfor %}
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                {% assign related_posts_count = related_posts_count | plus: 1 %}
+                            {% endif %}
+                        {% endif %}
+                    {% endunless %}
+                {% endfor %}
+                {% if related_posts_count == 0 %}
+                    {% for post in site.posts limit:3 %}
+                        <div class="side-post">
+                            <a  href="{{ post.url | prepend: site.baseurl }}">
+                                <div style="text-decoration: none;" class="related-article-item">
+                                    <h3>{{ post.title }}</h3>
+                                    <img src="{{ post.image }}" alt="{{ post.title }} image" class="related-article-image">
+                                    <p>
+                                        {% assign authors = page.author | remove: '[' | remove: ']' | remove: '"' %}
+                                        {% assign author_list = authors | split: ", " %}
+                                        {% for author in author_list %}
+                                            {{ author }}{% unless forloop.last %}, {% endunless %}
+                                        {% endfor %}
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            </aside>
+            {% endif %}
+
+
+
+        </section>
+
+
+        {% include footer.html %}
+
+        <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "BlogPosting",
+            "name": "{{ page.title }}",
+            "headline": "{{ page.subtitle }}",
+            "description": "{{ page.description }}",
+            "image": "{{ page.image }}",
+            "url": "{{ page.url | prepend: site.baseurl | prepend: site.url }}",
+            "articleBody": "{{ content | strip_html | xml_escape }}",
+            "wordcount": "{{ content | number_of_words }}",
+            "inLanguage": "{{ site.language }}",
+            "dateCreated": "{{ page.date | date: '%Y-%m-%d/' }}",
+            "datePublished": "{{ page.date | date: '%Y-%m-%d/' }}",
+            "dateModified": "{{ page.date | date: '%Y-%m-%d/' }}",
+            "author": {
+                "@type": "Person",
+                "name": "{{ page.author }}",
+                "image": "{{ '/assets/img/user.jpg' | prepend: site.baseurl | prepend: site.url }}",
+                "jobTitle": "Author Position", // You might need to adjust this part
+                "url": "{{ '/author-url/' | prepend: site.baseurl | prepend: site.url }}" // Adjust based on actual author URL structure
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "{{ site.name }}",
+                "url": "{{ site.url }}{{site.baseurl}}/",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "{{ site.url }}{{site.baseurl}}/assets/img/blog-image.png",
+                    "width": "600",
+                    "height": "315"
+                }
+            },
+            "mainEntityOfPage": "True",
+            "genre": "{{ page.category }}",
+            "articleSection": "{{ page.category }}",
+            "keywords": [{{ page.tags | join: '","' | append: '"' | prepend: '"' }}]
+        }
+        </script>
+    </body>
+</html>

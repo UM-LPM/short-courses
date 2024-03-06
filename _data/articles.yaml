@@ -1,0 +1,1521 @@
+- '#': '1'
+  author:
+  - Božidar Potočnik
+  contact: bozidar.potocnik@um.si
+  title: Analiza fotografij z umetno inteligenco
+  image: https://www.kasandbox.org/programming-images/avatars/duskpin-ultimate.png
+  type: Krajše izobraževanje
+  field: RIN
+  keywords:
+  - analiza fotografij
+  - umetna inteligenca
+  - prepoznava predmetov
+  - segmentacija slik
+  - modeli
+  public: X
+  difficulty: Višji nivo
+  previous_workshop: ''
+  description: Udeleženci bodo spoznali osnovne principe analize fotografij z računalnikom,
+    principe analize fotografij z umetno inteligenco, pripravo, vrednotenje in uporabo
+    kompleksnejših modelov umetne inteligence. V okviru osnovnih principov bodo spoznali
+    predstavitev barvnih fotografij in slik v računalniških sistemih, osnovne operacije
+    nad fotografijami kot so konvolucija, pragovne operacije, maskiranje in rezanje.
+    V principih analize fotografij z umetno inteligenco bodo spoznali pogosto uporabljanje
+    tehnike prepoznave predmetov, detekcije predmetov v sliki in segmentacije zanimivih
+    elementov. V kombinaciji z osnovnimi operacijami bodo udeleženci analizirali vidne
+    lastnosti elementov v fotografijah. Njihovo znanje bodo pokazali z uporabo pripravljenih
+    modelov umetne inteligence, katere bodo vgradili v lastno programsko opremo ter
+    jih prilagodili in optimizirali za lastne probleme. Spoznali bodo tudi pristope
+    s katerimi lahko metode prilagodijo in optimizirajo za nove probleme.
+  vs: ''
+  uni: ''
+  mag: ''
+- '#': '2'
+  author:
+  - Božidar Potočnik
+  contact: bozidar.potocnik@um.si
+  title: Uporaba tehnik globokega učenja za prepoznavanje objektov v slikah
+  image: ''
+  type: Krajše izobraževanje
+  field: RIN
+  keywords:
+  - globoke nevronske mreže
+  - zaznava objektov
+  - lokalizacija objektov
+  - ovrednotenje uspešnosti
+  public: ''
+  difficulty: Začetni nivo
+  previous_workshop: ''
+  description: Udeleženci bodo spoznali teoretične in praktične osnove delovanja ter
+    uporabe globokih nevronskih mrež. Omejili se bodo na reševanje problemov zaznavanja
+    in lokaliziranja objektov v digitalnih posnetkih. Naučili se bodo pripraviti učne
+    podatke ter oceniti njihovo kvaliteto. S pomočjo učne množice bodo samostojno
+    izvedli preprosto učenje globoke nevronske mreže. Iz nabora obstoječih arhitektur
+    nevronskih mrež bodo zmožni izbrati najprimernejše za reševan problem. Razumeli
+    bodo postopek učenja, ki ga bodo z najosnovnejšimi mehanizmi sposobni nadzorovati
+    in prilagajati. Uspešnost učenja bodo ovrednotili z uveljavljenimi metrikami.
+    Spoznali bodo še osnovne napotke za izboljšanje učenja nevronskih mrež. Naučeno
+    globoko nevronsko mrežo bodo znali uporabiti za detektiranje in lokaliziranje
+    objektov v poljubnih digitalnih posnetkih. Uspešnost delovanja nevronske mreže
+    bodo ovrednotili kvalitativno in kvantitativno.
+  vs: X
+  uni: ''
+  mag: ''
+- '#': '3'
+  author:
+  - Božidar Potočnik
+  contact: bozidar.potocnik@um.si
+  title: 'Razumevanje fotografij z globokimi nevronskimi mrežami'
+  image: ''
+  type: Krajše izobraževanje s preverjanjem
+  field: RIN
+  keywords:
+  - analiza fotografij
+  - umetna inteligenca
+  - prepoznava predmetov
+  - segmentacija slik
+  - modeli za slikovno analizo
+  public: ''
+  difficulty: Višji nivo
+  previous_workshop: ''
+  description: Udeleženci bodo spoznali osnovne principe analize fotografij z računalnikom,
+    principe analize fotografij z umetno inteligenco, pripravo, vrednotenje in uporabo
+    kompleksnejših modelov umetne inteligence. V okviru osnovnih principov bodo spoznali
+    predstavitev barvnih fotografij in slik v računalniških sistemih, osnovne operacije
+    nad fotografijami kot so konvolucija, pragovne operacije, maskiranje in rezanje.
+    V principih analize fotografij z umetno inteligenco bodo spoznali pogosto uporabljanje
+    tehnike prepoznave predmetov, detekcije predmetov v sliki in segmentacije zanimivih
+    elementov. V kombinaciji z osnovnimi operacijami bodo udeleženci analizirali vidne
+    lastnosti elementov v fotografijah. Njihovo znanje bodo pokazali z uporabo pripravljenih
+    modelov umetne inteligence, katere bodo vgradili v lastno programsko opremo ter
+    jih prilagodili in optimizirali za lastne probleme. V praktičnih vajah bodo pokazali
+    razumevanje teh principov pri uporabi modernih modelov za prepoznavo, detekcijo
+    in analizo slikovnega materiala.
+  vs: ''
+  uni: ''
+  mag: ''
+- '#': '4'
+  author:
+  - Božidar Potočnik
+  contact: bozidar.potocnik@um.si
+  title: Globoke nevronske mreže in prepoznavanje objektov v digitalnih slikah
+  image: ''
+  type: UM akreditirano manjše izobraževanje s preverjanjem
+  field: RIN
+  keywords:
+  - globoke nevronske mreže
+  - zaznava objektov
+  - lokalizacija objektov
+  - ovrednotenje uspešnosti
+  public: ''
+  difficulty: Začetni nivo
+  previous_workshop: ''
+  description: Udeleženci bodo spoznali teoretične in praktične osnove delovanja ter
+    uporabe globokih nevronskih mrež. Omejili se bodo na reševanje problemov zaznavanja
+    in lokaliziranja objektov v digitalnih posnetkih. Naučili se bodo pripraviti učne
+    podatke ter oceniti njihovo kvaliteto. S pomočjo učne množice bodo samostojno
+    izvedli preprosto učenje globoke nevronske mreže. Iz nabora obstoječih arhitektur
+    nevronskih mrež bodo zmožni izbrati najprimernejše za reševan problem. Razumeli
+    bodo postopek učenja, ki ga bodo z najosnovnejšimi mehanizmi sposobni nadzorovati
+    in prilagajati. Uspešnost učenja bodo ovrednotili z uveljavljenimi metrikami.
+    Spoznali bodo še osnovne napotke za izboljšanje učenja nevronskih mrež. Naučeno
+    globoko nevronsko mrežo bodo znali uporabiti za detektiranje in lokaliziranje
+    objektov v poljubnih digitalnih posnetkih. Uspešnost delovanja nevronske mreže
+    bodo ovrednotili kvalitativno in kvantitativno.
+  vs: ''
+  uni: ''
+  mag: ''
+- '#': '5'
+  author:
+  - Božidar Potočnik
+  contact: bozidar.potocnik@um.si
+  title: Globoke nevronske mreže za prepoznavanje objektov v slikah v industrijskem
+    okolju
+  image: ''
+  type: Krajše izobraževanje
+  field: RIN
+  keywords:
+  - globoke nevronske mreže
+  - zaznava objektov
+  - lokalizacija objektov
+  - ovrednotenje uspešnosti
+  public: ''
+  difficulty: Začetni nivo
+  previous_workshop: ''
+  description: Udeleženci bodo spoznali teoretične in praktične osnove delovanja ter
+    uporabe globokih nevronskih mrež. Omejili se bodo na reševanje problemov zaznavanja
+    in lokaliziranja objektov v digitalnih posnetkih. Naučili se bodo pripraviti učne
+    podatke ter oceniti njihovo kvaliteto. S pomočjo učne množice bodo samostojno
+    izvedli preprosto učenje globoke nevronske mreže. Iz nabora obstoječih arhitektur
+    nevronskih mrež bodo zmožni izbrati najprimernejše za reševan problem. Razumeli
+    bodo postopek učenja, ki ga bodo z najosnovnejšimi mehanizmi sposobni nadzorovati
+    in prilagajati. Uspešnost učenja bodo ovrednotili z uveljavljenimi metrikami.
+    Spoznali bodo še osnovne napotke za izboljšanje učenja nevronskih mrež. Naučeno
+    globoko nevronsko mrežo bodo znali uporabiti za detektiranje in lokaliziranje
+    objektov v poljubnih digitalnih posnetkih. Uspešnost delovanja nevronske mreže
+    bodo ovrednotili kvalitativno in kvantitativno.
+  vs: ''
+  uni: X
+  mag: ''
+- '#': '6'
+  author:
+  - Božidar Potočnik
+  contact: bozidar.potocnik@um.si
+  title: Črpanje podatkov iz fotografij
+  image: ''
+  type: Krajše izobraževanje
+  field: RIN
+  keywords:
+  - analiza fotografij
+  - umetna inteligenca
+  - prepoznava predmetov
+  - segmentacija slik
+  - barvne slike
+  public: ''
+  difficulty: Višji nivo
+  previous_workshop: ''
+  description: Udeleženci bodo spoznali osnovne principe analize fotografij z računalnikom,
+    principe analize fotografij z umetno inteligenco, pripravo, vrednotenje in uporabo
+    kompleksnejših modelov umetne inteligence. V okviru osnovnih principov bodo spoznali
+    predstavitev barvnih fotografij in slik v računalniških sistemih, osnovne operacije
+    nad fotografijami kot so konvolucija, pragovne operacije, maskiranje in rezanje.
+    V principih analize fotografij z umetno inteligenco bodo spoznali pogosto uporabljanje
+    tehnike prepoznave predmetov, detekcije predmetov v sliki in segmentacije zanimivih
+    elementov. V kombinaciji z osnovnimi operacijami bodo udeleženci analizirali vidne
+    lastnosti elementov v fotografijah. Njihovo znanje bodo pokazali z uporabo pripravljenih
+    modelov umetne inteligence, katere bodo vgradili v lastno programsko opremo ter
+    jih prilagodili in optimizirali za lastne probleme. Spoznali bodo tudi pristope
+    prilagajanja teh metod na lastne probleme.
+  vs: ''
+  uni: ''
+  mag: ''
+- '#': '7'
+  author:
+  - Božidar Potočnik
+  contact: bozidar.potocnik@um.si
+  title: Prilagajanje in optimizacija parametrov globokih nevronskih mrež
+  image: ''
+  type: Krajše izobraževanje
+  field: RIN
+  keywords:
+  - prilagajanje učenja
+  - hiperparametri nevronskih mrež
+  - ovrednotenje učne množice
+  - bogatenje podatkov
+  - slikovna analiza
+  public: ''
+  difficulty: Višji nivo
+  previous_workshop: ''
+  description: Udeleženci bodo spoznali napredne postopke za prilagajanje učenja globokih
+    nevronskih mrež na izbran aplikacijski problem. Predstavljena bodo priporočila
+    in hevristični algoritmi za upravljanje s hiperparametri nevronskih mrež. Naučili
+    se bodo ovrednotiti kvaliteto in primernost učne množice. Spoznali bodo postopke
+    bogatenja učnih podatkov. V praktičnih vajah bodo izkazali razumevanje teh principov
+    pri uporabi modernih modelov za prepoznavo, detekcijo in analizo slikovnega materiala.
+    Za vključitev v skupino se od udeležencev pričakuje osnovno razumevanje delovanja
+    in implementiranja globokih nevronskih mrež.
+  vs: ''
+  uni: ''
+  mag: ''
+- '#': '8'
+  author:
+  - Božidar Potočnik
+  contact: bozidar.potocnik@um.si
+  title: Računalniška obdelava slik na vgrajenih sistemih
+  image: ''
+  type: Krajše izobraževanje
+  field: RIN
+  keywords:
+  - globoke nevronske mreže
+  - prilagajanje nevronskih mrež
+  - prenašanje modelov
+  - slikovni material
+  public: ''
+  difficulty: Višji nivo
+  previous_workshop: ''
+  description: Udeleženci se bodo seznanili s sodobnimi globokimi nevronskimi mrežami,
+    namenjenimi obdelovanju in analizi digitalnih slik. Razumeli bodo računske in
+    prostorske zahteve za učenje in delovanje nevronskih mrež. Spoznali bodo postopke
+    za prilagajanje in prenašanje globokih nevronskih mrež, naučenih na zmogljivih
+    računalniških sistemih, na sisteme z omejeno računsko in pomnilniško močjo, kot
+    so, na primer, vgrajeni sistemi. V praktičnih vajah bodo izkazali razumevanje
+    teh principov pri uporabi modernih modelov za prepoznavo, detekcijo in analizo
+    slikovnega materiala. Za vključitev v skupino se od udeležencev pričakuje osnovno
+    razumevanje delovanja in implementiranja globokih nevronskih mrež.
+  vs: ''
+  uni: ''
+  mag: ''
+- '#': '9'
+  author:
+  - Žiga Leber
+  contact: ziga.leber@um.si
+  title: Osnove funkcijskega programiranja
+  image: ''
+  type: Krajše izobraževanje
+  field: RIN
+  keywords:
+  - funkcijsko programiranje
+  - OCaml
+  - stroga tipizacija
+  public: ''
+  difficulty: Višji nivo
+  previous_workshop: ''
+  description: 'Udeleženci bodo spoznali osnove funkcijskega programiranja z uporabo
+    programskega jezika OCaml: funkcije, algebraični podatkovni tipi, funkcije višjega
+    reda, programiranje od spodaj navzgor, moduli, funkcije nad moduli,  kategorične
+    abstrakcije (monoid, funktor, aplikativni funktor, monad). Prednost strogo tipiziranih
+    funkcijskih jezikov, kot je OCaml, je možnost matematičnega sklepanja o programski
+    kodi in njihova odlična sposobnost zgodnjega odkrivanja napak, kar znatno izboljša
+    pravilnosti, zanesljivost in možnost vzdrževanja programske opreme. Učenje OCaml
+    je dober način za seznanitev z nespremenljivostjo, izboljša veščine abstrakcije
+    in poglablja razumevanje teorije programskih jezikov. OCaml je popularen v finančnem
+    sektorju, pri tehnologijah veriženja blokov (Tezos) in pri razvoju programskih
+    jezikov. Udeleženci bodo v sklopu seminarja implementirali preproste programe
+    s katerimi bodo preverili svoje razumevanje.'
+  vs: ''
+  uni: ''
+  mag: ''
+- '#': '10'
+  author:
+  - Marjan Mernik
+  contact: marjan.mernik@um.si
+  title: 'Domensko-specifični jeziki: končni uporabniki kot razvijalci programske
+    opreme'
+  image: ''
+  type: Krajše izobraževanje
+  field: RIN
+  keywords:
+  - domensko-specifični jeziki
+  - konstrukti jezikov
+  - razlike s splošno-namenskimi jeziki
+  public: ''
+  difficulty: Začetni nivo
+  previous_workshop: ''
+  description: Programska oprema dandanes krmili in avtomatizira naša vsakdanja opravila.
+    Razvoj programske opreme pa postaja vse zahtevnejši in poklic razvijalec programske
+    opreme, programer, vse bolj iskan in cenjen. Z nastankom pametnih hiš  in mest
+    pa bo takorekoč vsak posameznik, končni uporabnik, primoran "sprogramirati" določena
+    vsakodnevna opravila tudi sam. Pri čemer pa večina končnih uporabnikov ne bo imela
+    računalniškega predznanja in poznavanje splošno-namenskih programskih jezikov,
+    kot so C++, Java in Python. V zadnjem času postajajo vse bolj popularni domensko-specifični
+    jeziki s katerimi končni uporabniki lahko rešujejo domensko-specifične probleme,
+    kot so krmiljenje pametne hiše. Udeleženci se bodo seznanili z domensko-specifičnimi
+    jeziki in možnostmi, ki jih le-ti ponujajo končnim uporabnikom. Konstrukti domensko-specifičnih
+    jezikov so običajno preprosti in vezani na domeno uporabe, zato jih končni uporabniki
+    lažje razumejo in uporabljajo. Udeleženci se bodo tako seznanili z osnovnimi pristopi
+    in orodji za gradnjo domensko-specifičnih jezikov, predvsem pa razumeli razlike
+    med splošno-namenskimi programskimi jeziki in domensko-specifičnimi jeziki ter
+    kako slednje koristno uporabiti za mnogotera opravila.
+  vs: ''
+  uni: ''
+  mag: ''
+- '#': '11'
+  author:
+  - Tomaž Kosar
+  - Dragana Ostojić
+  contact: tomaz.kosar@um.si
+  title: 'Razvoj spletnih aplikacij s skladom MERN: zaledni del'
+  image: ''
+  type: Krajše izobraževanje
+  field: RIN
+  keywords:
+  - API
+  - MERN
+  - Node.js
+  - Express.js
+  - JavaScript
+  - MongoDB
+  - zaledni razvoj
+  public: ''
+  difficulty: Začetni nivo
+  previous_workshop: ''
+  description: Izobraževanje za sklad MERN je namenjeno udeležencem, ki želijo pridobiti
+    znanje in veščine za izgradnjo polno funkcionalnih spletnih aplikacij. Sklad MERN
+    je sestavljen iz štirih tehnologij - MongoDB, Express.js, React in Node.js. Sklad
+    je zelo priljubljen med razvijalci zaradi svoje zmogljivosti in prilagodljivosti.
+    Delavnica se osredotoča na praktične primere uporabe MERN sklada, ki vključujejo
+    obdelavo podatkov, dostop do podatkovne baze, uporabo strežnika in razvoj aplikacijskega
+    vmesnika (APIja). Udeleženci bodo dobili praktične izkušnje z zalednim razvojem.
+    Po koncu delavnice bodo udeleženci imeli osnovno razumevanje zalednega dela MERN
+    sklada.
+  vs: ''
+  uni: ''
+  mag: ''
+- '#': '12'
+  author:
+  - Tomaž Kosar
+  - Dragana Ostojić
+  contact: tomaz.kosar@um.si
+  title: 'Razvoj spletnih aplikacij s skladom MERN: čelni del'
+  image: ''
+  type: Krajše izobraževanje
+  field: RIN
+  keywords:
+  - React
+  - spletna aplikacija
+  - MERN
+  - JavaScript
+  - čelni razvoj
+  - uporabniški vmesnik
+  public: ''
+  difficulty: Začetni nivo
+  previous_workshop: 'Razvoj spletnih aplikacij s skladom MERN: zaledni del'
+  description: Izobraževanje je namenjen razvijalcem spletnih aplikacij, ki imajo
+    predznanje iz zalednega dela MERN, želijo pa pridobiti znanje iz čelnega dela
+    razvoja spletne aplikacije. Na čelnem delu obstajajo številne alternative tehnologije,
+    med njimi pa izstopajo po popularnosti React, Vue in Angular. Na delavnici bomo
+    primerjali njihove zmogljivosti in pokazali razlike. Poudarek tehnologije bo pa
+    na tehnologiji React, ki je del sklada MERN. Na delavnici bodo udeleženci razvijali
+    svoj uporabniški vmesnik. Spoznali bodo podporne tehnologije (React Router, Redux,
+    Material Design). Po koncu delavnice bodo udeleženci imeli osnovno znanje iz razvoja
+    čelnega dela spletne aplikacije (po skladu MERN).
+  vs: ''
+  uni: ''
+  mag: ''
+- '#': '13'
+  author:
+  - Matej Moravec
+  - Tomaž Kosar
+  contact: matej.moravec@um.si
+  title: Programski jezik Kotlin
+  image: ''
+  type: Krajše izobraževanje
+  field: RIN
+  keywords:
+  - Kotlin
+  - objektno-umernjeno programiranje
+  - IntelliJ IDEA
+  - JVM
+  public: ''
+  difficulty: ''
+  previous_workshop: ''
+  description: Udeleženci bodo pridobili temeljno razumevanje sintakse programskega
+    jezika Kotlin ter osnovne tehnike objektno-usmerjenega programiranja. S pomočjo
+    integriranega razvojnega okolja IntelliJ IDEA bodo spoznali načrtovanje, implementacijo,
+    razhroščevanje in dokumentiranje preprostih programov. Skozi praktične primere
+    bodo pridobili vpogled v uporabo različnih programskih konstruktov, kot so različni
+    tipi spremenljivk, polja, strukture/razredi, prireditveni operator, pogojne krmilne
+    strukture, iterativne krmilne strukture za ponavljanja ter funkcije. Programski
+    jezik Kotlin, čeprav relativno "mlad," temelji na platformi JVM (Java Virtual
+    Machine) in je združljiv s programskim jezikom Java. Udeleženci se bodo zato seznanili
+    tudi z interoperabilnostjo med programskima jezikoma Kotlin in Java ter spoznali,
+    kako ju lahko uporabljajo v okviru istega projekta. Kotlin je v ospredju razvoja
+    mobilnih aplikacij za platformo Android, vendar se med drugim uporablja tudi za
+    razvoj namiznih aplikacij ter platformno-neodvisnih aplikacij.
+  vs: ''
+  uni: ''
+  mag: ''
+- '#': '14'
+  author:
+  - Matej Moravec
+  - Tomaž Kosar
+  contact: matej.moravec@um.si
+  title: Aplikacija Jetpack Compose
+  image: ''
+  type: Krajše izobraževanje
+  field: RIN
+  keywords:
+  - Jetpack Compose
+  - komplet orodij
+  - Android Studio
+  - razvoj aplikacij
+  - uporabniške komponente
+  public: ''
+  difficulty: ''
+  previous_workshop: ''
+  description: Udeleženci bodo pridobili praktično znanje o uporabi Jetpack Compose,
+    modernem kompletu orodij za izdelavo uporabniškega vmesnika za aplikacije na platformi
+    Android. Skozi praktične vaje in projekte bodo razvijali razumevanje Jetpack Compose
+    sintakse in osnovne koncepte, ki omogočajo gradnjo izjemno prilagodljivih in interaktivnih
+    uporabniških vmesnikov. Delavnica bo potekala v integriranem razvojnem okolju
+    Android Studio, kjer bodo udeleženci spoznali proces načrtovanja, implementacije
+    in testiranja aplikacije. Osredotočili se bodo na obvladovanje uporabniških komponent,
+    upravljanje stanja aplikacije, animacije in navigacijo. Med delavnico bodo udeleženci
+    razvijali lasten projekt, ki bo vključeval tipične uporabniške interakcije, kot
+    so obrazci, seznami, navigacijski tok in več. Jetpack Compose je prihodnost izdelave
+    uporabniškega vmesnika na platformi Android s katerim je mogoče razviti sodobne
+    in privlačne aplikacije za platformo Android in to znanje uporabiti tudi pri izdelavi
+    namiznih aplikacij.
+  vs: ''
+  uni: ''
+  mag: ''
+- '#': '15'
+  author:
+  - Matej Moravec
+  contact: matej.moravec@um.si
+  title: 'Razvoj računalniških iger v programskem jeziku Java ali Kotlin '
+  image: ''
+  type: Krajše izobraževanje
+  field: RIN
+  keywords:
+  - računalniške igre
+  - razvoj igre
+  - libGDX
+  - življenjski cikel
+  - organizacija kode
+  - Java
+  - Kotlin
+  public: ''
+  difficulty: ''
+  previous_workshop: ''
+  description: Udeleženci bodo spoznali, kako načrtovati in implementirati preprosto
+    računalniško igro. Naučili se bodo, kako poteka glavna zanka igre oz. kakšen je
+    življenjski cikel igre. Vsak udeleženec bo implementiral svojo lastno igro z uporabo
+    ogrodja libGDX in programskega jezika Java ali Kotlin. Ustvarili bomo igro, ki
+    se bo odzivala na igralčeve ukaze, obdelovala vhodne podatke in izrisovala objekte
+    na zaslonu. Med razvojem se bomo naučili, kako učinkovito odpravljati morebitne
+    napake, ki se pojavijo med razvojem. Ne bomo se omejili le na ustvarjanje preproste
+    igre, temveč tudi na to, kako pripraviti projekt za nadaljnji razvoj. Udeleženci
+    se bodo naučili, kako organizirati svojo kodo in vire, da bo projekt pripravljen
+    na razširitev in izboljšavo igre s pridobljenim znanjem.
+  vs: ''
+  uni: ''
+  mag: ''
+- '#': '16'
+  author:
+  - Tomaž Kosar
+  - Mario Casar
+  contact: tomaz.kosar@um.si
+  title: Vizualno programiranje za končne uporabnike
+  image: ''
+  type: Krajše izobraževanje
+  field: RIN
+  keywords:
+  - vizualno programiranje
+  - Poliglot
+  - Scratch
+  - AppInventor
+  - prvi koraki programiranja
+  - interaktivno učenje
+  public: ''
+  difficulty: ''
+  previous_workshop: ''
+  description: Okolja za vizualno programiranje so postala vse bolj pomembna zaradi
+    vse večjega pomena znanja programiranja za končne uporabnike v sodobni družbi.
+    Na predlaganih delavnicah se udeleženci seznanijo z različnimi orodji in vizualnimi
+    programskimi jeziki, kot so Poliglot, Scratch in AppInventor. Poliglot je programsko
+    orodje, ki je bilo razvito na UM FERI in je namenjeno učenju osnovnih veščin programiranja.
+    Nadaljujemo s Scratch-om, ki je programski jezik zasnovan za otroke, ki se šele
+    učijo programiranja, saj omogoča enostavno izdelavo interaktivnih animacij in
+    iger. AppInventor pa je orodje za razvoj mobilnih aplikacij, ki omogoča enostavno
+    izdelavo mobilnih aplikacij za Android platformo. Na teh delavnicah se udeleženci
+    naučijo osnov (vizualnega) programiranja in izdelajo svoje lastne aplikacije in
+    igre, kot je npr. aplikacija za beleženje športnih aktivnosti. Delavnica je zelo
+    primerna tudi za učitelje računalništva za osnovne šole. Dokvalifikacija učiteljev
+    je pomemben korak pri zagotavljanju kvalitetne izobrazbe za otroke, ki se šele
+    učijo programiranja. Udeleženci, ki so seznanjeni z najnovejšimi orodji in programskimi
+    jeziki, lahko na bolj interaktiven način predajajo svoje znanje in še bolj spodbujajo
+    otrokovo zanimanje za računalništvo.
+  vs: ''
+  uni: ''
+  mag: ''
+- '#': '17'
+  author:
+  - Peter Kokol
+  - Milan Zorman
+  - Bojan Žlahtič
+  contact: peter.kokol@um.si
+  title: Osnove statistične analize podatkov
+  image: ''
+  type: Krajše izobraževanje
+  field: RIN
+  keywords:
+  - statična analiza
+  - sklepna statistika
+  - statični programski paket
+  public: ''
+  difficulty: ''
+  previous_workshop: ''
+  description: Udeleženci bodo spoznali osnovne principe statistične analize in klasično
+    sklepno statistiko. V okviru osnov bodo spoznali teorijo verjetnosti, klasične  statistične
+    definicije, pravila verjetnosti, verjetnostne porazdelitve kot so binomska, normalna
+    in multivariatna. V okviru klasične sklepno statistike bodo spoznali vzorčenje,  ocenjevanje
+    parametrov in preizkušanje statističnih domnev. Naveden pojme in principe bodo
+    preskusili na praktičnih primerih z uporabo statističnega programskega paketa.
+  vs: ''
+  uni: ''
+  mag: ''
+- '#': '18'
+  author:
+  - Peter Kokol
+  - Milan Zorman
+  - Bojan Žlahtič
+  contact: peter.kokol@um.si
+  title: Osnove kvalitete programske opreme
+  image: ''
+  type: Krajše izobraževanje
+  field: RIN
+  keywords:
+  - kvaliteta
+  - napake
+  - odpravljanje
+  - validacija
+  - verifikacija
+  - osnovne merilne tehnike kvalitete
+  public: ''
+  difficulty: ''
+  previous_workshop: ''
+  description: 'Udeleženci bodo spoznali osnovne principe, vidike in modele kvalitete
+    programske opreme, kot so napake, ki se pojavljajo pri oblikovanju programske
+    opreme in kako zagotavljati kvalitete. Spoznali bodo procese prevencija napak,
+    odpravljanje napak, validacije in verifikacije. Spoznali bodo tudi osnovne tehnika
+    merjenje kvalitete kot so programske metrike, ocenjevanje kvalitete in klasifikacija
+    napak.  '
+  vs: ''
+  uni: ''
+  mag: ''
+- '#': '19'
+  author:
+  - Peter Kokol
+  - Milan Zorman
+  - Bojan Žlahtič
+  contact: peter.kokol@um.si
+  title: Zbiranje in priprava podatkov za strojno učenje
+  image: ''
+  type: Krajše izobraževanje
+  field: RIN
+  keywords:
+  - osnovni tipi podatkov
+  - tipi značilk
+  - strojno učenje
+  - podatki
+  - podatkovne zbirke
+  - predobdelava
+  - vizualizacija
+  public: ''
+  difficulty: ''
+  previous_workshop: ''
+  description: Udeleženci bodo spoznali osnovne tipe podatkov, tipe značilk za strojno
+    obdelavo, osnovne principe pridobivanja in organizacije podatkov ter podatkovnih
+    zbirk, pomen predobdelave in vizualizacije podatkov.
+  vs: ''
+  uni: ''
+  mag: ''
+- '#': '20'
+  author:
+  - Peter Kokol
+  - Milan Zorman
+  - Bojan Žlahtič
+  contact: peter.kokol@um.si
+  title: Vitko upravljanje v inženirstvu
+  image: ''
+  type: Krajše izobraževanje
+  field: RIN
+  keywords:
+  - vitko upravljanje
+  public: ''
+  difficulty: ''
+  previous_workshop: ''
+  description: 'Udeleženci bodo spoznali osnovne vitkega upravljanja v inženirskih
+    poklicih: principe vitkega razmišljanja, opazovanje okolja, odkrivanje vzrokov
+    odpovedi in posledic, ter načrtovanje in izvedbo izboljšav skozi orodja vitkega
+    upravljanja.'
+  vs: ''
+  uni: ''
+  mag: ''
+- '#': '21'
+  author:
+  - Peter Kokol
+  - Milan Zorman
+  - Bojan Žlahtič
+  contact: peter.kokol@um.si
+  title: Osnove strojnega učenja
+  image: ''
+  type: Krajše izobraževanje
+  field: RIN
+  keywords:
+  - terminologija
+  - tipi algoritmov
+  - metrike uspešnosti
+  - podatki
+  - testna okolja
+  public: ''
+  difficulty: ''
+  previous_workshop: ''
+  description: Udeleženci se bodo seznanili z osnovno terminologijo, različnimi vrstami
+    učenja, tipi algoritmov, metrikami uspešnosti in delitvijo ter filtriranjem podatkov.
+    Prav tako se bodo srečali z interaktivnimi testnimi okolji za potrebe preizkušanja
+    in nadaljnjih aplikacij.
+  vs: ''
+  uni: ''
+  mag: ''
+- '#': '22'
+  author:
+  - Peter Kokol
+  - Milan Zorman
+  - Bojan Žlahtič
+  contact: peter.kokol@um.si
+  title: Osnove strojnega učenja v programskem jeziku R
+  image: ''
+  type: Krajše izobraževanje
+  field: RIN
+  keywords:
+  - R
+  - strojno učenje
+  - odbdelava
+  - vizualizacija
+  public: ''
+  difficulty: ''
+  previous_workshop: ''
+  description: Udeleženci se bodo seznanili s knjižnicami v programskem jeziku R,
+    ki so namenjene strojnemu učenju, obdelavi podatkov in vizualizaciji, ter spoznali
+    praktične primere njihove uporabe.
+  vs: X
+  uni: ''
+  mag: ''
+- '#': '23'
+  author:
+  - Peter Kokol
+  - Milan Zorman
+  - Bojan Žlahtič
+  contact: peter.kokol@um.si
+  title: 'Osnove strojnega učenja v programskem jeziku Python '
+  image: ''
+  type: Krajše izobraževanje
+  field: RIN
+  keywords:
+  - Python
+  - strojno učenje
+  - odbdelava
+  - vizualizacija
+  public: ''
+  difficulty: ''
+  previous_workshop: ''
+  description: Udeleženci se bodo seznanili s knjižnicami v programskem jeziku Python,
+    ki so namenjene strojnemu učenju, obdelavi podatkov in vizualizaciji, ter spoznali
+    praktične primere njihove uporabe.
+  vs: ''
+  uni: ''
+  mag: ''
+- '#': '24'
+  author:
+  - Peter Kokol
+  - Milan Zorman
+  - Bojan Žlahtič
+  contact: peter.kokol@um.si
+  title: Orodja za razvoj programske opreme
+  image: ''
+  type: Krajše izobraževanje
+  field: RIN
+  keywords:
+  - timsko okolje
+  - verzioniranje
+  - komunikacija
+  - dokumentacija
+  - avtomatizacija
+  public: ''
+  difficulty: ''
+  previous_workshop: ''
+  description: Udeleženci se bodo seznanili z orodji, ki omogočajo učinkovit razvoj
+    programske opreme v timskem okolju, vključno z načrtovanjem, verzioniranjem, komunikacijo,
+    dokumentacijo ter avtomatizacijo.
+  vs: ''
+  uni: ''
+  mag: ''
+- '#': '25'
+  author:
+  - Damjan Strnad
+  contact: damjan.strnad@um.si
+  title: Uvod v strojno učenje
+  image: ''
+  type: Krajše izobraževanje
+  field: RIN
+  keywords:
+  - strojno učenje
+  - učni podatki
+  - predobdelava
+  - napovedni modeli
+  - vrednostnje
+  public: ''
+  difficulty: ''
+  previous_workshop: ''
+  description: Udeleženci bodo spoznali osnove strojnega učenja, priprave učnih podatkov,
+    izbire značilnic in tipa napovednega modela, gradnje, učenja in vrednotenja naučenih
+    modelov. V okviru priprave podatkov bodo spoznali tehnike predobdelave učnih podatkov,
+    ki vključuje čiščenje, zaznavanje izstopajočih vrednosti in nadomeščanje manjkajočih
+    vrednosti. Uporabili bodo nekatere osnovne algoritme analize vzorcev v podatkih,
+    ter izvedli zmanjšanje dimenzije in vizualizacijo podatkov. Na tej stopnji se
+    bodo udeleženci seznanili s preprostejšimi modeli strojnega učenja kot sta linearna
+    in logistična regresija, Bayesov klasifikator in odločitvena (klasifikacijska
+    in regresijska) drevesa. Pridobljeno znanje bodo preizkusili pri izgradnji enega
+    ali več napovednih modelov za izbrano podatkovno zbirko, za kar bodo uporabili
+    obstoječa prosto-dostopna orodja.
+  vs: ''
+  uni: ''
+  mag: ''
+- '#': '26'
+  author:
+  - Damjan Strnad
+  contact: damjan.strnad@um.si
+  title: Umetne nevronske mreže in globoko učenje
+  image: ''
+  type: Krajše izobraževanje
+  field: RIN
+  keywords:
+  - umetne nevronske mreže
+  - strojno učenje
+  - optimizacija
+  - regularizacija
+  - validacija
+  public: ''
+  difficulty: ''
+  previous_workshop: Uvod v strojno učenje
+  description: Udeleženci bodo spoznali osnove umetnih nevronskih mrež, različne arhitekturne
+    rešitve in principe strojnega učenja globokih nevronskih mrež. Seznanili se bodo
+    s praktičnimi težavami, ki se lahko pojavijo pri učenju nevronskih mrež, kot sta
+    počasno učenje in prekomerno prileganje. Za reševanje teh težav bodo uporabili
+    različne tehnike kot so optimizacija hiperparametrov, regularizacija, povečanje
+    učne množice in ansambelske metode. Učenje in optimizacijo nevronske mreže bodo
+    izvedli za izbran regresijski ali klasifikacijski problem na prosto dostopni ali
+    lastni podatkovni zbirki, pri čemer bodo za spremljanje poteka učenja uporabili
+    vizualizacijo njegovega napredka glede na napako napovedi. Naučen model bodo validirali
+    na testnih podatkih z uporabo različnih metrik uspešnosti. Je vsebinsko nadaljevanje
+    Uvod v strojno učenje.
+  vs: ''
+  uni: ''
+  mag: ''
+- '#': '27'
+  author:
+  - Damjan Strnad
+  contact: damjan.strnad@um.si
+  title: Analiza grafov z umetno inteligenco
+  image: ''
+  type: Krajše izobraževanje
+  field: RIN
+  keywords:
+  - grafi
+  - nevronske mreže
+  - analiza družbenih omrežij
+  public: ''
+  difficulty: ''
+  previous_workshop: Umetne nevronske mreže in globoko učenje
+  description: V okviru tega naprednejšega modula se bodo udeleženci najprej seznanili
+    z različnimi oblikami grafov in načini predstavitve omrežij iz realnega sveta
+    v obliki podatkovne strukture graf. V nadaljevanju bodo spoznali osnove grafovskih
+    nevronskih mrež, njihove principe delovanja in načine pretvorbe vozlišč, podgrafov
+    ali celotnih grafov v vektorske vložitve. Nad vektorskimi vložitvami bodo v nadaljevanju
+    zgradili napovedni ali klasifikacijski model za napovedovanje povezav, klasifikacijo
+    vozlišč ali klasifikacijo grafov. To bodo povezali s praktičnim primerom uporabe,
+    kot je analiza družbenih omrežij, napovedovanje prometnih tokov ali priporočanje
+    na podlagi interakcij med uporabniki in predmeti. Pričakovano je poznavanje osnov
+    programiranja v pythonu in strojnega učenja.
+  vs: ''
+  uni: ''
+  mag: ''
+- '#': '28'
+  author:
+  - Damjan Strnad
+  contact: damjan.strnad@um.si
+  title: Globoko okrepitveno učenje z nevronskimi mrežami
+  image: ''
+  type: Krajše izobraževanje
+  field: RIN
+  keywords:
+  - okrepitveno učenje
+  - nevronske mreže
+  - optimizacija pravilnika
+  - agent
+  public: ''
+  difficulty: ''
+  previous_workshop: Umetne nevronske mreže in globoko učenje
+  description: V tem modulu bodo udeleženci spoznali principe okrepitvenega učenja,
+    klasične algoritme in osnovne algoritme globokega okrepitvenega učenja z nevronskimi
+    mrežami. Na podlagi poznavanja osnovnih principov delovanja bodo za izbran problem
+    okrepitvenega učenja lahko identificirali in opisali glavne komponente kot so
+    akcije agenta, predstavitev stanj in model okolja, ki določa prehajanje stanj
+    in nagrade za izvedene akcije. Pri obravnavi klasičnih pristopov se bodo seznanili
+    s pristopi optimizacije pravilnika in klasičnimi algoritmi okrepitvenega učenja.
+    Nato bodo za predstavitev agentove strategije delovanja ali modela okolja uporabili
+    globoko nevronsko mrežo in se seznanili s prednostmi takšnega pristopa. Spoznali
+    bodo nekaj metod okrepitvenega učenja z nevronskimi mrežami in jih uporabili za
+    optimizacijo delovanja agenta v simuliranem okolju.
+  vs: ''
+  uni: ''
+  mag: ''
+- '#': '29'
+  author:
+  - Damjan Strnad
+  contact: damjan.strnad@um.si
+  title: Generativna umetna inteligenca
+  image: ''
+  type: Krajše izobraževanje
+  field: RIN
+  keywords:
+  - generativni modeli
+  - nevronske mreže
+  - generiranje besedila
+  - generiranje slik
+  public: ''
+  difficulty: ''
+  previous_workshop: Umetne nevronske mreže in globoko učenje
+  description: Udeleženci se bodo seznanili s teorijo in praktičnimi aplikacijami
+    generativnih modelov nevronskih mrež, ki poganjajo sodobna orodja za generiranje
+    naravnega jezika v obliki besedil in govora ter drugih oblik digitalne vsebine.
+    Glede na predviden nivo zahtevnosti bodo udeleženci pri teoretičnem delu spoznali
+    osnovne principe delovanja generativnih modelov, njihovo učenje in uporabo ter
+    prenos naučenih modelov na nove domene. Pri praktičnem delu bodo preizkusili delovanje
+    prosto dostopnih testnih različic modelov za generiranje besedila, slik in ostalih
+    vrst vsebine, ter identificirali primere koristne uporabe teh orodij pri svojem
+    delu. Na naprednejšem nivoju bodo uporabniki vključili obstoječe prosto dostopne
+    modele v lastne aplikacije.
+  vs: ''
+  uni: ''
+  mag: ''
+- '#': '30'
+  author:
+  - Damjan Strnad
+  contact: damjan.strnad@um.si
+  title: Metode za napovedovanje časovnih vrst
+  image: ''
+  type: Krajše izobraževanje
+  field: RIN
+  keywords:
+  - časovne vrste
+  - dekompozicija
+  - napovedovanje vrednosti
+  - validacija
+  - strojno učenje
+  public: ''
+  difficulty: ''
+  previous_workshop: ''
+  description: V okviru tega modula bodo udeleženci spoznali računalniške metode za
+    analizo in obdelavo časovnih vrst z eno ali več spremenljivkami. V prvem delu
+    se bodo seznanili z različnimi oblikami časovnih vrst in uporabili metode za njihovo
+    modeliranje z dekompozicijo na osnovne komponente, kot sta trend in sezonska komponenta.
+    V nadaljevanju bodo izvedli osnovno izpeljavo lastnosti izbranih časovnih vrst,
+    kot je avtokorelacija, in uporabili preproste modele za napovedovanje prihodnjih
+    vrednosti časovne vrste. Seznanili se bodo z različnimi pristopi za validacijo
+    napovednih modelov, ki vključuje vrednotenje točnosti napovedi in analizo rezidualov.
+    Sledila bo obravnava avtoregresijskih modelov za napovedovanje v časovnih vrstah,
+    glede na predviden nivo vsebine pa bodo udeleženci v zaključnem delu za modeliranje
+    izbranih časovnih vrst uporabili še sodobne pristope strojnega učenja z nevronskimi
+    mrežami.
+  vs: ''
+  uni: ''
+  mag: ''
+- '#': '31'
+  author:
+  - Damjan Strnad
+  contact: damjan.strnad@um.si
+  title: Podatkovne strukture v praksi
+  image: ''
+  type: Krajše izobraževanje
+  field: RIN
+  keywords:
+  - podatkovne strukture
+  - iskanje podatkov
+  - dodajanje podatkov
+  - brisanje podatkov
+  - učinkovitost
+  public: ''
+  difficulty: ''
+  previous_workshop: ''
+  description: V okviru tega modula bodo udeleženci spoznali osnovne in nekatere napredne
+    podatkovne strukture za organizirano hrambo podatkov. Seznanili se bodo z osnovnimi
+    operacijami na podatkovnih strukturah, kot so iskanje, dodajanje in brisanje podatkov,
+    ter njihovo časovno zahtevnostjo. Teoretično znanje bodo podkrepili v praktičnem
+    delu, kjer bodo za izbrane oblike realnih problemov uporabili različne podatkovne
+    strukture in primerjali njihovo učinkovitost pri različnih razmerjih operacij
+    iskanja, dodajanja in brisanja podatkov.
+  vs: ''
+  uni: ''
+  mag: ''
+- '#': '32'
+  author:
+  - Damjan Strnad
+  contact: damjan.strnad@um.si
+  title: Računalniški algoritmi za reševanje problemov na grafih
+  image: ''
+  type: Krajše izobraževanje
+  field: RIN
+  keywords:
+  - grafi
+  - iskanje najkrajših poti
+  - največji pretok
+  - povezovanje komponent
+  - časovna zahtevnost
+  public: ''
+  difficulty: ''
+  previous_workshop: ''
+  description: Udeleženci tega modula se bodo seznanili z osnovnimi in naprednejšimi
+    algoritmi za reševanje problemov nad grafi. V uvodnem delu se bodo seznanili s
+    podatkovno strukturo graf in spoznali osnovne pojme, povezane z grafi. V obliki
+    grafa bodo predstavili različne praktične primere in spoznali tipe problemov na
+    splošnih in posebnih grafih, ki jih rešujemo z računalniškimi algoritmi. Izbrane
+    vrste problemov, kot so iskanje najkrajših poti, največjega pretoka ali povezanih
+    komponent v grafu, bodo s pomočjo programskih knjižnic rešili na grafih različnih
+    velikosti in analizirali praktične omejitve v smislu časovne zahtevnosti. Za določene
+    oblike optimizacijskih nalog bodo uporabili hitrejše aproksimativne rešitve in
+    jih primerjali z optimalnimi.
+  vs: ''
+  uni: ''
+  mag: ''
+- '#': '33'
+  author:
+  - Borko Bošković
+  contact: borko.boskovic@um.si
+  title: Programiranje za superračunalnik – C++ niti
+  image: ''
+  type: Krajše izobraževanje
+  field: RIN
+  keywords:
+  - paralelno računanje
+  - niti
+  - C++
+  - stohastnični algoritem
+  - superračunalnik
+  public: ''
+  difficulty: Višji nivo
+  previous_workshop: ''
+  description: Udeleženci bodo spoznali osnovne principe paralelnega računanja s pomočjo
+    niti v programskem jeziku C++. Predstavljeni bodo vidiki sočasnosti, delovanje
+    večjedrnih računalnikov, koncept deljenega pomnilnika, kritične sekcije, bariere,
+    atomarne operacije itd. Udeleženci bodo reševali kombinatorični problem, ki uporablja
+    več niti, s pomočjo stohastičnega algoritma.
+  vs: ''
+  uni: ''
+  mag: ''
+- '#': '34'
+  author:
+  - Borko Bošković
+  contact: borko.boskovic@um.si
+  title: Programiranje za superračunalnik – Python niti
+  image: ''
+  type: Krajše izobraževanje
+  field: RIN
+  keywords:
+  - paralelno računanje
+  - niti
+  - Python
+  - stohastnični algoritem
+  - superračunalnik
+  public: ''
+  difficulty: Srednji nivo
+  previous_workshop: ''
+  description: Udeleženci bodo spoznali osnovne principe paralelnega računanja s pomočjo
+    niti v programskem jeziku Python. Predstavljeni bodo osnovi vidiki sočasnosti,
+    delovanje večjedrnih računalnikov, uporaba deljenega pomnilnika, kritičnih sekcij
+    itd. Udeleženci bodo pri praktičnem delu reševali kombinatorični problem, ki uporablja
+    več niti, s pomočjo stohastičnega algoritma.
+  vs: ''
+  uni: ''
+  mag: ''
+- '#': '35'
+  author:
+  - Borko Bošković
+  contact: borko.boskovic@um.si
+  title: Programiranje za superračunalnik – OpenMP
+  image: ''
+  type: Krajše izobraževanje
+  field: RIN
+  keywords:
+  - paralelno računanje
+  - OpenMP
+  - sekvenčni program
+  - superračunalnik
+  - C++
+  public: ''
+  difficulty: Srednji nivo
+  previous_workshop: ''
+  description: Udeleženci bodo spoznali osnovne principe paralelnega računanja s pomočjo
+    programskega ogrodja OpenMP v programskem jeziku C++. Predstavljeni bodo vidiki
+    sočasnosti, delovanje večjedrnih računalnikov, koncept deljenega pomnilnika, kritične
+    sekcije, atomarne operacije itd. S pomočjo ogrodja OpenMP bo prikazan način paralelizacije
+    sekvenčnega programa. Udeleženci bodo sekvenčni program paralelizirali tako, da
+    ga bodo dopolnili s pomočjo paradigm OpenMP.
+  vs: ''
+  uni: ''
+  mag: ''
+- '#': '36'
+  author:
+  - Borko Bošković
+  contact: borko.boskovic@um.si
+  title: Programiranje za superračunalnik – MPI
+  image: ''
+  type: Krajše izobraževanje
+  field: RIN
+  keywords:
+  - paralelno računanje
+  - porazdeljeno računanje
+  - pošiljanje sporočil
+  - C++
+  - MPI
+  - superračunalnik
+  public: ''
+  difficulty: Višji nivo
+  previous_workshop: ''
+  description: Udeleženci bodo spoznali osnovne principe paralelnega in porazdeljenega
+    računanja s pomočjo pošiljanja sporočil v programskem jeziku C++. Predstavljeni
+    bodo vidiki sočasnosti, delovanje porazdeljenih računalniških sistemov, koncept
+    pošiljanja sporočil, itd. S pomočjo MPI bo prikazan način paralelnega in porazdeljenega
+    računanja. Udeleženci bodo reševali kombinatorični problem s pomočjo pošiljanja
+    sporočil in stohastičnega algoritma, ki se bo izvajal porazdeljeno.
+  vs: ''
+  uni: ''
+  mag: ''
+- '#': '37'
+  author:
+  - Borko Bošković
+  contact: borko.boskovic@um.si
+  title: Programiranje za superračunalnik – Singularity
+  image: ''
+  type: Krajše izobraževanje
+  field: RIN
+  keywords:
+  - navidezni računalnik
+  - Singularity
+  - superračunalnik
+  - vozlišča
+  public: ''
+  difficulty: Srednji nivo
+  previous_workshop: ''
+  description: Udeleženci bodo spoznali osnovne principe navideznih računalnikov s
+    pomočjo orodja Singularity. Predstavljeno bo okolje za zagon programa na superračunalniku,
+    ki se bo preneslo na superračunalnik, kjer se bo program zagnal na več vozliščih.
+    Udeleženci bodo pripravili okolje za prevajanje in zagon programa na superračunalniku.
+  vs: ''
+  uni: ''
+  mag: ''
+- '#': '38'
+  author:
+  - Matej Kramberger
+  - Nina Murks
+  contact: matej.kramberger@um.si
+  title: Uvod v Python za programerje
+  image: ''
+  type: Krajše izobraževanje
+  field: RIN
+  keywords:
+  - Python
+  - podatkovni tipi
+  - konstrukti
+  - knjižnice
+  - optimizacija
+  - profiliranje
+  public: ''
+  difficulty: Začetni nivo
+  previous_workshop: ''
+  description: "•\tSintaksa v programskem jeziku Python.\n•\tPodatkovni tipi.\n•\t\
+    Programski vzorci in programski konstrukti.\n•\tKnjižnice.\n•\tOptimizacija in\
+    \ profiliranje kode v programskem jeziku Python.\n•\tPraktični primeri"
+  vs: ''
+  uni: ''
+  mag: ''
+- '#': '39'
+  author:
+  - Matej Kramberger
+  - Nina Murks
+  contact: nina.murks@um.si
+  title: Uvod v Python za neprogramerje
+  image: ''
+  type: Krajše izobraževanje
+  field: RIN
+  keywords:
+  - Python
+  - sintaksa
+  - podatkovni tipi
+  public: ''
+  difficulty: Začetni nivo
+  previous_workshop: ''
+  description: "•\tUvod v programiranje\n•\tSintaksa v programskem jeziku Python.\n\
+    •\tPodatkovni tipi.\n•\tPraktični primeri"
+  vs: ''
+  uni: ''
+  mag: ''
+- '#': '40'
+  author:
+  - Nina Murks
+  - Matej Kramberger
+  - Aleš Holobar
+  contact: nina.murks@um.si
+  title: Programerski uvod v digitalno obdelavo signalov (Python)
+  image: ''
+  type: Krajše izobraževanje
+  field: RIN
+  keywords:
+  - Digitalni signali
+  - obdelava signalov
+  - Fourierova analiza
+  - linearni sistemi
+  - filtri
+  public: ''
+  difficulty: Začetni nivo
+  previous_workshop: ''
+  description: "•\tDigitalni signali (AD/DA pretvorba, vzorčenje, Nyquistov teorem,\
+    \ ločljivost)\n•\tUvod v diskretno Fourierovo analizo\n•\tLinearni sistemi in\
+    \ konvolucija\n•\tARMA/MA filtrov, \n•\tKonvolutivne nevronske mreže kot MA in\
+    \ rekurentne nevronske mreže kot ARMA sistemi\n•\tPraktični primeri obdelave signalov. "
+  vs: ''
+  uni: ''
+  mag: ''
+- '#': '41'
+  author:
+  - Nina Murks
+  - Matej Kramberger
+  - Aleš Holobar
+  contact: nina.murks@um.si
+  title: Napredna frekvenčna analiza za programerje
+  image: ''
+  type: Krajše izobraževanje
+  field: RIN
+  keywords:
+  - analitični signali
+  - frekvenčna analiza
+  - diskretna valčna transformacija
+  public: ''
+  difficulty: Višji nivo
+  previous_workshop: ''
+  description: "•\tAnalitični signali\n•\tnapredna frekvenčna analiza (diskretna Fourierova\
+    \ analiza, kratkočasovna Fourierova analiza, okenske funkcije,  Welchova metoda),\
+    \  \n•\tAlternative Fourierovi analizi: časovno-frekvenčne porazdelitve Cohenovega\
+    \ razreda in diskretna valčna transformacija... \n•\tPraktični primeri frekvenčne\
+    \ obdelave signalov"
+  vs: ''
+  uni: ''
+  mag: ''
+- '#': '42'
+  author:
+  - Aleš Holober
+  - Martin Šavc
+  - Matej Kramberger
+  contact: ales.holobar@um.si
+  title: Diskretna valčna transformacija
+  image: ''
+  type: Krajše izobraževanje
+  field: RIN
+  keywords:
+  - diskretna valčna transformacija
+  - DWT
+  - implementacija
+  - primerjava analize
+  - obdelava signalov
+  public: ''
+  difficulty: Višji nivo
+  previous_workshop: ''
+  description: "•\tteoretična primerjava DFT, CWT in DWT (poudarek na DWT)\n     \
+    \ o\tkratek pregled DFT, njegove omejitve \n      o\tkako omejitve reši STFT\n\
+    \      o\tkako omejitve reši CWT, slabosti pristopa\n      o\tkako omejitve reši\
+    \ DWT\n•\tpregled izbranih valčkov (Haar, Daubechie, Symlet, ...)\n      o\tkaj\
+    \ je valček (podrobneje)\n      o\tprimeri valčkov za DWT, lastnosti \n•\tučinkovita\
+    \ implementacija DWT\n      o\tMožnost on-line implementacije\n•\tprimerjava analize\
+    \ DWT in DFT/STFT na primerih\n•\taplikacija DWT/iDWT za obdelavo signalov"
+  vs: ''
+  uni: ''
+  mag: ''
+- '#': '43'
+  author:
+  - Matej Kramberger
+  - Nina Murks
+  contact: matej.kramberger@um.si
+  title: Python in umetna inteligenca z aplikacijami v razpoznavanju vzorcev
+  image: ''
+  type: Krajše izobraževanje
+  field: RIN
+  keywords:
+  - Python
+  - knjižnice
+  - nevronske mreže
+  - razpoznavanje vzorcev
+  public: ''
+  difficulty: Začetni nivo
+  previous_workshop: ''
+  description: "•\tOsnovni koncepti programiranja v Python (spremenljivke, pogojni\
+    \ stavki, zanke, funkcije).\n•\tKnjižnice.\n•\tOsnovni koncepti in arhitekture\
+    \ nevronskih mrež: perceptron, MLP, fully connected (dropout layer, softmax layer,\
+    \ binarno/multiclass/multilabel, različne kriterijske funkcije (loss functions...),\
+    \ konvolutivne nevronske mreže\n•\tRazpoznavanje vzorcev (prometni znaki)."
+  vs: ''
+  uni: ''
+  mag: ''
+- '#': '44'
+  author:
+  - Matjaž Divjak
+  contact: matjaz.divjak@um.si
+  title: Matlab in prototipiranje digitalne obdelave signalov
+  image: ''
+  type: Krajše izobraževanje
+  field: RIN
+  keywords:
+  - Matlab
+  - obdelava signalov
+  - orodjarne
+  public: ''
+  difficulty: Začetni nivo
+  previous_workshop: ''
+  description: "-\tOsnove Matlaba: razvojno okolje (IDE) in grafični vmesnik (GUI),\
+    \ vgrajena dokumentacija, osnove jezika (programiranje), osnovna matematika in\
+    \ delo z matrikami, razhroščevanje kode, 2D in 3D vizualizacija podatkov, uvoz/izvoz\
+    \ podatkov\n-\tObdelava signalov z Matlabom: čiščenje signalov, odstranjevanje\
+    \ šuma, filtri, normalizacija, interpolacija, glajenje, korelacija, histogrami,\
+    \ statistike, …\n-\tPregled nekaj najpomembnejših orodjarn s kratko praktično\
+    \ demonstracijo: signal processing toolbox, data acquisition toolbox, statistics\
+    \ toolbox, …"
+  vs: ''
+  uni: ''
+  mag: ''
+- '#': '45'
+  author:
+  - Matjaž Divjak
+  contact: matjaz.divjak@um.si
+  title: Napredno programiranje v Matlabu
+  image: ''
+  type: Krajše izobraževanje
+  field: RIN
+  keywords:
+  - Matlab
+  - paralelizacija
+  - nizkonivojsko programiranje
+  - izvedljivi modeli
+  - podatkovna baza
+  public: ''
+  difficulty: Višji nivo
+  previous_workshop: ''
+  description: "Zahtevnejši nivo programiranja v Matlabu s poudarkom na aplikacijah\
+    \ obdelave signalov. \n-\tNaprednejše tehnike za učinkovito programsko kodo v\
+    \ Matlabu: vektorizacija, indeksiranje, pre-allocation, \n-\tParalelizacija: Parallel\
+    \ computing toolbox\n-\tNizkonivojsko programiranje: vključevanje zunanjih C/C++/java\
+    \ rutin\n-\tprevajanje matlabove kode v izvedljive module \n-\tpovezava s podatkovnimi\
+    \ bazami"
+  vs: ''
+  uni: ''
+  mag: ''
+- '#': '46'
+  author:
+  - Aleš Holober
+  - Nina Murks
+  - Matej Kramberger
+  contact: ales.holobar@um.si
+  title: Uvod v kvantno programiranje
+  image: ''
+  type: Krajše izobraževanje s preverjanjem
+  field: RIN
+  keywords:
+  - kvantno programiranje
+  - biti
+  - registri
+  - vrata
+  - vezja
+  - algoritmi
+  - simulatorji
+  public: ''
+  difficulty: Začetni nivo
+  previous_workshop: ''
+  description: "•\tOsnovni principi kvantnega sveta: superpozicija, kvantno prepletanje,\
+    \ tuneljenje. \n•\tKvantni biti in kvantni registri.\n•\tKvantna vrata in kvantna\
+    \ vezja. \n•\tPregled kvantnih algoritmov in primerjava njihove računske kompleksnosti\
+    \ s klasičnimi algoritmi.\n•\tKvantni simulatorji in programska orodja.  \n•\t\
+    Praktični primeri uporab kvantnih algoritmov."
+  vs: ''
+  uni: ''
+  mag: ''
+- '#': '47'
+  author:
+  - Matjaž Divjak
+  - Aleš Holobar
+  - Matej Kramberger
+  contact: matjaz.divjak@um.si
+  title: 'Razpoznavanje vzorcev in redukcija dimenzij: primerjava klasičnih algoritmov
+    in globokega učenja'
+  image: ''
+  type: Krajše izobraževanje s preverjanjem
+  field: RIN
+  keywords:
+  - ocenjevanje značilnic
+  - redukcija dimenzij
+  - globoko učenje
+  - problem velikosti učnih množic
+  - primerjava
+  public: ''
+  difficulty: Višji nivo
+  previous_workshop: ''
+  description: "•\tOcenjevanje značilnic: klasični algoritmi (filtri, časovne in spektralne\
+    \ značilnice), \n•\tOcenjevanje značilnic: globoko učenje in konvolutivne nevronske\
+    \ mreže \n•\tRedukcija dimenzij, klasični pristopi: Analiza poglavitnih komponent\
+    \ (PCA), Analiza neodvisnih komponent (ICA)\n•\tRedukcija dimenzij, globoko učenje:\
+    \ kodirniki in dekodirniki (autoencoders);\n•\tProblem velikosti učnih množic\
+    \ in primerjava med klasičnimi pristopi in globokim učenjem. "
+  vs: ''
+  uni: ''
+  mag: ''
+- '#': '48'
+  author:
+  - Matej Kramberger
+  - Matin Šavc
+  - Aleš Holobar
+  - Matjaž Divjak
+  contact: matej.kramberger@um.si
+  title: 'Klasifikacija vzorcev: klasični pristopi in globoke nevronske mreže'
+  image: ''
+  type: Krajše izobraževanje s preverjanjem
+  field: RIN
+  keywords:
+  - klasifikacija vzorcev
+  - klasični pristopi
+  - globoke nevronske mreže
+  public: ''
+  difficulty: Višji nivo
+  previous_workshop: 'Razpoznavanje vzorcev in redukcija dimenzij: primerjava klasičnih
+    algoritmov in globokega učenja'
+  description: "Ta modul kot predznanje zahteva kompetence modula 10. \n•\tKlasifikacija\
+    \ s klasičnimi pristopi: logistična regresija, LDA, SVM\n•\tModerni pristopi z\
+    \ globokimi nevronskimi mrežami: arhitekture nevronskih mrež, s poudarkom na plasteh\
+    \ za klasifikacijo: perceptron, MLP, fully connected (dropout layer, softmax layer,\
+    \ binarno/multiclass/multilabel, različne kriterijske funkcije (loss functions...)\
+    \ \n•\tPraktični primeri klasifikacije 1D signalov (klasifikacija žanra glasbe,...)"
+  vs: ''
+  uni: ''
+  mag: ''
+- '#': '49'
+  author:
+  - Matjaž Divjak
+  - Aleš Holobar
+  contact: matjaz.divjak@um.si
+  title: Ločevanje izvorov v večkanalnih mešanicah signalov
+  image: ''
+  type: Krajše izobraževanje s preverjanjem
+  field: RIN
+  keywords:
+  - signali
+  - večkanalni
+  - ločevanje izvorov
+  - globoke nevronske mreže
+  public: ''
+  difficulty: Višji nivo
+  previous_workshop: ''
+  description: "•\tKlasični postopki slepega ločevanja izvorov: Analiza poglavitnih\
+    \ komponent (PCA), Analiza neodvisnih komponent (ICA), \n•\tModerni pristopi ločevanju\
+    \ izvorov z globokimi nevronskimi mrežami: konvolutivne nevronske mreže \n•\t\
+    Praktični primeri uporabe: razpoznavanje govorcev, razpoznavanje gest/akcij iz\
+    \ IMU/pospeškometer signalov, izločanje srčnega utripa iz 1-kanalnega EMG signala,\
+    \ …"
+  vs: ''
+  uni: ''
+  mag: ''
+- '#': '50'
+  author:
+  - Leon Kutoš
+  - Nina Murks
+  contact: leon.kutos@um.si
+  title: Delovanje računalniških sistemov
+  image: ''
+  type: Krajše izobraževanje s preverjanjem
+  field: RIN
+  keywords:
+  - sestava računalnika
+  - vhodne naprave
+  - izhodne naprave
+  - operacijski sistem
+  public: ''
+  difficulty: Začetni nivo
+  previous_workshop: ''
+  description: "•\tSestava računalnika ( Praktično: samostojno sestavljanje računalnika\
+    \ + VR verzija) \n•\tVhodne/ izhodne naprave\n•\tUvod v operacijske sisteme: datotečni\
+    \ sistemi, dostop do računalniških virov, gonilniki"
+  vs: ''
+  uni: ''
+  mag: ''
+- '#': '51'
+  author:
+  - Leon Kutoš
+  - Nina Murks
+  contact: leon.kutos@um.si
+  title: Uporabniška programska oprema in urejanje besedil
+  image: ''
+  type: Krajše izobraževanje
+  field: RIN
+  keywords:
+  - urejevalniki besedil
+  - predstavitve
+  - preglednice
+  - Libre Office
+  - uporabniška programska oprema
+  public: ''
+  difficulty: Začetni nivo
+  previous_workshop: ''
+  description: "•\tUrejevalniki besedil- naprednejša uporaba:  makri, uporaba stilov,\
+    \ učinkovito delo s kompleksnimi dokumenti (knjigami), Latex.\n•\tPredstavitve:\
+    \ Različni pogledi na predstavitve, animacije, urejanje prosojnic.\n•\tPreglednice:\
+    \ osnovne funkcije, makri, kompleksne funkcije.\n•\tOdprtokodne alternative plačljivim\
+    \ urejevalnikom besedil (Libre office)."
+  vs: ''
+  uni: ''
+  mag: ''
+- '#': '52'
+  author:
+  - Leon Kutoš
+  - Nina Murks
+  contact: leon.kutos@um.si
+  title: Uvod v svetovni splet in uporaba spletnih virov
+  image: ''
+  type: Krajše izobraževanje
+  field: RIN
+  keywords:
+  - svetovni splet
+  - spletni viri
+  - elektrosnka pošta
+  - spletni brskalniki
+  - varnost
+  - ChatGPT
+  public: ''
+  difficulty: Začetni nivo
+  previous_workshop: ''
+  description: "•\tElektronska pošta.\n•\tSpletni brskalniki.\n•\tZaščita / varnost\
+    \ na internetu: primeri dobrih praks.\n•\tUporaba chatGPT in stopnje zaupanja… "
+  vs: ''
+  uni: ''
+  mag: ''
+- '#': '53'
+  author:
+  - Uroš Mlakar
+  - Martin Šavc
+  - Jurij Munda
+  contact: uros.mlakar@um.si
+  title: Uvod v operacijski sistem Linux
+  image: ''
+  type: Krajše izobraževanje
+  field: RIN, multidisciplinarno
+  keywords:
+  - Linux
+  - operacijski sistem
+  - računalniški viri
+  - procesi
+  - programiranje v lupinah
+  - pravice
+  - požarni zid
+  public: ''
+  difficulty: Začetni nivo
+  previous_workshop: ''
+  description: "•\tZasnova operacijskega sistema\n•\tNameščanje programske \n•\tRazvrščanje\
+    \ procesov\n•\tDostop do računalniških virov\n•\tProgramiranje v lupinah\n•\t\
+    Napredno upravljanje s pravicami uporabnikov\n•\tPožarni zid"
+  vs: ''
+  uni: ''
+  mag: ''
+- '#': '54'
+  author:
+  - Aleš Holobar
+  - Nina Murks
+  - Matej Kramberger
+  - Matjaž Divjak
+  contact: ales.holobar@um.si
+  title: 'Napredna komunikacija človek-stroj: vmesniki možgani-stroj in vmesniki mišice-stroj'
+  image: ''
+  type: Krajše izobraževanje
+  field: RIN
+  keywords:
+  - komunikacija človek-stroj
+  - kinematični vmesniki
+  - elektorfizični vmesniki
+  - čustveno računalništvo
+  public: ''
+  difficulty: Višji nivo
+  previous_workshop: ''
+  description: "•\tKinematični vmesniki: (Kinect, sledenje gibanju z nevroskimi mrežami)\n\
+    •\tElektrofiziološi vmesniki:  elektromiogrami in elektroencefalogrami\n•\tUvod\
+    \ v čustveno računalništvo: objektivno vrednotenje odzivov uporabnikov: ocenjevanje\
+    \ upravnikovega sodelovanja oz. vpetosti v komunikacijo človek-stroj Primeri aplikacij:\
+    \ kolaborativna robotika, EEG črkovalniki, objektivno merjenje miselne koncentracije,\
+    \ merjenje mišične utrujenosti, merjenje nepravilne uporabe mišic "
+  vs: ''
+  uni: ''
+  mag: ''
