@@ -30,7 +30,7 @@ body {
       position: relative;
       outline: 0;
       @include media("<=sm") {
-        font-size: rem(18px);
+        font-size: rem(16px);
       }
     }
 
@@ -39,8 +39,12 @@ body {
       height: rem(30px);
       transition: all .4s;
   
-      @include media(">=sm") {
+      @include media(">sm") {
         width: rem(205px);
+      }
+
+      @include media("<=sm") {
+        width: rem(140px);
       }
     }
   }

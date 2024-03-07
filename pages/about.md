@@ -10,3 +10,7 @@ permalink: /o-nas/
 ## O nas
 
 Pilotni projekti Univerze v Mariboru za prenovo visokega šolstva za zelen in odporen prehod v družbo 5.0
+
+## Viri 
+Slike: [Unsplash - Free for commercial use](https://unsplash.com)\
+Predloga: [Jekflix Template - MIT license](https://github.com/thiagorossener/jekflix-template)

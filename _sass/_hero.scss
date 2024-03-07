@@ -8,6 +8,14 @@
 
   +#grid {
     margin-top: rem(-400px);
+
+    @include media("<=md") {
+      margin-top: rem(-100px);
+    }
+    
+    @include media("<=sm") {
+      margin-top: rem(-40px);
+    }
   }
 
   .gradient,
@@ -35,10 +43,21 @@
     position: absolute;
     width: 80%;
     height: 70%;
+    min-height: fit-content;
     padding-left: 10%;
 
     @include media("<=sm") {
+      width: 40%;
+      padding-bottom: 20%;
+      padding-top: 30%;
+      min-height: fit-content;
+    }
+
+    @include media("<=md") {
       width: 50%;
+      padding-bottom: 20%;
+      padding-top: 10%;
+      min-height: fit-content;
     }
 
     .date {
@@ -53,7 +72,7 @@
       margin: rem(10px) 0;
 
       @include media("<=sm") {
-        font-size: rem(30px);
+        font-size: rem(20px);
       }
     }
 
@@ -63,8 +82,12 @@
       text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
       margin: 0;
 
-      @include media("<=sm") {
+      @include media("<=md") {
         font-size: rem(18px);
+      }
+
+      @include media("<=sm") {
+        font-size: rem(16px);
       }
     }
 
