@@ -48,6 +48,10 @@
     margin: rem(0px) auto;
     display: block;
     padding: 10px 0;
+    @include media("<=sm") {
+      width: 80%;
+
+    }
   }
 
   figure {
@@ -281,6 +285,10 @@
 
     @include media(">=sm") {
       font-size: rem(20px);
+    }
+
+    @include media("<sm") {
+      font-size: rem(16px);
     }
 
     th,
@@ -744,7 +752,12 @@
   border-radius: 10px;
   transition: border-color 0.3s ease; 
   padding: 10px;
-  margin-bottom: 5%;
+  margin: 5%;
+
+  @include media("<=sm") {
+    padding: 4px;
+    text-align: center;
+  }
   
   &:hover {
     border-color: $themeColor; 
@@ -762,11 +775,17 @@
     text-decoration: none; 
   }
 
+  .image-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+  }
+
   img {
     border-radius: 10px;
     max-width:300px; 
     max-height:200px; 
-    align-items: center;
+    width: 90%;
   }
 
 }
