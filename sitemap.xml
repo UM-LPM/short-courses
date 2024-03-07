@@ -16,19 +16,11 @@ layout: null
             {% endif %}
         </url>
     {% endfor %}
-        {% for article in site.data.articles %}
+        {% for post in site.posts %}
         <url>
-            <loc>{{ site.url }}{{ site.baseurl }}/{{ article.title | replace: ' ', '_' | downcase }}</loc>
+            <loc>{{ site.url }}{{ site.baseurl }}/{{ post.title | replace: ' ', '_' | downcase }}</loc>
             <changefreq>weekly</changefreq>
             <priority>0.8</priority>
-        </url>
-    {% endfor %}
-
-    {% for author in site.authors %}
-        <url>
-            <loc>{{ author.url | prepend: site.baseurl | prepend: site.url }}</loc>
-            <changefreq>monthly</changefreq>
-            <priority>0.5</priority>
         </url>
     {% endfor %}
 </urlset>

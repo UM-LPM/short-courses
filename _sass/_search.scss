@@ -63,7 +63,7 @@
       display: block;
     }
 
-    .entry-date {
+    .entry-author {
       float: right;
       display: none;
       font-size: rem(14px);
@@ -73,7 +73,7 @@
       }
     }
 
-    .entry-category {
+    .entry-keywords {
       text-transform: uppercase;
       background-color: $themeColor;
       margin-right: rem(5px);
@@ -83,6 +83,11 @@
       padding: rem(2px) rem(8px);
       color: #ffffff;
     }
+
+    p {
+      color: $accentDark;
+    }
+
 
     a {
       color: $accentDark;

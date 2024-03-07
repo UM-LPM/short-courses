@@ -3,10 +3,10 @@
         var settings = $.extend({
             jsonFile: '/search.json',
             jsonFormat: 'title,keywords,author,url',
-            template: '<li>hello</li>',
+            template: '<li><article><a href="{url}">{title}<span class="entry-author">{author}</span><span class="entry-keywords">{keywords}</span></a></article></li>',
             searchResults: '.search-results',
             limit: '10',
-            noResults: '<p>We didn\'t find anything :(</p>'
+            noResults: '<p>Žal, nismo našli rezultate :(</p>'
         }, options);
 
         var properties = settings.jsonFormat.split(',');

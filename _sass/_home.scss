@@ -93,17 +93,19 @@
 
   .category {
     display: block;
-    height: rem(36px);
-    line-height: rem(36px);
+    height: auto; 
+    line-height: normal; 
     text-transform: uppercase;
     font-weight: bold;
     font-size: rem(18px);
-    padding: 0 rem(15px);
-
-    a {
+    padding: 0rem;
+    margin-bottom: 0.5rem;
+    overflow: hidden; 
+    white-space: normal;
+    span {
       color: $accentDark;
     }
-  }
+  }  
 
   .box-body {
     img {

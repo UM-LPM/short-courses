@@ -1,24 +1,11 @@
-name: Jekflix
-title: Jekflix | A blog theme for Jekyll
-description: Jekflix is a template for Jekyll inspired by Netflix and made by
-  Thiago Rossener.
-tags:
-  - blog
-  - template
-  - jekyll
-  - theme
-  - netlify
+name: Predlogi krajših izobraževanj
+title: Predlogi krajših izobraževanj
+description: Cilj spodnjega nabora vsebin je preveriti zainteresiranost za razvoj izbranih krajših izobraževanj Univerze v Mariboru.
 show_hero: true
 menu:
-  - title: Home
+  - title: Doma
     url: /
-  - title: About
-    url: /about
-  - title: Contact
-    url: /contact
-email: youremail@test.com
-# See: https://disqus.com/
-disqus_username: disqus_username
-# Contact Form Setting
-# See: https://formspree.io/
-formspree_form_id: formspree_form_id
+  - title: O nas
+    url: /o-nas
+  - title: Kontakt
+    url: /kontakt
