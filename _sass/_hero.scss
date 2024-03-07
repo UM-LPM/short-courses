@@ -10,11 +10,11 @@
     margin-top: rem(-400px);
 
     @include media("<=md") {
-      margin-top: rem(-100px);
+      margin-top: rem(-300px);
     }
     
     @include media("<=sm") {
-      margin-top: rem(-40px);
+      margin-top: rem(-120px);
     }
   }
 
