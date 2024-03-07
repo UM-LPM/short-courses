@@ -47,14 +47,14 @@
     padding-left: 10%;
 
     @include media("<=sm") {
-      width: 40%;
+      width: 80%;
       padding-bottom: 20%;
       padding-top: 30%;
       min-height: fit-content;
     }
 
     @include media("<=md") {
-      width: 50%;
+      width: 80%;
       padding-bottom: 20%;
       padding-top: 10%;
       min-height: fit-content;
