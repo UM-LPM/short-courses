@@ -285,12 +285,12 @@
 
     @include media(">=sm") {
       font-size: rem(20px);
-      width: 90%;
+      width: 95%;
     }
 
     @include media("<sm") {
       font-size: rem(16px);
-      width: 70%;
+      width: 85%;
     }
 
     th,
