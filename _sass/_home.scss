@@ -155,7 +155,7 @@
       line-height: rem(26px);
       color: $accentDark;
       padding: 0 rem(10px);
-      border: 1px solid $accentDark;
+      border: 2px solid $accentDark;
       border-radius: 15px;
       display: inline-block;
       margin: 0 rem(10px) rem(10px) 0;
@@ -246,6 +246,6 @@
   }
 
   .box-info {
-    padding: rem(15px);
+    padding: rem(10px);
   }
 }

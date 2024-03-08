@@ -49,8 +49,7 @@
     display: block;
     padding: 10px 0;
     @include media("<=sm") {
-      width: 80%;
-
+      width: 90%;
     }
   }
 
@@ -113,7 +112,7 @@
     margin-top: rem(20px);
     margin-bottom: rem(20px);
 
-    @include media(">=sm") {
+    @include media(">sm") {
       margin-top: rem(29px);
       margin-bottom: rem(29px);
     }
@@ -642,7 +641,7 @@
     margin-top: rem(30px);
     letter-spacing: 0.025rem;
     line-height: rem(40px);
-    padding: 0 rem(10px);
+    padding: 0 rem(5px);
 
     @include media(">=sm") {
       font-size: rem(20px);
@@ -653,9 +652,9 @@
       font-size: rem(14px);
       color: $primaryDark;
       display: inline-block;
-      border: 1px solid $primaryDark;
+      border: 2px solid $primaryDark;
       border-radius: rem(20px);
-      padding: 0 rem(10px);
+      padding: 0 rem(5px);
       margin-right: rem(2px);
       margin-bottom: rem(8px);
       text-decoration: none;
@@ -676,7 +675,7 @@
       display: inline-block;
       border: 1px solid $themeColor;
       border-radius: rem(20px);
-      padding: 0 rem(10px);
+      padding: 0 rem(5px);
       margin-right: rem(2px);
       margin-bottom: rem(8px);
       text-decoration: none;
