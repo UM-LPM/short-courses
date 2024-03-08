@@ -1,0 +1,34 @@
+---
+---
+  {% assign posts = site.posts | where_exp:"post", "post.is_generated != true" %}
+  {% for post in site.posts %}
+  {% if post.keywords %}
+    {% for keyword in post.keywords %}
+      {% unless all_keywords_str contains keyword %}
+        {% if all_keywords_str == "" %}
+          {% assign all_keywords_str = keyword %}
+        {% else %}
+          {% assign all_keywords_str = all_keywords_str | append: "|" | append: keyword %}
+        {% endif %}
+      {% endunless %}
+    {% endfor %}
+  {% endif %}
+  {% if post.intended %}
+    {% for word in post.intended %}
+      {% unless all_intended_str contains word %}
+        {% if all_intended_str == "" %}
+          {% assign all_intended_str = word %}
+        {% else %}
+          {% assign all_intended_str = all_intended_str | append: "|" | append: word %}
+        {% endif %}
+      {% endunless %}
+    {% endfor %}
+  {% endif %}
+{% endfor %}
+
+{% assign all_keywords = all_keywords_str | split: "|" %}
+{% assign all_intended = all_intended_str | split: "|" %}
+{ "tags": [{% for keyword in all_keywords %}{% if keyword != "" %}
+    "{{ keyword}}",{% endif %}{% endfor %}{% for word in all_intended %}{% if word != "" %}
+    "{{ word}}"{% unless forloop.last %},{% endunless %}{% endif %}{% endfor %}
+]}

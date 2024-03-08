@@ -84,3 +84,6 @@ exclude: [
 
 # Theme
 version: v3.1.2
+
+# App connection link(url)
+url: localhost/pmd/api/:course
