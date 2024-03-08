@@ -20,8 +20,7 @@ keywords:
 - "problem velikosti učnih množic"
 - "primerjava"
 intended:
-- "vsi"
-- "poklicno"
+
 - "razvijalci programske opreme"
 difficulty: "Višji nivo"
 requisite: ""

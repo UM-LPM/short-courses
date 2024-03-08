@@ -20,8 +20,7 @@ keywords:
 - "elektorfizični vmesniki"
 - "čustveno računalništvo"
 intended:
-- "vsi"
-- "poklicno"
+
 - "razvijalci programske opreme"
 difficulty: "Višji nivo"
 requisite: ""
