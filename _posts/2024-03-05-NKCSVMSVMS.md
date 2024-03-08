@@ -25,9 +25,9 @@ intended:
 difficulty: "Višji nivo"
 requisite: ""
 description: |
-    •	Kinematični vmesniki: (Kinect, sledenje gibanju z nevroskimi mrežami)
-    •	Elektrofiziološi vmesniki:  elektromiogrami in elektroencefalogrami
-    •	Uvod v čustveno računalništvo: objektivno vrednotenje odzivov uporabnikov: ocenjevanje upravnikovega sodelovanja oz. vpetosti v komunikacijo človek-stroj Primeri aplikacij: kolaborativna robotika, EEG črkovalniki, objektivno merjenje miselne koncentracije, merjenje mišične utrujenosti, merjenje nepravilne uporabe mišic
+    - Kinematični vmesniki: (Kinect, sledenje gibanju z nevroskimi mrežami)
+    - Elektrofiziološi vmesniki:  elektromiogrami in elektroencefalogrami
+    - Uvod v čustveno računalništvo: objektivno vrednotenje odzivov uporabnikov: ocenjevanje upravnikovega sodelovanja oz. vpetosti v komunikacijo človek-stroj Primeri aplikacij: kolaborativna robotika, EEG črkovalniki, objektivno merjenje miselne koncentracije, merjenje mišične utrujenosti, merjenje nepravilne uporabe mišic
 vs: ""
 uni: ""
 mag: ""

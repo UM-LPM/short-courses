@@ -25,11 +25,11 @@ intended:
 difficulty: "Višji nivo"
 requisite: ""
 description: |
-    •	Ocenjevanje značilnic: klasični algoritmi (filtri, časovne in spektralne značilnice), 
-    •	Ocenjevanje značilnic: globoko učenje in konvolutivne nevronske mreže 
-    •	Redukcija dimenzij, klasični pristopi: Analiza poglavitnih komponent (PCA), Analiza neodvisnih komponent (ICA)
-    •	Redukcija dimenzij, globoko učenje: kodirniki in dekodirniki (autoencoders);
-    •	Problem velikosti učnih množic in primerjava med klasičnimi pristopi in globokim učenjem.
+    - Ocenjevanje značilnic: klasični algoritmi (filtri, časovne in spektralne značilnice), 
+    - Ocenjevanje značilnic: globoko učenje in konvolutivne nevronske mreže 
+    - Redukcija dimenzij, klasični pristopi: Analiza poglavitnih komponent (PCA), Analiza neodvisnih komponent (ICA)
+    - Redukcija dimenzij, globoko učenje: kodirniki in dekodirniki (autoencoders);
+    - Problem velikosti učnih množic in primerjava med klasičnimi pristopi in globokim učenjem.
 vs: ""
 uni: ""
 mag: ""

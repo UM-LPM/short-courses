@@ -48,7 +48,7 @@
                         <img style="margin-bottom: 0;" src="{{ site.baseurl }}/assets/img/1024/{{ page.id }}.jpeg" alt="Featured image" class="post-cover">
                         <!-- <span style="padding-top: 0; font-style: italic;">Vir: {{ page.image }}</span> -->
                     {% endif %}
-                    <p class="post-description">{{ page.description | newline_to_br }}</p>
+                    <p class="post-description">{{ page.description | newline_to_br | replace: "  ", "&nbsp;&nbsp;&nbsp;&nbsp;" }}</p>
                     {{ content }}
                     <table style="margin-bottom: 1%; padding-top: 0%; align-items: center;">
                         <tr>

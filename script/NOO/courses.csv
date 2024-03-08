@@ -58,114 +58,114 @@ Bojan Žlahtič";peter.kokol@um.si;Orodja za razvoj programske opreme;ORPO;;1;RI
 36;Borko Bošković ;borko.boskovic@um.si;Programiranje za superračunalnik – MPI;PSMPI;;1;RIN;paralelno računanje, porazdeljeno računanje, pošiljanje sporočil, C++, MPI, superračunalnik;vsi, poklicno, razvijalci programske opreme;Višji nivo;;Udeleženci bodo spoznali osnovne principe paralelnega in porazdeljenega računanja s pomočjo pošiljanja sporočil v programskem jeziku C++. Predstavljeni bodo vidiki sočasnosti, delovanje porazdeljenih računalniških sistemov, koncept pošiljanja sporočil, itd. S pomočjo MPI bo prikazan način paralelnega in porazdeljenega računanja. Udeleženci bodo reševali kombinatorični problem s pomočjo pošiljanja sporočil in stohastičnega algoritma, ki se bo izvajal porazdeljeno.;;;;1;1;1
 37;Borko Bošković ;borko.boskovic@um.si;Programiranje za superračunalnik – Singularity;PSS;;1;RIN;navidezni računalnik, Singularity, superračunalnik, vozlišča;vsi, poklicno, razvijalci programske opreme;Srednji nivo;;Udeleženci bodo spoznali osnovne principe navideznih računalnikov s pomočjo orodja Singularity. Predstavljeno bo okolje za zagon programa na superračunalniku, ki se bo preneslo na superračunalnik, kjer se bo program zagnal na več vozliščih. Udeleženci bodo pripravili okolje za prevajanje in zagon programa na superračunalniku.;;;;1;1;1
 38;"Matej Kramberger, 
-Nina Murks";matej.kramberger@um.si;Uvod v Python za programerje;UPP;;1;RIN;Python, podatkovni tipi, konstrukti, knjižnice, optimizacija,  profiliranje ;vsi, poklicno, razvijalci programske opreme;Začetni nivo;;"•	Sintaksa v programskem jeziku Python.
-•	Podatkovni tipi.
-•	Programski vzorci in programski konstrukti.
-•	Knjižnice.
-•	Optimizacija in profiliranje kode v programskem jeziku Python.
-•	Praktični primeri";;;;1;1;1
+Nina Murks";matej.kramberger@um.si;Uvod v Python za programerje;UPP;;1;RIN;Python, podatkovni tipi, konstrukti, knjižnice, optimizacija,  profiliranje ;vsi, poklicno, razvijalci programske opreme;Začetni nivo;;"- Sintaksa v programskem jeziku Python.
+- Podatkovni tipi.
+- Programski vzorci in programski konstrukti.
+- Knjižnice.
+- Optimizacija in profiliranje kode v programskem jeziku Python.
+- Praktični primeri";;;;1;1;1
 39;"Matej Kramberger, 
-Nina Murks";nina.murks@um.si;Uvod v Python za neprogramerje;UPN;;1;RIN;Python, sintaksa, podatkovni tipi;vsi, poklicno, razvijalci programske opreme;Začetni nivo;;"•	Uvod v programiranje
-•	Sintaksa v programskem jeziku Python.
-•	Podatkovni tipi.
-•	Praktični primeri";;;;1;1;1
+Nina Murks";nina.murks@um.si;Uvod v Python za neprogramerje;UPN;;1;RIN;Python, sintaksa, podatkovni tipi;vsi, poklicno, razvijalci programske opreme;Začetni nivo;;"- Uvod v programiranje
+- Sintaksa v programskem jeziku Python.
+- Podatkovni tipi.
+- Praktični primeri";;;;1;1;1
 40;"Nina Murks,
 Matej Kramberger,
-Aleš Holobar";nina.murks@um.si;Programerski uvod v digitalno obdelavo signalov (Python);PUDOS;;1;RIN;Digitalni signali, obdelava signalov, Fourierova analiza, linearni sistemi, filtri;vsi, poklicno, razvijalci programske opreme;Začetni nivo;;"•	Digitalni signali (AD/DA pretvorba, vzorčenje, Nyquistov teorem, ločljivost)
-•	Uvod v diskretno Fourierovo analizo
-•	Linearni sistemi in konvolucija
-•	ARMA/MA filtrov, 
-•	Konvolutivne nevronske mreže kot MA in rekurentne nevronske mreže kot ARMA sistemi
-•	Praktični primeri obdelave signalov. ";;;;1;1;1
+Aleš Holobar";nina.murks@um.si;Programerski uvod v digitalno obdelavo signalov (Python);PUDOS;;1;RIN;Digitalni signali, obdelava signalov, Fourierova analiza, linearni sistemi, filtri;vsi, poklicno, razvijalci programske opreme;Začetni nivo;;"- Digitalni signali (AD/DA pretvorba, vzorčenje, Nyquistov teorem, ločljivost)
+- Uvod v diskretno Fourierovo analizo
+- Linearni sistemi in konvolucija
+- ARMA/MA filtrov, 
+- Konvolutivne nevronske mreže kot MA in rekurentne nevronske mreže kot ARMA sistemi
+- Praktični primeri obdelave signalov. ";;;;1;1;1
 41;"Nina Murks,
 Matej Kramberger,
-Aleš Holobar";nina.murks@um.si;Napredna frekvenčna analiza za programerje;NFAP;;1;RIN;analitični signali, frekvenčna analiza, diskretna valčna transformacija;vsi, poklicno, razvijalci programske opreme;Višji nivo;;"•	Analitični signali
-•	napredna frekvenčna analiza (diskretna Fourierova analiza, kratkočasovna Fourierova analiza, okenske funkcije,  Welchova metoda),  
-•	Alternative Fourierovi analizi: časovno-frekvenčne porazdelitve Cohenovega razreda in diskretna valčna transformacija... 
-•	Praktični primeri frekvenčne obdelave signalov";;;;1;1;1
+Aleš Holobar";nina.murks@um.si;Napredna frekvenčna analiza za programerje;NFAP;;1;RIN;analitični signali, frekvenčna analiza, diskretna valčna transformacija;vsi, poklicno, razvijalci programske opreme;Višji nivo;;"- Analitični signali
+- napredna frekvenčna analiza (diskretna Fourierova analiza, kratkočasovna Fourierova analiza, okenske funkcije,  Welchova metoda),  
+- Alternative Fourierovi analizi: časovno-frekvenčne porazdelitve Cohenovega razreda in diskretna valčna transformacija... 
+- Praktični primeri frekvenčne obdelave signalov";;;;1;1;1
 42;"Aleš Holober,
 Martin Šavc,
-Matej Kramberger";ales.holobar@um.si;Diskretna valčna transformacija;DVT;;1;RIN;diskretna valčna transformacija, DWT, implementacija, primerjava analize, obdelava signalov;vsi, poklicno, razvijalci programske opreme;Višji nivo;;"•	teoretična primerjava DFT, CWT in DWT (poudarek na DWT)
-      o	kratek pregled DFT, njegove omejitve 
-      o	kako omejitve reši STFT
-      o	kako omejitve reši CWT, slabosti pristopa
-      o	kako omejitve reši DWT
-•	pregled izbranih valčkov (Haar, Daubechie, Symlet, ...)
-      o	kaj je valček (podrobneje)
-      o	primeri valčkov za DWT, lastnosti 
-•	učinkovita implementacija DWT
-      o	Možnost on-line implementacije
-•	primerjava analize DWT in DFT/STFT na primerih
-•	aplikacija DWT/iDWT za obdelavo signalov";;;;1;1;1
+Matej Kramberger";ales.holobar@um.si;Diskretna valčna transformacija;DVT;;1;RIN;diskretna valčna transformacija, DWT, implementacija, primerjava analize, obdelava signalov;vsi, poklicno, razvijalci programske opreme;Višji nivo;;"- teoretična primerjava DFT, CWT in DWT (poudarek na DWT)
+      - kratek pregled DFT, njegove omejitve 
+      - kako omejitve reši STFT
+      - kako omejitve reši CWT, slabosti pristopa
+      - kako omejitve reši DWT
+- pregled izbranih valčkov (Haar, Daubechie, Symlet, ...)
+      - kaj je valček (podrobneje)
+      - primeri valčkov za DWT, lastnosti 
+- učinkovita implementacija DWT
+      - Možnost on-line implementacije
+- primerjava analize DWT in DFT/STFT na primerih
+- aplikacija DWT/iDWT za obdelavo signalov";;;;1;1;1
 43;"Matej Kramberger, 
-Nina Murks";matej.kramberger@um.si;Python in umetna inteligenca z aplikacijami v razpoznavanju vzorcev;PUIARV;;1;RIN;Python, knjižnice, nevronske mreže, razpoznavanje vzorcev;vsi, poklicno, razvijalci programske opreme;Začetni nivo;;"•	Osnovni koncepti programiranja v Python (spremenljivke, pogojni stavki, zanke, funkcije).
-•	Knjižnice.
-•	Osnovni koncepti in arhitekture nevronskih mrež: perceptron, MLP, fully connected (dropout layer, softmax layer, binarno/multiclass/multilabel, različne kriterijske funkcije (loss functions...), konvolutivne nevronske mreže
-•	Razpoznavanje vzorcev (prometni znaki).";;;;1;1;1
-44;Matjaž Divjak;matjaz.divjak@um.si;Matlab in prototipiranje digitalne obdelave signalov;MPDOS;;1;RIN;Matlab, obdelava signalov, orodjarne;vsi, poklicno, razvijalci programske opreme;Začetni nivo;;"-	Osnove Matlaba: razvojno okolje (IDE) in grafični vmesnik (GUI), vgrajena dokumentacija, osnove jezika (programiranje), osnovna matematika in delo z matrikami, razhroščevanje kode, 2D in 3D vizualizacija podatkov, uvoz/izvoz podatkov
--	Obdelava signalov z Matlabom: čiščenje signalov, odstranjevanje šuma, filtri, normalizacija, interpolacija, glajenje, korelacija, histogrami, statistike, …
--	Pregled nekaj najpomembnejših orodjarn s kratko praktično demonstracijo: signal processing toolbox, data acquisition toolbox, statistics toolbox, …";;;;1;1;1
+Nina Murks";matej.kramberger@um.si;Python in umetna inteligenca z aplikacijami v razpoznavanju vzorcev;PUIARV;;1;RIN;Python, knjižnice, nevronske mreže, razpoznavanje vzorcev;vsi, poklicno, razvijalci programske opreme;Začetni nivo;;"- Osnovni koncepti programiranja v Python (spremenljivke, pogojni stavki, zanke, funkcije).
+- Knjižnice.
+- Osnovni koncepti in arhitekture nevronskih mrež: perceptron, MLP, fully connected (dropout layer, softmax layer, binarno/multiclass/multilabel, različne kriterijske funkcije (loss functions...), konvolutivne nevronske mreže
+- Razpoznavanje vzorcev (prometni znaki).";;;;1;1;1
+44;Matjaž Divjak;matjaz.divjak@um.si;Matlab in prototipiranje digitalne obdelave signalov;MPDOS;;1;RIN;Matlab, obdelava signalov, orodjarne;vsi, poklicno, razvijalci programske opreme;Začetni nivo;;"- Osnove Matlaba: razvojno okolje (IDE) in grafični vmesnik (GUI), vgrajena dokumentacija, osnove jezika (programiranje), osnovna matematika in delo z matrikami, razhroščevanje kode, 2D in 3D vizualizacija podatkov, uvoz/izvoz podatkov
+- Obdelava signalov z Matlabom: čiščenje signalov, odstranjevanje šuma, filtri, normalizacija, interpolacija, glajenje, korelacija, histogrami, statistike, …
+- Pregled nekaj najpomembnejših orodjarn s kratko praktično demonstracijo: signal processing toolbox, data acquisition toolbox, statistics toolbox, …";;;;1;1;1
 45;Matjaž Divjak;matjaz.divjak@um.si;Napredno programiranje v Matlabu;NPM;;1;RIN;Matlab, paralelizacija, nizkonivojsko programiranje, izvedljivi modeli, podatkovna baza;vsi, poklicno, razvijalci programske opreme;Višji nivo;;"Zahtevnejši nivo programiranja v Matlabu s poudarkom na aplikacijah obdelave signalov. 
--	Naprednejše tehnike za učinkovito programsko kodo v Matlabu: vektorizacija, indeksiranje, pre-allocation, 
--	Paralelizacija: Parallel computing toolbox
--	Nizkonivojsko programiranje: vključevanje zunanjih C/C++/java rutin
--	prevajanje matlabove kode v izvedljive module 
--	povezava s podatkovnimi bazami";;;;1;1;1
+- Naprednejše tehnike za učinkovito programsko kodo v Matlabu: vektorizacija, indeksiranje, pre-allocation, 
+- Paralelizacija: Parallel computing toolbox
+- Nizkonivojsko programiranje: vključevanje zunanjih C/C++/java rutin
+- prevajanje matlabove kode v izvedljive module 
+- povezava s podatkovnimi bazami";;;;1;1;1
 46;"Aleš Holober,
 Nina Murks,
-Matej Kramberger";ales.holobar@um.si;Uvod v kvantno programiranje;UKP;;2;RIN;kvantno programiranje, biti, registri, vrata, vezja, algoritmi, simulatorji;vsi, poklicno, razvijalci programske opreme;Začetni nivo;;"•	Osnovni principi kvantnega sveta: superpozicija, kvantno prepletanje, tuneljenje. 
-•	Kvantni biti in kvantni registri.
-•	Kvantna vrata in kvantna vezja. 
-•	Pregled kvantnih algoritmov in primerjava njihove računske kompleksnosti s klasičnimi algoritmi.
-•	Kvantni simulatorji in programska orodja.  
-•	Praktični primeri uporab kvantnih algoritmov.";;;;1;1;1
+Matej Kramberger";ales.holobar@um.si;Uvod v kvantno programiranje;UKP;;2;RIN;kvantno programiranje, biti, registri, vrata, vezja, algoritmi, simulatorji;vsi, poklicno, razvijalci programske opreme;Začetni nivo;;"- Osnovni principi kvantnega sveta: superpozicija, kvantno prepletanje, tuneljenje. 
+- Kvantni biti in kvantni registri.
+- Kvantna vrata in kvantna vezja. 
+- Pregled kvantnih algoritmov in primerjava njihove računske kompleksnosti s klasičnimi algoritmi.
+- Kvantni simulatorji in programska orodja.  
+- Praktični primeri uporab kvantnih algoritmov.";;;;1;1;1
 47;"Matjaž Divjak,
 Aleš Holobar,
-Matej Kramberger";matjaz.divjak@um.si;Razpoznavanje vzorcev in redukcija dimenzij: primerjava klasičnih algoritmov in globokega učenja;RVRDPKAGU;;2;RIN;ocenjevanje značilnic, redukcija dimenzij, globoko učenje, problem velikosti učnih množic, primerjava;vsi, poklicno, razvijalci programske opreme;Višji nivo;;"•	Ocenjevanje značilnic: klasični algoritmi (filtri, časovne in spektralne značilnice), 
-•	Ocenjevanje značilnic: globoko učenje in konvolutivne nevronske mreže 
-•	Redukcija dimenzij, klasični pristopi: Analiza poglavitnih komponent (PCA), Analiza neodvisnih komponent (ICA)
-•	Redukcija dimenzij, globoko učenje: kodirniki in dekodirniki (autoencoders);
-•	Problem velikosti učnih množic in primerjava med klasičnimi pristopi in globokim učenjem. ";;;;1;1;1
+Matej Kramberger";matjaz.divjak@um.si;Razpoznavanje vzorcev in redukcija dimenzij: primerjava klasičnih algoritmov in globokega učenja;RVRDPKAGU;;2;RIN;ocenjevanje značilnic, redukcija dimenzij, globoko učenje, problem velikosti učnih množic, primerjava;vsi, poklicno, razvijalci programske opreme;Višji nivo;;"- Ocenjevanje značilnic: klasični algoritmi (filtri, časovne in spektralne značilnice), 
+- Ocenjevanje značilnic: globoko učenje in konvolutivne nevronske mreže 
+- Redukcija dimenzij, klasični pristopi: Analiza poglavitnih komponent (PCA), Analiza neodvisnih komponent (ICA)
+- Redukcija dimenzij, globoko učenje: kodirniki in dekodirniki (autoencoders);
+- Problem velikosti učnih množic in primerjava med klasičnimi pristopi in globokim učenjem. ";;;;1;1;1
 48;"Matej Kramberger,
 Matin Šavc,
 Aleš Holobar, 
 Matjaž Divjak";matej.kramberger@um.si;Klasifikacija vzorcev: klasični pristopi in globoke nevronske mreže;KVKPGNM;;2;RIN;klasifikacija vzorcev, klasični pristopi, globoke nevronske mreže;vsi, poklicno, razvijalci programske opreme;Višji nivo;Razpoznavanje vzorcev in redukcija dimenzij: primerjava klasičnih algoritmov in globokega učenja;"Ta modul kot predznanje zahteva kompetence modula 10. 
-•	Klasifikacija s klasičnimi pristopi: logistična regresija, LDA, SVM
-•	Moderni pristopi z globokimi nevronskimi mrežami: arhitekture nevronskih mrež, s poudarkom na plasteh za klasifikacijo: perceptron, MLP, fully connected (dropout layer, softmax layer, binarno/multiclass/multilabel, različne kriterijske funkcije (loss functions...) 
-•	Praktični primeri klasifikacije 1D signalov (klasifikacija žanra glasbe,...)";;;;1;1;1
+- Klasifikacija s klasičnimi pristopi: logistična regresija, LDA, SVM
+- Moderni pristopi z globokimi nevronskimi mrežami: arhitekture nevronskih mrež, s poudarkom na plasteh za klasifikacijo: perceptron, MLP, fully connected (dropout layer, softmax layer, binarno/multiclass/multilabel, različne kriterijske funkcije (loss functions...) 
+- Praktični primeri klasifikacije 1D signalov (klasifikacija žanra glasbe,...)";;;;1;1;1
 49;"Matjaž Divjak,
-Aleš Holobar";matjaz.divjak@um.si;Ločevanje izvorov v večkanalnih mešanicah signalov;LIVMS;;2;RIN;signali, večkanalni, ločevanje izvorov, globoke nevronske mreže;vsi, poklicno, razvijalci programske opreme;Višji nivo;;"•	Klasični postopki slepega ločevanja izvorov: Analiza poglavitnih komponent (PCA), Analiza neodvisnih komponent (ICA), 
-•	Moderni pristopi ločevanju izvorov z globokimi nevronskimi mrežami: konvolutivne nevronske mreže 
-•	Praktični primeri uporabe: razpoznavanje govorcev, razpoznavanje gest/akcij iz IMU/pospeškometer signalov, izločanje srčnega utripa iz 1-kanalnega EMG signala, …";;;;1;1;1
+Aleš Holobar";matjaz.divjak@um.si;Ločevanje izvorov v večkanalnih mešanicah signalov;LIVMS;;2;RIN;signali, večkanalni, ločevanje izvorov, globoke nevronske mreže;vsi, poklicno, razvijalci programske opreme;Višji nivo;;"- Klasični postopki slepega ločevanja izvorov: Analiza poglavitnih komponent (PCA), Analiza neodvisnih komponent (ICA), 
+- Moderni pristopi ločevanju izvorov z globokimi nevronskimi mrežami: konvolutivne nevronske mreže 
+- Praktični primeri uporabe: razpoznavanje govorcev, razpoznavanje gest/akcij iz IMU/pospeškometer signalov, izločanje srčnega utripa iz 1-kanalnega EMG signala, …";;;;1;1;1
 50;"Leon Kutoš,
-Nina Murks";leon.kutos@um.si;Delovanje računalniških sistemov;DRS;;2;RIN;sestava računalnika, vhodne naprave, izhodne naprave, operacijski sistem;vsi, poklicno, razvijalci programske opreme;Začetni nivo;;"•	Sestava računalnika ( Praktično: samostojno sestavljanje računalnika + VR verzija) 
-•	Vhodne/ izhodne naprave
-•	Uvod v operacijske sisteme: datotečni sistemi, dostop do računalniških virov, gonilniki";;;;1;1;1
+Nina Murks";leon.kutos@um.si;Delovanje računalniških sistemov;DRS;;2;RIN;sestava računalnika, vhodne naprave, izhodne naprave, operacijski sistem;vsi, poklicno, razvijalci programske opreme;Začetni nivo;;"- Sestava računalnika ( Praktično: samostojno sestavljanje računalnika + VR verzija) 
+- Vhodne/ izhodne naprave
+- Uvod v operacijske sisteme: datotečni sistemi, dostop do računalniških virov, gonilniki";;;;1;1;1
 51;"Leon Kutoš,
-Nina Murks";leon.kutos@um.si;Uporabniška programska oprema in urejanje besedil;UPOUB;;1;RIN;urejevalniki besedil, predstavitve, preglednice, Libre Office, uporabniška programska oprema;vsi, poklicno, razvijalci programske opreme;Začetni nivo;;"•	Urejevalniki besedil- naprednejša uporaba:  makri, uporaba stilov, učinkovito delo s kompleksnimi dokumenti (knjigami), Latex.
-•	Predstavitve: Različni pogledi na predstavitve, animacije, urejanje prosojnic.
-•	Preglednice: osnovne funkcije, makri, kompleksne funkcije.
-•	Odprtokodne alternative plačljivim urejevalnikom besedil (Libre office).";;;;1;1;1
+Nina Murks";leon.kutos@um.si;Uporabniška programska oprema in urejanje besedil;UPOUB;;1;RIN;urejevalniki besedil, predstavitve, preglednice, Libre Office, uporabniška programska oprema;vsi, poklicno, razvijalci programske opreme;Začetni nivo;;"- Urejevalniki besedil- naprednejša uporaba:  makri, uporaba stilov, učinkovito delo s kompleksnimi dokumenti (knjigami), Latex.
+- Predstavitve: Različni pogledi na predstavitve, animacije, urejanje prosojnic.
+- Preglednice: osnovne funkcije, makri, kompleksne funkcije.
+- Odprtokodne alternative plačljivim urejevalnikom besedil (Libre office).";;;;1;1;1
 52;"Leon Kutoš,
-Nina Murks";leon.kutos@um.si;Uvod v svetovni splet in uporaba spletnih virov;USSUSV;;1;RIN;svetovni splet, spletni viri, elektrosnka pošta, spletni brskalniki, varnost, ChatGPT;vsi, poklicno, razvijalci programske opreme;Začetni nivo;;"•	Elektronska pošta.
-•	Spletni brskalniki.
-•	Zaščita / varnost na internetu: primeri dobrih praks.
-•	Uporaba chatGPT in stopnje zaupanja… ";;;;1;1;1
+Nina Murks";leon.kutos@um.si;Uvod v svetovni splet in uporaba spletnih virov;USSUSV;;1;RIN;svetovni splet, spletni viri, elektrosnka pošta, spletni brskalniki, varnost, ChatGPT;vsi, poklicno, razvijalci programske opreme;Začetni nivo;;"- Elektronska pošta.
+- Spletni brskalniki.
+- Zaščita / varnost na internetu: primeri dobrih praks.
+- Uporaba chatGPT in stopnje zaupanja… ";;;;1;1;1
 53;"Uroš Mlakar,
 Martin Šavc,
-Jurij Munda";uros.mlakar@um.si;Uvod v operacijski sistem Linux;UOSL;;1;RIN, multidisciplinarno;Linux, operacijski sistem, računalniški viri, procesi, programiranje v lupinah, pravice, požarni zid;vsi, poklicno, razvijalci programske opreme;Začetni nivo;;"•	Zasnova operacijskega sistema
-•	Nameščanje programske 
-•	Razvrščanje procesov
-•	Dostop do računalniških virov
-•	Programiranje v lupinah
-•	Napredno upravljanje s pravicami uporabnikov
-•	Požarni zid";;;;1;1;1
+Jurij Munda";uros.mlakar@um.si;Uvod v operacijski sistem Linux;UOSL;;1;RIN, multidisciplinarno;Linux, operacijski sistem, računalniški viri, procesi, programiranje v lupinah, pravice, požarni zid;vsi, poklicno, razvijalci programske opreme;Začetni nivo;;"- Zasnova operacijskega sistema
+- Nameščanje programske 
+- Razvrščanje procesov
+- Dostop do računalniških virov
+- Programiranje v lupinah
+- Napredno upravljanje s pravicami uporabnikov
+- Požarni zid";;;;1;1;1
 54;"Aleš Holobar,
 Nina Murks,
 Matej Kramberger,
-Matjaž Divjak";ales.holobar@um.si;Napredna komunikacija človek-stroj: vmesniki možgani-stroj in vmesniki mišice-stroj;NKCSVMSVMS;;1;RIN;komunikacija človek-stroj, kinematični vmesniki, elektorfizični vmesniki, čustveno računalništvo;vsi, poklicno, razvijalci programske opreme;Višji nivo;;"•	Kinematični vmesniki: (Kinect, sledenje gibanju z nevroskimi mrežami)
-•	Elektrofiziološi vmesniki:  elektromiogrami in elektroencefalogrami
-•	Uvod v čustveno računalništvo: objektivno vrednotenje odzivov uporabnikov: ocenjevanje upravnikovega sodelovanja oz. vpetosti v komunikacijo človek-stroj Primeri aplikacij: kolaborativna robotika, EEG črkovalniki, objektivno merjenje miselne koncentracije, merjenje mišične utrujenosti, merjenje nepravilne uporabe mišic ";;;;1;1;1
+Matjaž Divjak";ales.holobar@um.si;Napredna komunikacija človek-stroj: vmesniki možgani-stroj in vmesniki mišice-stroj;NKCSVMSVMS;;1;RIN;komunikacija človek-stroj, kinematični vmesniki, elektorfizični vmesniki, čustveno računalništvo;vsi, poklicno, razvijalci programske opreme;Višji nivo;;"- Kinematični vmesniki: (Kinect, sledenje gibanju z nevroskimi mrežami)
+- Elektrofiziološi vmesniki:  elektromiogrami in elektroencefalogrami
+- Uvod v čustveno računalništvo: objektivno vrednotenje odzivov uporabnikov: ocenjevanje upravnikovega sodelovanja oz. vpetosti v komunikacijo človek-stroj Primeri aplikacij: kolaborativna robotika, EEG črkovalniki, objektivno merjenje miselne koncentracije, merjenje mišične utrujenosti, merjenje nepravilne uporabe mišic ";;;;1;1;1
 55;;;;;;;;;;;;;;;;;;
 56;;;;;;;;;;;;;;;;;;
 57;;;;;;;;;;;;;;;;;;
