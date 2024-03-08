@@ -4,11 +4,11 @@
   {% assign posts = site.posts | where_exp:"post", "post.is_generated != true" %}
   {% for post in posts %}
     {
-      "title": "{{ post.title | escape }}",
-      "keywords": "{{ post.keywords | join: ', ' }}",
-      "author": "{% for author in post.author %}{{ author }}{% unless forloop.last %}, {% endunless %}{% endfor %}",
+      "title": "{{ post.title | escape | replace: "š", "s" | replace: "č", "c" | replace: "ž", "z" | replace: "Š", "S" | replace: "Č", "C" | replace: "Ž", "Z" }}",
+      "keywords": "{{ post.keywords | join: ', ' | replace: "š", "s" | replace: "č", "c" | replace: "ž", "z" | replace: "Š", "S" | replace: "Č", "C" | replace: "Ž", "Z" }}",
+      "author": "{% for author in post.author %}{{ author | replace: "š", "s" | replace: "č", "c" | replace: "ž", "z" | replace: "Š", "S" | replace: "Č", "C" | replace: "Ž", "Z" }}{% unless forloop.last %}, {% endunless %}{% endfor %}",
       "url": "{{ site.baseurl }}{{ post.url }}",
-      "description": "{{ post.description | strip_newlines | lstrip | replace: '"', '' }}"
+      "description": "{{ post.description | strip_newlines | lstrip | replace: '"', '' | replace: "š", "s" | replace: "č", "c" | replace: "ž", "z" | replace: "Š", "S" | replace: "Č", "C" | replace: "Ž", "Z"}}"
     }{% unless forloop.last %},{% endunless %}
   {% endfor %}
 ]
