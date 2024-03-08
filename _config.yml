@@ -86,4 +86,4 @@ exclude: [
 version: v3.1.2
 
 # App connection link(url)
-url: localhost/pmd/api/:course
+urlApi: localhost/pmd/api/:course
