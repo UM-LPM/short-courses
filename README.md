@@ -35,8 +35,8 @@ V mapi s **script** se nahaja python skripta, ki sprejme tabelo v obliko .csv in
 
 ## Serviranje v formatu json
 Stran tudi ustvari in servira podatke:
-- [Vsa izobraževanja](https://pmd.lpm.feri.um.si/courses-data.json)
-- [Ključne besede, tags, značke](https://pmd.lpm.feri.um.si/tag-data.json)
+- [Vsa izobraževanja: /courses-data.json](https://pmd.lpm.feri.um.si/courses-data.json)
+- [Ključne besede, tags, značke: /tag-data.json](https://pmd.lpm.feri.um.si/tag-data.json)
 
 ## Zasluge
 ### Jekflix Template za stran
