@@ -27,9 +27,16 @@ Nato zaženite skripto:
 ```
 Slike s spremenjeno velikostjo bodo shranjene v mapah **assets/img/1024**, **assets/img/512** in **assets/img/256**.
 
-## Podatke
+## Uvoz podatkov
 
+### Format csv
 V mapi s **script** se nahaja python skripta, ki sprejme tabelo v obliko .csv in pretvori podatke v Markdown, ter shrani v _posts, za uniformen prikaz podatkov.
+
+
+## Serviranje v formatu json
+Stran tudi ustvari in servira podatke:
+- [Vsa izobraževanja](https://pmd.lpm.feri.um.si/courses-data.json)
+- [Ključne besede, tags, značke](https://pmd.lpm.feri.um.si/tag-data.json)
 
 ## Zasluge
 ### Jekflix Template za stran
