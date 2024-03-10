@@ -7,9 +7,9 @@ layout: minimal
 {% assign all_keywords_str = "" %}
 {% assign all_intended_str = "" %}
 
-{% for post in site.posts %}
-  {% if post.keywords %}
-    {% for keyword in post.keywords %}
+{% for course in site.courses %}
+  {% if course.keywords %}
+    {% for keyword in course.keywords %}
       {% unless all_keywords_str contains keyword %}
         {% if all_keywords_str == "" %}
           {% assign all_keywords_str = keyword %}
@@ -19,8 +19,8 @@ layout: minimal
       {% endunless %}
     {% endfor %}
   {% endif %}
-  {% if post.intended %}
-    {% for word in post.intended %}
+  {% if course.intended %}
+    {% for word in course.intended %}
       {% unless all_intended_str contains word %}
         {% if all_intended_str == "" %}
           {% assign all_intended_str = word %}
@@ -48,9 +48,9 @@ layout: minimal
   {% for keyword in all_keywords %}
     <h3 class="tag-display" id="{{ keyword | slugify }}">{{ keyword }}</h3>
     <ul>
-    {% for post in site.posts %}
-      {% if post.keywords contains keyword %}
-        <li><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+    {% for course in site.courses %}
+      {% if course.keywords contains keyword %}
+        <li><a href="{{ site.url }}{{ site.baseurl }}{{ course.url }}">{{ course.title }}</a></li>
       {% endif %}
     {% endfor %}
     </ul>
@@ -61,9 +61,9 @@ layout: minimal
   {% for word in all_intended %}
     <h3 class="tag-display" id="{{ word | slugify }}">{{ word }}</h3>
     <ul>
-    {% for post in site.posts %}
-      {% if post.intended contains word %}
-        <li><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+    {% for course in site.courses %}
+      {% if course.intended contains word %}
+        <li><a href="{{ site.url }}{{ site.baseurl }}{{ course.url }}">{{ course.title }}</a></li>
       {% endif %}
     {% endfor %}
     </ul>

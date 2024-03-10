@@ -9,22 +9,22 @@
         </div>
         <div class="content">
             <ul>
-                {% assign next_posts = site.posts | where_exp:"post","post.is_generated != true" | where_exp:"post","post.path != page.path" %}
-                {% assign shuffled_array = next_posts | shuffle %}
-                {% for post in shuffled_array limit:2 %}
+                {% assign next_courses = site.courses | where_exp:"course","course.is_generated != true" | where_exp:"course","course.path != page.path" %}
+                {% assign shuffled_array = next_courses | shuffle %}
+                {% for course in shuffled_array limit:2 %}
                     <li>
-                        <a href="{{ post.url | prepend: site.baseurl }}">
+                        <a href="{{ course.url | prepend: site.baseurl }}">
                             <figure>
-                                {% if post.optimized_image %}
-                                    <img src="{{ post.optimized_image }}">
+                                {% if course.optimized_image %}
+                                    <img src="{{ course.optimized_image }}">
                                 {% elsif post.image %}
-                                    <img src="{{ post.image }}">
+                                    <img src="{{ course.image }}">
                                 {% else %}
                                     <img src="/assets/img/off.jpg">
                                 {% endif %}
                             </figure>
-                            <h3>{{ post.title }}</h3>
-                            <p>{{ post.description }}</p>
+                            <h3>{{ course.title }}</h3>
+                            <p>{{ course.description }}</p>
                         </a>
                     </li>
                 {% endfor %}

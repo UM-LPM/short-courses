@@ -1,9 +1,9 @@
 ---
 ---
-  {% assign posts = site.posts | where_exp:"post", "post.is_generated != true" %}
-  {% for post in site.posts %}
-  {% if post.keywords %}
-    {% for keyword in post.keywords %}
+  {% assign courses = site.courses | where_exp:"course", "course.is_generated != true" %}
+  {% for course in site.courses %}
+  {% if course.keywords %}
+    {% for keyword in course.keywords %}
       {% unless all_keywords_str contains keyword %}
         {% if all_keywords_str == "" %}
           {% assign all_keywords_str = keyword %}
@@ -13,8 +13,8 @@
       {% endunless %}
     {% endfor %}
   {% endif %}
-  {% if post.intended %}
-    {% for word in post.intended %}
+  {% if course.intended %}
+    {% for word in course.intended %}
       {% unless all_intended_str contains word %}
         {% if all_intended_str == "" %}
           {% assign all_intended_str = word %}
