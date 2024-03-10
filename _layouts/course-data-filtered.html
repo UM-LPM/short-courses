@@ -1,18 +1,18 @@
 ---
 ---
 [
-  {% assign posts = site.posts | where_exp:"post", "post.is_generated != true" %}
-  {% for post in posts %}
+  {% assign courses = site.courses | where_exp:"course", "course.is_generated != true" %}
+  {% for course in courses %}
     {
-      "id": "{{ post.id }}",
-      "title": "{{ post.title | escape | replace: "š", "s" | replace: "č", "c" | replace: "ž", "z" | replace: "Š", "S" | replace: "Č", "C" | replace: "Ž", "Z" }}",
-      "keywords": "{{ post.keywords | join: ', ' | replace: "š", "s" | replace: "č", "c" | replace: "ž", "z" | replace: "Š", "S" | replace: "Č", "C" | replace: "Ž", "Z" }}",
-      "author": "{% for author in post.author %}{{ author | replace: "š", "s" | replace: "č", "c" | replace: "ž", "z" | replace: "Š", "S" | replace: "Č", "C" | replace: "Ž", "Z" }}{% unless forloop.last %}, {% endunless %}{% endfor %}",
-      "url": "{{ site.baseurl }}{{ post.url }}",
-      "description": "{{ post.description | strip_newlines | lstrip | replace: '"', '' | replace: "š", "s" | replace: "č", "c" | replace: "ž", "z" | replace: "Š", "S" | replace: "Č", "C" | replace: "Ž", "Z"}}"
-      "image": "{{ post.image}}",
-      "difficulty": "{{ post.difficulty | replace: "š", "s" | replace: "č", "c" | replace: "ž", "z" | replace: "Š", "S" | replace: "Č", "C" | replace: "Ž", "Z" }}",
-      "type": "{{ post.type | replace: "š", "s" | replace: "č", "c" | replace: "ž", "z" | replace: "Š", "S" | replace: "Č", "C" | replace: "Ž", "Z" }}"
+      "id": "{{ course.id }}",
+      "title": "{{ course.title | escape | replace: "š", "s" | replace: "č", "c" | replace: "ž", "z" | replace: "Š", "S" | replace: "Č", "C" | replace: "Ž", "Z" }}",
+      "keywords": "{{ course.keywords | join: ', ' | replace: "š", "s" | replace: "č", "c" | replace: "ž", "z" | replace: "Š", "S" | replace: "Č", "C" | replace: "Ž", "Z" }}",
+      "author": "{% for author in course.author %}{{ author | replace: "š", "s" | replace: "č", "c" | replace: "ž", "z" | replace: "Š", "S" | replace: "Č", "C" | replace: "Ž", "Z" }}{% unless forloop.last %}, {% endunless %}{% endfor %}",
+      "url": "{{ site.baseurl }}{{ course.url }}",
+      "description": "{{ course.description | strip_newlines | lstrip | replace: '"', '' | replace: "š", "s" | replace: "č", "c" | replace: "ž", "z" | replace: "Š", "S" | replace: "Č", "C" | replace: "Ž", "Z"}}"
+      "image": "{{ course.image}}",
+      "difficulty": "{{ course.difficulty | replace: "š", "s" | replace: "č", "c" | replace: "ž", "z" | replace: "Š", "S" | replace: "Č", "C" | replace: "Ž", "Z" }}",
+      "type": "{{ course.type | replace: "š", "s" | replace: "č", "c" | replace: "ž", "z" | replace: "Š", "S" | replace: "Č", "C" | replace: "Ž", "Z" }}"
     }{% unless forloop.last %},{% endunless %}
   {% endfor %}
 ]

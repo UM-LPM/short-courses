@@ -1,0 +1,21 @@
+<!-- Pagination links -->
+{% if paginator.page_trail %}
+    {% assign next_courses = site.courses | where_exp:"course","course.is_generated != true" | where_exp:"course","course.path != page.path" | where_exp:"course","course.date <= page.date" %}
+    <div class="pagination pagination-course {{ include.extra_classes }}">
+        {% if paginator.is_last != true %}
+            <a href="{{ paginator.next_page_path }}">
+                {% if include.progressBar %}
+                    {% include progress-bar.html %}
+                {% endif %}
+                <span class="text">{{ site.translations.pagination.next_page | default: "Next Page" }} <svg class="arrow"><use xlink:href="#icon-arrow-right"></use></svg></span>
+            </a>
+        {% else if next_courses.first %}
+            <a href="{{ next_courses.first.url }}">
+                {% if include.progressBar %}
+                    {% include progress-bar.html finished=true %}
+                {% endif %}
+                <span class="text">{{ site.translations.pagination.next_course | default: "Next course" }} <svg class="arrow"><use xlink:href="#icon-arrow-right"></use></svg></span>
+            </a>
+        {% endif %}
+    </div>
+{% endif %}

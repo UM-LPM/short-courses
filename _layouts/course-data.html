@@ -1,18 +1,18 @@
 ---
 ---
 [
-  {% assign posts = site.posts | where_exp:"post", "post.is_generated != true" %}
-  {% for post in posts %}
+  {% assign courses = site.courses | where_exp:"course", "course.is_generated != true" %}
+  {% for course in courses %}
     {
-      "id": "{{ post.id }}",
-      "title": "{{ post.title | escape }}",
-      "keywords": "{{ post.keywords | join: ', ' }}",
-      "author": "{% for author in post.author %}{{ author }}{% unless forloop.last %}, {% endunless %}{% endfor %}",
-      "url": "{{ site.baseurl }}{{ post.url }}",
-      "description": "{{ post.description | strip_newlines | lstrip | replace: '"', '' }}",
-      "image": "{{ post.image}}",
-      "difficulty": "{{ post.difficulty }}",
-      "type": "{{ post.type }}"
+      "id": "{{ course.id }}",
+      "title": "{{ course.title | escape }}",
+      "keywords": "{{ course.keywords | join: ', ' }}",
+      "author": "{% for author in course.author %}{{ author }}{% unless forloop.last %}, {% endunless %}{% endfor %}",
+      "url": "{{ site.baseurl }}{{ course.url }}",
+      "description": "{{ course.description | strip_newlines | lstrip | replace: '"', '' }}",
+      "image": "{{ course.image}}",
+      "difficulty": "{{ course.difficulty }}",
+      "type": "{{ course.type }}"
     }{% unless forloop.last %},{% endunless %}
   {% endfor %}
 ]
