@@ -1,0 +1,35 @@
+---
+date: "2024-01-01 00:00:00" 
+version: "0.1.1"
+lastUpdate: "2024-03-09 20:00:00"
+layout: "course"
+id: "POPGNM"
+permalink: "POPGNM"
+author:
+- "Božidar Potočnik"
+contact: "bozidar.potocnik@um.si"
+title: "Prilagajanje in optimizacija parametrov globokih nevronskih mrež"
+image: "https://images.unsplash.com/photo-1639322537504-6427a16b0a28"
+type: "Krajše izobraževanje"
+field:
+- "Računalništvo in informatika"
+keywords:
+- "prilagajanje učenja"
+- "hiperparametri nevronskih mrež"
+- "ovrednotenje učne množice"
+- "bogatenje podatkov"
+- "slikovna analiza"
+intended:
+
+- "razvijalci programske opreme"
+difficulty: "Višji nivo"
+requisite: ""
+description: |
+    Udeleženci bodo spoznali napredne postopke za prilagajanje učenja globokih nevronskih mrež na izbran aplikacijski problem. Predstavljena bodo priporočila in hevristični algoritmi za upravljanje s hiperparametri nevronskih mrež. Naučili se bodo ovrednotiti kvaliteto in primernost učne množice. Spoznali bodo postopke bogatenja učnih podatkov. V praktičnih vajah bodo izkazali razumevanje teh principov pri uporabi modernih modelov za prepoznavo, detekcijo in analizo slikovnega materiala. Za vključitev v skupino se od udeležencev pričakuje osnovno razumevanje delovanja in implementiranja globokih nevronskih mrež.
+vs: ""
+uni: ""
+mag: ""
+state: "Predlog"
+execution: "Sinhrona"
+ects: "1"
+---

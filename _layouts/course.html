@@ -93,7 +93,8 @@
             <aside class="see-also">
                 <h3>Poglej tudi</h3>
                 {% assign related_courses_count = 0 %}
-                {% for course in site.courses %}
+                {% assign courses = site.courses | shuffle %}
+                {% for course in courses %}
                     {% unless course.url == page.url %}
                         {% assign shared_keywords = false %}
                         {% for keyword in page.keywords %}
@@ -126,9 +127,8 @@
                         {% endif %}
                     {% endunless %}
                 {% endfor %}
-                {% if related_courses_count == 0 %}
-                    {% assign counter = 0 %}
-                    {% for course in site.courses %}
+                {% if related_courses_count < 3 %}
+                    {% for course in courses %}
                         {% if course.url != page.url %}
                             <div class="side-course">
                                 <a href="{{ course.url | prepend: site.baseurl }}">
@@ -147,8 +147,8 @@
                                     </div>
                                 </a>
                             </div>
-                            {% assign counter = counter | plus: 1 %}
-                            {% if counter == 3 %}
+                            {% assign related_courses_count = related_courses_count | plus: 1 %}
+                            {% if related_courses_count == 3 %}
                                 {% break %}
                             {% endif %}
                         {% endif %}
@@ -156,9 +156,6 @@
                 {% endif %}
             </aside>
             {% endif %}
-
-
-
         </section>
 
 
