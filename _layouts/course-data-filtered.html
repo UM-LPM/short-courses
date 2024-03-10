@@ -4,11 +4,15 @@
   {% assign posts = site.posts | where_exp:"post", "post.is_generated != true" %}
   {% for post in posts %}
     {
+      "id": "{{ post.id }}",
       "title": "{{ post.title | escape | replace: "š", "s" | replace: "č", "c" | replace: "ž", "z" | replace: "Š", "S" | replace: "Č", "C" | replace: "Ž", "Z" }}",
       "keywords": "{{ post.keywords | join: ', ' | replace: "š", "s" | replace: "č", "c" | replace: "ž", "z" | replace: "Š", "S" | replace: "Č", "C" | replace: "Ž", "Z" }}",
       "author": "{% for author in post.author %}{{ author | replace: "š", "s" | replace: "č", "c" | replace: "ž", "z" | replace: "Š", "S" | replace: "Č", "C" | replace: "Ž", "Z" }}{% unless forloop.last %}, {% endunless %}{% endfor %}",
       "url": "{{ site.baseurl }}{{ post.url }}",
       "description": "{{ post.description | strip_newlines | lstrip | replace: '"', '' | replace: "š", "s" | replace: "č", "c" | replace: "ž", "z" | replace: "Š", "S" | replace: "Č", "C" | replace: "Ž", "Z"}}"
+      "image": "{{ post.image}}",
+      "difficulty": "{{ post.difficulty | replace: "š", "s" | replace: "č", "c" | replace: "ž", "z" | replace: "Š", "S" | replace: "Č", "C" | replace: "Ž", "Z" }}",
+      "type": "{{ post.type | replace: "š", "s" | replace: "č", "c" | replace: "ž", "z" | replace: "Š", "S" | replace: "Č", "C" | replace: "Ž", "Z" }}"
     }{% unless forloop.last %},{% endunless %}
   {% endfor %}
 ]

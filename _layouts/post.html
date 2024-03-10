@@ -45,7 +45,7 @@
                         </div>
                     </div>
                     {% if page.image %}
-                        <img style="margin-bottom: 0;" src="{{ site.baseurl }}/assets/img/1024/{{ page.id }}.jpeg" alt="Featured image" class="post-cover">
+                        <img style="margin-bottom: 0;" src="{{ site.baseurl }}/assets/img/1024{{ page.id }}.jpeg" alt="Featured image" class="post-cover">
                         <!-- <span style="padding-top: 0; font-style: italic;">Vir: {{ page.image }}</span> -->
                     {% endif %}
                     <p class="post-description">{{ page.description | newline_to_br | replace: "  ", "&nbsp;&nbsp;&nbsp;&nbsp;" }}</p>
@@ -109,7 +109,7 @@
                                         <div class="related-article-item">
                                             <h3>{{ post.title }}</h3>
                                             <div class="image-container">
-                                                <img src="{{ site.baseurl }}/assets/img/256/{{ post.id }}.jpeg" alt="{{ post.title }} image" class="related-article-image">
+                                                <img src="{{ site.baseurl }}/assets/img/256{{ post.id }}.jpeg" alt="{{ post.title }} image" class="related-article-image">
                                             </div>
                                             <p>
                                                 {% assign authors = page.author | remove: '[' | remove: ']' | remove: '"' %}
@@ -135,7 +135,7 @@
                                     <div style="text-decoration: none;" class="related-article-item">
                                         <h3>{{ post.title }}</h3>
                                         <div class="image-container">
-                                            <img src="{{ site.baseurl }}/assets/img/256/{{ post.id }}.jpeg" alt="{{ post.title }} image" class="related-article-image">
+                                            <img src="{{ site.baseurl }}/assets/img/256{{ post.id }}.jpeg" alt="{{ post.title }} image" class="related-article-image">
                                         </div>
                                         <p>
                                             {% assign authors = post.author | remove: '[' | remove: ']' | remove: '"' %}

@@ -35,7 +35,8 @@ V mapi s **script** se nahaja python skripta, ki sprejme tabelo v obliko .csv in
 
 ## Serviranje v formatu json
 Stran tudi ustvari in servira podatke:
-- [Vsa izobraževanja: /courses-data.json](https://pmd.lpm.feri.um.si/courses-data.json)
+- [Vsa izobraževanja: /course-data.json](https://pmd.lpm.feri.um.si/course-data.json)
+- [Vsa izobraževanja brez šumnikov: /course-data-filtered.json](https://pmd.lpm.feri.um.si/course-data-filtered.json)
 - [Ključne besede, tags, značke: /tag-data.json](https://pmd.lpm.feri.um.si/tag-data.json)
 
 ## Zasluge
