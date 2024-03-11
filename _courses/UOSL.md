@@ -26,7 +26,6 @@ keywords:
 - "požarni zid"
 intended:
 - "vsi"
-
 - "razvijalci programske opreme"
 difficulty: "Začetni nivo"
 requisite: ""

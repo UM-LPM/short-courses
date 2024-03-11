@@ -22,9 +22,8 @@ keywords:
 - "prvi koraki programiranja"
 - "interaktivno učenje"
 intended:
-
 - "razvijalci programske opreme"
-difficulty: ""
+difficulty: "Začetni nivo"
 requisite: ""
 description: |
     Okolja za vizualno programiranje so postala vse bolj pomembna zaradi vse večjega pomena znanja programiranja za končne uporabnike v sodobni družbi. Na predlaganih delavnicah se udeleženci seznanijo z različnimi orodji in vizualnimi programskimi jeziki, kot so Poliglot, Scratch in AppInventor. Poliglot je programsko orodje, ki je bilo razvito na UM FERI in je namenjeno učenju osnovnih veščin programiranja. Nadaljujemo s Scratch-om, ki je programski jezik zasnovan za otroke, ki se šele učijo programiranja, saj omogoča enostavno izdelavo interaktivnih animacij in iger. AppInventor pa je orodje za razvoj mobilnih aplikacij, ki omogoča enostavno izdelavo mobilnih aplikacij za Android platformo. Na teh delavnicah se udeleženci naučijo osnov (vizualnega) programiranja in izdelajo svoje lastne aplikacije in igre, kot je npr. aplikacija za beleženje športnih aktivnosti. Delavnica je zelo primerna tudi za učitelje računalništva za osnovne šole. Dokvalifikacija učiteljev je pomemben korak pri zagotavljanju kvalitetne izobrazbe za otroke, ki se šele učijo programiranja. Udeleženci, ki so seznanjeni z najnovejšimi orodji in programskimi jeziki, lahko na bolj interaktiven način predajajo svoje znanje in še bolj spodbujajo otrokovo zanimanje za računalništvo.

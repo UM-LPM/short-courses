@@ -19,7 +19,6 @@ keywords:
 - "stroga tipizacija"
 intended:
 - "vsi"
-
 - "razvijalci programske opreme"
 difficulty: "Višji nivo"
 requisite: ""

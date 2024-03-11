@@ -18,9 +18,8 @@ keywords:
 - "nevronske mreže"
 - "analiza družbenih omrežij"
 intended:
-
 - "razvijalci programske opreme"
-difficulty: ""
+difficulty: "Višji nivo"
 requisite: "Umetne nevronske mreže in globoko učenje"
 description: |
     V okviru tega naprednejšega modula se bodo udeleženci najprej seznanili z različnimi oblikami grafov in načini predstavitve omrežij iz realnega sveta v obliki podatkovne strukture graf. V nadaljevanju bodo spoznali osnove grafovskih nevronskih mrež, njihove principe delovanja in načine pretvorbe vozlišč, podgrafov ali celotnih grafov v vektorske vložitve. Nad vektorskimi vložitvami bodo v nadaljevanju zgradili napovedni ali klasifikacijski model za napovedovanje povezav, klasifikacijo vozlišč ali klasifikacijo grafov. To bodo povezali s praktičnim primerom uporabe, kot je analiza družbenih omrežij, napovedovanje prometnih tokov ali priporočanje na podlagi interakcij med uporabniki in predmeti. Pričakovano je poznavanje osnov programiranja v pythonu in strojnega učenja.

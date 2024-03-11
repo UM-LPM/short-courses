@@ -20,7 +20,6 @@ keywords:
 - "izvedljivi modeli"
 - "podatkovna baza"
 intended:
-
 - "razvijalci programske opreme"
 difficulty: "Višji nivo"
 requisite: ""

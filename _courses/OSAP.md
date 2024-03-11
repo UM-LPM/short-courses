@@ -21,9 +21,8 @@ keywords:
 - "statični programski paket"
 intended:
 - "vsi"
-
 - "razvijalci programske opreme"
-difficulty: ""
+difficulty: "Začetni nivo"
 requisite: ""
 description: |
     Udeleženci bodo spoznali osnovne principe statistične analize in klasično sklepno statistiko. V okviru osnov bodo spoznali teorijo verjetnosti, klasične  statistične definicije, pravila verjetnosti, verjetnostne porazdelitve kot so binomska, normalna in multivariatna. V okviru klasične sklepno statistike bodo spoznali vzorčenje,  ocenjevanje parametrov in preizkušanje statističnih domnev. Naveden pojme in principe bodo preskusili na praktičnih primerih z uporabo statističnega programskega paketa.

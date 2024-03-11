@@ -24,9 +24,8 @@ keywords:
 - "osnovne merilne tehnike kvalitete"
 intended:
 - "vsi"
-
 - "razvijalci programske opreme"
-difficulty: ""
+difficulty: "Začetni nivo"
 requisite: ""
 description: |
     Udeleženci bodo spoznali osnovne principe, vidike in modele kvalitete programske opreme, kot so napake, ki se pojavljajo pri oblikovanju programske opreme in kako zagotavljati kvalitete. Spoznali bodo procese prevencija napak, odpravljanje napak, validacije in verifikacije. Spoznali bodo tudi osnovne tehnika merjenje kvalitete kot so programske metrike, ocenjevanje kvalitete in klasifikacija napak.

@@ -20,7 +20,6 @@ keywords:
 - "segmentacija slik"
 - "modeli za slikovno analizo"
 intended:
-
 - "razvijalci programske opreme"
 difficulty: "Višji nivo"
 requisite: ""

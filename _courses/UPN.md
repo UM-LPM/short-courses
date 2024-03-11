@@ -20,7 +20,6 @@ keywords:
 - "podatkovni tipi"
 intended:
 - "vsi"
-
 - "razvijalci programske opreme"
 difficulty: "Začetni nivo"
 requisite: ""

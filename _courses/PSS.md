@@ -19,7 +19,6 @@ keywords:
 - "superračunalnik"
 - "vozlišča"
 intended:
-
 - "razvijalci programske opreme"
 difficulty: "Srednji nivo"
 requisite: ""

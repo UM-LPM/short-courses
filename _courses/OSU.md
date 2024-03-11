@@ -23,9 +23,8 @@ keywords:
 - "testna okolja"
 intended:
 - "vsi"
-
 - "razvijalci programske opreme"
-difficulty: ""
+difficulty: "Začetni nivo"
 requisite: ""
 description: |
     Udeleženci se bodo seznanili z osnovno terminologijo, različnimi vrstami učenja, tipi algoritmov, metrikami uspešnosti in delitvijo ter filtriranjem podatkov. Prav tako se bodo srečali z interaktivnimi testnimi okolji za potrebe preizkušanja in nadaljnjih aplikacij.

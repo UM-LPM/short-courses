@@ -20,7 +20,6 @@ keywords:
 - "superračunalnik"
 - "C++"
 intended:
-
 - "razvijalci programske opreme"
 difficulty: "Srednji nivo"
 requisite: ""

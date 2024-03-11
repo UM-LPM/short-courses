@@ -22,7 +22,6 @@ keywords:
 - "elektorfizični vmesniki"
 - "čustveno računalništvo"
 intended:
-
 - "razvijalci programske opreme"
 difficulty: "Višji nivo"
 requisite: ""

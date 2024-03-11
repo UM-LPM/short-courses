@@ -21,9 +21,8 @@ keywords:
 - "vrednostnje"
 intended:
 - "vsi"
-
 - "razvijalci programske opreme"
-difficulty: ""
+difficulty: "Začetni nivo"
 requisite: ""
 description: |
     Udeleženci bodo spoznali osnove strojnega učenja, priprave učnih podatkov, izbire značilnic in tipa napovednega modela, gradnje, učenja in vrednotenja naučenih modelov. V okviru priprave podatkov bodo spoznali tehnike predobdelave učnih podatkov, ki vključuje čiščenje, zaznavanje izstopajočih vrednosti in nadomeščanje manjkajočih vrednosti. Uporabili bodo nekatere osnovne algoritme analize vzorcev v podatkih, ter izvedli zmanjšanje dimenzije in vizualizacijo podatkov. Na tej stopnji se bodo udeleženci seznanili s preprostejšimi modeli strojnega učenja kot sta linearna in logistična regresija, Bayesov klasifikator in odločitvena (klasifikacijska in regresijska) drevesa. Pridobljeno znanje bodo preizkusili pri izgradnji enega ali več napovednih modelov za izbrano podatkovno zbirko, za kar bodo uporabili obstoječa prosto-dostopna orodja.

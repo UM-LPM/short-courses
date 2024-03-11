@@ -20,7 +20,6 @@ keywords:
 - "izhodne naprave"
 - "operacijski sistem"
 intended:
-
 - "razvijalci programske opreme"
 difficulty: "Začetni nivo"
 requisite: ""

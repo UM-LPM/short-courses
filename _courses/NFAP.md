@@ -20,7 +20,6 @@ keywords:
 - "frekvenčna analiza"
 - "diskretna valčna transformacija"
 intended:
-
 - "razvijalci programske opreme"
 difficulty: "Višji nivo"
 requisite: ""

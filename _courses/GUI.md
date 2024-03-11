@@ -19,9 +19,8 @@ keywords:
 - "generiranje besedila"
 - "generiranje slik"
 intended:
-
 - "razvijalci programske opreme"
-difficulty: ""
+difficulty: "Višji nivo"
 requisite: "Umetne nevronske mreže in globoko učenje"
 description: |
     Udeleženci se bodo seznanili s teorijo in praktičnimi aplikacijami generativnih modelov nevronskih mrež, ki poganjajo sodobna orodja za generiranje naravnega jezika v obliki besedil in govora ter drugih oblik digitalne vsebine. Glede na predviden nivo zahtevnosti bodo udeleženci pri teoretičnem delu spoznali osnovne principe delovanja generativnih modelov, njihovo učenje in uporabo ter prenos naučenih modelov na nove domene. Pri praktičnem delu bodo preizkusili delovanje prosto dostopnih testnih različic modelov za generiranje besedila, slik in ostalih vrst vsebine, ter identificirali primere koristne uporabe teh orodij pri svojem delu. Na naprednejšem nivoju bodo uporabniki vključili obstoječe prosto dostopne modele v lastne aplikacije.

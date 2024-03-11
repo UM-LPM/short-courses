@@ -22,7 +22,6 @@ keywords:
 - "problem velikosti učnih množic"
 - "primerjava"
 intended:
-
 - "razvijalci programske opreme"
 difficulty: "Višji nivo"
 requisite: ""

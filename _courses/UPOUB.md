@@ -21,7 +21,6 @@ keywords:
 - "Libre Office"
 - "uporabniška programska oprema"
 intended:
-
 - "razvijalci programske opreme"
 difficulty: "Začetni nivo"
 requisite: ""

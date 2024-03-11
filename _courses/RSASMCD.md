@@ -22,7 +22,6 @@ keywords:
 - "čelni razvoj"
 - "uporabniški vmesnik"
 intended:
-
 - "razvijalci programske opreme"
 difficulty: "Začetni nivo"
 requisite: "Razvoj spletnih aplikacij s skladom MERN: zaledni del"

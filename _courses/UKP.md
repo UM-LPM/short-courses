@@ -25,7 +25,6 @@ keywords:
 - "simulatorji"
 intended:
 - "vsi"
-
 - "razvijalci programske opreme"
 difficulty: "Začetni nivo"
 requisite: ""

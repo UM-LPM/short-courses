@@ -22,7 +22,6 @@ keywords:
 - "linearni sistemi"
 - "filtri"
 intended:
-
 - "razvijalci programske opreme"
 difficulty: "Začetni nivo"
 requisite: ""

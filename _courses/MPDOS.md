@@ -18,7 +18,6 @@ keywords:
 - "obdelava signalov"
 - "orodjarne"
 intended:
-
 - "razvijalci programske opreme"
 difficulty: "Začetni nivo"
 requisite: ""

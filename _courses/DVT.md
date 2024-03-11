@@ -22,7 +22,6 @@ keywords:
 - "primerjava analize"
 - "obdelava signalov"
 intended:
-
 - "razvijalci programske opreme"
 difficulty: "Višji nivo"
 requisite: ""

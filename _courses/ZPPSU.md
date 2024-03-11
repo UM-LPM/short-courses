@@ -24,9 +24,8 @@ keywords:
 - "predobdelava"
 - "vizualizacija"
 intended:
-
 - "razvijalci programske opreme"
-difficulty: ""
+difficulty: "Začetni nivo"
 requisite: ""
 description: |
     Udeleženci bodo spoznali osnovne tipe podatkov, tipe značilk za strojno obdelavo, osnovne principe pridobivanja in organizacije podatkov ter podatkovnih zbirk, pomen predobdelave in vizualizacije podatkov.

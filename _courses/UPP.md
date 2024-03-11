@@ -22,7 +22,6 @@ keywords:
 - "optimizacija"
 - "profiliranje"
 intended:
-
 - "razvijalci programske opreme"
 difficulty: "Začetni nivo"
 requisite: ""
