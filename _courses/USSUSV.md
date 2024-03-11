@@ -23,7 +23,6 @@ keywords:
 - "ChatGPT"
 intended:
 - "vsi"
-
 - "razvijalci programske opreme"
 difficulty: "Začetni nivo"
 requisite: ""

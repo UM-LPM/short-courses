@@ -22,9 +22,8 @@ keywords:
 - "dokumentacija"
 - "avtomatizacija"
 intended:
-
 - "razvijalci programske opreme"
-difficulty: ""
+difficulty: "Začetni nivo"
 requisite: ""
 description: |
     Udeleženci se bodo seznanili z orodji, ki omogočajo učinkovit razvoj programske opreme v timskem okolju, vključno z načrtovanjem, verzioniranjem, komunikacijo, dokumentacijo ter avtomatizacijo.

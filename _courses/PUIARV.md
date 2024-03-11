@@ -20,7 +20,6 @@ keywords:
 - "nevronske mreže"
 - "razpoznavanje vzorcev"
 intended:
-
 - "razvijalci programske opreme"
 difficulty: "Začetni nivo"
 requisite: ""

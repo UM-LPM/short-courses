@@ -20,9 +20,8 @@ keywords:
 - "validacija"
 - "strojno učenje"
 intended:
-
 - "razvijalci programske opreme"
-difficulty: ""
+difficulty: "Višji nivo"
 requisite: ""
 description: |
     V okviru tega modula bodo udeleženci spoznali računalniške metode za analizo in obdelavo časovnih vrst z eno ali več spremenljivkami. V prvem delu se bodo seznanili z različnimi oblikami časovnih vrst in uporabili metode za njihovo modeliranje z dekompozicijo na osnovne komponente, kot sta trend in sezonska komponenta. V nadaljevanju bodo izvedli osnovno izpeljavo lastnosti izbranih časovnih vrst, kot je avtokorelacija, in uporabili preproste modele za napovedovanje prihodnjih vrednosti časovne vrste. Seznanili se bodo z različnimi pristopi za validacijo napovednih modelov, ki vključuje vrednotenje točnosti napovedi in analizo rezidualov. Sledila bo obravnava avtoregresijskih modelov za napovedovanje v časovnih vrstah, glede na predviden nivo vsebine pa bodo udeleženci v zaključnem delu za modeliranje izbranih časovnih vrst uporabili še sodobne pristope strojnega učenja z nevronskimi mrežami.

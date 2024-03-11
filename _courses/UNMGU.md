@@ -20,7 +20,6 @@ keywords:
 - "regularizacija"
 - "validacija"
 intended:
-
 - "razvijalci programske opreme"
 difficulty: ""
 requisite: "Uvod v strojno učenje"

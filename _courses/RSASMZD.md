@@ -23,7 +23,6 @@ keywords:
 - "MongoDB"
 - "zaledni razvoj"
 intended:
-
 - "razvijalci programske opreme"
 difficulty: "Začetni nivo"
 requisite: ""

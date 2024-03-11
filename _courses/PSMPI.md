@@ -21,7 +21,6 @@ keywords:
 - "MPI"
 - "superračunalnik"
 intended:
-
 - "razvijalci programske opreme"
 difficulty: "Višji nivo"
 requisite: ""

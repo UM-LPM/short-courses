@@ -19,7 +19,6 @@ keywords:
 - "prenašanje modelov"
 - "slikovni material"
 intended:
-
 - "razvijalci programske opreme"
 difficulty: "Višji nivo"
 requisite: ""

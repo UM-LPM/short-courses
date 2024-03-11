@@ -18,9 +18,8 @@ field:
 keywords:
 - "vitko upravljanje"
 intended:
-
 - "razvijalci programske opreme"
-difficulty: ""
+difficulty: "Začetni nivo"
 requisite: ""
 description: |
     Udeleženci bodo spoznali osnovne vitkega upravljanja v inženirskih poklicih: principe vitkega razmišljanja, opazovanje okolja, odkrivanje vzrokov odpovedi in posledic, ter načrtovanje in izvedbo izboljšav skozi orodja vitkega upravljanja.

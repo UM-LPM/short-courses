@@ -21,9 +21,8 @@ keywords:
 - "razvoj aplikacij"
 - "uporabniške komponente"
 intended:
-
 - "razvijalci programske opreme"
-difficulty: ""
+difficulty: "Začetni nivo"
 requisite: ""
 description: |
     Udeleženci bodo pridobili praktično znanje o uporabi Jetpack Compose, modernem kompletu orodij za izdelavo uporabniškega vmesnika za aplikacije na platformi Android. Skozi praktične vaje in projekte bodo razvijali razumevanje Jetpack Compose sintakse in osnovne koncepte, ki omogočajo gradnjo izjemno prilagodljivih in interaktivnih uporabniških vmesnikov. Delavnica bo potekala v integriranem razvojnem okolju Android Studio, kjer bodo udeleženci spoznali proces načrtovanja, implementacije in testiranja aplikacije. Osredotočili se bodo na obvladovanje uporabniških komponent, upravljanje stanja aplikacije, animacije in navigacijo. Med delavnico bodo udeleženci razvijali lasten projekt, ki bo vključeval tipične uporabniške interakcije, kot so obrazci, seznami, navigacijski tok in več. Jetpack Compose je prihodnost izdelave uporabniškega vmesnika na platformi Android s katerim je mogoče razviti sodobne in privlačne aplikacije za platformo Android in to znanje uporabiti tudi pri izdelavi namiznih aplikacij.

@@ -22,9 +22,8 @@ keywords:
 - "vizualizacija"
 intended:
 - "vsi"
-
 - "razvijalci programske opreme"
-difficulty: ""
+difficulty: "Začetni nivo"
 requisite: ""
 description: |
     Udeleženci se bodo seznanili s knjižnicami v programskem jeziku R, ki so namenjene strojnemu učenju, obdelavi podatkov in vizualizaciji, ter spoznali praktične primere njihove uporabe.

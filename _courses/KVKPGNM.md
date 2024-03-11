@@ -21,7 +21,6 @@ keywords:
 - "klasični pristopi"
 - "globoke nevronske mreže"
 intended:
-
 - "razvijalci programske opreme"
 difficulty: "Višji nivo"
 requisite: "Razpoznavanje vzorcev in redukcija dimenzij: primerjava klasičnih algoritmov in globokega učenja"

@@ -20,9 +20,8 @@ keywords:
 - "IntelliJ IDEA"
 - "JVM"
 intended:
-
 - "razvijalci programske opreme"
-difficulty: ""
+difficulty: "Začetni nivo"
 requisite: ""
 description: |
     Udeleženci bodo pridobili temeljno razumevanje sintakse programskega jezika Kotlin ter osnovne tehnike objektno-usmerjenega programiranja. S pomočjo integriranega razvojnega okolja IntelliJ IDEA bodo spoznali načrtovanje, implementacijo, razhroščevanje in dokumentiranje preprostih programov. Skozi praktične primere bodo pridobili vpogled v uporabo različnih programskih konstruktov, kot so različni tipi spremenljivk, polja, strukture/razredi, prireditveni operator, pogojne krmilne strukture, iterativne krmilne strukture za ponavljanja ter funkcije. Programski jezik Kotlin, čeprav relativno "mlad," temelji na platformi JVM (Java Virtual Machine) in je združljiv s programskim jezikom Java. Udeleženci se bodo zato seznanili tudi z interoperabilnostjo med programskima jezikoma Kotlin in Java ter spoznali, kako ju lahko uporabljajo v okviru istega projekta. Kotlin je v ospredju razvoja mobilnih aplikacij za platformo Android, vendar se med drugim uporablja tudi za razvoj namiznih aplikacij ter platformno-neodvisnih aplikacij.

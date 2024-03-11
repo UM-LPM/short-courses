@@ -20,7 +20,6 @@ keywords:
 - "bogatenje podatkov"
 - "slikovna analiza"
 intended:
-
 - "razvijalci programske opreme"
 difficulty: "Višji nivo"
 requisite: ""

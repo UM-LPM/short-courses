@@ -20,9 +20,8 @@ keywords:
 - "brisanje podatkov"
 - "učinkovitost"
 intended:
-
 - "razvijalci programske opreme"
-difficulty: ""
+difficulty: "Višji nivo"
 requisite: ""
 description: |
     V okviru tega modula bodo udeleženci spoznali osnovne in nekatere napredne podatkovne strukture za organizirano hrambo podatkov. Seznanili se bodo z osnovnimi operacijami na podatkovnih strukturah, kot so iskanje, dodajanje in brisanje podatkov, ter njihovo časovno zahtevnostjo. Teoretično znanje bodo podkrepili v praktičnem delu, kjer bodo za izbrane oblike realnih problemov uporabili različne podatkovne strukture in primerjali njihovo učinkovitost pri različnih razmerjih operacij iskanja, dodajanja in brisanja podatkov.

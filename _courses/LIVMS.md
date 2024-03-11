@@ -20,7 +20,6 @@ keywords:
 - "ločevanje izvorov"
 - "globoke nevronske mreže"
 intended:
-
 - "razvijalci programske opreme"
 difficulty: "Višji nivo"
 requisite: ""

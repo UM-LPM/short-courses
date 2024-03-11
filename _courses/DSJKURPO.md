@@ -18,7 +18,6 @@ keywords:
 - "konstrukti jezikov"
 - "razlike s splošno-namenskimi jeziki"
 intended:
-
 - "razvijalci programske opreme"
 difficulty: "Začetni nivo"
 requisite: ""

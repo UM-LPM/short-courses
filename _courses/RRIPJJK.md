@@ -22,9 +22,8 @@ keywords:
 - "Java"
 - "Kotlin"
 intended:
-
 - "razvijalci programske opreme"
-difficulty: ""
+difficulty: "Začetni nivo"
 requisite: ""
 description: |
     Udeleženci bodo spoznali, kako načrtovati in implementirati preprosto računalniško igro. Naučili se bodo, kako poteka glavna zanka igre oz. kakšen je življenjski cikel igre. Vsak udeleženec bo implementiral svojo lastno igro z uporabo ogrodja libGDX in programskega jezika Java ali Kotlin. Ustvarili bomo igro, ki se bo odzivala na igralčeve ukaze, obdelovala vhodne podatke in izrisovala objekte na zaslonu. Med razvojem se bomo naučili, kako učinkovito odpravljati morebitne napake, ki se pojavijo med razvojem. Ne bomo se omejili le na ustvarjanje preproste igre, temveč tudi na to, kako pripraviti projekt za nadaljnji razvoj. Udeleženci se bodo naučili, kako organizirati svojo kodo in vire, da bo projekt pripravljen na razširitev in izboljšavo igre s pridobljenim znanjem.

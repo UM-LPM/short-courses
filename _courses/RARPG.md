@@ -20,9 +20,8 @@ keywords:
 - "povezovanje komponent"
 - "časovna zahtevnost"
 intended:
-
 - "razvijalci programske opreme"
-difficulty: ""
+difficulty: "Začetni nivo"
 requisite: ""
 description: |
     Udeleženci tega modula se bodo seznanili z osnovnimi in naprednejšimi algoritmi za reševanje problemov nad grafi. V uvodnem delu se bodo seznanili s podatkovno strukturo graf in spoznali osnovne pojme, povezane z grafi. V obliki grafa bodo predstavili različne praktične primere in spoznali tipe problemov na splošnih in posebnih grafih, ki jih rešujemo z računalniškimi algoritmi. Izbrane vrste problemov, kot so iskanje najkrajših poti, največjega pretoka ali povezanih komponent v grafu, bodo s pomočjo programskih knjižnic rešili na grafih različnih velikosti in analizirali praktične omejitve v smislu časovne zahtevnosti. Za določene oblike optimizacijskih nalog bodo uporabili hitrejše aproksimativne rešitve in jih primerjali z optimalnimi.

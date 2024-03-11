@@ -19,7 +19,6 @@ keywords:
 - "lokalizacija objektov"
 - "ovrednotenje uspešnosti"
 intended:
-
 - "razvijalci programske opreme"
 difficulty: "Začetni nivo"
 requisite: ""
