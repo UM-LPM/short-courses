@@ -45,7 +45,7 @@
     }
 
     @media (max-height: rem(200px)) { 
-      padding-top: 10%;
+      padding-top: 20%;
       padding-bottom: 30%;
       min-height: fit-content;
       height: 100%;
@@ -62,7 +62,7 @@
     @include media("<=md") {
       width: 90%; 
       padding-bottom: 20%;
-      padding-top: 5%; 
+      padding-top: 10%; 
       height: 100%;
       min-height: fit-content;
     }
@@ -79,7 +79,7 @@
       margin: rem(10px) 0;
 
       @include media("<=sm") {
-        font-size: rem(30px);
+        font-size: rem(36px);
       }
     }
 
@@ -90,11 +90,11 @@
       margin: 0;
 
       @include media("<=md") {
-        font-size: rem(20px);
+        font-size: rem(22px);
       }
 
       @include media("<=sm") {
-        font-size: rem(18px);
+        font-size: rem(22px);
       }
     }
 

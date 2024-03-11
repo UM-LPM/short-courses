@@ -1,5 +1,5 @@
 ---
-date: "2024-01-01 00:00:00" 
+date: "2024-01-01" 
 version: "0.1.1"
 lastUpdate: "2024-03-09 20:00:00"
 layout: "course"
@@ -32,5 +32,5 @@ uni: ""
 mag: ""
 state: "Predlog"
 execution: "Sinhrona"
-ects: "1"
+ects: "1" 
 ---
