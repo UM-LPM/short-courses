@@ -1,0 +1,34 @@
+---
+date: "2024-01-01 00:00:00" 
+version: "0.1.1"
+lastUpdate: "2024-03-09 20:00:00"
+layout: "course"
+id: "GOUNM"
+permalink: "GOUNM"
+author:
+- "Damjan Strnad"
+contact: "damjan.strnad@um.si"
+title: "Globoko okrepitveno učenje z nevronskimi mrežami"
+image: "https://images.unsplash.com/photo-1545987796-200677ee1011"
+type: "Krajše izobraževanje"
+field:
+- "Računalništvo in informatika"
+keywords:
+- "okrepitveno učenje"
+- "nevronske mreže"
+- "optimizacija pravilnika"
+- "agent"
+intended:
+
+- "razvijalci programske opreme"
+difficulty: ""
+requisite: "Umetne nevronske mreže in globoko učenje"
+description: |
+    V tem modulu bodo udeleženci spoznali principe okrepitvenega učenja, klasične algoritme in osnovne algoritme globokega okrepitvenega učenja z nevronskimi mrežami. Na podlagi poznavanja osnovnih principov delovanja bodo za izbran problem okrepitvenega učenja lahko identificirali in opisali glavne komponente kot so akcije agenta, predstavitev stanj in model okolja, ki določa prehajanje stanj in nagrade za izvedene akcije. Pri obravnavi klasičnih pristopov se bodo seznanili s pristopi optimizacije pravilnika in klasičnimi algoritmi okrepitvenega učenja. Nato bodo za predstavitev agentove strategije delovanja ali modela okolja uporabili globoko nevronsko mrežo in se seznanili s prednostmi takšnega pristopa. Spoznali bodo nekaj metod okrepitvenega učenja z nevronskimi mrežami in jih uporabili za optimizacijo delovanja agenta v simuliranem okolju.
+vs: ""
+uni: ""
+mag: ""
+state: "Predlog"
+execution: "Sinhrona"
+ects: "1"
+---

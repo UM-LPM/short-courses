@@ -7,9 +7,11 @@
       "id": "{{ course.id }}",
       "title": "{{ course.title | escape | replace: "š", "s" | replace: "č", "c" | replace: "ž", "z" | replace: "Š", "S" | replace: "Č", "C" | replace: "Ž", "Z" }}",
       "keywords": "{{ course.keywords | join: ', ' | replace: "š", "s" | replace: "č", "c" | replace: "ž", "z" | replace: "Š", "S" | replace: "Č", "C" | replace: "Ž", "Z" }}",
+      "intended": "{{ course.intended | join: ', ' | replace: "š", "s" | replace: "č", "c" | replace: "ž", "z" | replace: "Š", "S" | replace: "Č", "C" | replace: "Ž", "Z" }}",
       "author": "{% for author in course.author %}{{ author | replace: "š", "s" | replace: "č", "c" | replace: "ž", "z" | replace: "Š", "S" | replace: "Č", "C" | replace: "Ž", "Z" }}{% unless forloop.last %}, {% endunless %}{% endfor %}",
       "url": "{{ site.baseurl }}{{ course.url }}",
-      "description": "{{ course.description | strip_newlines | lstrip | replace: '"', '' | replace: "š", "s" | replace: "č", "c" | replace: "ž", "z" | replace: "Š", "S" | replace: "Č", "C" | replace: "Ž", "Z"}}"
+      "field": "{{ course.field | join: ', ' | replace: "š", "s" | replace: "č", "c" | replace: "ž", "z" | replace: "Š", "S" | replace: "Č", "C" | replace: "Ž", "Z" }}",
+      "description": "{{ course.description | strip_newlines | lstrip | replace: '"', '' | replace: "š", "s" | replace: "č", "c" | replace: "ž", "z" | replace: "Š", "S" | replace: "Č", "C" | replace: "Ž", "Z"}}",
       "image": "{{ course.image}}",
       "difficulty": "{{ course.difficulty | replace: "š", "s" | replace: "č", "c" | replace: "ž", "z" | replace: "Š", "S" | replace: "Č", "C" | replace: "Ž", "Z" }}",
       "type": "{{ course.type | replace: "š", "s" | replace: "č", "c" | replace: "ž", "z" | replace: "Š", "S" | replace: "Č", "C" | replace: "Ž", "Z" }}"

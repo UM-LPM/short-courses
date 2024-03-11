@@ -1,0 +1,37 @@
+---
+date: "2024-01-01 00:00:00" 
+version: "0.1.1"
+lastUpdate: "2024-03-09 20:00:00"
+layout: "course"
+id: "LIVMS"
+permalink: "LIVMS"
+author:
+- "Matjaž Divjak"
+- "Aleš Holobar"
+contact: "matjaz.divjak@um.si"
+title: "Ločevanje izvorov v večkanalnih mešanicah signalov"
+image: "https://images.unsplash.com/photo-1606778303077-3780ea8d5420"
+type: "Krajše izobraževanje s preverjanjem"
+field:
+- "Računalništvo in informatika"
+keywords:
+- "signali"
+- "večkanalni"
+- "ločevanje izvorov"
+- "globoke nevronske mreže"
+intended:
+
+- "razvijalci programske opreme"
+difficulty: "Višji nivo"
+requisite: ""
+description: |
+    - Klasični postopki slepega ločevanja izvorov: Analiza poglavitnih komponent (PCA), Analiza neodvisnih komponent (ICA), 
+    - Moderni pristopi ločevanju izvorov z globokimi nevronskimi mrežami: konvolutivne nevronske mreže 
+    - Praktični primeri uporabe: razpoznavanje govorcev, razpoznavanje gest/akcij iz IMU/pospeškometer signalov, izločanje srčnega utripa iz 1-kanalnega EMG signala, …
+vs: ""
+uni: ""
+mag: ""
+state: "Predlog"
+execution: "Sinhrona"
+ects: "1"
+---

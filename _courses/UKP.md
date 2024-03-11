@@ -1,0 +1,45 @@
+---
+date: "2024-01-01 00:00:00" 
+version: "0.1.1"
+lastUpdate: "2024-03-09 20:00:00"
+layout: "course"
+id: "UKP"
+permalink: "UKP"
+author:
+- "Aleš Holober"
+- "Nina Murks"
+- "Matej Kramberger"
+contact: "ales.holobar@um.si"
+title: "Uvod v kvantno programiranje"
+image: "https://images.unsplash.com/photo-1537432376769-00f5c2f4c8d2"
+type: "Krajše izobraževanje s preverjanjem"
+field:
+- "Računalništvo in informatika"
+keywords:
+- "kvantno programiranje"
+- "biti"
+- "registri"
+- "vrata"
+- "vezja"
+- "algoritmi"
+- "simulatorji"
+intended:
+- "vsi"
+
+- "razvijalci programske opreme"
+difficulty: "Začetni nivo"
+requisite: ""
+description: |
+    - Osnovni principi kvantnega sveta: superpozicija, kvantno prepletanje, tuneljenje. 
+    - Kvantni biti in kvantni registri.
+    - Kvantna vrata in kvantna vezja. 
+    - Pregled kvantnih algoritmov in primerjava njihove računske kompleksnosti s klasičnimi algoritmi.
+    - Kvantni simulatorji in programska orodja.  
+    - Praktični primeri uporab kvantnih algoritmov.
+vs: ""
+uni: ""
+mag: ""
+state: "Predlog"
+execution: "Sinhrona"
+ects: "1"
+---
