@@ -62,6 +62,7 @@
     .entry-author {
       float: right;
       display: none;
+      margin-left: 5%;
       font-size: rem(14px);
 
       @include media(">=sm") {
