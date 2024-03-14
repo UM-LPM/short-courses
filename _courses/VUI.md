@@ -9,15 +9,17 @@ author:
 - "Peter Kokol"
 - "Milan Zorman"
 - "Bojan Žlahtič"
-contact: "peter.kokol@um.si"
+contact: "milan.zorman@um.si"
 title: "Vitko upravljanje v inženirstvu"
 image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4"
-type: "Krajše izobraževanje"
+type: "UM akreditirano manjše izobraževanje s preverjanjem"
 field:
 - "Računalništvo in informatika"
 keywords:
 - "vitko upravljanje"
 intended:
+- "vsi"
+- "poklicno"
 - "razvijalci programske opreme"
 difficulty: "Začetni nivo"
 requisite: ""

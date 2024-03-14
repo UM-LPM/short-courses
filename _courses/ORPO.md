@@ -9,10 +9,10 @@ author:
 - "Peter Kokol"
 - "Milan Zorman"
 - "Bojan Žlahtič"
-contact: "peter.kokol@um.si"
+contact: "bojan.zlahtic@um.si"
 title: "Orodja za razvoj programske opreme"
 image: "https://images.unsplash.com/photo-1610563166150-b34df4f3bcd6"
-type: "Krajše izobraževanje"
+type: "UM akreditirano manjše izobraževanje s preverjanjem"
 field:
 - "Računalništvo in informatika"
 keywords:
@@ -22,8 +22,10 @@ keywords:
 - "dokumentacija"
 - "avtomatizacija"
 intended:
+- "vsi"
+- "poklicno"
 - "razvijalci programske opreme"
-difficulty: "Začetni nivo"
+difficulty: "Srednji nivo"
 requisite: ""
 description: |
     Udeleženci se bodo seznanili z orodji, ki omogočajo učinkovit razvoj programske opreme v timskem okolju, vključno z načrtovanjem, verzioniranjem, komunikacijo, dokumentacijo ter avtomatizacijo.

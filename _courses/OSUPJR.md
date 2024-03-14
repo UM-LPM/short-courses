@@ -9,10 +9,10 @@ author:
 - "Peter Kokol"
 - "Milan Zorman"
 - "Bojan Žlahtič"
-contact: "peter.kokol@um.si"
+contact: "bojan.zlahtic@um.si"
 title: "Osnove strojnega učenja v programskem jeziku R"
 image: "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2"
-type: "Krajše izobraževanje"
+type: "UM akreditirano manjše izobraževanje s preverjanjem"
 field:
 - "Računalništvo in informatika"
 keywords:
@@ -22,8 +22,9 @@ keywords:
 - "vizualizacija"
 intended:
 - "vsi"
+- "poklicno"
 - "razvijalci programske opreme"
-difficulty: "Začetni nivo"
+difficulty: "Srednji nivo"
 requisite: ""
 description: |
     Udeleženci se bodo seznanili s knjižnicami v programskem jeziku R, ki so namenjene strojnemu učenju, obdelavi podatkov in vizualizaciji, ter spoznali praktične primere njihove uporabe.

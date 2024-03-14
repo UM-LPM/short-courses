@@ -1,11 +1,13 @@
 ---
 date: "2024-01-01" 
-version: "0.1.1"
+version: "0.1.2"
 lastUpdate: "2024-03-09 20:00:00"
 layout: "course"
 id: "GNMPODS"
 permalink: "GNMPODS"
 author:
+- "Martin Šavc"
+- "Uroš Mlakar"
 - "Božidar Potočnik"
 contact: "bozidar.potocnik@um.si"
 title: "Globoke nevronske mreže in prepoznavanje objektov v digitalnih slikah"
@@ -17,9 +19,12 @@ keywords:
 - "globoke nevronske mreže"
 - "zaznava objektov"
 - "lokalizacija objektov"
-- "ovrednotenje uspešnosti"
+- "vrednotenje uspešnosti"
+- "digitalne slike"
+- "računalniški vid"
 intended:
-- "razvijalci programske opreme"
+- "vsi"
+- "poklicno"
 difficulty: "Začetni nivo"
 requisite: ""
 description: |

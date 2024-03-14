@@ -12,7 +12,7 @@ author:
 contact: "peter.kokol@um.si"
 title: "Osnove kvalitete programske opreme"
 image: "https://images.unsplash.com/photo-1522252234503-e356532cafd5"
-type: "Krajše izobraževanje"
+type: "UM akreditirano manjše izobraževanje s preverjanjem"
 field:
 - "Računalništvo in informatika"
 keywords:
@@ -24,8 +24,9 @@ keywords:
 - "osnovne merilne tehnike kvalitete"
 intended:
 - "vsi"
+- "poklicno"
 - "razvijalci programske opreme"
-difficulty: "Začetni nivo"
+difficulty: "Srednji nivo"
 requisite: ""
 description: |
     Udeleženci bodo spoznali osnovne principe, vidike in modele kvalitete programske opreme, kot so napake, ki se pojavljajo pri oblikovanju programske opreme in kako zagotavljati kvalitete. Spoznali bodo procese prevencija napak, odpravljanje napak, validacije in verifikacije. Spoznali bodo tudi osnovne tehnika merjenje kvalitete kot so programske metrike, ocenjevanje kvalitete in klasifikacija napak.

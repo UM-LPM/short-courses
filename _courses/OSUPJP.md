@@ -9,10 +9,10 @@ author:
 - "Peter Kokol"
 - "Milan Zorman"
 - "Bojan Žlahtič"
-contact: "peter.kokol@um.si"
+contact: "bojan.zlahtic@um.si"
 title: "Osnove strojnega učenja v programskem jeziku Python"
 image: "https://images.unsplash.com/photo-1624953587687-daf255b6b80a"
-type: "Krajše izobraževanje"
+type: "UM akreditirano manjše izobraževanje s preverjanjem"
 field:
 - "Računalništvo in informatika"
 keywords:
@@ -22,8 +22,9 @@ keywords:
 - "vizualizacija"
 intended:
 - "vsi"
+- "poklicno"
 - "razvijalci programske opreme"
-difficulty: "Začetni nivo"
+difficulty: "Srednji nivo"
 requisite: ""
 description: |
     Udeleženci se bodo seznanili s knjižnicami v programskem jeziku Python, ki so namenjene strojnemu učenju, obdelavi podatkov in vizualizaciji, ter spoznali praktične primere njihove uporabe.

@@ -9,10 +9,10 @@ author:
 - "Peter Kokol"
 - "Milan Zorman"
 - "Bojan Žlahtič"
-contact: "peter.kokol@um.si"
+contact: "milan.zorman@um.si"
 title: "Osnove strojnega učenja"
 image: "https://images.unsplash.com/photo-1555255707-c07966088b7b"
-type: "Krajše izobraževanje"
+type: "UM akreditirano manjše izobraževanje s preverjanjem"
 field:
 - "Računalništvo in informatika"
 keywords:
@@ -23,6 +23,7 @@ keywords:
 - "testna okolja"
 intended:
 - "vsi"
+- "poklicno"
 - "razvijalci programske opreme"
 difficulty: "Začetni nivo"
 requisite: ""

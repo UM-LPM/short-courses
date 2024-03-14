@@ -6,35 +6,32 @@ layout: "course"
 id: "UKP"
 permalink: "UKP"
 author:
-- "Aleš Holober"
-- "Nina Murks"
+- "Aleš Holobar"
 - "Matej Kramberger"
+- "Nina Murks"
 contact: "ales.holobar@um.si"
 title: "Uvod v kvantno programiranje"
 image: "https://images.unsplash.com/photo-1537432376769-00f5c2f4c8d2"
-type: "Krajše izobraževanje s preverjanjem"
+type: "UM akreditirano manjše izobraževanje s preverjanjem"
 field:
 - "Računalništvo in informatika"
 keywords:
-- "kvantno programiranje"
-- "biti"
-- "registri"
-- "vrata"
-- "vezja"
-- "algoritmi"
-- "simulatorji"
-intended:
-- "vsi"
+- "kvantni biti"
+- "kvantni registri"
+- "kvantni algoritmi"
+- "superpozicija"
+- "kvantno prepletanje"
+intended: 
 - "razvijalci programske opreme"
+- "na področju RIN"
+- "odločevalci"
+- "študenti"
+- "vseživljensko učenje"
+- "osipniki"
 difficulty: "Začetni nivo"
 requisite: ""
 description: |
-    - Osnovni principi kvantnega sveta: superpozicija, kvantno prepletanje, tuneljenje. 
-    - Kvantni biti in kvantni registri.
-    - Kvantna vrata in kvantna vezja. 
-    - Pregled kvantnih algoritmov in primerjava njihove računske kompleksnosti s klasičnimi algoritmi.
-    - Kvantni simulatorji in programska orodja.  
-    - Praktični primeri uporab kvantnih algoritmov.
+    Udeleženci bodo v poljudni obliki spoznali osnovne principe kvantnega sveta, kot so superpozicija, kvantno prepletanje in tuneljenje. Spoznali bodo, kako ti osnovni principi nadgrajujejo klasične bit in registre v kvantne bite in kvantne registre. Seznanili se bodo z osnovami delovanja kvantnih vrat in kvantnih vezij. Spoznali, preučili in ovrednotili bodo najbolj znane kvantne algoritme in primerjali njihove računske kompleksnosti s kompleksnostmi klasičnih algoritmov. Spoznali bodo delo v kvantnih simulatorjih in programskih orodij za kvantno programiranje. Osvojeno znanje bodo preizkusili na praktičnih primerih uporabe kvantnih algoritmov, predvsem na področju kriptografije in kibernetske varnosti.
 vs: ""
 uni: ""
 mag: ""

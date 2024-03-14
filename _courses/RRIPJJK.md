@@ -7,10 +7,11 @@ id: "RRIPJJK"
 permalink: "RRIPJJK"
 author:
 - "Matej Moravec"
+- "Matej Črepinšek"
 contact: "matej.moravec@um.si"
 title: "Razvoj računalniških iger v programskem jeziku Java ali Kotlin"
 image: "https://images.unsplash.com/photo-1556438064-2d7646166914"
-type: "Krajše izobraževanje"
+type: "UM akreditirano manjše izobraževanje s preverjanjem"
 field:
 - "Računalništvo in informatika"
 keywords:
@@ -22,7 +23,8 @@ keywords:
 - "Java"
 - "Kotlin"
 intended:
-- "razvijalci programske opreme"
+- "zaposleni na področju KLASIUS"
+- "študenti"
 difficulty: "Začetni nivo"
 requisite: ""
 description: |
