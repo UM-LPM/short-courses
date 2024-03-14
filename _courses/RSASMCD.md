@@ -11,7 +11,7 @@ author:
 contact: "tomaz.kosar@um.si"
 title: "Razvoj spletnih aplikacij s skladom MERN: čelni del"
 image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee"
-type: "Krajše izobraževanje"
+type: "UM akreditirano manjše izobraževanje s preverjanjem"
 field:
 - "Računalništvo in informatika"
 keywords:
@@ -22,6 +22,8 @@ keywords:
 - "čelni razvoj"
 - "uporabniški vmesnik"
 intended:
+- "vsi"
+- "poklicno"
 - "razvijalci programske opreme"
 difficulty: "Začetni nivo"
 requisite: "Razvoj spletnih aplikacij s skladom MERN: zaledni del"
@@ -30,7 +32,11 @@ description: |
 vs: ""
 uni: ""
 mag: ""
-state: "Pilotno"
-execution: "Sinhrona"
+state: "1. pilotna izvedba"
+execution: "Asinhrona"
 ects: "1"
+structure: |
+    Predavanja: 10 ur
+    Vaje: 10  ur
+    Samostojno delo: 10 ur
 ---

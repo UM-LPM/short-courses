@@ -9,10 +9,10 @@ author:
 - "Peter Kokol"
 - "Milan Zorman"
 - "Bojan Žlahtič"
-contact: "peter.kokol@um.si"
+contact: "milan.zorman@um.si"
 title: "Zbiranje in priprava podatkov za strojno učenje"
 image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7"
-type: "Krajše izobraževanje"
+type: "UM akreditirano manjše izobraževanje s preverjanjem"
 field:
 - "Računalništvo in informatika"
 keywords:
@@ -24,6 +24,8 @@ keywords:
 - "predobdelava"
 - "vizualizacija"
 intended:
+- "vsi"
+- "poklicno"
 - "razvijalci programske opreme"
 difficulty: "Začetni nivo"
 requisite: ""

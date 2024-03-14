@@ -7,21 +7,22 @@ id: "USU"
 permalink: "USU"
 author:
 - "Damjan Strnad"
+- "Štefan Horvat"
 contact: "damjan.strnad@um.si"
 title: "Uvod v strojno učenje"
 image: "https://images.unsplash.com/photo-1474314243412-cd4a79f02c6a"
-type: "Krajše izobraževanje"
+type: "UM akreditirano manjše izobraževanje s preverjanjem"
 field:
 - "Računalništvo in informatika"
 keywords:
 - "strojno učenje"
-- "učni podatki"
-- "predobdelava"
-- "napovedni modeli"
-- "vrednostnje"
+- "model podatkov"
+- "napovedovanje"
+- "klasifikacija"
+- "regresija"
 intended:
 - "vsi"
-- "razvijalci programske opreme"
+- "poklicno"
 difficulty: "Začetni nivo"
 requisite: ""
 description: |

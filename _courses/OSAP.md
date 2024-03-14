@@ -12,7 +12,7 @@ author:
 contact: "peter.kokol@um.si"
 title: "Osnove statistične analize podatkov"
 image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f"
-type: "Krajše izobraževanje"
+type: "UM akreditirano manjše izobraževanje s preverjanjem"
 field:
 - "Računalništvo in informatika"
 keywords:
@@ -21,6 +21,7 @@ keywords:
 - "statični programski paket"
 intended:
 - "vsi"
+- "poklicno"
 - "razvijalci programske opreme"
 difficulty: "Začetni nivo"
 requisite: ""

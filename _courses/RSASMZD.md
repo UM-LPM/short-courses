@@ -11,7 +11,7 @@ author:
 contact: "tomaz.kosar@um.si"
 title: "Razvoj spletnih aplikacij s skladom MERN: zaledni del"
 image: "https://images.unsplash.com/photo-1511376777868-611b54f68947"
-type: "Krajše izobraževanje"
+type: "UM akreditirano manjše izobraževanje s preverjanjem"
 field:
 - "Računalništvo in informatika"
 keywords:
@@ -23,6 +23,8 @@ keywords:
 - "MongoDB"
 - "zaledni razvoj"
 intended:
+- "vsi"
+- "poklicno"
 - "razvijalci programske opreme"
 difficulty: "Začetni nivo"
 requisite: ""
@@ -31,7 +33,11 @@ description: |
 vs: ""
 uni: ""
 mag: ""
-state: "Pilotno"
-execution: "Sinhrona"
+state: "1. pilotna izvedba"
+execution: "Asinhrona"
 ects: "1"
+structure: |
+    Predavanja: 10 ur
+    Vaje: 10  ur
+    Samostojno delo: 10 ur
 ---
