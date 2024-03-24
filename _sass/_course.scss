@@ -274,6 +274,42 @@
     overflow-x: auto;
   }
 
+  .data-container{
+    display: flex; 
+    flex-direction: column; 
+    width: 100%; 
+    margin-top: 5%; 
+    margin-left: 5%;
+
+    .icon-description-container{
+      margin-bottom: 5%;
+
+      .inside-icon-description {
+        display: flex; 
+        align-items: flex-start;
+
+        i {
+          color: $themeGreen; 
+          margin-top: 2%;
+          margin-right: 8px;
+        }
+
+        .description-data {
+          display: flex; 
+          flex-direction: column;
+
+          p {
+            margin: 0;
+          }
+
+          .desc {
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+
   table {
     @include mainFont(400);
     font-size: rem(17px);
