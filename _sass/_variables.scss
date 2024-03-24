@@ -5,7 +5,15 @@
 $themeColor: map-get($theme, themeColor) !default;
 $primaryDark: map-get($theme, primaryDark) !default;
 $accentDark: map-get($theme, accentDark) !default;
+$primaryLight: map-get($theme, primaryLight) !default;
+$accentLight: map-get($theme, accentLight) !default;
 $lightGray: map-get($theme, lightGray) !default;
+$themeBlue: map-get($theme, themeBlue) !default;
+$themeOrange: map-get($theme, themeOrange) !default;
+$themeGreen: map-get($theme, themeGreen) !default;
+$darkThemeBlue: map-get($theme, darkThemeBlue) !default;
+$darkThemeOrange: map-get($theme, darkThemeOrange) !default;
+$darkThemeGreen: map-get($theme, darkThemeGreen) !default;
 $texts: map-get($theme, texts) !default;
 
 // Breakpoints

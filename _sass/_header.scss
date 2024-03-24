@@ -4,7 +4,7 @@ body {
 }
 
 .bar-header {
-  background-color: $primaryDark;
+  background-color: $themeColor;
   padding: rem(10px) rem(15px);
   position: fixed;
   left: 0;
@@ -112,10 +112,10 @@ body {
 }
 
 body.main-page {
-  background-color: #141414;
+  background-color: $accentDark;
 
   .bar-header {
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: $themeColor;
   }
 }
 
@@ -126,12 +126,12 @@ body.light:not(.main-page) {
 
     .icon-search,
     .icon-menu {
-      fill: $primaryDark;
+      fill: $themeColor;
     }
 
     .logo a,
     .version {
-      color: $primaryDark;
+      color: $themeColor;
     }
   }
 }
