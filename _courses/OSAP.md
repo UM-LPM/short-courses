@@ -33,4 +33,9 @@ mag: ""
 state: "Predlog"
 execution: "Sinhrona"
 ects: "1"
+implementation: |
+    Predavanja: 12 ur
+    Računalniške vaje: 6 ur
+    Samostojno delo: 8 ur
+    Seminarske vaje: 4 ure
 ---

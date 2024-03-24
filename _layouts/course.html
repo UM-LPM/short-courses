@@ -51,40 +51,89 @@
                     {% endif %}
                     <p class="course-description">{{ page.description | newline_to_br | replace: "  ", "&nbsp;&nbsp;&nbsp;&nbsp;" }}</p>
                     {{ content }}
-                    <table style="margin-bottom: 1%; padding-top: 0%; align-items: center;">
-                        <tr>
-                            <th>Vrsta izobraževanja</th>
-                            <td>{{ page.type }}</td>
-                        </tr>
-                        <tr>
-                            <th>Področje</th>
-                            <td>{{ page.field }}</td>
-                        </tr>
-                        <tr>
-                            <th>Težavnost</th>
-                            <td>{{ page.difficulty }}</td>
-                        </tr>
-                        <tr>
-                            <th>Priporočena predhodnja delavnica</th>
-                            <td>{% if page.requisite != '' %}{{ page.requisite }}{% else %}➖{% endif %}</td>
-                        </tr>
-                        <tr>
-                            <th>Stanje</th>
-                            <td>{{ page.state }}</td>
-                        </tr>
-                        <tr>
-                            <th>Vrsta izvedbe</th>
-                            <td>{{ page.execution }}</td>
-                        </tr>
-                        <tr>
-                            <th>Obseg izobraževanja glede števila ECTS</th>
-                            <td>{{ page.ects | times: 25 }} - {{ page.ects | times: 30 }} ur dela</td>
-                        </tr>
-                        <tr>
-                            <th>Kontakt poučevanja</th>
-                            <td>{{ page.contact }}</td>
-                        </tr>
-                    </table>
+                    <div class="data-container">
+                        <div class="icon-description-container">
+                            <div class="inside-icon-description">
+                                <i class="fas fa-paperclip"></i>
+                                <div class="description-data">
+                                    <p class="desc"><strong>Vrsta izobraževanja</strong></p>
+                                    <p>{{ page.type }}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="icon-description-container">
+                            <div class="inside-icon-description">
+                                <i class="fas fa-paperclip"></i>
+                                <div class="description-data">
+                                    <p class="desc"><strong>Področje</strong></p>
+                                    <p>{{ page.field }}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="icon-description-container">
+                            <div class="inside-icon-description">
+                                <i class="fas fa-paperclip"></i>
+                                <div class="description-data">
+                                    <p class="desc"><strong>Težavnost</strong></p>
+                                    <p>{{ page.difficulty }}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="icon-description-container">
+                            <div class="inside-icon-description">
+                                <i class="fas fa-paperclip"></i>
+                                <div class="description-data">
+                                    <p class="desc"><strong>Priporočena predhodnja delavnica</strong></p>
+                                    <p>{% if page.requisite != '' %}{{ page.requisite }}{% else %}➖{% endif %}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="icon-description-container">
+                            <div class="inside-icon-description">
+                                <i class="fas fa-paperclip"></i>
+                                <div class="description-data">
+                                    <p class="desc"><strong>Stanje</strong></p>
+                                    <p>{{ page.state }}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="icon-description-container">
+                            <div class="inside-icon-description">
+                                <i class="fas fa-paperclip"></i>
+                                <div class="description-data">
+                                    <p class="desc"><strong>Vrsta izvedbe</strong></p>
+                                    <p>{{ page.execution }}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="icon-description-container">
+                            <div class="inside-icon-description">
+                                <i class="fas fa-paperclip"></i>
+                                <div class="description-data">
+                                    <p class="desc"><strong>Obseg izobraževanja glede števila ECTS</strong></p>
+                                    <p>{{ page.ects | times: 25 }} - {{ page.ects | times: 30 }} ur dela</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="icon-description-container">
+                            <div class="inside-icon-description">
+                                <i class="fas fa-paperclip"></i>
+                                <div class="description-data">
+                                    <p class="desc"><strong>Kontakt poučevanja</strong></p>
+                                    <p>{{ page.contact }}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="icon-description-container">
+                            <div class="inside-icon-description">
+                                <i class="fas fa-paperclip"></i>
+                                <div class="description-data">
+                                    <p class="desc"><strong>Izvedba</strong></p>
+                                    <p>{{ page.implementation | newline_to_br | replace: "  ", "&nbsp;&nbsp;&nbsp;&nbsp;" }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                                                  
                 </section>                
                 {% include pagination-course.html %}
             </article>

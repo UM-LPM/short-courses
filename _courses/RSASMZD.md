@@ -36,6 +36,11 @@ mag: ""
 state: "1. pilotna izvedba"
 execution: "Asinhrona"
 ects: "1"
+implementation: |
+    Predavanja: 12 ur
+    Računalniške vaje: 6 ur
+    Samostojno delo: 8 ur
+    Seminarske vaje: 4 ure
 structure: |
     Predavanja: 10 ur
     Vaje: 10  ur
