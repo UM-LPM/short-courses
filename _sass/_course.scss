@@ -610,7 +610,7 @@
 
     .title {
       font-size: rem(16px);
-      color: #fff;
+      color: #000;
       margin: rem(5px) 0;
       transition: all 0.3s;
       @include media(">=sm") {

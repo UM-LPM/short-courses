@@ -23,22 +23,17 @@
   flex-flow: row wrap;
 }
 
-.title-category {
-  font-size: rem(32px);
-  margin: 0 0 rem(40px);
-  padding: 0 rem(23px);
-  text-transform: lowercase;
-  color: #fff;
-}
-
 .box-item {
   flex: 1 0 $itemMinWidth;
   margin: 0 0 rem(30px);
   display: inline-block;
   min-height: rem(285px);
   transition: all 0.3s;
+  padding: 1%;
   position: relative;
   z-index: 1;
+  background-color: rgba($primaryLight, 0.8);
+  border-radius: 3%;
 
   @include media("<=sm") {
     margin: 0 rem($itemMargin) rem(26px);
@@ -62,9 +57,18 @@
     flex: 1 0 calc(100%/#{$maxItemsPerRow} - #{$itemMargin * 2});
   }
 
+  .course-author {
+    color: $darkThemeBlue;
+  }
+
+  .course-title {
+    color: $darkThemeGreen;
+  }
+
   &:hover {
     z-index: 2;
     transform: scale(1.05);
+    background-color: rgba($themeColor, 0.6);
 
     img {
       -webkit-filter: grayscale(100%);
@@ -80,6 +84,10 @@
       }
     }
 
+    .category span {
+      color: $accentDark;
+    }
+
     .box-body {
       time,
       p {
@@ -88,7 +96,7 @@
 
       .cover {
         .new-course-tag {
-          background-color: #000;
+          background-color: $accentLight;
         }
 
         .read-icon {
@@ -103,6 +111,7 @@
     display: block;
   }
 
+
   .category {
     display: block;
     height: auto; 
@@ -115,7 +124,7 @@
     overflow: hidden; 
     white-space: normal;
     span {
-      color: $accentDark;
+      color: $darkThemeBlue;
     }
   }  
 
@@ -139,7 +148,7 @@
       margin: rem(10px) 0;
       font-size: rem(24px);
       @include mainFont(800);
-      color: $accentDark;
+      color: $primaryLight;
       line-height: rem(30px);
     }
 
@@ -153,25 +162,25 @@
     .tags a {
       height: rem(30px);
       line-height: rem(26px);
-      color: $accentDark;
+      color: $accentLight;
       padding: 0 rem(10px);
-      border: 2px solid $accentDark;
+      border: 2px solid $accentLight;
       border-radius: 15px;
       display: inline-block;
       margin: 0 rem(10px) rem(10px) 0;
       z-index: 50;
 
       &:hover {
-        color: $primaryDark;
-        background: $accentDark;
-        border-color: $accentDark;
+        color: $accentDark;
+        background: $accentLight;
+        border-color: $accentLight;
       }
     }
 
     .tags .intended {
       height: rem(30px);
       line-height: rem(26px);
-      color: $accentDark;
+      color: $accentLight;
       padding: 0 rem(10px);
       border: 2px solid $themeColor;
       border-radius: 15px;
@@ -180,7 +189,7 @@
       z-index: 50;
 
       &:hover {
-        color: $lightGray;
+        color: $accentDark;
         background: $themeColor;
         border-color: $themeColor;
       }
@@ -208,7 +217,7 @@
         text-transform: uppercase;
         display: inline-block;
         background: $themeColor;
-        color: #fff;
+        color: $primaryLight;
         font-size: rem(13px);
         font-weight: 700;
         line-height: rem(24px);
@@ -235,7 +244,7 @@
         margin-top: rem(-40px);
         margin-left: rem(-40px);
         border: 2px solid #fff;
-        color: $themeColor;
+        color: $themeGreen;
         z-index: 4;
 
         svg {
