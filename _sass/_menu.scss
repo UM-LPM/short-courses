@@ -21,10 +21,6 @@ body.has-push-menu {
     .progress-bar {
       left: rem(240px);
     }
-
-    .bar-header {
-      left: rem(240px);
-    }
   }
 }
 
@@ -59,7 +55,7 @@ aside.sidebar {
   }
 
   nav {
-    ul {
+    .menu {
       padding: 0;
       margin: rem(5px) 0;
 
@@ -67,7 +63,7 @@ aside.sidebar {
         margin: rem(10px) 0;
       }
 
-      li {
+      .list-menu {
         margin: 0;
         list-style-type: none;
 

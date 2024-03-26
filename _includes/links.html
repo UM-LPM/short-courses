@@ -1,7 +1,7 @@
-<ul>
+<ul class="menu">
   {% for item in site.menu %}
     {% if item.title and item.url %}
-      <li>
+      <li class="list-menu">
         <a href="{{ site.url }}{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
       </li>
     {% endif %}
