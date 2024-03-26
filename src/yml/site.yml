@@ -1,9 +1,9 @@
-name: Predlogi krajših izobraževanj
-title: Predlogi krajših izobraževanj
+name: Krajša izobraževanja UM FERI
+title: Krajša izobraževanja UM FERI
 description: Cilj spodnjega nabora vsebin je preveriti zainteresiranost za razvoj izbranih krajših izobraževanj Univerze v Mariboru.
 show_hero: true
 menu:
-  - title: Doma
+  - title: Domov
     url: /
   - title: O nas
     url: /o-nas

@@ -4,6 +4,7 @@
     <body class="has-push-menu">
         {% include minutes-to-read.html %}
         {% include svg-icons.html %}
+        {% include feri-header.html %}
         {% include header.html %}
 
         <section class="course {% if site.two_columns_layout %}two-columns{% else %}one-column{% endif %}">
@@ -140,7 +141,7 @@
 
             {% if site.two_columns_layout %}
             <aside class="see-also">
-                <h3>Poglej tudi</h3>
+                <h3 style="margin-left: 30px;">Poglej tudi</h3>
                 {% assign related_courses_count = 0 %}
                 {% assign courses = site.courses | shuffle %}
                 {% for course in courses %}

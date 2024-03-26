@@ -6,7 +6,7 @@ body {
 .bar-header {
   background-color: $themeColor;
   padding: rem(10px) rem(15px);
-  position: fixed;
+  position: absolute;
   left: 0;
   width: 100%;
   z-index: 10;
@@ -120,6 +120,7 @@ body.main-page {
 }
 
 body.light:not(.main-page) {
+  
   .bar-header {
     box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
     background-color: rgba(255, 255, 255, 0.95);
@@ -135,6 +136,7 @@ body.light:not(.main-page) {
     }
   }
 }
+
 
 .overlay {
   position: fixed;

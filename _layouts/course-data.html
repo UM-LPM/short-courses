@@ -14,7 +14,8 @@
       "description": "{{ course.description | strip_newlines | lstrip | replace: '"', '' }}",
       "image": "{{ course.image}}",
       "difficulty": "{{ course.difficulty }}",
-      "type": "{{ course.type }}"
+      "type": "{{ course.type }}",
+      "execution": "{{ course.execution }}"
     }{% unless forloop.last %},{% endunless %}
   {% endfor %}
 ]
