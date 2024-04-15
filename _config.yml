@@ -1,17 +1,17 @@
 # Site Settings
 name: Krajša izobraževanja UM FERI
 title: Krajša izobraževanja UM FERI
-description: Cilj spodnjega nabora vsebin je preveriti zainteresiranost za razvoj izbranih krajših izobraževanj Univerze v Mariboru.
-  
+description: >
+  Razvoj družbe narekuje nenehno posodabljanje kompetenc za obvladovanje obstoječih in prihodnjih izzivov. S krajšimi izobraževanji naslavljamo družbene, osebne in potrebe trga dela... <a href="/vec/" style="text-decoration: none; font-weight: bold; color: #DBA40B;">Več...</a>
+
 show_hero: true
 menu:
   - title: Domov
     url: /
-  - title: O nas
-    url: /o-nas
+  - title: Več
+    url: /vec
   - title: Kontakt
     url: /kontakt
-
 
 # Posts Settings
 show_time_bar: true
@@ -19,13 +19,11 @@ show_modal_on_exit: false
 show_modal_on_finish_post: true
 two_columns_layout: true
 
-
 # Advanced Settings
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 google_analytics: "UA-XXXXXXXX-X"
 language: "si"
-
 
 # Build settings
 markdown: kramdown
@@ -66,21 +64,22 @@ plugins:
   - jekyll-paginate-content
 
 # Exclude my node related stuff
-exclude: [
-  'docs/',
-  'vendor/',
-  'LICENSE',
-  'CHANGELOG.md',
-  'jekflix.gemspec',
-  'package.json',
-  'package-lock.json',
-  'node_modules',
-  'initpost.sh',
-  'Gemfile',
-  'Gemfile.lock',
-  'gulpfile.js',
-  'README.md'
-]
+exclude:
+  [
+    "docs/",
+    "vendor/",
+    "LICENSE",
+    "CHANGELOG.md",
+    "jekflix.gemspec",
+    "package.json",
+    "package-lock.json",
+    "node_modules",
+    "initpost.sh",
+    "Gemfile",
+    "Gemfile.lock",
+    "gulpfile.js",
+    "README.md",
+  ]
 
 # Theme
 version: v3.1.2
