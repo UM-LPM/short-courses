@@ -6,14 +6,14 @@ layout: "course"
 id: "UPyN"
 permalink: "UPyN"
 author:
-- "Matej Kramberger"
 - "Nina Murks"
+- "Matej Kramberger"
 contact: "nina.murks@um.si"
 title: "Uvod v Python za neprogramerje"
 image: "https://images.unsplash.com/photo-1517148815978-75f6acaaf32c"
-type: "UM akreditirano manjše izobraževanje s preverjanjem"
+type: "Potrjeno krajše izobraževanje za podelitev mikrodokazila UM"
 field:
-- "Računalništvo in informatika"
+- "KLASIUS-P-16 (0610)"
 keywords:
 - "Python"
 - "sintaksa"
@@ -22,25 +22,16 @@ keywords:
 - "zanke"
 - "funkcije"
 intended:
-- "poklicno"
-- "učitelji"
-- "študenti"
-- "vseživljensko učenje"
-- "osipniki"
-- "dijaki"
+- "vsi"
 difficulty: "Začetni nivo"
 requisite: ""
 description: |
     Udeleženci bodo spoznali osnovne veščine programiranja v programskem jeziku Python. Spoznali bodo najosnovnejše koncepte programiranja kot so: spremenljivke, podatkovni tipi, pogojni stavki, zanke in funkcije. Izobraževanje bo sestavljeno iz teoretičnih in praktičnih pristopov, ter na takšen način opremil udeležence z zadostnim znanjem za samostojno nagrajevanje znanja iz programiranja.
-vs: ""
-uni: ""
-mag: ""
 state: "Predlog"
 execution: "Sinhrona"
 ects: "1"
 implementation: |
-    Predavanja: 12 ur
-    Računalniške vaje: 6 ur
-    Samostojno delo: 8 ur
-    Seminarske vaje: 4 ure
+    Predavanja: 10 ur
+    Vaje: 10  ur
+    Samostojno delo: 10 ur
 ---
