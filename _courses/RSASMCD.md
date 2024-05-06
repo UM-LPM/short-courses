@@ -8,6 +8,7 @@ permalink: "RSASMCD"
 author:
 - "Tomaž Kosar"
 - "Dragana Ostojić"
+- "Matej Črepinšek"
 contact: "tomaz.kosar@um.si"
 title: "Razvoj spletnih aplikacij s skladom MERN: čelni del"
 image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee"
