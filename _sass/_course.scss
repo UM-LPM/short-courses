@@ -119,7 +119,51 @@
     }
   }
 
+  button.course-button {
+    background-color: $themeColor;
+    padding: rem(12px);
+    border: rem(1px);
+    border-radius: rem(4px);
+    box-shadow: 0 4px 6px rgba(107, 107, 107, 0.8);
+
+    a {
+      color: $accentDark;
+      font-size: rem(16px);
+
+      &:hover {
+        color: $themeOrange;
+      }
+    }
+
+  }
+
   p.course-info {
+    @include mainFont(300);
+    font-size: rem(13px);
+    letter-spacing: 0;
+    color: darken($lightGray, 30%);
+    margin: 0 auto;
+
+    @include media(">=sm") {
+      margin-bottom: rem(10px);
+      font-size: rem(15px);
+    }
+
+    span,
+    time {
+      vertical-align: middle;
+    }
+
+    time {
+      margin-right: rem(10px);
+
+      @include media(">=sm") {
+        margin-right: rem(30px);
+      }
+    }
+  }
+
+  p.course-button {
     @include mainFont(300);
     font-size: rem(13px);
     letter-spacing: 0;
