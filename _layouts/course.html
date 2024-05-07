@@ -32,6 +32,12 @@
                         <svg id="clock" class="icon-clock"><use xlink:href="#icon-clock"></use></svg>
                         <span>{{ minutesText }}</span>
                     </p>
+                    <p class="course-button">
+                        {% if page.cType == "1" %}
+                        <button class="course-button"><a href="{{site.catalog_url}}{{page.id}}">Prijavite se in pokažite
+                                svoje zanimanje</a></button>
+                        {% endif %}
+                    </p>
                 </header>
                 <section>
                     <div class="box-info">
@@ -127,7 +133,13 @@
                                 </div>
                             </div>
                         </div>
-                    </div>                                                  
+                    </div>   
+                    <p style="text-align: center;"  class="course-button">
+                        {% if page.cType == "1" %}
+                        <button class="course-button"><a href="{{site.catalog_url}}{{page.id}}">Prijavite se in pokažite
+                                svoje zanimanje</a></button>
+                        {% endif %}
+                    </p>                                               
                 </section>                
                 {% include pagination-course.html %}
             </article>
