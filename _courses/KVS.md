@@ -32,4 +32,5 @@ ects: "1"
 implementation: |
     Predavanja: 10 ur
     Samostojno delo: 20 ur
+cType: "0"
 ---

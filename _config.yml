@@ -24,7 +24,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 google_analytics: "UA-XXXXXXXX-X"
 language: "si"
-catalog_url: "catalog_url"
+catalog_url: "https://katalog.krajsa-izobrazevanja.feri.um.si/#/catalog"
 
 # Build settings
 markdown: kramdown
