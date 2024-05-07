@@ -15,7 +15,8 @@
       "image": "{{ course.image}}",
       "difficulty": "{{ course.difficulty }}",
       "type": "{{ course.type }}",
-      "execution": "{{ course.execution }}"
+      "execution": "{{ course.execution }}",
+      "cType": "{{ course.cType }}"
     }{% unless forloop.last %},{% endunless %}
   {% endfor %}
 ]
