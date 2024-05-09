@@ -6,7 +6,6 @@
         {% include svg-icons.html %}
         {% include feri-header.html %}
         {% include header.html %}
-
         <section class="course {% if site.two_columns_layout %}two-columns{% else %}one-column{% endif %}">
             <article role="article" class="course-content">
                 <header>
@@ -35,6 +34,16 @@
                                 svoje zanimanje</a></button>
                         {% endif %}
                     </p>
+                    {% if page.executionStartDate and page.executionStartDate != "" %}
+                        {% assign executionDate = page.executionStartDate | date: "%Y-%m-%d" %}
+                        {% assign formattedExecutionDate = executionDate | date: "%d.%m.%Y" %}
+                        {% assign currentDate = 'now' | date: "%Y-%m-%d" %}
+                        {% if executionDate >= currentDate %}
+                            <p class="course-title">
+                                <b>Prva načrtovana izvedba: {{ formattedExecutionDate }}</b>
+                            </p>
+                        {% endif %}
+                    {% endif %}
                 </header>
                 <section>
                     <div class="box-info">
@@ -130,6 +139,22 @@
                                 </div>
                             </div>
                         </div>
+
+                        {% if page.executionStartDate and page.executionStartDate != "" %}
+                        {% assign executionDate = page.executionStartDate | date: "%Y-%m-%d" %}
+                        {% assign currentDate = 'now' | date: "%Y-%m-%d" %}
+                        {% if executionDate >= currentDate and page.executionData and page.executionData != "" %}
+                            <div class="icon-description-container">
+                                <div class="inside-icon-description">
+                                    <i class="fas fa-paperclip"></i>
+                                    <div class="description-data">
+                                        <p class="desc"><strong>Datumi izvedbe</strong></p>
+                                        <p>{{ page.executionData | newline_to_br | replace: "  ", "&nbsp;&nbsp;&nbsp;&nbsp;" }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endif %}
+                    {% endif %}
                     </div>   
                     <p style="text-align: center;"  class="course-button">
                         {% if page.cType == "1" %}
