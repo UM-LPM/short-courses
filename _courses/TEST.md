@@ -8,6 +8,7 @@ permalink: "TEST"
 author:
 - "Janez Novak"
 contact: "janez.novak@um.si"
+notifyEmail: "cvetankapasinecka@gmail.com"
 title: "Krajše izobraževanje"
 image: "https://unsplash.com/photos/fbi-woman-works-on-a-case-NxOQWmoYr9k"
 type: "Potrjeno krajše izobraževanje za podelitev mikrodokazila UM"
@@ -32,4 +33,8 @@ implementation: |
     Vaje: 2 ur
     Samostojno delo: 20 ur
 cType: "1"
+executionStartDate: "2024-06-17"
+executionData: |
+    Predavanja: 17. 6. in 18. 6. 
+    Vaje: 19. 6. in 20. 6.
 ---

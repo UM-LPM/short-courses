@@ -15,7 +15,10 @@
       "image": "{{ course.image}}",
       "difficulty": "{{ course.difficulty | replace: "š", "s" | replace: "č", "c" | replace: "ž", "z" | replace: "Š", "S" | replace: "Č", "C" | replace: "Ž", "Z" }}",
       "type": "{{ course.type | replace: "š", "s" | replace: "č", "c" | replace: "ž", "z" | replace: "Š", "S" | replace: "Č", "C" | replace: "Ž", "Z" }}",
-      "cType": "{{ course.cType }}"
+      "cType": "{{ course.cType }}",
+      {% if course.notifyEmail and course.notifyEmail != "" %}"notifyEmail": "{{ course.notifyEmail }}"{% else %}"notifyEmail": ""{% endif %},
+      {% if course.executionStartDate and course.executionStartDate != "" %}"executionStartDate": "{{ course.executionStartDate }}"{% else %}"executionStartDate": ""{% endif %},
+      {% if course.executionData and course.executionData != "" %}"executionData": "{{ course.executionData | replace: "š", "s" | replace: "č", "c" | replace: "ž", "z" | replace: "Š", "S" | replace: "Č", "C" | replace: "Ž", "Z" | strip_newlines | replace: '"', '\"' }}"{% else %}"executionData": ""{% endif %}
     }{% unless forloop.last %},{% endunless %}
   {% endfor %}
 ]
