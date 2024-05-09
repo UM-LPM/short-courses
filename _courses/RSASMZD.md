@@ -9,6 +9,7 @@ author:
 - "Tomaž Kosar"
 - "Dragana Ostojić"
 contact: "tomaz.kosar@um.si"
+notifyEmail: "cvetankapasinecka@gmail.com"
 title: "Razvoj spletnih aplikacij s skladom MERN: zaledni del"
 image: "https://images.unsplash.com/photo-1511376777868-611b54f68947"
 type: "Potrjeno krajše izobraževanje za podelitev mikrodokazila UM"

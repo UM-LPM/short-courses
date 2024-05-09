@@ -16,7 +16,10 @@
       "difficulty": "{{ course.difficulty }}",
       "type": "{{ course.type }}",
       "execution": "{{ course.execution }}",
-      "cType": "{{ course.cType }}"
+      "cType": "{{ course.cType }}",
+      {% if course.notifyEmail and course.notifyEmail != "" %}"notifyEmail": "{{ course.notifyEmail }}"{% else %}"notifyEmail": ""{% endif %},
+      {% if course.executionStartDate and course.executionStartDate != "" %}"executionStartDate": "{{ course.executionStartDate }}"{% else %}"executionStartDate": ""{% endif %},
+      {% if course.executionData and course.executionData != "" %}"executionData": "{{ course.executionData | strip_newlines | replace: '"', '\"' }}"{% else %}"executionData": ""{% endif %}
     }{% unless forloop.last %},{% endunless %}
   {% endfor %}
 ]

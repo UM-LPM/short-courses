@@ -9,6 +9,7 @@ author:
 - "Nina Murks"
 - "Matej Kramberger"
 contact: "nina.murks@um.si"
+notifyEmail: "nina.murks@um.si"
 title: "Uvod v Python za neprogramerje"
 image: "https://images.unsplash.com/photo-1517148815978-75f6acaaf32c"
 type: "Potrjeno krajše izobraževanje za podelitev mikrodokazila UM"

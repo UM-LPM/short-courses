@@ -8,6 +8,7 @@ permalink: "USUO"
 author:
 - "Damjan Strnad"
 contact: "damjan.strnad@um.si"
+notifyEmail: "damjan.strnad@um.si"
 title: "Uvod v strojno učenje z orodjem Orange"
 image: "https://pmd.lpm.feri.um.si/assets/img/1024/USU.jpeg"
 type: "Potrjeno krajše izobraževanje za podelitev mikrodokazila UM"
@@ -36,4 +37,8 @@ implementation: |
     Vaje: 6 ur
     Samostojno delo: 20 ur
 cType: "1"
+executionStartDate: "2024-06-17"
+executionData: |
+    Predavanja: 17. 6. in 18. 6. 
+    Vaje: 19. 6. in 20. 6.
 ---
