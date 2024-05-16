@@ -11,7 +11,7 @@ contact: "muhamed.turkanovic@um.si"
 notifyEmail: "cvetankapasinecka@gmail.com"
 title: "Identifikacija, overjanje in blockchain"
 image: "https://unsplash.com/photos/black-flat-screen-computer-monitor-bMvuh0YQQ68"
-type: "Potrjeno krajše izobraževanje za podelitev mikrodokazila UM"
+type: "Krajše izobraževanje"
 field:
 - "KLASIUS-P-16 (0610)"
 keywords:

@@ -12,7 +12,7 @@ author:
 contact: "muhamed.turkanovic@um.si"
 title: "Kibernetska varnost za vsakdan"
 image: "https://www.pexels.com/photo/black-android-smartphone-on-top-of-white-book-39584/"
-type: "Potrjeno krajše izobraževanje za podelitev mikrodokazila UM"
+type: "Krajše izobraževanje"
 field:
 - "KLASIUS-P-16 (0610)"
 keywords:
