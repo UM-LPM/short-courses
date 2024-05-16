@@ -12,7 +12,7 @@ contact: "tomaz.kosar@um.si"
 notifyEmail: "cvetankapasinecka@gmail.com"
 title: "Razvoj spletnih aplikacij s skladom MERN: čelni del"
 image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee"
-type: "Potrjeno krajše izobraževanje za podelitev mikrodokazila UM"
+type: "Krajše izobraževanje"
 field:
 - "KLASIUS-P-16 (0610)"
 keywords:
@@ -33,7 +33,7 @@ execution: "Asinhrona"
 ects: "1"
 implementation: |
     Predavanja: 10 ur
-    Vaje: 10  ur
+    Vaje: 10 ur
     Samostojno delo: 10 ur
 cType: "1"
 ---

@@ -12,7 +12,7 @@ contact: "muhamed.turkanovic@um.si"
 notifyEmail: "cvetankapasinecka@gmail.com"
 title: "Spletna varnost in vdorno testiranje"
 image: "https://unsplash.com/photos/closeup-photo-of-eyeglasses-w7ZyuGYNpRQ"
-type: "Potrjeno krajše izobraževanje za podelitev mikrodokazila UM"
+type: "Krajše izobraževanje"
 field:
 - "KLASIUS-P-16 (0610)"
 keywords:

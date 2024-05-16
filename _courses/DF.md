@@ -10,7 +10,7 @@ author:
 contact: "muhamed.turkanovic@um.si"
 title: "Digitalna forenzika"
 image: "https://unsplash.com/photos/fbi-woman-works-on-a-case-NxOQWmoYr9k"
-type: "Potrjeno krajše izobraževanje za podelitev mikrodokazila UM"
+type: "Krajše izobraževanje"
 field:
 - "KLASIUS-P-16 (0610)"
 keywords:

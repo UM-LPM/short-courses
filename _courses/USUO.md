@@ -11,7 +11,7 @@ contact: "damjan.strnad@um.si"
 notifyEmail: "damjan.strnad@um.si"
 title: "Uvod v strojno učenje z orodjem Orange"
 image: "https://pmd.lpm.feri.um.si/assets/img/1024/USU.jpeg"
-type: "Potrjeno krajše izobraževanje za podelitev mikrodokazila UM"
+type: "Krajše izobraževanje"
 field:
 - "KLASIUS-P-16 (0610)"
 keywords:

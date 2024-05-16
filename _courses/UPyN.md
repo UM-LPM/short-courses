@@ -12,7 +12,7 @@ contact: "nina.murks@um.si"
 notifyEmail: "nina.murks@um.si"
 title: "Uvod v Python za neprogramerje"
 image: "https://images.unsplash.com/photo-1517148815978-75f6acaaf32c"
-type: "Potrjeno krajše izobraževanje za podelitev mikrodokazila UM"
+type: "Krajše izobraževanje"
 field:
 - "KLASIUS-P-16 (0610)"
 keywords:
@@ -33,7 +33,7 @@ execution: "Sinhrona"
 ects: "1"
 implementation: |
     Predavanja: 10 ur
-    Vaje: 10  ur
+    Vaje: 10 ur
     Samostojno delo: 10 ur
 cType: "0"
 ---

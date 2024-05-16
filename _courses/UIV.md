@@ -10,7 +10,7 @@ author:
 contact: "muhamed.turkanovic@um.si"
 title: "Upravljanje informacijske varnosti"
 image: "https://unsplash.com/photos/person-holding-pencil-near-laptop-computer-5fNmWej4tAA"
-type: "Potrjeno krajše izobraževanje za podelitev mikrodokazila UM"
+type: "Krajše izobraževanje"
 field:
 - "KLASIUS-P-16 (0610)"
 keywords:
