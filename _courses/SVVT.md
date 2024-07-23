@@ -9,7 +9,7 @@ author:
 - "Marko Hölbl"
 - "Muhamed Turkanović"
 contact: "muhamed.turkanovic@um.si"
-notifyEmail: "cvetankapasinecka@gmail.com"
+notifyEmail: "cvetanka.pasinechka@student.um.si"
 title: "Spletna varnost in vdorno testiranje"
 image: "https://unsplash.com/photos/closeup-photo-of-eyeglasses-w7ZyuGYNpRQ"
 type: "Krajše izobraževanje"
