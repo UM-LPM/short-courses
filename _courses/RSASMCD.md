@@ -9,7 +9,7 @@ author:
 - "Tomaž Kosar"
 - "Dragana Ostojić"
 contact: "tomaz.kosar@um.si"
-notifyEmail: "cvetankapasinecka@gmail.com"
+notifyEmail: "cvetanka.pasinechka@student.um.si"
 title: "Razvoj spletnih aplikacij s skladom MERN: čelni del"
 image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee"
 type: "Krajše izobraževanje"
