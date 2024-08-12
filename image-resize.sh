@@ -20,22 +20,31 @@ if [ ! -d "$DEST_DIR_256" ]; then
     mkdir -p "$DEST_DIR_256"
 fi
 
+resize_image() {
+    local img="$1"
+    local dest_dir="$2"
+    local size="$3"
+    local filename=$(basename "$img")
+    local dest_path="$dest_dir/$filename"
+
+    if [ ! -f "$dest_path" ]; then
+        echo "Resizing $filename to $size"
+        magick "$img" -resize "${size}x" "$dest_path"
+    else
+        echo "$filename already exists in $dest_dir, skipping resize."
+    fi
+}
+
 for img in "$SRC_DIR"/*; do
-    filename=$(basename "$img")
-    echo "Resizing $filename"
-    magick "$img" -resize 1024x "$DEST_DIR_1024/$filename"
+    resize_image "$img" "$DEST_DIR_1024" 1024
 done
 
 for img in "$SRC_DIR"/*; do
-    filename=$(basename "$img")
-    echo "Resizing $filename"
-    magick "$img" -resize 512x "$DEST_DIR_512/$filename"
+    resize_image "$img" "$DEST_DIR_512" 512
 done
 
 for img in "$SRC_DIR"/*; do
-    filename=$(basename "$img")
-    echo "Resizing $filename"
-    magick "$img" -resize 256x "$DEST_DIR_256/$filename"
+    resize_image "$img" "$DEST_DIR_256" 256
 done
 
 echo "Resizing completed."
