@@ -1,35 +1,3 @@
-@font-face {
-    font-family: 'Open Sans';
-    font-weight: 300;
-    font-style: normal;
-    src: local('Open Sans Light'), local('OpenSans-Light'), url('/site/templates/fonts/OpenSans-Light.woff') format('woff'), url('/site/templates/fonts/OpenSans-Light.ttf') format('truetype');
-    font-display:swap
-}
-
-@font-face {
-    font-family: 'Open Sans';
-    font-weight: 400;
-    font-style: normal;
-    src: local('Open Sans'), local('OpenSans'), url('/site/templates/fonts/OpenSans-Regular.woff') format('woff'), url('/site/templates/fonts/OpenSans-Regular.ttf') format('truetype');
-    font-display:swap
-}
-
-@font-face {
-    font-family: 'Open Sans';
-    font-weight: 600;
-    font-style: normal;
-    src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url('/site/templates/fonts/OpenSans-Semibold.woff') format('woff'), url('/site/templates/fonts/OpenSans-Semibold.ttf') format('truetype');
-    font-display:swap
-}
-
-@font-face {
-    font-family: 'FontAwesome';
-    font-weight: normal;
-    font-style: normal;
-    src: url('/site/templates/fonts/fontawesome-webfont.woff') format('woff'), url('/site/templates/fonts/fontawesome-webfont.ttf') format('truetype');
-    font-display:swap
-}
-
 .meni-small {
     display: none !important
 }
@@ -281,7 +249,8 @@ header, #content{
     font-weight: 300;
     text-decoration: none;
     padding: 0 .722em;
-    display:block
+    display:block;
+    font-family: Sana;
 }
 
 #main-nav li.active a {
@@ -312,7 +281,8 @@ header, #content{
     height: 3.2em;
     text-decoration: none;
     padding: 0 1em;
-    display:block
+    display:block;
+    font-family: Sana
 }
 
 #theme-selector {
@@ -359,7 +329,8 @@ header, #content{
 
     .side-nav li a {
         font-size: 1em;
-        padding:.5em 1em
+        padding:.5em 1em;
+        font-family: Sana
     }
 
     #header-logos {
