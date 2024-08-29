@@ -39,7 +39,7 @@ execution: "Mešana"
 ects: "1"
 implementation: |
     Predavanja: 10 ur
-    Vaje: 10  ur
+    Vaje: 10 ur
     Samostojno delo: 10 ur
 cType: "1"
 executionStartDate: "2024-10-14"
