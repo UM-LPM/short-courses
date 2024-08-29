@@ -1,7 +1,7 @@
 ---
 date: "2024-08-12" 
-version: "0.1.0"
-lastUpdate: "2024-08-12 14:00:00"
+version: "0.1.1"
+lastUpdate: "2024-08-29 14:00:00"
 layout: "course"
 id: "GNMPODS"
 permalink: "GNMPODS"
@@ -9,8 +9,8 @@ author:
 - "Martin Šavc"
 - "Uroš Mlakar"
 - "Božidar Potočnik"
-contact: "bozidar.potocnik@um.si"
-notifyEmail: "bozidar.potocnik@um.si"
+contact: "uros.mlakar@um.si"
+notifyEmail: "uros.mlakar@um.si"
 title: "Globoke nevronske mreže in prepoznavanje objektov v digitalnih slikah"
 image: "https://images.unsplash.com/photo-1517148815978-75f6acaaf32c"
 type: "UM akreditirano manjše izobraževanje s preverjanjem"
@@ -38,7 +38,7 @@ implementation: |
     Vaje: 6 ur
     Samostojno delo: 18 ur
 cType: "1"
-executionStartDate: "2024-10-01"
+executionStartDate: "2024-11-11"
 executionData: |
-    Začetek je načtrovan za Oktober. Bolj natančne informacije bodo objavljene pozneje.
+    Začetek je načrtovan za November. Bolj natančne informacije bodo objavljene pozneje.
 ---
