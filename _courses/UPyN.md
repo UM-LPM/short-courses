@@ -50,7 +50,7 @@ executionData: |
     20. 10. 2024 ob 16:00-19:00
     23. 10. 2024 ob 16:00-17:30
     25. 10. 2024 ob 16:00-17:30
-    
+questions: |
     Ali vam predpisani termini ustrezajo? Če ne, prosim predlagajte ustreznejše (pisni odgovor)
     Ali imate lasten prenosni računalnik na katerem lahko delate tekom izobraževanja?
 ---
