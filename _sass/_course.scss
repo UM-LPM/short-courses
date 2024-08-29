@@ -129,6 +129,7 @@
     a {
       color: $accentDark;
       font-size: rem(16px);
+      font-family: "Titillium Web", "Helvetica Neue", Helvetica, sans-serif;
 
       &:hover {
         color: $themeOrange;
@@ -169,6 +170,7 @@
     letter-spacing: 0;
     color: darken($lightGray, 30%);
     margin: 0 auto;
+    margin-top: rem(10px);
 
     @include media(">=sm") {
       margin-bottom: rem(40px);
@@ -323,7 +325,7 @@
   .data-container{
     display: flex; 
     flex-direction: column; 
-    width: 100%; 
+    width: 90%; 
     margin-top: 5%; 
     margin-left: 5%;
 
@@ -723,6 +725,8 @@
     margin-top: rem(30px);
     letter-spacing: 0.025rem;
     line-height: rem(40px);
+    margin-left: rem(20px);
+    margin-right: rem(20px);
     padding: 0 rem(5px);
 
     @include media(">=sm") {
@@ -836,6 +840,7 @@
   transition: border-color 0.3s ease; 
   padding: 10px;
   margin: 5%;
+  font-family: "Titillium Web", "Helvetica Neue", Helvetica, sans-serif;
 
   @include media("<=sm") {
     padding: 4px;
@@ -852,6 +857,7 @@
 
   p {
     color: $themeColor;
+    
   }
   
   a {
