@@ -1,7 +1,7 @@
 ---
 date: "2024-08-12" 
-version: "0.1.0"
-lastUpdate: "2024-08-12 14:00:00"
+version: "0.1.1"
+lastUpdate: "2024-08-29 14:00:00"
 layout: "course"
 id: "UKP"
 permalink: "UKP"
@@ -9,7 +9,7 @@ author:
 - "Aleš Holobar"
 - "Matej Kramberger"
 - "Nina Murks"
-contact: "ales.holobar@um.si"
+contact: "nina.murks@um.si"
 notifyEmail: "cvetanka.pasinechka@student.um.si"
 title: "Uvod v kvantno programiranje"
 image: "https://images.unsplash.com/photo-1517148815978-75f6acaaf32c"
@@ -43,5 +43,5 @@ implementation: |
 cType: "1"
 executionStartDate: "2024-12-01"
 executionData: |
-    Začetek je načtrovan za December. Bolj natančne informacije bodo objavljene pozneje.
+    Začetek je načrtovan za December. Bolj natančne informacije bodo objavljene pozneje.
 ---

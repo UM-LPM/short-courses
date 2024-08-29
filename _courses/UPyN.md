@@ -1,7 +1,7 @@
 ---
-date: "2024-03-09" 
+date: "2024-01-01" 
 version: "0.1.2"
-lastUpdate: "2024-08-12 14:00:00"
+lastUpdate: "2024-08-29 13:00:00"
 layout: "course"
 id: "UPyN"
 permalink: "UPyN"
@@ -39,10 +39,18 @@ execution: "Mešana"
 ects: "1"
 implementation: |
     Predavanja: 10 ur
-    Vaje: 10 ur
+    Vaje: 10  ur
     Samostojno delo: 10 ur
 cType: "1"
-executionStartDate: "2024-10-01"
+executionStartDate: "2024-10-14"
 executionData: |
-    Začetek je načtrovan za Oktober. Bolj natančne informacije bodo objavljene pozneje.
+    14. 10. 2024 ob 16:00-19:00 
+    16. 10. 2024 ob 16:00-19:00 
+    18. 10. 2024 ob 16:00-19:00 
+    20. 10. 2024 ob 16:00-19:00
+    23. 10. 2024 ob 16:00-17:30
+    25. 10. 2024 ob 16:00-17:30
+    
+    Ali vam predpisani termini ustrezajo? Če ne, prosim predlagajte ustreznejše (pisni odgovor)
+    Ali imate lasten prenosni računalnik na katerem lahko delate tekom izobraževanja?
 ---
