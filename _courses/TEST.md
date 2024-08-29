@@ -37,4 +37,7 @@ executionStartDate: "2024-06-17"
 executionData: |
     Predavanja: 17. 6. in 18. 6. 
     Vaje: 19. 6. in 20. 6.
+questions: |
+    Ali..?
+    Če...?
 ---
