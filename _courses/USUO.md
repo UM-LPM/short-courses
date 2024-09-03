@@ -29,7 +29,7 @@ difficulty: "Začetni nivo"
 requisite: ""
 description: |
     Cilj izobraževanja je seznaniti udeležence s teoretičnimi osnovami in praktično izvedbo strojnega učenja z orodjem Orange. Udeleženci se bodo seznanili s posameznimi koraki strojnega učenja, ki vključujejo pripravo podatkov, izbiro, učenje in gradnjo klasifikacijskih in regresijskih modelov ter njihovo validacijo. Pridobljeno teoretično znanje bodo uporabili za izgradnjo enega ali več napovednih modelov v programskem orodju Orange.
-state: "1. pilotna izvedba"
+state: "2. pilotna izvedba"
 execution: "Sinhrona"
 ects: "1"
 implementation: |
