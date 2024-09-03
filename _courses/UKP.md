@@ -13,7 +13,7 @@ contact: "nina.murks@um.si"
 notifyEmail: "cvetanka.pasinechka@student.um.si"
 title: "Uvod v kvantno programiranje"
 image: "https://images.unsplash.com/photo-1517148815978-75f6acaaf32c"
-type: "UM akreditirano krajše izobraževanje s preverjanjem"
+type: "Krajše izobraževanje s preverjanjem (pilotno mikrodokazilo)"
 field:
 - "KLASIUS-P-16 (0610)"
 keywords:
