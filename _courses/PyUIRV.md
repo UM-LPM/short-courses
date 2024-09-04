@@ -1,14 +1,14 @@
 ---
 date: "2024-08-12" 
 version: "0.1.1"
-lastUpdate: "2024-08-29 14:00:00"
+lastUpdate: "2024-09-04 16:00:00"
 layout: "course"
 id: "PyUIRV"
 permalink: "PyUIRV"
 author:
-- "Matej Kramberger"
+- "Dr. Matej Kramberger"
 - "Nina Murks"
-- "Matjaž Divjak"
+- "dr. Matjaž Divjak"
 contact: "nina.murks@um.si"
 notifyEmail: "cvetanka.pasinechka@student.um.si"
 title: "Python in umetna inteligenca z aplikacijami v razpoznavanju vzorcev"
@@ -32,7 +32,7 @@ intended:
 difficulty: "Začetni nivo"
 requisite: "Uvod v Python za neprogramerje"
 description: |
-    Udeleženci izobraževanja se bodo skozi programski jezik Python in razpoznavanje vzorcev spoznali z osnovami strojnega učenja in globokih nevronskih mrež. Spoznali bodo osnove nevromorfnih arhitektur, ki prinašajo revolucijo na področje računalništva in umetne inteligence. Seznanili se bodo s postopki programiranja globokih nevronskih mrež in pridobili razumevanje osnovnih konceptov razpoznavanja slik in zvoka z umetno inteligenco. Po pregledu klasičnih metod za signalno procesiranje in uporabnih modelov nevronskih mrež za delo s signali in slikami bodo udeleženci čez primere klasifikacije žanra glasbe, identifikacije govorcev in odstranjevanja šuma iz glasovnih posnetkov spoznali razlike med klasičnimi pristopi in pristopi z uporabo umetne inteligence.
+    Udeleženci izobraževanja se bodo s pomočjo programskega jezika Python in algoritmov razpoznavanja vzorcev spoznali z osnovami strojnega učenja in globokih nevronskih mrež. Spoznali bodo osnove nevromorfnih arhitektur, ki prinašajo revolucijo na področje računalništva in umetne inteligence. Seznanili se bodo s postopki programiranja globokih nevronskih mrež in pridobili razumevanje osnovnih konceptov postopkov razpoznavanja slik in zvoka z umetno inteligenco. Po pregledu klasičnih metod za signalno procesiranje in uporabnih modelov nevronskih mrež za delo s signali in slikami bodo udeleženci s pomočjo primerov klasifikacije žanra glasbe, identifikacije govorcev in odstranjevanja šuma iz glasovnih posnetkov, spoznali razlike med klasičnimi pristopi in pristopi z uporabo umetne inteligence.
 state: "1. pilotna izvedba"
 execution: "Mešana"
 ects: "1"
@@ -43,5 +43,5 @@ implementation: |
 cType: "1"
 executionStartDate: "2024-10-01"
 executionData: |
-    Začetek je načrtovan za Oktober. Bolj natančne informacije bodo objavljene pozneje.
+    Začetek je načrtovan v oktobru 2024. Podrobnejše informacije bodo objavljene naknadno.
 ---
