@@ -1,14 +1,14 @@
 ---
 date: "2024-08-12" 
 version: "0.1.1"
-lastUpdate: "2024-08-29 14:00:00"
+lastUpdate: "2024-09-04 16:00:00"
 layout: "course"
 id: "GNMPODS"
 permalink: "GNMPODS"
 author:
-- "Martin Šavc"
-- "Uroš Mlakar"
-- "Božidar Potočnik"
+- "Dr. Martin Šavc"
+- "doc. dr. Uroš Mlakar"
+- "izr. prof. dr. Božidar Potočnik"
 contact: "uros.mlakar@um.si"
 notifyEmail: "uros.mlakar@um.si"
 title: "Globoke nevronske mreže in prepoznavanje objektov v digitalnih slikah"
@@ -40,5 +40,5 @@ implementation: |
 cType: "1"
 executionStartDate: "2024-11-11"
 executionData: |
-    Začetek je načrtovan za November. Bolj natančne informacije bodo objavljene pozneje.
+    Začetek je načrtovan v novembru 2024. Podrobnejše informacije bodo objavljene naknadno.
 ---

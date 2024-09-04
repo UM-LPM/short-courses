@@ -1,13 +1,13 @@
 ---
 date: "2024-08-12" 
 version: "0.1.1"
-lastUpdate: "2024-08-29 14:00:00"
+lastUpdate: "2024-09-04 16:00:00"
 layout: "course"
 id: "UKP"
 permalink: "UKP"
 author:
-- "Aleš Holobar"
-- "Matej Kramberger"
+- "Prof. dr. Aleš Holobar"
+- "dr. Matej Kramberger"
 - "Nina Murks"
 contact: "nina.murks@um.si"
 notifyEmail: "nina.murks@um.si"
@@ -43,5 +43,5 @@ implementation: |
 cType: "1"
 executionStartDate: "2024-12-01"
 executionData: |
-    Začetek je načrtovan za December. Bolj natančne informacije bodo objavljene pozneje.
+    Začetek je načrtovan v decembru 2024. Podrobnejše informacije bodo objavljene naknadno.
 ---
