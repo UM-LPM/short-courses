@@ -84,15 +84,17 @@
                                 </div>
                             </div>
                         </div>
+                        {% if page.requisite != '' %}
                         <div class="icon-description-container">
                             <div class="inside-icon-description">
                                 <i class="fas fa-paperclip"></i>
                                 <div class="description-data">
                                     <p class="desc"><strong>Priporočeno predhodno izobraževanje</strong></p>
-                                    <p>{% if page.requisite != '' %}{{ page.requisite }}{% else %}➖{% endif %}</p>
+                                    <p>{{ page.requisite }}</p>
                                 </div>
                             </div>
                         </div>
+                        {% endif %}
                         <div class="icon-description-container">
                             <div class="inside-icon-description">
                                 <i class="fas fa-paperclip"></i>
