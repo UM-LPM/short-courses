@@ -36,4 +36,7 @@ implementation: |
     Vaje: 10 ur
     Samostojno delo: 10 ur
 cType: "1"
+executionStartDate: "2024-10-14"
+executionData: |
+    Začetek je načrtovan 14.10.2024 ob 16. uri v DELTA.
 ---
