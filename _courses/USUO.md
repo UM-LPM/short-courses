@@ -37,8 +37,7 @@ implementation: |
     Vaje: 6 ur
     Samostojno delo: 20 ur
 cType: "1"
-executionStartDate: "2024-06-17"
+executionStartDate: "2024-11-04"
 executionData: |
-    Predavanja: 17. 6. in 18. 6. 
-    Vaje: 19. 6. in 20. 6.
+    Izvedba v času od 4. 11. do 7. 11. 2024.
 ---
