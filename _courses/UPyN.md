@@ -44,5 +44,10 @@ implementation: |
 cType: "1"
 executionStartDate: "2024-10-14"
 executionData: |
-    Pričetek 14. 10. 2024; 6 terminov v popoldanskem času.
+    14. 10. 2024 ob 16:00-19:00h
+    17. 10. 2024 ob 16:00-19:00h
+    18. 10. 2024 ob 16:00-19:00h
+    21. 10. 2024 ob 16:00-19:00h
+    24. 10. 2024 ob 16:00-17:30h
+    25. 10. 2024 ob 16:00-17:30h
 ---
