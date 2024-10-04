@@ -45,5 +45,5 @@ cType: "1"
 executionStartDate: "2024-10-14"
 executionData: |
     Pričetek 14. 10. 2024; 6 terminov v popoldanskem času.
-filledCourse: "true"
+filledCourse: true
 ---
