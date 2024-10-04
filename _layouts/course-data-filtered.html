@@ -19,7 +19,8 @@
       {% if course.notifyEmail and course.notifyEmail != "" %}"notifyEmail": "{{ course.notifyEmail }}"{% else %}"notifyEmail": ""{% endif %},
       {% if course.executionStartDate and course.executionStartDate != "" %}"executionStartDate": "{{ course.executionStartDate }}"{% else %}"executionStartDate": ""{% endif %},
       {% if course.executionData and course.executionData != "" %}"executionData": "{{ course.executionData | replace: "š", "s" | replace: "č", "c" | replace: "ž", "z" | replace: "Š", "S" | replace: "Č", "C" | replace: "Ž", "Z" | strip_newlines | replace: '"', '\"' }}"{% else %}"executionData": ""{% endif %},
-      {% if course.questions and course.questions != "" %}"questions": "{{ course.questions | newline_to_br | strip_newlines | replace: '  ', '\\n' | replace: '"', '\"' | replace: "š", "s" | replace: "č", "c" | replace: "ž", "z" | replace: "Š", "S" | replace: "Č", "C" | replace: "Ž", "Z" }}"{% else %}"questions": ""{% endif %}
+      {% if course.questions and course.questions != "" %}"questions": "{{ course.questions | newline_to_br | strip_newlines | replace: '  ', '\\n' | replace: '"', '\"' | replace: "š", "s" | replace: "č", "c" | replace: "ž", "z" | replace: "Š", "S" | replace: "Č", "C" | replace: "Ž", "Z" }}"{% else %}"questions": ""{% endif %},
+      {% if course.filledCourse and course.filledCourse != "" %}"filledCourse": "{{ course.filledCourse }}"{% else %}"filledCourse": "false"{% endif %}
     }{% unless forloop.last %},{% endunless %}
   {% endfor %}
 ]
