@@ -50,4 +50,5 @@ executionData: |
     21. 10. 2024 ob 16:00-19:00h
     24. 10. 2024 ob 16:00-17:30h
     25. 10. 2024 ob 16:00-17:30h
+filledCourse: true
 ---
