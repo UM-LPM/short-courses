@@ -8,9 +8,11 @@ permalink: "TEST"
 author:
 - "Janez Novak"
 contact: "janez.novak@um.si"
-notifyEmail: 
-- "test@gmail.com"
-- "test@student.um.si"
+notifyData:
+  - notifyEmail: "test@gmail.com"
+    notify: true
+  - notifyEmail: "test@student.um.si"
+    notify: false
 title: "Krajše izobraževanje"
 image: "https://unsplash.com/photos/fbi-woman-works-on-a-case-NxOQWmoYr9k"
 type: "Potrjeno krajše izobraževanje za podelitev mikrodokazila UM"
