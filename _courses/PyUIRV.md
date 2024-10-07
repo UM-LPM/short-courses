@@ -10,8 +10,9 @@ author:
 - "Nina Murks"
 - "dr. Matjaž Divjak"
 contact: "nina.murks@um.si"
-notifyEmail: 
-- "cvetanka.pasinechka@student.um.si"
+notifyData:
+  - notifyEmail: "cvetanka.pasinechka@student.um.si"
+    notify: true
 title: "Python in umetna inteligenca z aplikacijami v razpoznavanju vzorcev"
 image: "https://images.unsplash.com/photo-1517148815978-75f6acaaf32c"
 type: "Krajše izobraževanje s preverjanjem (pilotno mikrodokazilo)"
