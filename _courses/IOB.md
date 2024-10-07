@@ -8,7 +8,9 @@ permalink: "IOB"
 author:
 - "Muhamed Turkanović"
 contact: "muhamed.turkanovic@um.si"
-notifyEmail: "muhamed.turkanovic@um.si"
+notifyData:
+  - notifyEmail: "muhamed.turkanovic@um.si"
+    notify: true
 title: "Identifikacija, overjanje in blockchain"
 image: "https://unsplash.com/photos/black-flat-screen-computer-monitor-bMvuh0YQQ68"
 type: "Krajše izobraževanje"

@@ -8,7 +8,11 @@ permalink: "USUO"
 author:
 - "Damjan Strnad"
 contact: "damjan.strnad@um.si"
-notifyEmail: "damjan.strnad@um.si"
+notifyData:
+  - notifyEmail: "damjan.strnad@um.si"
+    notify: true
+  - notifyEmail: "cvetanka.pasinechka@student.um.si"
+    notify: false
 title: "Uvod v strojno učenje z orodjem Orange"
 image: "https://pmd.lpm.feri.um.si/assets/img/1024/USU.jpeg"
 type: "Krajše izobraževanje"
