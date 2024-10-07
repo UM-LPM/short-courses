@@ -10,7 +10,8 @@ author:
 - "dr. Matej Kramberger"
 - "Nina Murks"
 contact: "nina.murks@um.si"
-notifyEmail: "cvetanka.pasinechka@student.um.si"
+notifyEmail: 
+- "cvetanka.pasinechka@student.um.si"
 title: "Uvod v kvantno programiranje"
 image: "https://images.unsplash.com/photo-1517148815978-75f6acaaf32c"
 type: "Krajše izobraževanje s preverjanjem (pilotno mikrodokazilo)"
