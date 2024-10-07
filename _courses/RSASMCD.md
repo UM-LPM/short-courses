@@ -16,7 +16,7 @@ notifyData:
   - notifyEmail: "cvetanka.pasinechka@student.um.si"
     notify: true
   - notifyEmail: "ziga.leber@um.si"
-    notify: true
+    notify: false
 title: "Razvoj spletnih aplikacij s skladom MERN: čelni del"
 image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee"
 type: "Krajše izobraževanje"
