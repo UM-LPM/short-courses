@@ -44,5 +44,7 @@ implementation: |
 cType: "1"
 executionStartDate: "2024-10-14"
 executionData: |
-    Začetek je načrtovan 14.10.2024 ob 16. uri v DELTA.
+    ▪ 1. predavanje: ponedeljek, 14. 10. 2024, 16.00, učilnica DELTA
+    ▪ 2. predavanje: sreda, 16. 10. 2024, 12.00, učilnica F-201
+    ▪ 3. predavanje: še ni datuma
 ---
