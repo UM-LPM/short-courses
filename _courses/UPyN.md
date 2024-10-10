@@ -6,7 +6,7 @@ layout: "course"
 id: "UPyN"
 permalink: "UPyN"
 author:
-- "Dr. Aleš Holobar"
+- "Red. prof. dr. Aleš Holobar"
 - "Nina Murks"
 - "dr. Matej Kramberger"
 contact: "nina.murks@um.si"
