@@ -6,7 +6,7 @@ layout: "course"
 id: "PSMPI"
 permalink: "PSMPI"
 author:
-- "Doc. dr. BORKO BOŠKOVIĆ"
+- "Doc. dr. Borko Bošković"
 - "red. prof. dr. Janez Brest"
 contact: "borko.boskovic@um.si"
 notifyData:
