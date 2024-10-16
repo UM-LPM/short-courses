@@ -6,7 +6,7 @@ layout: "course"
 id: "UIV"
 permalink: "UIV"
 author:
-- "Lili Nemec Zlatolas"
+- "Doc. dr. Lili Nemec Zlatolas"
 contact: "muhamed.turkanovic@um.si"
 title: "Upravljanje informacijske varnosti"
 image: "https://unsplash.com/photos/person-holding-pencil-near-laptop-computer-5fNmWej4tAA"

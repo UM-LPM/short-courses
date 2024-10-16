@@ -6,7 +6,7 @@ layout: "course"
 id: "USUO"
 permalink: "USUO"
 author:
-- "Damjan Strnad"
+- "Izr. prof. dr. Damjan Strnad"
 contact: "damjan.strnad@um.si"
 notifyData:
   - notifyEmail: "damjan.strnad@um.si"

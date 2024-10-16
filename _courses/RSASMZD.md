@@ -6,8 +6,8 @@ layout: "course"
 id: "RSASMZD"
 permalink: "RSASMZD"
 author:
-- "Tomaž Kosar"
-- "Dragana Ostojić"
+- "Izr. prof. dr. Tomaž Kosar"
+- "asist. Dragana Ostojić"
 contact: "tomaz.kosar@um.si"
 notifyData:
   - notifyEmail: "dragana.ostojic@um.si"

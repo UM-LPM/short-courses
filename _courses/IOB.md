@@ -6,7 +6,7 @@ layout: "course"
 id: "IOB"
 permalink: "IOB"
 author:
-- "Muhamed Turkanović"
+- "Izr. prof. dr. Muhamed Turkanović"
 contact: "muhamed.turkanovic@um.si"
 notifyData:
   - notifyEmail: "muhamed.turkanovic@um.si"

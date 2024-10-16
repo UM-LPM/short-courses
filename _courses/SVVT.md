@@ -6,8 +6,8 @@ layout: "course"
 id: "SVVT"
 permalink: "SVVT"
 author:
-- "Marko Hölbl"
-- "Muhamed Turkanović"
+- "Izr. prof. dr. Marko Hölbl"
+- "izr. prof. dr. Muhamed Turkanović"
 contact: "muhamed.turkanovic@um.si"
 notifyData:
   - notifyEmail: "muhamed.turkanovic@um.si"
