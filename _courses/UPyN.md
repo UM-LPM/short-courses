@@ -38,14 +38,14 @@ intended:
 difficulty: "Začetni nivo"
 requisite: ""
 description: |
-    Udeleženci bodo spoznali osnovne veščine programiranja v programskem jeziku Python. Spoznali bodo najosnovnejše koncepte programiranja kot so: spremenljivke, podatkovni tipi, pogojni stavki, zanke in funkcije. Sledil bo uvod v delovanje nevronskih mrež z nekaj preprostimi primeri razpoznavanja vzorcev. Izobraževanje bo sestavljeno iz teoretičnih in praktičnih pristopov ter tako opremilo udeležence z zadostnim znanjem za samostojno nadgrajevanje znanja iz programiranja.
+    Udeleženci bodo pridobili temeljne veščine programiranja v programskem jeziku Pythonu, kjer se bodo spoznali z osnovnimi koncepti, kot so spremenljivke, podatkovni tipi, pogojni stavki, zanke in funkcije. Med izobraževanjem se bomo posvetili tudi risanju grafov ter preprosti obdelavi slik. Izobraževanje bo sestavljeno iz teoretičnih in praktičnih pristopov ter tako opremilo udeležence z zadostnim znanjem za samostojno nadgrajevanje znanja iz programiranja.
 state: "1. pilotna izvedba"
 execution: "Mešana"
 ects: "1"
 implementation: |
-    Predavanja: 10 ur
-    Vaje: 10 ur
-    Samostojno delo: 10 ur
+    Predavanja: 9 ur
+    Vaje: 9 ur
+    Samostojno delo: 12 ur
 cType: "1"
 executionStartDate: "2024-10-14"
 executionData: |

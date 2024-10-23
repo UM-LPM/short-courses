@@ -45,5 +45,10 @@ implementation: |
 cType: "1"
 executionStartDate: "2024-11-04"
 executionData: |
-    Začetek je načrtovan 04.11.2024. Podrobnejše informacije bodo objavljene naknadno.
+    4. 11. 2024 ob 16:00 - 19:00
+    5. 11. 2024 ob 16:00 - 19:00
+    6. 11. 2024 ob 17.00 - 20.00
+    11. 11. 2024 ob 16:00 - 19:00
+    14. 11. 2024 ob 16:00 - 19:00
+executionDataShow: false
 ---
