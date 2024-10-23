@@ -46,6 +46,6 @@ executionData: |
     26. 11. 2024 ob 16:00 - 18:30h (vaje)
     3. 12. 2024 ob 16:00 - 18:30h (predavanja)
     10. 12. 2024 ob 16:00 - 18:30h (vaje)
-    17. 12. 2024 ob 16:00 - 18:30h (zagovori)
+    17. 12. 2024 ob 16:00 - 18:30h (zagovor praktičnih nalog in preverjanje znanja)
 executionDataShow: false
 ---
