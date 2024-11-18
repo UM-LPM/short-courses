@@ -47,7 +47,7 @@ implementation: |
     Vaje: 9 ur
     Samostojno delo: 12 ur
 cType: "1"
-executionStartDate: "2025-01-10"
+executionStartDate: "2025-01-27"
 executionData: |
     Začetek je načrtovan v januarju 2025. Podrobnejše informacije bodo objavljene naknadno.
 ---

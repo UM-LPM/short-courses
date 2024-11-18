@@ -35,7 +35,7 @@
                     </p>
                     {% if page.executionStartDate and page.executionStartDate != "" %}
                         {% assign executionDate = page.executionStartDate | date: "%Y-%m-%d" %}
-                        {% assign formattedExecutionDate = executionDate | date: "%d.%m.%Y" %}
+                        {% assign formattedExecutionDate = executionDate | date: "%d. %m. %Y" %}
                         {% assign currentDate = 'now' | date: "%Y-%m-%d" %}
                         {% if executionDate >= currentDate %}
                             <p class="course-title">
