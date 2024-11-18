@@ -39,7 +39,7 @@ difficulty: "Začetni nivo"
 requisite: ""
 description: |
     Udeleženci bodo pridobili temeljne veščine programiranja v programskem jeziku Pythonu, kjer se bodo spoznali z osnovnimi koncepti, kot so spremenljivke, podatkovni tipi, pogojni stavki, zanke in funkcije. Med izobraževanjem se bomo posvetili tudi risanju grafov ter preprosti obdelavi slik. Izobraževanje bo sestavljeno iz teoretičnih in praktičnih pristopov ter tako opremilo udeležence z zadostnim znanjem za samostojno nadgrajevanje znanja iz programiranja.
-state: "1. pilotna izvedba"
+state: "2. pilotna izvedba"
 execution: "Mešana"
 ects: "1"
 implementation: |
@@ -47,13 +47,7 @@ implementation: |
     Vaje: 9 ur
     Samostojno delo: 12 ur
 cType: "1"
-executionStartDate: "2024-10-14"
+executionStartDate: "2025-01-10"
 executionData: |
-    14. 10. 2024 ob 16:00-19:00h
-    17. 10. 2024 ob 16:00-19:00h
-    18. 10. 2024 ob 16:00-19:00h
-    21. 10. 2024 ob 16:00-19:00h
-    24. 10. 2024 ob 16:00-17:30h
-    25. 10. 2024 ob 16:00-17:30h
-filledCourse: true
+    Začetek je načrtovan v januarju 2025. Podrobnejše informacije bodo objavljene naknadno.
 ---

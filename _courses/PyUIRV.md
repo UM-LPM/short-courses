@@ -43,12 +43,12 @@ implementation: |
     Vaje: 10 ur
     Samostojno delo: 10 ur
 cType: "1"
-executionStartDate: "2024-11-04"
+executionStartDate: "2024-11-25"
 executionData: |
-    4. 11. 2024 ob 16:00 - 19:00h
-    5. 11. 2024 ob 16:00 - 19:00h
-    6. 11. 2024 ob 17.00 - 20.00h
-    11. 11. 2024 ob 16:00 - 19:00h
-    14. 11. 2024 ob 16:00 - 19:00h
+    25. 11. 2024 ob 16:00 - 19:00h
+    26. 11. 2024 ob 17:00 - 20:00h
+    27. 11. 2024 ob 17.00 - 20.00h
+    29. 11. 2024 ob 16:00 - 19:00h
+    4. 12. 2024 ob 17:00 - 19:00h
 executionDataShow: false
 ---
