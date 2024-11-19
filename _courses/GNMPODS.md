@@ -13,6 +13,8 @@ contact: "uros.mlakar@um.si"
 notifyData:
   - notifyEmail: "uros.mlakar@um.si"
     notify: true
+  - notifyEmail: "nina.murks@um.si"
+    notify: true
 title: "Globoke nevronske mreže in prepoznavanje objektov v digitalnih slikah"
 image: "https://images.unsplash.com/photo-1517148815978-75f6acaaf32c"
 type: "Krajše izobraževanje s preverjanjem (pilotno mikrodokazilo)"
