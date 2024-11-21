@@ -41,7 +41,10 @@ implementation: |
     Vaje: 6 ur
     Samostojno delo: 18 ur
 cType: "1"
-executionStartDate: "2024-12-01"
+executionStartDate: "2024-12-09"
 executionData: |
-    Začetek je načrtovan v decembru 2024. Podrobnejše informacije bodo objavljene naknadno.
+    Ponedeljek 9. 12. 2024 od 18:00 do 21:00 (F201)
+    Sreda 11. 12. 2024 od 18:00 do 21:00 (F102)
+    Ponedeljek 16. 12. 2024 od 18:00 do 21:00 (F201)
+    Sreda 18. 12. 2024 od 18:00 do 21:00 (F102)
 ---
