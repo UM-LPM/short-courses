@@ -43,12 +43,8 @@ implementation: |
     Vaje: 10 ur
     Samostojno delo: 10 ur
 cType: "1"
-executionStartDate: "2024-11-25"
+executionStartDate: "2025-02-03"
 executionData: |
-    25. 11. 2024 ob 16:00 - 19:00h
-    26. 11. 2024 ob 17:00 - 20:00h
-    27. 11. 2024 ob 17.00 - 20.00h
-    29. 11. 2024 ob 16:00 - 19:00h
-    4. 12. 2024 ob 17:00 - 19:00h
+    Začetek je načrtovan v februarju 2025. Podrobnejše informacije bodo objavljene naknadno.
 executionDataShow: false
 ---
