@@ -46,5 +46,4 @@ cType: "1"
 executionStartDate: "2025-02-03"
 executionData: |
     Začetek je načrtovan v februarju 2025. Podrobnejše informacije bodo objavljene naknadno.
-executionDataShow: false
 ---

@@ -44,10 +44,9 @@ implementation: |
 cType: "1"
 executionStartDate: "2024-11-28"
 executionData: |
-    28. 11. 2024 ob 16:00 - 18:30 (predavanja)
-    3. 12. 2024 ob 16:00 - 18:30 (vaje)
-    9. 12. 2024 ob 16:00 - 18:30 (predavanja)
-    17. 12. 2024 ob 16:00 - 18:30 (vaje)
-    7. 1. 2025 ob 16:00 - 18:30 (zagovor praktičnih nalog in preverjanje znanja)
-executionDataShow: false
+    28. 11. 2024 ob 16:00 - 18:30h (predavanja)
+    3. 12. 2024 ob 16:00 - 18:30h (vaje)
+    9. 12. 2024 ob 16:00 - 18:30h (predavanja)
+    17. 12. 2024 ob 16:00 - 18:30h (vaje)
+    7. 1. 2025 ob 16:00 - 18:30h (zagovor praktičnih nalog in preverjanje znanja)
 ---
