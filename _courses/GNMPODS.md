@@ -42,11 +42,12 @@ implementation: |
     Vaje: 6 ur
     Samostojno delo: 18 ur
 cType: "1"
-executionStartDate: "2024-11-28"
+executionStartDate: "2025-02-17"
 executionData: |
-    28. 11. 2024 ob 16:00 - 18:30h (predavanja)
-    3. 12. 2024 ob 16:00 - 18:30h (vaje)
-    9. 12. 2024 ob 16:00 - 18:30h (predavanja)
-    17. 12. 2024 ob 16:00 - 18:30h (vaje)
-    7. 1. 2025 ob 16:00 - 18:30h (zagovor praktičnih nalog in preverjanje znanja)
+    17. 2. 2025 ob 16:00 - 18.30h (Predavanja)
+    21. 2. 2025 ob 16:00 - 18.30h (Vaje)
+    24. 2. 2025 ob 16:00 - 18.30h (Predavanja)
+    28. 2. 2025 ob 16:00 - 18.30h (Vaje)
+    7. 3. 2025 ob 16:00 - 18.30h (Zagovor praktničnih nalog in preverjanje znanja)
+executionDataShow: true
 ---
