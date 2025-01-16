@@ -48,6 +48,6 @@ executionData: |
     21. 2. 2025 ob 16:00 - 18.30h (Vaje)
     24. 2. 2025 ob 16:00 - 18.30h (Predavanja)
     28. 2. 2025 ob 16:00 - 18.30h (Vaje)
-    7. 3. 2025 ob 16:00 - 18.30h (Zagovor praktničnih nalog in preverjanje znanja)
+    7. 3. 2025 ob 16:00 - 18.30h (Zagovor praktičnih nalog in preverjanje znanja)
 executionDataShow: true
 ---
