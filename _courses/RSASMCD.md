@@ -16,6 +16,8 @@ notifyData:
     notify: false
   - notifyEmail: "cvetanka.pasinechka@student.um.si"
     notify: false
+  - notifyEmail: "matej.crepinsek@um.si"
+    notify: false  
 title: "Razvoj spletnih aplikacij s skladom MERN: čelni del"
 image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee"
 type: "Krajše izobraževanje"
