@@ -12,6 +12,8 @@ contact: "tomaz.kosar@um.si"
 notifyData:
   - notifyEmail: "cvetanka.pasinechka@student.um.si"
     notify: false
+  - notifyEmail: "matej.crepinsek@um.si"
+    notify: false  
 title: "Razvoj spletnih aplikacij s skladom MERN: zaledni del"
 image: "https://images.unsplash.com/photo-1511376777868-611b54f68947"
 type: "Krajše izobraževanje"
