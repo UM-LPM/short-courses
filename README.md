@@ -27,7 +27,7 @@ Nato zaženite skripto:
 ```
 Slike s spremenjeno velikostjo bodo shranjene v mapah **assets/img/1024**, **assets/img/512** in **assets/img/256**.
 
-## Namestitev na strežniku
+## Namestitev na strežnik
 
 Za namestitev na strežnik je potrebno generirati `Gemfile.lock` in `gemset.nix` z ukazom:
 
