@@ -27,6 +27,16 @@ Nato zaženite skripto:
 ```
 Slike s spremenjeno velikostjo bodo shranjene v mapah **assets/img/1024**, **assets/img/512** in **assets/img/256**.
 
+## Namestitev na strežniku
+
+Za namestitev na strežnik je potrebno generirati `Gemfile.lock` in `gemset.nix` z ukazom:
+
+```
+nix run .#bundix -- -l
+```
+
+- [Dokumentacija](https://nixos.org/manual/nixpkgs/stable/#developing-with-ruby)
+
 ## Uvoz podatkov
 
 ### Format csv
