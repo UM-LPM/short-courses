@@ -5,7 +5,7 @@ layout: main
 {% if site.paginate %}
     {% assign courses = paginator.courses | where_exp:"course","course.is_generated != true" %}
 {% else %}
-    {% assign courses = site.courses | where_exp:"course","course.is_generated != true" %}
+    {% assign courses = site.data.courses | where_exp:"course","course.is_generated != true" %}
 {% endif %}
 
 {% if site.show_hero and paginator == nil or paginator.page == 1 %}

@@ -161,7 +161,7 @@
             <aside class="see-also">
                 <h3 style="margin-left: 30px;">Poglej tudi</h3>
                 {% assign related_courses_count = 0 %}
-                {% assign courses = site.courses | shuffle %}
+                {% assign courses = site.data.courses | shuffle %}
                 {% for course in courses %}
                     {% unless course.url == page.url %}
                         {% assign shared_keywords = false %}

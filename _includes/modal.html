@@ -9,7 +9,7 @@
         </div>
         <div class="content">
             <ul>
-                {% assign next_courses = site.courses | where_exp:"course","course.is_generated != true" | where_exp:"course","course.path != page.path" %}
+                {% assign next_courses = site.data.courses | where_exp:"course","course.is_generated != true" | where_exp:"course","course.path != page.path" %}
                 {% assign shuffled_array = next_courses | shuffle %}
                 {% for course in shuffled_array limit:2 %}
                     <li>

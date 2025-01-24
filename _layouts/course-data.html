@@ -1,7 +1,7 @@
 ---
 ---
 [
-  {% assign courses = site.courses | where_exp:"course", "course.is_generated != true" %}
+  {% assign courses = site.data.courses | where_exp:"course", "course.is_generated != true" %}
   {% for course in courses %}
     {
       "id": "{{ course.id }}",
