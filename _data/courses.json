@@ -1,47 +1,8 @@
 [
   {
     "layout": "course",
-    "id": "/DDS-MAP:M4",
-    "url": "/DDS-MAP:M4",
-    "author": [
-      "red. prof. dr. MAJDA PAJNKIHAR, red. prof. dr. GREGOR ŠTIGLIC"
-    ],
-    "contact": "majda.pajnkihar@um.si",
-    "notifyData": [
-      {
-        "notifyEmail": "majda.pajnkihar@um.si",
-        "notify": true
-      },
-      {
-        "notifyEmail": "gregor.stiglic@um.si",
-        "notify": true
-      }
-    ],
-    "title": "IZOBRAŽEVANJE IZVAJALCEV USPOSABLJANJ ZA RAZVOJ OSEBNEGA DOBREGA POČUTJA",
-    "image": "http://localhost:8081/bb8f5fda-68b0-44de-bc47-76335653bd0a/",
-    "type": "Potrjeno krajše izobraževanje za podelitev mikrodokazila UM",
-    "field": [
-      "KLASIUS-P-16 (0688)"
-    ],
-    "keywords": [
-      "keyword"
-    ],
-    "intended": [
-      "zaposleni na področju KLASIUS",
-      "osipniki"
-    ],
-    "difficulty": "Začetni nivo",
-    "description": "V okviru kratkega izobraževanja bodo udeleženci pridobili ključna znanja s področja strategij, načrtovanja in mehanizmov za obvladovanje osebnega dobrega počutja in duševnega zdravja, ki so ključnega pomena na delovnem mestu v zdravstveni dejavnosti, kjer lahko visoke ravni poklicnega in digitalnega stresa vplivajo na uspešnost osebja in oskrbo pacientov.\nIzobraževanje se osredotoča na:  (i) osebno dobro počutje na delovnem mestu, (ii) organizacijsko odpornost na delovnem mestu.",
-    "state": "1. pilotna izvedba",
-    "execution": "Kombinirana izvedba (delno asinhrona izvedba, delno sinhrona izvedba s fizično prisotnostjo, delno sinhrona izvedba na daljavo)",
-    "ects": 1,
-    "implementation": "Predavanja: 3 ur\nAsinhrona izvedba: 60 ur",
-    "cType": "1"
-  },
-  {
-    "layout": "course",
-    "id": "/acr",
-    "url": "/acr",
+    "id": "/naslov",
+    "url": "/naslov",
     "author": [
       "Cvetanka Pasinechka"
     ],
@@ -53,24 +14,72 @@
       }
     ],
     "title": "NASLOV",
-    "image": "http://localhost:8081/89f02aa0-ac51-41bb-a4fa-ecc385b45748/",
+    "image": "http://localhost:8081/792e04bf-97c4-4268-9de7-a7e0a915f536",
     "type": "Potrjeno krajše izobraževanje za podelitev mikrodokazila UM",
     "field": [
       "KLASIUS-P-16 (1234)"
     ],
     "keywords": [
-      "keywords"
+      "key"
     ],
     "intended": [
       "vsi",
-      "zaposleni na področju KLASIUS"
+      "osipniki"
     ],
     "difficulty": "Začetni nivo",
-    "description": "opis opis...",
+    "description": "opis...",
     "state": "1. pilotna izvedba",
-    "execution": "Asinhrona",
+    "execution": "Sinhrona izvedba - izvedba s kontaktnimi urami, na daljavo",
     "ects": 1,
-    "implementation": "Vaje: 100 ur\nDruge oblike študija: 20 ur",
+    "implementation": "Vaje: 100 ur",
+    "cType": "1"
+  },
+  {
+    "layout": "course",
+    "id": "/DDS-MAP:M3",
+    "url": "/DDS-MAP:M3",
+    "author": [
+      "izr. prof. dr. DOMINIKA VRBNJAK, red. prof. dr. MAJDA PAJNKIHAR, red. prof. dr. GREGOR ŠTIGLIC, doc. dr. BOŠTJAN VLAOVIČ"
+    ],
+    "contact": "dominika.vrbnjak@um.si",
+    "notifyData": [
+      {
+        "notifyEmail": "dominika.vrbnjak@um.si",
+        "notify": true
+      },
+      {
+        "notifyEmail": "majda.pajnkihar@um.si",
+        "notify": true
+      },
+      {
+        "notifyEmail": "gregor.stiglic@um.si",
+        "notify": true
+      },
+      {
+        "notifyEmail": "bostjan.vlaovic@um.si",
+        "notify": true
+      }
+    ],
+    "title": "IMPLEMENTACIJA DIGITALNEGA ZDRAVSTVENEGA VARSTVA / DIGITALIZACIJA ZDRAVSTVA",
+    "image": "http://localhost:8081/88665280-ff7a-4fb4-9851-33bfb67bbbf2",
+    "type": "Potrjeno krajše izobraževanje za podelitev mikrodokazila UM",
+    "field": [
+      "KLASIUS-P-16 (0688)"
+    ],
+    "keywords": [
+      "key",
+      "words"
+    ],
+    "intended": [
+      "vsi",
+      "osipniki"
+    ],
+    "difficulty": "Začetni nivo",
+    "description": "V okviru kratkega izobraževanja bodo udeleženci pridobili ključna znanja s področja uporabe različnih digitalnih tehnologij in e-zdravja, vključno z mobilnim zdravjem, nosljivimi napravami, elektronskimi zdravstvenimi kartotekami (EHR), zdravstvenimi informacijskimi sistemi, umetno inteligenco (AI) in virtualno/razširjeno resničnostjo (AR/VR) skladno z regulativnimi, etičnimi in varnostnimi vidiki digitalne tehnologije. Prav tako se bodo udeleženci seznanli z pristopom vodenja projektov AGILE in upravljanja prenapetosti. Izobraževanje se osredotoča na: (i) digitalne zdravstvene tehnologije (ii) priložnosti in izzive digitalnih zdravstvenih tehnologij (iii) regulativne, etične in varnostne vidike pri uporabi digitalnih tehnologij.",
+    "state": "1. pilotna izvedba",
+    "execution": "Kombinirana izvedba (delno asinhrona izvedba, delno sinhrona izvedba s fizično prisotnostjo, delno sinhrona izvedba na daljavo)",
+    "ects": 1,
+    "implementation": "Predavanja: 6 ur\nAsinhrona izvedba: 55 ur\nKlinične vaje: 2 ur",
     "cType": "1"
   }
 ]

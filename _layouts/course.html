@@ -60,7 +60,7 @@
                         </div>
                     </div>
                     {% if page.image %}
-                        <img style="margin-bottom: 0;" src="{{ page.image }}1024{{ page.id }}.png" alt="Featured image" class="course-cover">
+                        <img style="margin-bottom: 0;" src="{{ page.image }}/1024{{ page.id }}.png" alt="Featured image" class="course-cover">
                         <!-- <span style="padding-top: 0; font-style: italic;">Vir: {{ page.image }}</span> -->
                     {% endif %}
                     <p class="course-description">{{ page.description | newline_to_br | replace: "  ", "&nbsp;&nbsp;&nbsp;&nbsp;" }}</p>
@@ -159,7 +159,6 @@
 
             {% if site.two_columns_layout %}
             <aside class="see-also">
-                <h3 style="margin-left: 30px;">Poglej tudi</h3>
                 
                 {% assign related_courses = "" | split: "," %}
                 {% assign backup_courses = "" | split: "," %}
@@ -206,14 +205,17 @@
                         {% endif %}
                     {% endfor %}
                 {% endif %}
-            
+                
+                {% if related_courses_count != 0 %} 
+                <h3 style="margin-left: 30px;">Poglej tudi</h3>
+                {% endif %}
                 {% for course in related_courses %}
                     <div class="side-course">
                         <a style="text-decoration: none;" href="{{ course.url | prepend: site.baseurl }}">
                             <div class="related-article-item">
                                 <h3>{{ course.title }}</h3>
                                 <div class="image-container">
-                                    <img src="{{ course.image }}256{{ course.id }}.png" alt="{{ course.title }} image" class="related-article-image">
+                                    <img src="{{ course.image }}/256{{ course.id }}.png" alt="{{ course.title }} image" class="related-article-image">
                                 </div>
                                 <p>
                                     {% assign authors = course.author | remove: '[' | remove: ']' | remove: '"' %}
