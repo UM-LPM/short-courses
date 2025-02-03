@@ -60,7 +60,7 @@
                         </div>
                     </div>
                     {% if page.image %}
-                        <img style="margin-bottom: 0;" src="{{ site.baseurl }}/assets/img/1024{{ page.id }}.jpeg" alt="Featured image" class="course-cover">
+                        <img style="margin-bottom: 0;" src="{{ page.image }}1024{{ page.id }}.png" alt="Featured image" class="course-cover">
                         <!-- <span style="padding-top: 0; font-style: italic;">Vir: {{ page.image }}</span> -->
                     {% endif %}
                     <p class="course-description">{{ page.description | newline_to_br | replace: "  ", "&nbsp;&nbsp;&nbsp;&nbsp;" }}</p>
@@ -84,7 +84,7 @@
                                 </div>
                             </div>
                         </div>
-                        {% if page.requisite != '' %}
+                        {% if page.requisite %}
                         <div class="icon-description-container">
                             <div class="inside-icon-description">
                                 <i class="fas fa-paperclip"></i>
@@ -160,69 +160,73 @@
             {% if site.two_columns_layout %}
             <aside class="see-also">
                 <h3 style="margin-left: 30px;">Poglej tudi</h3>
+                
+                {% assign related_courses = "" | split: "," %}
+                {% assign backup_courses = "" | split: "," %}
                 {% assign related_courses_count = 0 %}
+                
                 {% assign courses = site.data.courses | shuffle %}
+                
                 {% for course in courses %}
-                    {% unless course.url == page.url %}
-                        {% assign shared_keywords = false %}
+                    {% unless course.id == page.id %}
+                        {% assign has_shared_keyword = false %}
+                        
                         {% for keyword in page.keywords %}
                             {% if course.keywords contains keyword %}
-                                {% assign shared_keywords = true %}
+                                {% assign has_shared_keyword = true %}
                                 {% break %}
                             {% endif %}
                         {% endfor %}
-                        {% if shared_keywords %}
-                            {% if related_courses_count < 3 %}
-                                <div class="side-course">
-                                    <a style="text-decoration: none;" href="{{ course.url | prepend: site.baseurl }}">
-                                        <div class="related-article-item">
-                                            <h3>{{ course.title }}</h3>
-                                            <div class="image-container">
-                                                <img src="{{ site.baseurl }}/assets/img/256{{ course.id }}.jpeg" alt="{{ course.title }} image" class="related-article-image">
-                                            </div>
-                                            <p>
-                                                {% assign authors = course.author | remove: '[' | remove: ']' | remove: '"' %}
-                                                {% assign author_list = authors | split: ", " %}
-                                                {% for author in author_list %}
-                                                    {{ author }}{% unless forloop.last %}, {% endunless %}
-                                                {% endfor %}
-                                            </p>
-                                        </div>
-                                    </a>
-                                </div>
+            
+                        {% if has_shared_keyword %}
+                            {% unless related_courses contains course.id %}
+                                {% assign related_courses = related_courses | push: course %}
                                 {% assign related_courses_count = related_courses_count | plus: 1 %}
-                            {% endif %}
+                            {% endunless %}
+                        {% else %}
+                            {% unless backup_courses contains course.id %}
+                                {% assign backup_courses = backup_courses | push: course %}
+                            {% endunless %}
+                        {% endif %}
+            
+                        {% if related_courses_count == 3 %}
+                            {% break %}
                         {% endif %}
                     {% endunless %}
                 {% endfor %}
+            
                 {% if related_courses_count < 3 %}
-                    {% for course in courses %}
-                        {% if course.url != page.url %}
-                            <div class="side-course">
-                                <a href="{{ course.url | prepend: site.baseurl }}">
-                                    <div style="text-decoration: none;" class="related-article-item">
-                                        <h3>{{ course.title }}</h3>
-                                        <div class="image-container">
-                                            <img src="{{ site.baseurl }}/assets/img/256{{ course.id }}.jpeg" alt="{{ course.title }} image" class="related-article-image">
-                                        </div>
-                                        <p>
-                                            {% assign authors = course.author | remove: '[' | remove: ']' | remove: '"' %}
-                                            {% assign author_list = authors | split: ", " %}
-                                            {% for author in author_list %}
-                                                {{ author }}{% unless forloop.last %}, {% endunless %}
-                                            {% endfor %}
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
+                    {% for course in backup_courses %}
+                        {% unless related_courses contains course.id %}
+                            {% assign related_courses = related_courses | push: course %}
                             {% assign related_courses_count = related_courses_count | plus: 1 %}
-                            {% if related_courses_count == 3 %}
-                                {% break %}
-                            {% endif %}
+                        {% endunless %}
+                        {% if related_courses_count == 3 %}
+                            {% break %}
                         {% endif %}
                     {% endfor %}
                 {% endif %}
-            </aside>
+            
+                {% for course in related_courses %}
+                    <div class="side-course">
+                        <a style="text-decoration: none;" href="{{ course.url | prepend: site.baseurl }}">
+                            <div class="related-article-item">
+                                <h3>{{ course.title }}</h3>
+                                <div class="image-container">
+                                    <img src="{{ course.image }}256{{ course.id }}.png" alt="{{ course.title }} image" class="related-article-image">
+                                </div>
+                                <p>
+                                    {% assign authors = course.author | remove: '[' | remove: ']' | remove: '"' %}
+                                    {% assign author_list = authors | split: ", " %}
+                                    {% for author in author_list %}
+                                        {{ author }}{% unless forloop.last %}, {% endunless %}
+                                    {% endfor %}
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                {% endfor %}
+            </aside>                           
             {% endif %}
         </section>
 

@@ -1,133 +1,76 @@
-[{
-    "date": "2024-04-15",
-    "version": "0.1.0",
-    "lastUpdate": "2024-04-15 10:05:00",
+[
+  {
     "layout": "course",
-    "id": "/TEST",
-    "url": "/TEST",
-    "author": ["Janez Novak"],
-    "contact": "janez.novak@um.si",
+    "id": "/DDS-MAP:M4",
+    "url": "/DDS-MAP:M4",
+    "author": [
+      "red. prof. dr. MAJDA PAJNKIHAR, red. prof. dr. GREGOR ŠTIGLIC"
+    ],
+    "contact": "majda.pajnkihar@um.si",
     "notifyData": [
       {
-        "notifyEmail": "test@gmail.com",
+        "notifyEmail": "majda.pajnkihar@um.si",
         "notify": true
       },
       {
-        "notifyEmail": "test@student.um.si",
-        "notify": false
+        "notifyEmail": "gregor.stiglic@um.si",
+        "notify": true
       }
     ],
-    "title": "Krajše izobraževanje 1",
-    "image": "https://unsplash.com/photos/fbi-woman-works-on-a-case-NxOQWmoYr9k",
+    "title": "IZOBRAŽEVANJE IZVAJALCEV USPOSABLJANJ ZA RAZVOJ OSEBNEGA DOBREGA POČUTJA",
+    "image": "http://localhost:8081/bb8f5fda-68b0-44de-bc47-76335653bd0a/",
     "type": "Potrjeno krajše izobraževanje za podelitev mikrodokazila UM",
-    "field": ["KLASIUS-P-16 (0610)"],
+    "field": [
+      "KLASIUS-P-16 (0688)"
+    ],
     "keywords": [
-      "digitalna forenzika",
-      "računalniška forenzika",
-      "Autopsy"
+      "keyword"
     ],
     "intended": [
-      "zaposleni",
-      "študenti"
+      "zaposleni na področju KLASIUS",
+      "osipniki"
     ],
     "difficulty": "Začetni nivo",
-    "requisite": "",
-    "description": "Opis...",
+    "description": "V okviru kratkega izobraževanja bodo udeleženci pridobili ključna znanja s področja strategij, načrtovanja in mehanizmov za obvladovanje osebnega dobrega počutja in duševnega zdravja, ki so ključnega pomena na delovnem mestu v zdravstveni dejavnosti, kjer lahko visoke ravni poklicnega in digitalnega stresa vplivajo na uspešnost osebja in oskrbo pacientov.\nIzobraževanje se osredotoča na:  (i) osebno dobro počutje na delovnem mestu, (ii) organizacijsko odpornost na delovnem mestu.",
     "state": "1. pilotna izvedba",
-    "execution": "Mešana",
-    "ects": "1",
-    "implementation": "Predavanja: 8 ur\nVaje: 2 ur\nSamostojno delo: 20 ur",
-    "cType": "1",
-    "executionStartDate": "2024-06-17",
-    "executionData": "Predavanja: 17. 6. in 18. 6. \nVaje: 19. 6. in 20. 6.",
-    "questions": "Ali..?\nČe...?"
+    "execution": "Kombinirana izvedba (delno asinhrona izvedba, delno sinhrona izvedba s fizično prisotnostjo, delno sinhrona izvedba na daljavo)",
+    "ects": 1,
+    "implementation": "Predavanja: 3 ur\nAsinhrona izvedba: 60 ur",
+    "cType": "1"
   },
   {
-    "date": "2024-04-15",
-    "version": "0.1.0",
-    "lastUpdate": "2024-04-15 10:05:00",
     "layout": "course",
-    "id": "/DF",
-    "url": "/DF",
-    "author": ["Janez Novak"],
-    "contact": "janez.novak@um.si",
+    "id": "/acr",
+    "url": "/acr",
+    "author": [
+      "Cvetanka Pasinechka"
+    ],
+    "contact": "cvetanka.pasinechka@student.um.si",
     "notifyData": [
       {
-        "notifyEmail": "test@gmail.com",
+        "notifyEmail": "cvetanka.pasinechka@student.um.si",
         "notify": true
-      },
-      {
-        "notifyEmail": "test@student.um.si",
-        "notify": false
       }
     ],
-    "title": "Krajše izobraževanje 2",
-    "image": "https://unsplash.com/photos/fbi-woman-works-on-a-case-NxOQWmoYr9k",
+    "title": "NASLOV",
+    "image": "http://localhost:8081/89f02aa0-ac51-41bb-a4fa-ecc385b45748/",
     "type": "Potrjeno krajše izobraževanje za podelitev mikrodokazila UM",
-    "field": ["KLASIUS-P-16 (0610)"],
+    "field": [
+      "KLASIUS-P-16 (1234)"
+    ],
     "keywords": [
-      "digitalna forenzika",
-      "računalniška forenzika",
-      "Autopsy"
+      "keywords"
     ],
     "intended": [
-      "zaposleni",
-      "študenti"
+      "vsi",
+      "zaposleni na področju KLASIUS"
     ],
     "difficulty": "Začetni nivo",
-    "requisite": "",
-    "description": "Opis...",
+    "description": "opis opis...",
     "state": "1. pilotna izvedba",
-    "execution": "Mešana",
-    "ects": "1",
-    "implementation": "Predavanja: 8 ur\nVaje: 2 ur\nSamostojno delo: 20 ur",
-    "cType": "1",
-    "executionStartDate": "2024-06-17",
-    "executionData": "Predavanja: 17. 6. in 18. 6. \nVaje: 19. 6. in 20. 6.",
-    "questions": "Ali..?\nČe...?"
-  },
-  {
-    "date": "2024-04-15",
-    "version": "0.1.0",
-    "lastUpdate": "2024-04-15 10:05:00",
-    "layout": "course",
-    "id": "/CPF",
-    "url": "/CPF",
-    "author": ["Janez Janez"],
-    "contact": "janez.novak@um.si",
-    "notifyData": [
-      {
-        "notifyEmail": "test@gmail.com",
-        "notify": true
-      },
-      {
-        "notifyEmail": "test@student.um.si",
-        "notify": false
-      }
-    ],
-    "title": "Krajše izobraževanje 3",
-    "image": "https://unsplash.com/photos/fbi-woman-works-on-a-case-NxOQWmoYr9k",
-    "type": "Potrjeno krajše izobraževanje za podelitev mikrodokazila UM",
-    "field": ["KLASIUS-P-16 (0610)"],
-    "keywords": [
-      "digitalna forenzika",
-      "računalniška forenzika",
-      "Autopsy"
-    ],
-    "intended": [
-      "zaposleni",
-      "študenti"
-    ],
-    "difficulty": "Začetni nivo",
-    "requisite": "",
-    "description": "Opis...",
-    "state": "1. pilotna izvedba",
-    "execution": "Mešana",
-    "ects": "1",
-    "implementation": "Predavanja: 8 ur\nVaje: 2 ur\nSamostojno delo: 20 ur",
-    "cType": "1",
-    "executionStartDate": "2024-06-17",
-    "executionData": "Predavanja: 17. 6. in 18. 6. \nVaje: 19. 6. in 20. 6.",
-    "questions": "Ali..?\nČe...?"
-  }    
-]  
+    "execution": "Asinhrona",
+    "ects": 1,
+    "implementation": "Vaje: 100 ur\nDruge oblike študija: 20 ur",
+    "cType": "1"
+  }
+]
