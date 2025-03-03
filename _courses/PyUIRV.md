@@ -43,7 +43,9 @@ implementation: |
     Vaje: 10 ur
     Samostojno delo: 10 ur
 cType: "1"
-executionStartDate: "2025-03-03"
+executionStartDate: "2025-03-11"
 executionData: |
-    Začetek je načrtovan v marcu 2025. Podrobnejše informacije bodo objavljene naknadno.
+    11. 3. 2025 ob 16:00-19:00h
+    14. 3. 2025 ob 16:00-19:00h
+    Preostali trije termini izobraževanja bodo objavljeni naknadno. Predvideni so v tednih od 17.3. 2025 - 28. 3. 2025 prav tako med 16:00-19:00 uro.
 ---
