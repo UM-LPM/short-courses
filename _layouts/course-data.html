@@ -4,32 +4,17 @@
   {% assign courses = site.data.courses | where_exp:"course", "course.is_generated != true" %}
   {% for course in courses %}
     {
-      "id": "{{ course.id }}",
-      "title": "{{ course.title | escape }}",
+      "id": "{{ course.url }}",
+      "title": "{{ course.titleSl | escape }}",
       "keywords": "{{ course.keywords | join: ', ' }}",
       "intended": "{{ course.intended | join: ', ' }}",
-      "author": "{% for author in course.author %}{{ author }}{% unless forloop.last %}, {% endunless %}{% endfor %}",
+      "author": "{{ course.lecturersStr }}",
       "url": "{{ site.baseurl }}{{ course.url }}",
       "field": "{{ course.field | join: ', '}}",
-      "description": "{{ course.description | strip_newlines | lstrip | replace: '"', '' }}",
-      "image": "{{ course.image}}",
-      "difficulty": "{{ course.difficulty }}",
+      "description": "{{ course.descriptionSl | strip_newlines | lstrip | replace: '"', '' }}",
+      "image": "{{ course.image }}",
       "type": "{{ course.type }}",
-      "execution": "{{ course.execution }}",
-      "cType": "{{ course.cType }}",
-      "notifyData": [{% if course.notifyData and course.notifyData != "" %}{% for email in course.notifyData %}
-            {
-              "notifyEmail": "{{ email.notifyEmail }}",
-              "notify": {{ email.notify | default: false }}
-            }{% unless forloop.last %}, {% endunless %}{% endfor %}
-        {% else %} {
-            "notifyEmail": "",
-            "notify": false
-          }{% endif %}],
-      {% if course.executionStartDate and course.executionStartDate != "" %}"executionStartDate": "{{ course.executionStartDate }}"{% else %}"executionStartDate": ""{% endif %},
-      {% if course.executionData and course.executionData != "" %}"executionData": "{{ course.executionData | newline_to_br | strip_newlines | replace: '"', '\"' }}"{% else %}"executionData": ""{% endif %},
-      {% if course.questions and course.questions != "" %}"questions": "{{ course.questions | newline_to_br | strip_newlines | replace: '  ', '\\n' | replace: '"', '\"' }}"{% else %}"questions": ""{% endif %},
-      {% if course.filledCourse and course.filledCourse != "" %}"filledCourse": {{ course.filledCourse }}{% else %}"filledCourse": false{% endif %}
+      "execution": "{{ course.learningEnvironmentSl }}"
     }{% unless forloop.last %},{% endunless %}
   {% endfor %}
 ]

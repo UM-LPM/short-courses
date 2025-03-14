@@ -10,30 +10,18 @@
             <article role="article" class="course-content">
                 <header>
                     <h3>
-                        {% assign fields = page.field | remove: '[' | remove: ']' | remove: '"' %}
-                            {% assign field_list = fields | split: ", " %}
-                            {% for field in field_list %}
-                                {{ field }}{% unless forloop.last %}, {% endunless %}
-                            {% endfor %}
+                        {{ field }}
                     </h3>
-                    <h1 class="course-title">{{ page.title }}</h1>
+                    <h1 class="course-title">{{ page.titleSl }}</h1>
                     <p class="course-author" style="color:rgb(83, 83, 83); margin-top:0; padding-top: 0;">
-                        {% assign authors = page.author | remove: '[' | remove: ']' | remove: '"' %}
-                        {% assign author_list = authors | split: ", " %}
-                        {% for author in author_list %}
-                            {{ author }}{% unless forloop.last %}, {% endunless %}
-                        {% endfor %}
-                    </p>     
-                    <p class="course-info">
-                        <svg id="clock" class="icon-clock"><use xlink:href="#icon-clock"></use></svg>
-                        <span>{{ minutesText }}</span>
+                        {{ page.lecturersStr }}
                     </p>
                     <p class="course-button">
-                        {% if page.cType == "1" %}
-                        <button class="course-button"><a href="{{site.catalog_url}}{{page.id}}">Zanima me</a></button>
-                        {% endif %}
+                        <!-- {% if page.executions  %}
+                        <button class="course-button"><a href="{{site.catalog_url}}{{page.url}}">Zanima me</a></button>
+                        {% endif %} -->
                     </p>
-                    {% if page.executionStartDate and page.executionStartDate != "" %}
+                    <!-- {% if page.executionStartDate and page.executionStartDate != "" %}
                         {% assign executionDate = page.executionStartDate | date: "%Y-%m-%d" %}
                         {% assign formattedExecutionDate = executionDate | date: "%d. %m. %Y" %}
                         {% assign currentDate = 'now' | date: "%Y-%m-%d" %}
@@ -42,7 +30,7 @@
                                 <b>Načrtovan začetek izvedbe: {{ formattedExecutionDate }}</b>
                             </p>
                         {% endif %}
-                    {% endif %}
+                    {% endif %} -->
                 </header>
                 <section>
                     <div class="box-info">
@@ -60,10 +48,10 @@
                         </div>
                     </div>
                     {% if page.image %}
-                        <img style="margin-bottom: 0;" src="{{ page.image }}/1024{{ page.id }}.png" alt="Featured image" class="course-cover">
+                        <img style="margin-bottom: 0;" src="{{ page.image }}/1024/{{ page.acronym }}.png" alt="Featured image" class="course-cover">
                         <!-- <span style="padding-top: 0; font-style: italic;">Vir: {{ page.image }}</span> -->
                     {% endif %}
-                    <p class="course-description">{{ page.description | newline_to_br | replace: "  ", "&nbsp;&nbsp;&nbsp;&nbsp;" }}</p>
+                    <p class="course-description">{{ page.descriptionForCatalogueSl | newline_to_br | replace: "  ", "&nbsp;&nbsp;&nbsp;&nbsp;" }}</p>
                     {{ content }}
                     <div class="data-container">
                         <div class="icon-description-container">
@@ -84,23 +72,12 @@
                                 </div>
                             </div>
                         </div>
-                        {% if page.requisite %}
-                        <div class="icon-description-container">
-                            <div class="inside-icon-description">
-                                <i class="fas fa-paperclip"></i>
-                                <div class="description-data">
-                                    <p class="desc"><strong>Priporočeno predhodno izobraževanje</strong></p>
-                                    <p>{{ page.requisite }}</p>
-                                </div>
-                            </div>
-                        </div>
-                        {% endif %}
                         <div class="icon-description-container">
                             <div class="inside-icon-description">
                                 <i class="fas fa-paperclip"></i>
                                 <div class="description-data">
                                     <p class="desc"><strong>Vrsta izvedbe</strong></p>
-                                    <p>{{ page.execution }}</p>
+                                    <p>{{ page.learningEnvironmentSl }}</p>
                                 </div>
                             </div>
                         </div>
@@ -122,17 +99,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="icon-description-container">
-                            <div class="inside-icon-description">
-                                <i class="fas fa-paperclip"></i>
-                                <div class="description-data">
-                                    <p class="desc"><strong>Načrt izvedbe</strong></p>
-                                    <p>{{ page.implementation | newline_to_br | replace: "  ", "&nbsp;&nbsp;&nbsp;&nbsp;" }}</p>
-                                </div>
-                            </div>
-                        </div>
 
-                        {% if page.executionStartDate and page.executionStartDate != "" %}
+                        <!-- {% if page.executionStartDate and page.executionStartDate != "" %}
                         {% assign executionDate = page.executionStartDate | date: "%Y-%m-%d" %}
                         {% assign currentDate = 'now' | date: "%Y-%m-%d" %}
                         {% if executionDate >= currentDate and page.executionData and page.executionData != "" %}
@@ -145,14 +113,14 @@
                                     </div>
                                 </div>
                             </div>
-                        {% endif %}
+                        {% endif %} -->
                     {% endif %}
                     </div>   
-                    <p style="text-align: center;"  class="course-button">
+                    <!-- <p style="text-align: center;"  class="course-button">
                         {% if page.cType == "1" %}
-                        <button class="course-button"><a href="{{site.catalog_url}}{{page.id}}">Zanima me</a></button>
+                        <button class="course-button"><a href="{{site.catalog_url}}{{page.url}}">Zanima me</a></button>
                         {% endif %}
-                    </p>                                               
+                    </p>                                                -->
                 </section>                
                 {% include pagination-course.html %}
             </article>
@@ -167,7 +135,7 @@
                 {% assign courses = site.data.courses | shuffle %}
                 
                 {% for course in courses %}
-                    {% unless course.id == page.id %}
+                    {% unless course.url == page.url %}
                         {% assign has_shared_keyword = false %}
                         
                         {% for keyword in page.keywords %}
@@ -178,12 +146,12 @@
                         {% endfor %}
             
                         {% if has_shared_keyword %}
-                            {% unless related_courses contains course.id %}
+                            {% unless related_courses contains course.url %}
                                 {% assign related_courses = related_courses | push: course %}
                                 {% assign related_courses_count = related_courses_count | plus: 1 %}
                             {% endunless %}
                         {% else %}
-                            {% unless backup_courses contains course.id %}
+                            {% unless backup_courses contains course.url %}
                                 {% assign backup_courses = backup_courses | push: course %}
                             {% endunless %}
                         {% endif %}
@@ -196,7 +164,7 @@
             
                 {% if related_courses_count < 3 %}
                     {% for course in backup_courses %}
-                        {% unless related_courses contains course.id %}
+                        {% unless related_courses contains course.url %}
                             {% assign related_courses = related_courses | push: course %}
                             {% assign related_courses_count = related_courses_count | plus: 1 %}
                         {% endunless %}
@@ -213,16 +181,12 @@
                     <div class="side-course">
                         <a style="text-decoration: none;" href="{{ course.url | prepend: site.baseurl }}">
                             <div class="related-article-item">
-                                <h3>{{ course.title }}</h3>
+                                <h3>{{ course.titleSl }}</h3>
                                 <div class="image-container">
-                                    <img src="{{ course.image }}/256{{ course.id }}.png" alt="{{ course.title }} image" class="related-article-image">
+                                    <img src="{{ course.image }}/256{{ course.url }}.png" alt="{{ course.titleSl }} image" class="related-article-image">
                                 </div>
                                 <p>
-                                    {% assign authors = course.author | remove: '[' | remove: ']' | remove: '"' %}
-                                    {% assign author_list = authors | split: ", " %}
-                                    {% for author in author_list %}
-                                        {{ author }}{% unless forloop.last %}, {% endunless %}
-                                    {% endfor %}
+                                    {{ course.lecturersStr }}
                                 </p>
                             </div>
                         </a>

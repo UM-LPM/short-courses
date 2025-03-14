@@ -1,85 +1,480 @@
 [
   {
     "layout": "course",
-    "id": "/naslov",
-    "url": "/naslov",
-    "author": [
-      "Cvetanka Pasinechka"
-    ],
-    "contact": "cvetanka.pasinechka@student.um.si",
-    "notifyData": [
-      {
-        "notifyEmail": "cvetanka.pasinechka@student.um.si",
-        "notify": true
-      }
-    ],
-    "title": "NASLOV",
-    "image": "http://localhost:8081/792e04bf-97c4-4268-9de7-a7e0a915f536",
-    "type": "Potrjeno krajše izobraževanje za podelitev mikrodokazila UM",
-    "field": [
-      "KLASIUS-P-16 (1234)"
-    ],
-    "keywords": [
-      "key"
-    ],
-    "intended": [
-      "vsi",
-      "osipniki"
-    ],
-    "difficulty": "Začetni nivo",
-    "description": "opis...",
-    "state": "1. pilotna izvedba",
-    "execution": "Sinhrona izvedba - izvedba s kontaktnimi urami, na daljavo",
-    "ects": 1,
-    "implementation": "Vaje: 100 ur",
-    "cType": "1"
-  },
-  {
-    "layout": "course",
-    "id": "/DDS-MAP:M3",
-    "url": "/DDS-MAP:M3",
-    "author": [
-      "izr. prof. dr. DOMINIKA VRBNJAK, red. prof. dr. MAJDA PAJNKIHAR, red. prof. dr. GREGOR ŠTIGLIC, doc. dr. BOŠTJAN VLAOVIČ"
-    ],
-    "contact": "dominika.vrbnjak@um.si",
-    "notifyData": [
-      {
-        "notifyEmail": "dominika.vrbnjak@um.si",
-        "notify": true
-      },
-      {
-        "notifyEmail": "majda.pajnkihar@um.si",
-        "notify": true
-      },
-      {
-        "notifyEmail": "gregor.stiglic@um.si",
-        "notify": true
-      },
-      {
-        "notifyEmail": "bostjan.vlaovic@um.si",
-        "notify": true
-      }
-    ],
-    "title": "IMPLEMENTACIJA DIGITALNEGA ZDRAVSTVENEGA VARSTVA / DIGITALIZACIJA ZDRAVSTVA",
-    "image": "http://localhost:8081/88665280-ff7a-4fb4-9851-33bfb67bbbf2",
-    "type": "Potrjeno krajše izobraževanje za podelitev mikrodokazila UM",
+    "url": "/DDS-MAP:M4",
+    "image": "http://localhost:8081/0d069a68-70fa-4f47-b275-fff0dff27bcd",
     "field": [
       "KLASIUS-P-16 (0688)"
     ],
+    "implementation": "Predavanja: 3 ur\nAsinhrona izvedba: 60 ur",
+    "id": "0d069a68-70fa-4f47-b275-fff0dff27bcd",
+    "parentId": null,
+    "createdDate": "2025-03-11T15:51:11.236Z",
+    "validityDate": null,
+    "cmsSyncId": "dd625246-874a-11ef-b279-0242ac130004",
+    "lecturers": [
+      "MAJDA PAJNKIHAR",
+      "GREGOR ŠTIGLIC"
+    ],
+    "lecturersStr": "red. prof. dr. MAJDA PAJNKIHAR, red. prof. dr. GREGOR ŠTIGLIC",
+    "contact": "majda.pajnkihar@um.si",
+    "moderators": [
+      {
+        "email": "gregor.stiglic@um.si",
+        "notify": true
+      },
+      {
+        "email": "cvetanka.pasinechka@student.um.si",
+        "notify": true
+      }
+    ],
+    "acronym": "DDS-MAP:M4",
+    "titleSl": "IZOBRAŽEVANJE IZVAJALCEV USPOSABLJANJ ZA RAZVOJ OSEBNEGA DOBREGA POČUTJA",
+    "titleEn": "BUILDING A HEALTHY WORKFORCE & PERSONAL WELLBEING: TRAIN THE TRAINER",
+    "descSl": "",
+    "descEn": "",
+    "descriptionForCatalogueSl": "V okviru kratkega izobraževanja bodo udeleženci pridobili ključna znanja s področja strategij, načrtovanja in mehanizmov za obvladovanje osebnega dobrega počutja in duševnega zdravja, ki so ključnega pomena na delovnem mestu v zdravstveni dejavnosti, kjer lahko visoke ravni poklicnega in digitalnega stresa vplivajo na uspešnost osebja in oskrbo pacientov.\nIzobraževanje se osredotoča na:  (i) osebno dobro počutje na delovnem mestu, (ii) organizacijsko odpornost na delovnem mestu.",
+    "descriptionForCatalogueEn": "V okviru kratkega izobraževanja bodo udeleženci pridobili ključna znanja s področja strategij, načrtovanja in mehanizmov za obvladovanje osebnega dobrega počutja in duševnega zdravja, ki so ključnega pomena na delovnem mestu v zdravstveni dejavnosti, kjer lahko visoke ravni poklicnega in digitalnega stresa vplivajo na uspešnost osebja in oskrbo pacientov.\nIzobraževanje se osredotoča na:  (i) osebno dobro počutje na delovnem mestu, (ii) organizacijsko odpornost na delovnem mestu.",
+    "faculty": {
+      "code": 707,
+      "title": "Fakulteta za zdravstvene vede",
+      "acronym": "FZV",
+      "titleEn": "Faculty of Health Sciences"
+    },
+    "qualificationLevelSoksqf": 0,
+    "educationClassificationKlasiusp16": "0688",
+    "ects": 1,
+    "learningEnvironment": "blended",
+    "learningEnvironmentSl": "Kombinirana izvedba (delno asinhrona izvedba, delno sinhrona izvedba s fizično prisotnostjo, delno sinhrona izvedba na daljavo)",
+    "learningEnvironmentEn": "Blended instruction (partially asynchronous instruction, partially synchronous instruction with physical presence, partially synchronous instruction with online presence)",
+    "hours": [
+      {
+        "type": "PRE",
+        "value": 3,
+        "typeEn": "Lectures",
+        "typeSl": "Predavanja"
+      },
+      {
+        "type": "ASI",
+        "value": 60,
+        "typeEn": "Asynchronous instruction",
+        "typeSl": "Asinhrona izvedba"
+      }
+    ],
+    "minParticipants": 0,
+    "imagePath": "0d069a68-70fa-4f47-b275-fff0dff27bcd",
     "keywords": [
       "key",
       "words"
     ],
     "intended": [
+      "zaposleni",
+      "osipniki"
+    ],
+    "modifiedBy": "cvetanka.pasinechka@student.um.si",
+    "executions": [
+      {
+        "id": "671b31d1-f879-42ff-bd7c-1443aeb46063",
+        "note": null,
+        "endDate": "2025-03-30T00:00:00+00:00",
+        "executed": "scheduled",
+        "location": "Feri",
+        "courseId": "0d069a68-70fa-4f47-b275-fff0dff27bcd",
+        "startDate": "2025-03-22T00:00:00+00:00",
+        "maxParticipants": 30,
+        "minParticipants": 10,
+        "executionDataEn": null,
+        "executionDataSl": "Urnik urnik ...."
+      },
+      {
+        "id": "35280e46-c389-4ad6-8791-706c3ef1c75d",
+        "note": null,
+        "endDate": null,
+        "executed": "planned",
+        "location": null,
+        "courseId": "0d069a68-70fa-4f47-b275-fff0dff27bcd",
+        "startDate": "2025-03-21T00:00:00+00:00",
+        "maxParticipants": 30,
+        "minParticipants": 10,
+        "executionDataEn": null,
+        "executionDataSl": "Testno izvedbo"
+      },
+      {
+        "id": "df1dcb10-3008-404a-a0ef-f069e57a9843",
+        "note": null,
+        "endDate": null,
+        "executed": "planned",
+        "location": null,
+        "courseId": "0d069a68-70fa-4f47-b275-fff0dff27bcd",
+        "startDate": "2025-03-20T00:00:00+00:00",
+        "maxParticipants": null,
+        "minParticipants": 10,
+        "executionDataEn": null,
+        "executionDataSl": "test2"
+      },
+      {
+        "id": "8a52e6c9-d082-4b7a-a9fc-a8a62c5f91de",
+        "note": null,
+        "endDate": null,
+        "executed": "planned",
+        "location": null,
+        "courseId": "0d069a68-70fa-4f47-b275-fff0dff27bcd",
+        "startDate": "2025-03-30T00:00:00+00:00",
+        "maxParticipants": null,
+        "minParticipants": 10,
+        "executionDataEn": null,
+        "executionDataSl": "test"
+      }
+    ]
+  },
+  {
+    "layout": "course",
+    "url": "/DDS-MAP:M4",
+    "image": "http://localhost:8081/c573cbd0-83b6-4a45-852d-7d88702e148c",
+    "field": [
+      "KLASIUS-P-16 (0688)"
+    ],
+    "implementation": "Predavanja: 3 ur\nAsinhrona izvedba: 60 ur",
+    "id": "c573cbd0-83b6-4a45-852d-7d88702e148c",
+    "parentId": null,
+    "createdDate": "2025-03-11T15:51:08.992Z",
+    "validityDate": null,
+    "cmsSyncId": "dd625246-874a-11ef-b279-0242ac130004",
+    "lecturers": [
+      "MAJDA PAJNKIHAR",
+      "GREGOR ŠTIGLIC"
+    ],
+    "lecturersStr": "red. prof. dr. MAJDA PAJNKIHAR, red. prof. dr. GREGOR ŠTIGLIC",
+    "contact": "majda.pajnkihar@um.si",
+    "moderators": [
+      {
+        "email": "majda.pajnkihar@um.si",
+        "notify": true
+      },
+      {
+        "email": "gregor.stiglic@um.si",
+        "notify": true
+      },
+      {
+        "email": "cvetanka.pasinechka@student.um.si",
+        "notify": true
+      }
+    ],
+    "acronym": "DDS-MAP:M4",
+    "titleSl": "IZOBRAŽEVANJE IZVAJALCEV USPOSABLJANJ ZA RAZVOJ OSEBNEGA DOBREGA POČUTJA",
+    "titleEn": "BUILDING A HEALTHY WORKFORCE & PERSONAL WELLBEING: TRAIN THE TRAINER",
+    "descSl": "",
+    "descEn": "",
+    "descriptionForCatalogueSl": "V okviru kratkega izobraževanja bodo udeleženci pridobili ključna znanja s področja strategij, načrtovanja in mehanizmov za obvladovanje osebnega dobrega počutja in duševnega zdravja, ki so ključnega pomena na delovnem mestu v zdravstveni dejavnosti, kjer lahko visoke ravni poklicnega in digitalnega stresa vplivajo na uspešnost osebja in oskrbo pacientov.\nIzobraževanje se osredotoča na:  (i) osebno dobro počutje na delovnem mestu, (ii) organizacijsko odpornost na delovnem mestu.",
+    "descriptionForCatalogueEn": "V okviru kratkega izobraževanja bodo udeleženci pridobili ključna znanja s področja strategij, načrtovanja in mehanizmov za obvladovanje osebnega dobrega počutja in duševnega zdravja, ki so ključnega pomena na delovnem mestu v zdravstveni dejavnosti, kjer lahko visoke ravni poklicnega in digitalnega stresa vplivajo na uspešnost osebja in oskrbo pacientov.\nIzobraževanje se osredotoča na:  (i) osebno dobro počutje na delovnem mestu, (ii) organizacijsko odpornost na delovnem mestu.",
+    "faculty": {
+      "code": 707,
+      "title": "Fakulteta za zdravstvene vede",
+      "acronym": "FZV",
+      "titleEn": "Faculty of Health Sciences"
+    },
+    "qualificationLevelSoksqf": 0,
+    "educationClassificationKlasiusp16": "0688",
+    "ects": 1,
+    "learningEnvironment": "blended",
+    "learningEnvironmentSl": "Kombinirana izvedba (delno asinhrona izvedba, delno sinhrona izvedba s fizično prisotnostjo, delno sinhrona izvedba na daljavo)",
+    "learningEnvironmentEn": "Blended instruction (partially asynchronous instruction, partially synchronous instruction with physical presence, partially synchronous instruction with online presence)",
+    "hours": [
+      {
+        "type": "PRE",
+        "value": 3,
+        "typeEn": "Lectures",
+        "typeSl": "Predavanja"
+      },
+      {
+        "type": "ASI",
+        "value": 60,
+        "typeEn": "Asynchronous instruction",
+        "typeSl": "Asinhrona izvedba"
+      }
+    ],
+    "minParticipants": 0,
+    "imagePath": "c573cbd0-83b6-4a45-852d-7d88702e148c",
+    "keywords": [
+      "key",
+      "words"
+    ],
+    "intended": [
+      "zaposleni",
+      "osipniki"
+    ],
+    "modifiedBy": "cvetanka.pasinechka@student.um.si",
+    "executions": [
+      {
+        "id": "88c7aa77-6890-49af-bff0-56b88c84e6e8",
+        "note": null,
+        "endDate": "2025-04-19T00:00:00+00:00",
+        "executed": "scheduled",
+        "location": "FERI",
+        "courseId": "c573cbd0-83b6-4a45-852d-7d88702e148c",
+        "startDate": "2025-03-29T00:00:00+00:00",
+        "maxParticipants": 30,
+        "minParticipants": 10,
+        "executionDataEn": null,
+        "executionDataSl": "Predviden urnik izobraževanja"
+      }
+    ]
+  },
+  {
+    "layout": "course",
+    "url": "/DDS-MAP:M2",
+    "image": "http://localhost:8081/f7850755-6f0e-4087-a2a6-447a9ea22557",
+    "field": [
+      "KLASIUS-P-16 (0688)"
+    ],
+    "implementation": "Asinhrona izvedba: 60 ur\nKlinične vaje: 3 ur",
+    "id": "f7850755-6f0e-4087-a2a6-447a9ea22557",
+    "parentId": null,
+    "createdDate": "2025-03-11T15:16:24.051Z",
+    "validityDate": null,
+    "cmsSyncId": "79b967bb-8ac3-11ef-bd95-0242ac130004",
+    "lecturers": [
+      "DOMINIKA VRBNJAK",
+      "MAJDA PAJNKIHAR",
+      "GREGOR ŠTIGLIC",
+      "BOŠTJAN VLAOVIČ"
+    ],
+    "lecturersStr": "izr. prof. dr. DOMINIKA VRBNJAK, red. prof. dr. MAJDA PAJNKIHAR, red. prof. dr. GREGOR ŠTIGLIC, doc. dr. BOŠTJAN VLAOVIČ",
+    "contact": "dominika.vrbnjak@um.si",
+    "moderators": [
+      {
+        "email": "dominika.vrbnjak@um.si",
+        "notify": true
+      },
+      {
+        "email": "majda.pajnkihar@um.si",
+        "notify": true
+      },
+      {
+        "email": "gregor.stiglic@um.si",
+        "notify": true
+      },
+      {
+        "email": "bostjan.vlaovic@um.si",
+        "notify": true
+      }
+    ],
+    "acronym": "DDS-MAP:M2",
+    "titleSl": "TRENUTNI IN PRIHODNJI IZZIVI V ZDRAVSTVU / AKTUALNA IN PORAJAJOČA SE VPRAŠANJA V ZDRAVSTVU",
+    "titleEn": "CURRENT & EMERGING ISSUES IN HEALTHCARE",
+    "descSl": "",
+    "descEn": "",
+    "descriptionForCatalogueSl": "Krajše izobraževanje bo udeležencem omogočilo pridobitev ključnih znanj za reševanje izzivov kibernetske varnosti v zdravstveni dejavnosti, ter uporabi digitalne tehnologije za pripravljenost in odzivanje na nujne primere ter razvoju zmogljivosti načrtovanja predvidevanja. Modul se osredotoča na: (i) Kibernetsko varnost (ii) Prakse za izboljšanje kibernetske varnosti (iii) Izkoriščanje digitalnih tehnologij za pripravljenost in odzivanje na izredne razmere (iv) Načrtovanje predvidevanja.",
+    "descriptionForCatalogueEn": "Krajše izobraževanje bo udeležencem omogočilo pridobitev ključnih znanj za reševanje izzivov kibernetske varnosti v zdravstveni dejavnosti, ter uporabi digitalne tehnologije za pripravljenost in odzivanje na nujne primere ter razvoju zmogljivosti načrtovanja predvidevanja. Modul se osredotoča na: (i) Kibernetsko varnost (ii) Prakse za izboljšanje kibernetske varnosti (iii) Izkoriščanje digitalnih tehnologij za pripravljenost in odzivanje na izredne razmere (iv) Načrtovanje predvidevanja.",
+    "faculty": {
+      "code": 707,
+      "title": "Fakulteta za zdravstvene vede",
+      "acronym": "FZV",
+      "titleEn": "Faculty of Health Sciences"
+    },
+    "qualificationLevelSoksqf": 0,
+    "educationClassificationKlasiusp16": "0688",
+    "ects": 1,
+    "learningEnvironment": "blended",
+    "learningEnvironmentSl": "Kombinirana izvedba (delno asinhrona izvedba, delno sinhrona izvedba s fizično prisotnostjo, delno sinhrona izvedba na daljavo)",
+    "learningEnvironmentEn": "Blended instruction (partially asynchronous instruction, partially synchronous instruction with physical presence, partially synchronous instruction with online presence)",
+    "hours": [
+      {
+        "type": "ASI",
+        "value": 60,
+        "typeEn": "Asynchronous instruction",
+        "typeSl": "Asinhrona izvedba"
+      },
+      {
+        "type": "KLI",
+        "value": 3,
+        "typeEn": "Clinical work",
+        "typeSl": "Klinične vaje"
+      }
+    ],
+    "minParticipants": 0,
+    "imagePath": "f7850755-6f0e-4087-a2a6-447a9ea22557",
+    "keywords": [
+      "key",
+      "word"
+    ],
+    "intended": [
       "vsi",
       "osipniki"
     ],
-    "difficulty": "Začetni nivo",
-    "description": "V okviru kratkega izobraževanja bodo udeleženci pridobili ključna znanja s področja uporabe različnih digitalnih tehnologij in e-zdravja, vključno z mobilnim zdravjem, nosljivimi napravami, elektronskimi zdravstvenimi kartotekami (EHR), zdravstvenimi informacijskimi sistemi, umetno inteligenco (AI) in virtualno/razširjeno resničnostjo (AR/VR) skladno z regulativnimi, etičnimi in varnostnimi vidiki digitalne tehnologije. Prav tako se bodo udeleženci seznanli z pristopom vodenja projektov AGILE in upravljanja prenapetosti. Izobraževanje se osredotoča na: (i) digitalne zdravstvene tehnologije (ii) priložnosti in izzive digitalnih zdravstvenih tehnologij (iii) regulativne, etične in varnostne vidike pri uporabi digitalnih tehnologij.",
-    "state": "1. pilotna izvedba",
-    "execution": "Kombinirana izvedba (delno asinhrona izvedba, delno sinhrona izvedba s fizično prisotnostjo, delno sinhrona izvedba na daljavo)",
-    "ects": 1,
+    "modifiedBy": "cvetanka.pasinechka@student.um.si",
+    "executions": []
+  },
+  {
+    "layout": "course",
+    "url": "/DDS-MAP:M3",
+    "image": "http://localhost:8081/eb25686a-0aab-4f4d-bf41-36173839d931",
+    "field": [
+      "KLASIUS-P-16 (0688)"
+    ],
     "implementation": "Predavanja: 6 ur\nAsinhrona izvedba: 55 ur\nKlinične vaje: 2 ur",
-    "cType": "1"
+    "id": "eb25686a-0aab-4f4d-bf41-36173839d931",
+    "parentId": null,
+    "createdDate": "2025-03-11T16:04:45.044Z",
+    "validityDate": null,
+    "cmsSyncId": "8172ada1-8ac8-11ef-bd95-0242ac130004",
+    "lecturers": [
+      "DOMINIKA VRBNJAK",
+      "MAJDA PAJNKIHAR",
+      "GREGOR ŠTIGLIC"
+    ],
+    "lecturersStr": "izr. prof. dr. DOMINIKA VRBNJAK, red. prof. dr. MAJDA PAJNKIHAR, red. prof. dr. GREGOR ŠTIGLIC",
+    "contact": "dominika.vrbnjak@um.si",
+    "moderators": [
+      {
+        "email": "dominika.vrbnjak@um.si",
+        "notify": true
+      },
+      {
+        "email": "majda.pajnkihar@um.si",
+        "notify": true
+      },
+      {
+        "email": "gregor.stiglic@um.si",
+        "notify": true
+      }
+    ],
+    "acronym": "DDS-MAP:M3",
+    "titleSl": "IMPLEMENTACIJA DIGITALNEGA ZDRAVSTVENEGA VARSTVA / DIGITALIZACIJA ZDRAVSTVA",
+    "titleEn": "DIGITAL HEALTHCARE IMPLEMENTATION",
+    "descSl": "",
+    "descEn": "",
+    "descriptionForCatalogueSl": "V okviru kratkega izobraževanja bodo udeleženci pridobili ključna znanja s področja uporabe različnih digitalnih tehnologij in e-zdravja, vključno z mobilnim zdravjem, nosljivimi napravami, elektronskimi zdravstvenimi kartotekami (EHR), zdravstvenimi informacijskimi sistemi, umetno inteligenco (AI) in virtualno/razširjeno resničnostjo (AR/VR) skladno z regulativnimi, etičnimi in varnostnimi vidiki digitalne tehnologije. Prav tako se bodo udeleženci seznanli z pristopom vodenja projektov AGILE in upravljanja prenapetosti. Izobraževanje se osredotoča na: (i) digitalne zdravstvene tehnologije (ii) priložnosti in izzive digitalnih zdravstvenih tehnologij (iii) regulativne, etične in varnostne vidike pri uporabi digitalnih tehnologij.",
+    "descriptionForCatalogueEn": "V okviru kratkega izobraževanja bodo udeleženci pridobili ključna znanja s področja uporabe različnih digitalnih tehnologij in e-zdravja, vključno z mobilnim zdravjem, nosljivimi napravami, elektronskimi zdravstvenimi kartotekami (EHR), zdravstvenimi informacijskimi sistemi, umetno inteligenco (AI) in virtualno/razširjeno resničnostjo (AR/VR) skladno z regulativnimi, etičnimi in varnostnimi vidiki digitalne tehnologije. Prav tako se bodo udeleženci seznanli z pristopom vodenja projektov AGILE in upravljanja prenapetosti. Izobraževanje se osredotoča na: (i) digitalne zdravstvene tehnologije (ii) priložnosti in izzive digitalnih zdravstvenih tehnologij (iii) regulativne, etične in varnostne vidike pri uporabi digitalnih tehnologij.",
+    "faculty": {
+      "code": 707,
+      "title": "Fakulteta za zdravstvene vede",
+      "acronym": "FZV",
+      "titleEn": "Faculty of Health Sciences"
+    },
+    "qualificationLevelSoksqf": 0,
+    "educationClassificationKlasiusp16": "0688",
+    "ects": 1,
+    "learningEnvironment": "blended",
+    "learningEnvironmentSl": "Kombinirana izvedba (delno asinhrona izvedba, delno sinhrona izvedba s fizično prisotnostjo, delno sinhrona izvedba na daljavo)",
+    "learningEnvironmentEn": "Blended instruction (partially asynchronous instruction, partially synchronous instruction with physical presence, partially synchronous instruction with online presence)",
+    "hours": [
+      {
+        "type": "PRE",
+        "value": 6,
+        "typeEn": "Lectures",
+        "typeSl": "Predavanja"
+      },
+      {
+        "type": "ASI",
+        "value": 55,
+        "typeEn": "Asynchronous instruction",
+        "typeSl": "Asinhrona izvedba"
+      },
+      {
+        "type": "KLI",
+        "value": 2,
+        "typeEn": "Clinical work",
+        "typeSl": "Klinične vaje"
+      }
+    ],
+    "minParticipants": 0,
+    "imagePath": "eb25686a-0aab-4f4d-bf41-36173839d931",
+    "keywords": [
+      "key",
+      "word",
+      "s"
+    ],
+    "intended": [
+      "vsi",
+      "osipniki"
+    ],
+    "modifiedBy": "cvetanka.pasinechka@student.um.si",
+    "executions": []
+  },
+  {
+    "layout": "course",
+    "url": "/DDS-MAP:M2",
+    "image": "http://localhost:8081/13e659aa-2250-4cf7-9790-c838e1565b1b",
+    "field": [
+      "KLASIUS-P-16 (0688)"
+    ],
+    "implementation": "Asinhrona izvedba: 60 ur\nKlinične vaje: 3 ur",
+    "id": "13e659aa-2250-4cf7-9790-c838e1565b1b",
+    "parentId": null,
+    "createdDate": "2025-03-11T16:14:00.809Z",
+    "validityDate": null,
+    "cmsSyncId": "79b967bb-8ac3-11ef-bd95-0242ac130004",
+    "lecturers": [
+      "DOMINIKA VRBNJAK",
+      "MAJDA PAJNKIHAR",
+      "GREGOR ŠTIGLIC",
+      "BOŠTJAN VLAOVIČ"
+    ],
+    "lecturersStr": "izr. prof. dr. DOMINIKA VRBNJAK, red. prof. dr. MAJDA PAJNKIHAR, red. prof. dr. GREGOR ŠTIGLIC, doc. dr. BOŠTJAN VLAOVIČ",
+    "contact": "dominika.vrbnjak@um.si",
+    "moderators": [
+      {
+        "email": "dominika.vrbnjak@um.si",
+        "notify": true
+      },
+      {
+        "email": "majda.pajnkihar@um.si",
+        "notify": true
+      },
+      {
+        "email": "gregor.stiglic@um.si",
+        "notify": true
+      },
+      {
+        "email": "bostjan.vlaovic@um.si",
+        "notify": true
+      }
+    ],
+    "acronym": "DDS-MAP:M2",
+    "titleSl": "TRENUTNI IN PRIHODNJI IZZIVI V ZDRAVSTVU / AKTUALNA IN PORAJAJOČA SE VPRAŠANJA V ZDRAVSTVU",
+    "titleEn": "CURRENT & EMERGING ISSUES IN HEALTHCARE",
+    "descSl": "",
+    "descEn": "",
+    "descriptionForCatalogueSl": "Krajše izobraževanje bo udeležencem omogočilo pridobitev ključnih znanj za reševanje izzivov kibernetske varnosti v zdravstveni dejavnosti, ter uporabi digitalne tehnologije za pripravljenost in odzivanje na nujne primere ter razvoju zmogljivosti načrtovanja predvidevanja. Modul se osredotoča na: (i) Kibernetsko varnost (ii) Prakse za izboljšanje kibernetske varnosti (iii) Izkoriščanje digitalnih tehnologij za pripravljenost in odzivanje na izredne razmere (iv) Načrtovanje predvidevanja.",
+    "descriptionForCatalogueEn": "Krajše izobraževanje bo udeležencem omogočilo pridobitev ključnih znanj za reševanje izzivov kibernetske varnosti v zdravstveni dejavnosti, ter uporabi digitalne tehnologije za pripravljenost in odzivanje na nujne primere ter razvoju zmogljivosti načrtovanja predvidevanja. Modul se osredotoča na: (i) Kibernetsko varnost (ii) Prakse za izboljšanje kibernetske varnosti (iii) Izkoriščanje digitalnih tehnologij za pripravljenost in odzivanje na izredne razmere (iv) Načrtovanje predvidevanja.",
+    "faculty": {
+      "code": 707,
+      "title": "Fakulteta za zdravstvene vede",
+      "acronym": "FZV",
+      "titleEn": "Faculty of Health Sciences"
+    },
+    "qualificationLevelSoksqf": 0,
+    "educationClassificationKlasiusp16": "0688",
+    "ects": 1,
+    "learningEnvironment": "blended",
+    "learningEnvironmentSl": "Kombinirana izvedba (delno asinhrona izvedba, delno sinhrona izvedba s fizično prisotnostjo, delno sinhrona izvedba na daljavo)",
+    "learningEnvironmentEn": "Blended instruction (partially asynchronous instruction, partially synchronous instruction with physical presence, partially synchronous instruction with online presence)",
+    "hours": [
+      {
+        "type": "ASI",
+        "value": 60,
+        "typeEn": "Asynchronous instruction",
+        "typeSl": "Asinhrona izvedba"
+      },
+      {
+        "type": "KLI",
+        "value": 3,
+        "typeEn": "Clinical work",
+        "typeSl": "Klinične vaje"
+      }
+    ],
+    "minParticipants": 0,
+    "imagePath": "13e659aa-2250-4cf7-9790-c838e1565b1b",
+    "keywords": [
+      "key",
+      "word"
+    ],
+    "intended": [
+      "zaposleni na področju KLASIUS",
+      "osipniki"
+    ],
+    "modifiedBy": "cvetanka.pasinechka@student.um.si",
+    "executions": []
   }
 ]
