@@ -46,14 +46,5 @@ implementation: |
     Predavanja: 9 ur
     Vaje: 9 ur
     Samostojno delo: 12 ur
-cType: "1"
-executionStartDate: "2025-02-03"
-executionData: |
-    3. 2. 2025 ob 16:00 - 19:00h
-    4. 2. 2025 ob 16:00 - 19:00h
-    6. 2. 2025 ob 16:00 - 19:00h
-    10. 2. 2025 ob 16:00 - 19:00h
-    13. 2. 2025 ob 16:00 - 19:00h
-    19. 2. 2025 ob 16:00 - 19:00h
-executionDataShow: true
+cType: "0"
 ---

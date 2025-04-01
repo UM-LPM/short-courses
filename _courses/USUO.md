@@ -40,8 +40,5 @@ implementation: |
     Predavanja: 6 ur
     Vaje: 6 ur
     Samostojno delo: 20 ur
-cType: "1"
-executionStartDate: "2024-12-02"
-executionData: |
-    Izvedba v času od 2. 12. do 5. 12. 2024.
+cType: "0"
 ---

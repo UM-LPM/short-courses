@@ -3,6 +3,7 @@
 [
   {% assign courses = site.courses | where_exp:"course", "course.is_generated != true" %}
   {% for course in courses %}
+  {% if course.show != false %}
     {
       "id": "{{ course.id }}",
       "title": "{{ course.title | escape }}",
@@ -31,5 +32,6 @@
       {% if course.questions and course.questions != "" %}"questions": "{{ course.questions | newline_to_br | strip_newlines | replace: '  ', '\\n' | replace: '"', '\"' }}"{% else %}"questions": ""{% endif %},
       {% if course.filledCourse and course.filledCourse != "" %}"filledCourse": {{ course.filledCourse }}{% else %}"filledCourse": false{% endif %}
     }{% unless forloop.last %},{% endunless %}
+  {% endif %}
   {% endfor %}
 ]
