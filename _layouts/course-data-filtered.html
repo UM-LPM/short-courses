@@ -13,7 +13,7 @@
       "field": "{{ course.field | join: ', ' | replace: "š", "s" | replace: "č", "c" | replace: "ž", "z" | replace: "Š", "S" | replace: "Č", "C" | replace: "Ž", "Z" }}",
       "description": "{{ course.descriptionSl | strip_newlines | lstrip | replace: '"', '' | replace: "š", "s" | replace: "č", "c" | replace: "ž", "z" | replace: "Š", "S" | replace: "Č", "C" | replace: "Ž", "Z"}}",
       "image": "{{ course.image}}",
-      "type": "{{ course.type | replace: "š", "s" | replace: "č", "c" | replace: "ž", "z" | replace: "Š", "S" | replace: "Č", "C" | replace: "Ž", "Z" }}",
+      "type": "{{ course.type | replace: "š", "s" | replace: "č", "c" | replace: "ž", "z" | replace: "Š", "S" | replace: "Č", "C" | replace: "Ž", "Z" }}"
     }{% unless forloop.last %},{% endunless %}
   {% endfor %}
 ]
