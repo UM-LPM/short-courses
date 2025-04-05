@@ -10,9 +10,9 @@ author:
 contact: "mladen.borovic@um.si"
 notifyData:
   - notifyEmail: "mladen.borovic@um.si"
-    notify: true
+    notify: false
   - notifyEmail: "cvetanka.pasinechka@student.um.si"
-    notify: true
+    notify: false
 title: "Uvod v obdelavo velepodatkov v Pythonu"
 image: "https://images.unsplash.com/photo-1542744173-05336fcc7ad4"
 type: "Krajše izobraževanje s preverjanjem (pilotno mikrodokazilo)"

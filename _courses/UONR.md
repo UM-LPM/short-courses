@@ -10,9 +10,9 @@ author:
 contact: "mladen.borovic@um.si"
 notifyData:
   - notifyEmail: "mladen.borovic@um.si"
-    notify: true
+    notify: false
   - notifyEmail: "cvetanka.pasinechka@student.um.si"
-    notify: true
+    notify: false
 title: "Uvod v ogrodje NVIDIA RAPIDS"
 image: "https://unsplash.com/photos/green-and-red-light-wallpaper-n6B49lTx7NM"
 type: "Krajše izobraževanje s preverjanjem (pilotno mikrodokazilo)"
