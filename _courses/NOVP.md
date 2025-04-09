@@ -1,16 +1,17 @@
 ---
-date: "2025-04-01" 
-version: "0.1.0"
-lastUpdate: "2025-04-01 09:00:00"
+date: "2025-04-03" 
+version: "0.0.1"
+lastUpdate: "2025-04-03 16:00:00"
 layout: "course"
 id: "NOVP"
 permalink: "NOVP"
 author:
-- "Dr. Mladen Borovič"
+- "asist. dr. Mladen Borovič"
+- "Kristjan Žagar, mag. inž. rač. in inf. tehnol."
 contact: "mladen.borovic@um.si"
 notifyData:
   - notifyEmail: "mladen.borovic@um.si"
-    notify: false
+    notify: true
   - notifyEmail: "cvetanka.pasinechka@student.um.si"
     notify: false
 title: "Napredna obdelava velepodatkov v Pythonu"
@@ -28,7 +29,8 @@ keywords:
 - "velepodatki"
 intended:
 - "zaposleni na področju KLASIUS"
-requisite: ""
+difficulty: "Srednji nivo"
+requisite: "Uvod v obdelavo velepodatkov v Pythonu (UOVP)"
 description: |
     Udeleženci bodo spoznali različne načine pohitritve nalaganja večjih podatkovnih zbirk s knjižnico Pandas. Nadalje bodo predstavljeni načini dodatnih pohitritev dela z večjimi podatkovnimi zbirkami, ki jih omogočata knjižnici Polars in cuDF. Udeleženci bodo s primerjavo izvedbe funkcij za delo s podatki v omenjenih knjižnicah spoznali prednosti in slabosti posameznih pristopov za obdelavo podatkov.
 state: "1. pilotna izvedba"
@@ -40,7 +42,9 @@ implementation: |
     Samostojno delo: 18 ur
 cType: "1"
 executionStartDate: "2025-06-02"
-approximateExecutionStartDate: true
 executionData: |
-    Začetek je načrtovan v začetku junija 2025. Podrobnejše informacije bodo objavljene naknadno.
+    02. 06. 2025 ob 10:00 - 14:00h
+    03. 06. 2025 ob 10:00 - 14:00h
+    04. 06. 2025 ob 10:00 - 14:00h
+executionDataShow: true
 ---
