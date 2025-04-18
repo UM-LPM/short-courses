@@ -40,5 +40,5 @@ implementation: |
     Predavanja: 6 ur
     Vaje: 6 ur
     Samostojno delo: 20 ur
-cType: "0"
+cType: "1"
 ---
