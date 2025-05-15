@@ -17,9 +17,9 @@
                         {{ page.lecturersStr }}
                     </p>
                     <p class="course-button">
-                        <!-- {% if page.executions  %}
-                        <button class="course-button"><a href="{{site.catalog_url}}{{page.url}}">Zanima me</a></button>
-                        {% endif %} -->
+                        {% if page.executions  %}
+                        <button class="course-button"><a href="{{site.catalog_url}}{{page.id}}">Zanima me</a></button>
+                        {% endif %}
                     </p>
                     <!-- {% if page.executionStartDate and page.executionStartDate != "" %}
                         {% assign executionDate = page.executionStartDate | date: "%Y-%m-%d" %}
@@ -54,7 +54,7 @@
                     <p class="course-description">{{ page.descriptionForCatalogueSl | newline_to_br | replace: "  ", "&nbsp;&nbsp;&nbsp;&nbsp;" }}</p>
                     {{ content }}
                     <div class="data-container">
-                        <div class="icon-description-container">
+                        <!-- <div class="icon-description-container">
                             <div class="inside-icon-description">
                                 <i class="fas fa-paperclip"></i>
                                 <div class="description-data">
@@ -62,8 +62,8 @@
                                     <p>{{ page.type }}</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="icon-description-container">
+                        </div> -->
+                        <!-- <div class="icon-description-container">
                             <div class="inside-icon-description">
                                 <i class="fas fa-paperclip"></i>
                                 <div class="description-data">
@@ -71,7 +71,7 @@
                                     <p>{{ page.field }}</p>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="icon-description-container">
                             <div class="inside-icon-description">
                                 <i class="fas fa-paperclip"></i>
@@ -85,11 +85,29 @@
                             <div class="inside-icon-description">
                                 <i class="fas fa-paperclip"></i>
                                 <div class="description-data">
+                                    <p class="desc"><strong>Predvidena starostna skupina</strong></p>
+                                    <p>{{ page.intendedFor }}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="icon-description-container">
+                            <div class="inside-icon-description">
+                                <i class="fas fa-paperclip"></i>
+                                <div class="description-data">
+                                    <p class="desc"><strong>Potrebno znanje pred udeležbo</strong></p>
+                                    <p>{{ page.prerequisite }}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="icon-description-container">
+                            <div class="inside-icon-description">
+                                <i class="fas fa-paperclip"></i>
+                                <div class="description-data">
                                     <p class="desc"><strong>Obseg izobraževanja glede števila ECTS</strong></p>
                                     <p>{{ page.ects | times: 25 }} - {{ page.ects | times: 30 }} ur dela</p>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="icon-description-container">
                             <div class="inside-icon-description">
                                 <i class="fas fa-paperclip"></i>
@@ -99,28 +117,34 @@
                                 </div>
                             </div>
                         </div>
-
-                        <!-- {% if page.executionStartDate and page.executionStartDate != "" %}
-                        {% assign executionDate = page.executionStartDate | date: "%Y-%m-%d" %}
-                        {% assign currentDate = 'now' | date: "%Y-%m-%d" %}
-                        {% if executionDate >= currentDate and page.executionData and page.executionData != "" %}
-                            <div class="icon-description-container">
-                                <div class="inside-icon-description">
-                                    <i class="fas fa-paperclip"></i>
-                                    <div class="description-data">
-                                        <p class="desc"><strong>Predviden urnik izobraževanja</strong></p>
-                                        <p>{{ page.executionData | newline_to_br | replace: "  ", "&nbsp;&nbsp;&nbsp;&nbsp;" }}</p>
-                                    </div>
+                        
+                        {% if page.executions and page.executions.size > 0 %}
+                        <div class="icon-description-container">
+                            <div class="inside-icon-description">
+                                <i class="fas fa-calendar-alt"></i>
+                                <div class="description-data">
+                                    <p class="desc"><strong>Izvedba</strong></p>
+                                    {% for execution in page.executions %}
+                                        <div style="margin-bottom: 1em;">
+                                            <p><i class="fas fa-clock"></i> {{ execution.executionDataSl }}</p>
+                                            <p><i class="fas fa-map-marker-alt"></i> {{ execution.location }}</p>
+                                            {% if execution.note %}
+                                                <p><i class="fas fa-sticky-note"></i> {{ execution.note }}</p>
+                                            {% endif %}
+                                        </div>
+                                    {% endfor %}
                                 </div>
                             </div>
-                        {% endif %} -->
-                    {% endif %}
-                    </div>   
-                    <!-- <p style="text-align: center;"  class="course-button">
-                        {% if page.cType == "1" %}
-                        <button class="course-button"><a href="{{site.catalog_url}}{{page.url}}">Zanima me</a></button>
+                        </div>
                         {% endif %}
-                    </p>                                                -->
+
+                    
+                    </div>   
+                    <p style="text-align: center;"  class="course-button">
+                        {% if page.executions %}
+                        <button class="course-button"><a href="{{site.catalog_url}}{{page.id}}">Zanima me</a></button>
+                        {% endif %}
+                    </p>                                               
                 </section>                
                 {% include pagination-course.html %}
             </article>
@@ -135,7 +159,10 @@
                 {% assign courses = site.data.courses | shuffle %}
                 
                 {% for course in courses %}
-                    {% unless course.url == page.url %}
+                {% assign page_url = page.url | strip | remove: '/' %}
+                {% assign course_url = course.url | strip | remove: '/' %}
+
+                    {% unless course_url == page_url %}
                         {% assign has_shared_keyword = false %}
                         
                         {% for keyword in page.keywords %}

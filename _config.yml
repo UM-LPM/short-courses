@@ -1,8 +1,8 @@
 # Site Settings
-name: Krajša izobraževanja UM FERI
-title: Krajša izobraževanja UM FERI
+name: Počitniške šole UM FERI
+title: Počitniške šole UM FERI
 description: >
-  Razvoj družbe narekuje nenehno posodabljanje kompetenc za obvladovanje obstoječih in prihodnjih izzivov. S krajšimi izobraževanji naslavljamo družbene, osebne in potrebe trga dela... <br><a href="/vec/" style="text-decoration: none; font-weight: bold; color: #DBA40B;">Več...</a>
+  Na Fakulteti za elektrotehniko, računalništvo in informatiko Univerze v Mariboru v času zimskih in poletnih počitnic organiziramo POČITNIŠKE ŠOLE za osnovnošolce in srednješolce. <br><a href="/vec/" style="text-decoration: none; font-weight: bold; color: #DBA40B;">Več...</a>
 
 show_hero: true
 menu:
@@ -24,7 +24,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 google_analytics: "UA-XXXXXXXX-X"
 language: "si"
-catalog_url: "catalog_url"
+catalog_url: "http://localhost:18001/course/"
 
 defaults:
   - scope:
