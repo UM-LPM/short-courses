@@ -1,23 +1,23 @@
 [
   {
     "layout": "course",
-    "url": "/UIVP:KMV",
-    "image": "http://localhost:8081/00728dc9-bf33-4347-a61e-0257557392a3",
+    "url": "/TEST",
+    "image": "http://localhost:8081/af64d640-07d3-4e6d-b2c6-d439e841b9bf",
     "field": [
-      "KLASIUS-P-16 (123)"
+      "KLASIUS-P-16 (13)"
     ],
     "implementation": "Predavanja: 30 ur",
-    "publishDate": "2025-05-14T00:00:00.000Z",
-    "deleteDate": null,
-    "id": "00728dc9-bf33-4347-a61e-0257557392a3",
-    "parentId": null,
-    "createdDate": "2025-05-13T16:42:56.886Z",
+    "publishDate": "2025-05-28T00:00:00.000Z",
+    "deleteDate": "2025-09-20T00:00:00.000Z",
+    "id": "af64d640-07d3-4e6d-b2c6-d439e841b9bf",
+    "createdDate": "2025-05-26T11:42:03.705Z",
     "validityDate": null,
+    "parentId": null,
     "cmsSyncId": null,
     "lecturers": [
-      "Nina Murks"
+      "CVETAN"
     ],
-    "lecturersStr": "asist. Nina Murks, izr. prof. dr. Božidar Potočnik, dr. Martin Šavc",
+    "lecturersStr": "CVETANKA PASINECHKA",
     "contact": "cvetanka.pasinechka@student.um.si",
     "moderators": [
       {
@@ -25,25 +25,25 @@
         "notify": false
       }
     ],
-    "acronym": "UIVP:KMV",
-    "titleSl": "Umetna inteligenca v praksi: kreativne multimedijske vsebine ",
-    "titleEn": "Umetna inteligenca",
+    "acronym": "TEST",
+    "titleSl": "TEST",
+    "titleEn": "",
     "descSl": "",
     "descEn": "",
-    "descriptionForCatalogueSl": "Umetna inteligenca je povsod okrog nas; uporabljamo jo na telefonih, računalnikih in pri domačih nalogah. Ampak ali jo res znamo pametno in varno uporabljati? Na tej delavnici bomo skupaj odkrivali, kako delujejo orodja, kot so ChatGPT, DALL-E in Synthesia, in jih uporabili za izdelavo lastnega multimedijskega projekta. S praktičnimi nalogami boste spoznali, kako nam lahko orodja umetne inteligence pomagajo pri izdelavi kakovostnih besedil, slik in videov, hkrati pa razvijali svojo ustvarjalnost. Spoznali boste tudi, kako smo lahko bolj varni na spletu, ob tem pa smo del hitro razvijajoče tehnologije. ",
-    "descriptionForCatalogueEn": "Umetna inteligenca je povsod okrog nas; uporabljamo jo na telefonih, računalnikih in pri domačih nalogah. Ampak ali jo res znamo pametno in varno uporabljati? Na tej delavnici bomo skupaj odkrivali, kako delujejo orodja, kot so ChatGPT, DALL-E in Synthesia, in jih uporabili za izdelavo lastnega multimedijskega projekta. S praktičnimi nalogami boste spoznali, kako nam lahko orodja umetne inteligence pomagajo pri izdelavi kakovostnih besedil, slik in videov, hkrati pa razvijali svojo ustvarjalnost. Spoznali boste tudi, kako smo lahko bolj varni na spletu, ob tem pa smo del hitro razvijajoče tehnologije. ",
+    "descriptionForCatalogueSl": "opis1.\nopis2.",
+    "descriptionForCatalogueEn": "",
     "faculty": {
-      "code": 703,
-      "title": "Fakulteta za elektrotehniko, računalništvo in informatiko",
-      "acronym": "FERI",
-      "titleEn": "Faculty of Electrical Engineering and Computer Science"
+      "code": 709,
+      "title": "Ekonomsko-poslovna fakulteta",
+      "acronym": "EPF",
+      "titleEn": "Faculty of Economics and Business"
     },
     "qualificationLevelSoksqf": 0,
-    "educationClassificationKlasiusp16": "123",
+    "educationClassificationKlasiusp16": "13",
     "ects": 1,
-    "learningEnvironment": "blended",
-    "learningEnvironmentSl": "Kombinirana izvedba (delno asinhrona izvedba, delno sinhrona izvedba s fizično prisotnostjo, delno sinhrona izvedba na daljavo)",
-    "learningEnvironmentEn": "Blended instruction (partially asynchronous instruction, partially synchronous instruction with physical presence, partially synchronous instruction with online presence)",
+    "learningEnvironment": "synchronous_online",
+    "learningEnvironmentSl": "Sinhrona izvedba - izvedba s kontaktnimi urami, na daljavo",
+    "learningEnvironmentEn": "Synchronous instruction - instruction with online contact hours",
     "hours": [
       {
         "type": "PRE",
@@ -53,31 +53,31 @@
       }
     ],
     "minParticipants": 5,
-    "imagePath": "00728dc9-bf33-4347-a61e-0257557392a3",
+    "imagePath": "af64d640-07d3-4e6d-b2c6-d439e841b9bf",
     "keywords": [
-      "umetna inteligenca "
+      "keywords"
     ],
     "intended": [
-      "odločevalci"
+      "vsi"
     ],
     "modifiedBy": "cvetanka.pasinechka@student.um.si",
     "englishTranslation": false,
-    "intendedFor": "13-17 let",
-    "prerequisite": "/",
+    "intendedFor": "11/12",
+    "prerequisite": "13",
     "executions": [
       {
-        "id": "fdc74bd9-4a86-4119-a925-0a0fc7249cfc",
-        "note": "Udeleženci po zaključku počitniške šole prejmejo potrdilo o opravljenih 22 OIV urah.",
-        "endDate": "2025-07-04T00:00:00+00:00",
-        "executed": "scheduled",
-        "location": "Počitniška šola bo potekala na UM FERI v Mariboru (Koroška cesta 46).",
-        "courseId": "00728dc9-bf33-4347-a61e-0257557392a3",
-        "startDate": "2025-06-30T00:00:00+00:00",
-        "createdDate": "2025-05-14T12:44:58.521211+00:00",
-        "maxParticipants": 13,
+        "id": "14df4906-e085-4e26-befd-b857fd802d2a",
+        "note": null,
+        "filled": false,
+        "endDate": "2025-06-30T00:00:00+00:00",
+        "executed": "planned",
+        "location": "FERI",
+        "courseId": "af64d640-07d3-4e6d-b2c6-d439e841b9bf",
+        "startDate": "2025-06-26T00:00:00+00:00",
+        "maxParticipants": 16,
         "minParticipants": 5,
         "executionDataEn": null,
-        "executionDataSl": "30.6.2025 - 4.7.2025 9:00-15:00"
+        "executionDataSl": "urnik"
       }
     ]
   }
