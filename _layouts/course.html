@@ -81,6 +81,7 @@
                                 </div>
                             </div>
                         </div>
+                        {% if page.intendedFor and page.prerequisite != "" %}
                         <div class="icon-description-container">
                             <div class="inside-icon-description">
                                 <i class="fas fa-paperclip"></i>
@@ -90,6 +91,8 @@
                                 </div>
                             </div>
                         </div>
+                        {% endif %}
+                        {% if page.prerequisite and page.prerequisite != "" %}
                         <div class="icon-description-container">
                             <div class="inside-icon-description">
                                 <i class="fas fa-paperclip"></i>
@@ -99,6 +102,7 @@
                                 </div>
                             </div>
                         </div>
+                        {% endif %}
                         <!-- <div class="icon-description-container">
                             <div class="inside-icon-description">
                                 <i class="fas fa-paperclip"></i>

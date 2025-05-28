@@ -1,6 +1,6 @@
 # Site Settings
-name: Počitniške šole UM FERI
-title: Počitniške šole UM FERI
+name: Poletne počitniške šole UM FERI
+title: Poletne počitniške šole UM FERI
 description: >
   Na Fakulteti za elektrotehniko, računalništvo in informatiko Univerze v Mariboru v času zimskih in poletnih počitnic organiziramo POČITNIŠKE ŠOLE za osnovnošolce in srednješolce. <br><a href="/vec/" style="text-decoration: none; font-weight: bold; color: #DBA40B;">Več...</a>
 
@@ -24,7 +24,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 google_analytics: "UA-XXXXXXXX-X"
 language: "si"
-catalog_url: "http://localhost:18001/course/"
+catalog_url: "https://upravljanje.poletne-sole.feri.um.si/course/"
 
 defaults:
   - scope:
