@@ -15,7 +15,14 @@
       "type": "{{ course.type }}",
       "execution": "{{ course.learningEnvironmentSl }}",
       "intendedFor": "{{ course.intendedFor }}",
-      "prerequisite": "{{ course.prerequisite }}"
+      "prerequisite": "{{ course.prerequisite }}",
+      {% if course.executions and course.executions[0] %}
+        "executionStartDate": "{{ course.executions[0].startDate | date: "%d. %m. %Y" }}",
+        "executionEndDate": "{{ course.executions[0].endDate | date: "%d. %m. %Y" }}"
+      {% else %}
+        "executionStartDate": null,
+        "executionEndDate": null
+      {% endif %}
     }{% unless forloop.last %},{% endunless %}
   {% endfor %}
 ]

@@ -50,7 +50,7 @@ layout: minimal
     <ul>
     {% for course in site.data.courses %}
       {% if course.keywords contains keyword %}
-        <li><a href="{{ site.url }}{{ site.baseurl }}{{ course.url }}">{{ course.title }}</a></li>
+        <li><a href="{{ site.url }}{{ site.baseurl }}/{{ course.acronym }}">{{ course.titleSl }}</a></li>
       {% endif %}
     {% endfor %}
     </ul>
@@ -63,7 +63,7 @@ layout: minimal
     <ul>
     {% for course in site.data.courses %}
       {% if course.intended contains word %}
-        <li><a href="{{ site.url }}{{ site.baseurl }}{{ course.url }}">{{ course.title }}</a></li>
+        <li><a href="{{ site.url }}{{ site.baseurl }}/{{ course.acronym }}">{{ course.titleSl }}</a></li>
       {% endif %}
     {% endfor %}
     </ul>
