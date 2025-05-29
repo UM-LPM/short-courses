@@ -16,11 +16,6 @@
                     <p class="course-author" style="color:rgb(83, 83, 83); margin-top:0; padding-top: 0;">
                         {{ page.lecturersStr }}
                     </p>
-                    <p class="course-button">
-                        {% if page.executions  %}
-                        <button class="course-button"><a href="{{site.catalog_url}}{{page.id}}">Zanima me</a></button>
-                        {% endif %}
-                    </p>
                     <!-- {% if page.executionStartDate and page.executionStartDate != "" %}
                         {% assign executionDate = page.executionStartDate | date: "%Y-%m-%d" %}
                         {% assign formattedExecutionDate = executionDate | date: "%d. %m. %Y" %}
@@ -33,6 +28,12 @@
                     {% endif %} -->
                 </header>
                 <section>
+                    {% if page.image %}
+                        <img style="margin-bottom: 0;" src="{{ page.image }}/1024/{{ page.acronym }}.png" alt="Featured image" class="course-cover">
+                        <!-- <span style="padding-top: 0; font-style: italic;">Vir: {{ page.image }}</span> -->
+                    {% endif %}
+                    <p class="course-description">{{ page.descriptionForCatalogueSl | newline_to_br | replace: "  ", "&nbsp;&nbsp;&nbsp;&nbsp;" }}</p>
+                    {{ content }}
                     <div class="box-info">
                         <div class="tags">
                             {% for tag in page.keywords %}
@@ -47,12 +48,6 @@
                             {% endfor %}
                         </div>
                     </div>
-                    {% if page.image %}
-                        <img style="margin-bottom: 0;" src="{{ page.image }}/1024/{{ page.acronym }}.png" alt="Featured image" class="course-cover">
-                        <!-- <span style="padding-top: 0; font-style: italic;">Vir: {{ page.image }}</span> -->
-                    {% endif %}
-                    <p class="course-description">{{ page.descriptionForCatalogueSl | newline_to_br | replace: "  ", "&nbsp;&nbsp;&nbsp;&nbsp;" }}</p>
-                    {{ content }}
                     <div class="data-container">
                         <!-- <div class="icon-description-container">
                             <div class="inside-icon-description">
@@ -137,7 +132,7 @@
                     </div>   
                     <p style="text-align: center;"  class="course-button">
                         {% if page.executions %}
-                        <button class="course-button"><a href="{{site.catalog_url}}{{page.id}}">Zanima me</a></button>
+                        <button class="course-button"><a href="{{site.catalog_url}}{{page.id}}">Prijava</a></button>
                         {% endif %}
                     </p>                                               
                 </section>                
