@@ -41,13 +41,11 @@
                                     <a href="{{ site.baseurl }}/tags/#{{ tag | slugify }}">#{{ tag }}</a>
                                 {% endif %}
                             {% endfor %}
-                            {% for tag in page.intended %}
-                                {% if tag != "" %}
-                                    <a class="intended" href="{{ site.baseurl }}/tags/#{{ tag | slugify }}">#{{ tag }}</a>
-                                {% endif %}
-                            {% endfor %}
                         </div>
                     </div>
+                    {% if page.intended contains "dekleta" %}
+                        <p class="warning">To izobraževanje je namenjeno zgolj dekletom!</p>
+                    {% endif %}
                     <div class="data-container">
                         <!-- <div class="icon-description-container">
                             <div class="inside-icon-description">

@@ -1,81 +1,586 @@
 [
   {
     "layout": "course",
-    "url": "/TEST",
-    "image": "http://localhost:8081/af64d640-07d3-4e6d-b2c6-d439e841b9bf",
+    "url": "/NTVOA",
+    "image": "https://upravljanje-katalog.lpm.feri.um.si/images//b0d238ad-653b-4bb1-892c-a17f7fbc3639",
     "field": [
-      "KLASIUS-P-16 (13)"
+      "KLASIUS-P-16 (111)"
     ],
-    "implementation": "Predavanja: 30 ur",
+    "implementation": "Predavanja: 22 ur",
     "publishDate": "2025-05-28T00:00:00.000Z",
-    "deleteDate": "2025-09-20T00:00:00.000Z",
-    "id": "af64d640-07d3-4e6d-b2c6-d439e841b9bf",
-    "createdDate": "2025-05-26T11:42:03.705Z",
+    "deleteDate": null,
+    "id": "b0d238ad-653b-4bb1-892c-a17f7fbc3639",
+    "createdDate": "2025-05-28T12:45:58.619Z",
     "validityDate": null,
     "parentId": null,
     "cmsSyncId": null,
     "lecturers": [
-      "CVETAN"
+      "Rok Friš"
     ],
-    "lecturersStr": "CVETANKA PASINECHKA",
-    "contact": "cvetanka.pasinechka@student.um.si",
+    "lecturersStr": "Rok Friš",
+    "contact": "nina.murks@um.si; tomaz.kosar@um.si",
     "moderators": [
+      {
+        "email": "rok.fris@um.si",
+        "notify": false
+      },
       {
         "email": "cvetanka.pasinechka@student.um.si",
         "notify": false
+      },
+      {
+        "email": "nina.murks@um.si",
+        "notify": false
+      },
+      {
+        "email": "tomaz.kosar@um.si",
+        "notify": false
       }
     ],
-    "acronym": "TEST",
-    "titleSl": "TEST",
+    "acronym": "NTVOA",
+    "titleSl": "Načrtovanje tiskanih vezij z orodjem Altium",
     "titleEn": "",
     "descSl": "",
     "descEn": "",
-    "descriptionForCatalogueSl": "opis1.\nopis2.",
+    "descriptionForCatalogueSl": "Tekom študija si že pridobil veliko znanja o elektrotehniki in možnosti uporabe različnih elektronskih komponent. Zdaj lahko to znanje uporabiš v praksi in izdelaš načrt za tiskano vezje, ki bo poganjalo enosmerni motor. Za načrtovanje boš spoznal in uporabil orodje Altium, ki ga uporablja veliko podjetji v Sloveniji in tujini za načrtovanje tiskanih vezij. Poznavanje tega orodja ti omogoča prednost pri zaposlitvi.  \n\nNačrtovano vezje boš sestavil in testiral. Spoznal boš različne metode in trike spajkanja komponent, ki jih boš z nekaj vaje osvojil. Vaja dela mojstra! ",
     "descriptionForCatalogueEn": "",
     "faculty": {
-      "code": 709,
-      "title": "Ekonomsko-poslovna fakulteta",
-      "acronym": "EPF",
-      "titleEn": "Faculty of Economics and Business"
+      "code": 703,
+      "title": "Fakulteta za elektrotehniko, računalništvo in informatiko",
+      "acronym": "FERI",
+      "titleEn": "Faculty of Electrical Engineering and Computer Science"
     },
     "qualificationLevelSoksqf": 0,
-    "educationClassificationKlasiusp16": "13",
+    "educationClassificationKlasiusp16": "111",
     "ects": 1,
-    "learningEnvironment": "synchronous_online",
-    "learningEnvironmentSl": "Sinhrona izvedba - izvedba s kontaktnimi urami, na daljavo",
-    "learningEnvironmentEn": "Synchronous instruction - instruction with online contact hours",
+    "learningEnvironment": "synchronous_physical",
+    "learningEnvironmentSl": "Sinhrona izvedba - izvedba s kontaktnimi urami, v živo",
+    "learningEnvironmentEn": "Synchronous instruction - instruction with in person contact hours",
     "hours": [
       {
         "type": "PRE",
-        "value": 30,
+        "value": 22,
         "typeEn": "Lectures",
         "typeSl": "Predavanja"
       }
     ],
     "minParticipants": 5,
-    "imagePath": "af64d640-07d3-4e6d-b2c6-d439e841b9bf",
+    "imagePath": "b0d238ad-653b-4bb1-892c-a17f7fbc3639",
     "keywords": [
-      "keywords"
+      "TiskanoVezje",
+      "AltiumDesigner",
+      "Elektrotehnika",
+      "Spajkanje",
+      "PraktičnoZnanje"
     ],
     "intended": [
-      "vsi"
+      "študenti",
+      "dijaki"
     ],
     "modifiedBy": "cvetanka.pasinechka@student.um.si",
     "englishTranslation": false,
+    "intendedFor": "18-29 let",
+    "prerequisite": "Osnovno znanje elektrotehnike, aktiven uporabniški račun za Altium Designer.  ",
     "executions": [
       {
-        "id": "14df4906-e085-4e26-befd-b857fd802d2a",
-        "note": null,
+        "id": "c365a3dc-ab34-4db0-9efd-ad163e3abb68",
+        "note": "Udeleženci po zaključku počitniške šole prejmejo potrdilo o opravljenih 22 OIV urah.",
         "filled": false,
-        "endDate": "2025-06-30T00:00:00+00:00",
-        "executed": "planned",
-        "location": "FERI",
-        "courseId": "af64d640-07d3-4e6d-b2c6-d439e841b9bf",
-        "startDate": "2025-06-26T00:00:00+00:00",
-        "maxParticipants": 16,
+        "endDate": "2025-07-04T00:00:00+00:00",
+        "executed": "scheduled",
+        "location": "Počitniška šola bo potekala na UM FERI v Mariboru (Koroška cesta 46).",
+        "courseId": "b0d238ad-653b-4bb1-892c-a17f7fbc3639",
+        "startDate": "2025-07-01T00:00:00+00:00",
+        "maxParticipants": 18,
         "minParticipants": 5,
         "executionDataEn": null,
-        "executionDataSl": "urnik"
+        "executionDataSl": "1. 7. 2025 - 4. 7. 2025 med 9:00 - 15:00 uro."
+      }
+    ]
+  },
+  {
+    "layout": "course",
+    "url": "/UIP:KMV",
+    "image": "https://upravljanje-katalog.lpm.feri.um.si/images//726bcaa0-7d5d-47c0-95f8-c5be2d89f45d",
+    "field": [
+      "KLASIUS-P-16 (111)"
+    ],
+    "implementation": "Predavanja: 22 ur",
+    "publishDate": "2025-05-28T00:00:00.000Z",
+    "deleteDate": null,
+    "id": "726bcaa0-7d5d-47c0-95f8-c5be2d89f45d",
+    "createdDate": "2025-05-28T13:08:19.455Z",
+    "validityDate": null,
+    "parentId": null,
+    "cmsSyncId": null,
+    "lecturers": [
+      "Irena Lovrenčič Držanič"
+    ],
+    "lecturersStr": "Irena Lovrenčič Držanič",
+    "contact": "nina.murks@um.si; tomaz.kosar@um.si",
+    "moderators": [
+      {
+        "email": "irena.lovrencic@um.si",
+        "notify": false
+      },
+      {
+        "email": "cvetanka.pasinechka@student.um.si",
+        "notify": false
+      },
+      {
+        "email": "nina.murks@um.si",
+        "notify": false
+      },
+      {
+        "email": "tomaz.kosar@um.si",
+        "notify": false
+      }
+    ],
+    "acronym": "UIP:KMV",
+    "titleSl": "Umetna inteligenca v praksi: kreativne multimedijske vsebine ",
+    "titleEn": "",
+    "descSl": "",
+    "descEn": "",
+    "descriptionForCatalogueSl": "Umetna inteligenca je povsod okrog nas; uporabljamo jo na telefonih, računalnikih in pri domačih nalogah. Ampak ali jo res znamo pametno in varno uporabljati? Na tej delavnici bomo skupaj odkrivali, kako delujejo orodja, kot so ChatGPT, DALL-E in Synthesia, in jih uporabili za izdelavo lastnega multimedijskega projekta. S praktičnimi nalogami boste spoznali, kako nam lahko orodja umetne inteligence pomagajo pri izdelavi kakovostnih besedil, slik in videov, hkrati pa razvijali svojo ustvarjalnost. Spoznali boste tudi, kako smo lahko bolj varni na spletu, ob tem pa smo del hitro razvijajoče tehnologije. \n\nNa delavnici boste spoznali veščine, ki so vsak dan pomembnejše. Pridružite se nam, spoznajte svet umetne inteligence in se preizkusite v svoji ustvarjalnosti! ",
+    "descriptionForCatalogueEn": "",
+    "faculty": {
+      "code": 703,
+      "title": "Fakulteta za elektrotehniko, računalništvo in informatiko",
+      "acronym": "FERI",
+      "titleEn": "Faculty of Electrical Engineering and Computer Science"
+    },
+    "qualificationLevelSoksqf": 0,
+    "educationClassificationKlasiusp16": "111",
+    "ects": 1,
+    "learningEnvironment": "synchronous_physical",
+    "learningEnvironmentSl": "Sinhrona izvedba - izvedba s kontaktnimi urami, v živo",
+    "learningEnvironmentEn": "Synchronous instruction - instruction with in person contact hours",
+    "hours": [
+      {
+        "type": "PRE",
+        "value": 22,
+        "typeEn": "Lectures",
+        "typeSl": "Predavanja"
+      }
+    ],
+    "minParticipants": 5,
+    "imagePath": "726bcaa0-7d5d-47c0-95f8-c5be2d89f45d",
+    "keywords": [
+      "UmetnaInteligenca",
+      "DigitalnaUstvarjalnost",
+      "ChatGPT",
+      "VarnaRabaInterneta",
+      "MultimedijskiProjekt"
+    ],
+    "intended": [
+      "osnovnošolci",
+      "dijaki"
+    ],
+    "modifiedBy": "cvetanka.pasinechka@student.um.si",
+    "englishTranslation": false,
+    "intendedFor": "13-17 let",
+    "prerequisite": "Udeleženci ne potrebujejo ničesar.",
+    "executions": [
+      {
+        "id": "8eb2a282-2c49-4ac6-b365-145a0e824ac8",
+        "note": "Udeleženci po zaključku počitniške šole prejmejo potrdilo o opravljenih 22 OIV urah.",
+        "filled": false,
+        "endDate": "2025-07-04T00:00:00+00:00",
+        "executed": "scheduled",
+        "location": "Počitniška šola bo potekala na UM FERI v Mariboru (Koroška cesta 46).",
+        "courseId": "726bcaa0-7d5d-47c0-95f8-c5be2d89f45d",
+        "startDate": "2025-06-30T00:00:00+00:00",
+        "maxParticipants": 13,
+        "minParticipants": 5,
+        "executionDataEn": null,
+        "executionDataSl": "30. 6. 2025 - 4. 7. 2025 med 9:00 - 14:00 uro."
+      }
+    ]
+  },
+  {
+    "layout": "course",
+    "url": "/RSPR",
+    "image": "https://upravljanje-katalog.lpm.feri.um.si/images//95e2a607-cbcc-40de-aeaf-d91de3ebc609",
+    "field": [
+      "KLASIUS-P-16 (111)"
+    ],
+    "implementation": "Predavanja: 22 ur",
+    "publishDate": "2025-05-29T00:00:00.000Z",
+    "deleteDate": null,
+    "id": "95e2a607-cbcc-40de-aeaf-d91de3ebc609",
+    "createdDate": "2025-05-29T10:21:11.388Z",
+    "validityDate": null,
+    "parentId": null,
+    "cmsSyncId": null,
+    "lecturers": [
+      "Leon Kutoš"
+    ],
+    "lecturersStr": "Leon Kutoš",
+    "contact": "nina.murks@um.si; tomaz.kosar@um.si",
+    "moderators": [
+      {
+        "email": "leon.kutos@um.si",
+        "notify": false
+      },
+      {
+        "email": "nina.murks@um.si",
+        "notify": false
+      },
+      {
+        "email": "tomaz.kosar@um.si",
+        "notify": false
+      },
+      {
+        "email": "cvetanka.pasinechka@student.um.si",
+        "notify": false
+      }
+    ],
+    "acronym": "RSPR",
+    "titleSl": "Razstavi, sestavi in poveži računalnik",
+    "titleEn": "",
+    "descSl": "",
+    "descEn": "",
+    "descriptionForCatalogueSl": "Si se kdaj vprašal, kaj se skriva v notranjosti računalnika? Na naši delavnici boš imel priložnost, da stopiš v vlogo računalniškega mojstra! Naučil se boš prepoznati in razumeti osnovne računalniške komponente, jih pravilno sestaviti in povezati v delujoč sistem. Spoznal boš, kako preveriti delovanje računalnika s posebnimi programskimi orodji ter kako odkriti in odpraviti morebitne težave. ",
+    "descriptionForCatalogueEn": "",
+    "faculty": {
+      "code": 703,
+      "title": "Fakulteta za elektrotehniko, računalništvo in informatiko",
+      "acronym": "FERI",
+      "titleEn": "Faculty of Electrical Engineering and Computer Science"
+    },
+    "qualificationLevelSoksqf": 0,
+    "educationClassificationKlasiusp16": "111",
+    "ects": 1,
+    "learningEnvironment": "synchronous_physical",
+    "learningEnvironmentSl": "Sinhrona izvedba - izvedba s kontaktnimi urami, v živo",
+    "learningEnvironmentEn": "Synchronous instruction - instruction with in person contact hours",
+    "hours": [
+      {
+        "type": "PRE",
+        "value": 22,
+        "typeEn": "Lectures",
+        "typeSl": "Predavanja"
+      }
+    ],
+    "minParticipants": 5,
+    "imagePath": "95e2a607-cbcc-40de-aeaf-d91de3ebc609",
+    "keywords": [
+      "RačunalniškeKomponente",
+      "SestaviRačunalnik",
+      "ITVeščine",
+      "StrojnaOprema",
+      "PraktičnoUčenje"
+    ],
+    "intended": [
+      "osnovnošolci",
+      "dijaki"
+    ],
+    "modifiedBy": "cvetanka.pasinechka@student.um.si",
+    "englishTranslation": false,
+    "intendedFor": "12-16 let",
+    "prerequisite": "Udeleženci ne potrebujejo ničesar.",
+    "executions": [
+      {
+        "id": "ffc366ff-dcf7-4571-a40e-05a8f305a66a",
+        "note": "Udeleženci po zaključku počitniške šole prejmejo potrdilo o opravljenih 22 OIV urah.",
+        "filled": false,
+        "endDate": "2025-07-23T00:00:00+00:00",
+        "executed": "scheduled",
+        "location": "Počitniška šola bo potekala na UM FERI v Mariboru (Koroška cesta 46).",
+        "courseId": "95e2a607-cbcc-40de-aeaf-d91de3ebc609",
+        "startDate": "2025-07-21T00:00:00+00:00",
+        "maxParticipants": 13,
+        "minParticipants": 5,
+        "executionDataEn": null,
+        "executionDataSl": "21. 7. 2025 - 23. 7. 2025 med 9:00 - 15:00 uro."
+      }
+    ]
+  },
+  {
+    "layout": "course",
+    "url": "/ISSSBP",
+    "image": "https://upravljanje-katalog.lpm.feri.um.si/images//3847b0e2-fcb2-475b-b310-4082e4c2b61d",
+    "field": [
+      "KLASIUS-P-16 (111)"
+    ],
+    "implementation": "Predavanja: 22 ur",
+    "publishDate": "2025-05-29T00:00:00.000Z",
+    "deleteDate": null,
+    "id": "3847b0e2-fcb2-475b-b310-4082e4c2b61d",
+    "createdDate": "2025-05-29T10:29:40.129Z",
+    "validityDate": null,
+    "parentId": null,
+    "cmsSyncId": null,
+    "lecturers": [
+      "Saša Brdnik"
+    ],
+    "lecturersStr": "Saša Brdnik",
+    "contact": "nina.murks@um.si; tomaz.kosar@um.si",
+    "moderators": [
+      {
+        "email": "sasa.brdnik@um.si",
+        "notify": false
+      },
+      {
+        "email": "nina.murks@um.si",
+        "notify": false
+      },
+      {
+        "email": "tomaz.kosar@um.si",
+        "notify": true
+      },
+      {
+        "email": "cvetanka.pasinechka@student.um.si",
+        "notify": true
+      }
+    ],
+    "acronym": "ISSSBP",
+    "titleSl": "Izdelava sodobnih spletnih strani brez programiranja",
+    "titleEn": "",
+    "descSl": "",
+    "descEn": "",
+    "descriptionForCatalogueSl": "Vabljeni na brezplačni tečaj razvoja spletnih strani z uporabo sistema WordPress – brez potrebe po znanju programiranja!  \n\nTečaj je namenjen učencem in dijakom, starim od 14 do 19 let, ki jih zanima oblikovanje, tehnologija ali želijo preprosto ustvariti svojo spletno stran za šolski projekt, hobi ali predstavitev idej. Na delavnici boste: \n\n- spoznali osnove WordPress orodja za upravljanje z vsebinami, \n- spoznali osnove načrtovanja spletnih strani in uporabniške izkušnje, \n- postavili in oblikovali svojo spletno stran, \n- pridobili konkretne nasvete za oblikovanje in razvoj spletnih strani v Wordressu. \n\nTečaj bo potekal v sproščenem, a poučnem vzdušju, pod vodstvom izkušenih mentorjev. Udeleženci ne potrebujejo predhodnih znanj informatike ali programiranja. ",
+    "descriptionForCatalogueEn": "",
+    "faculty": {
+      "code": 703,
+      "title": "Fakulteta za elektrotehniko, računalništvo in informatiko",
+      "acronym": "FERI",
+      "titleEn": "Faculty of Electrical Engineering and Computer Science"
+    },
+    "qualificationLevelSoksqf": 0,
+    "educationClassificationKlasiusp16": "111",
+    "ects": 1,
+    "learningEnvironment": "synchronous_physical",
+    "learningEnvironmentSl": "Sinhrona izvedba - izvedba s kontaktnimi urami, v živo",
+    "learningEnvironmentEn": "Synchronous instruction - instruction with in person contact hours",
+    "hours": [
+      {
+        "type": "PRE",
+        "value": 22,
+        "typeEn": "Lectures",
+        "typeSl": "Predavanja"
+      }
+    ],
+    "minParticipants": 5,
+    "imagePath": "3847b0e2-fcb2-475b-b310-4082e4c2b61d",
+    "keywords": [
+      "WordPressTečaj",
+      "SpletneStrani",
+      "OblikovanjeSpletnihStrani",
+      "DigitalneVeščine",
+      "UstvariSvojoStran"
+    ],
+    "intended": [
+      "osnovnošolci",
+      "dijaki"
+    ],
+    "modifiedBy": "cvetanka.pasinechka@student.um.si",
+    "englishTranslation": false,
+    "intendedFor": "14-19 let",
+    "prerequisite": "Udeleženci ne potrebujejo ničesar. Lahko prinesejo svoje prenosne računalnike, če bi želeli spletne strani oblikovati na njih. ",
+    "executions": [
+      {
+        "id": "407a2d37-3129-4753-9685-1c9185c6fe96",
+        "note": "Udeleženci po zaključku počitniške šole prejmejo potrdilo o opravljenih 22 OIV urah.",
+        "filled": false,
+        "endDate": "2025-07-23T00:00:00+00:00",
+        "executed": "scheduled",
+        "location": "Počitniška šola bo potekala na UM FERI v Mariboru (Koroška cesta 46).",
+        "courseId": "3847b0e2-fcb2-475b-b310-4082e4c2b61d",
+        "startDate": "2025-07-21T00:00:00+00:00",
+        "maxParticipants": 13,
+        "minParticipants": 5,
+        "executionDataEn": null,
+        "executionDataSl": "21. 7. 2025 - 23. 7. 2025 med 8:30 - 16:00 uro."
+      }
+    ]
+  },
+  {
+    "layout": "course",
+    "url": "/PKSUIP",
+    "image": "https://upravljanje-katalog.lpm.feri.um.si/images//b03e37d6-03a6-4f66-81a4-c5824afde564",
+    "field": [
+      "KLASIUS-P-16 (111)"
+    ],
+    "implementation": "",
+    "publishDate": "2025-05-29T00:00:00.000Z",
+    "deleteDate": null,
+    "id": "b03e37d6-03a6-4f66-81a4-c5824afde564",
+    "createdDate": "2025-05-29T10:36:43.912Z",
+    "validityDate": null,
+    "parentId": null,
+    "cmsSyncId": null,
+    "lecturers": [
+      "Tjaša Heričko"
+    ],
+    "lecturersStr": "Tjaša Heričko",
+    "contact": "nina.murks@um.si; tomaz.kosar@um.si",
+    "moderators": [
+      {
+        "email": "nina.murks@um.si",
+        "notify": false
+      },
+      {
+        "email": "tomaz.kosar@um.si",
+        "notify": false
+      },
+      {
+        "email": "cvetanka.pasinechka@student.um.si",
+        "notify": false
+      },
+      {
+        "email": "tjasa.hericko@um.si",
+        "notify": false
+      }
+    ],
+    "acronym": "PKSUIP",
+    "titleSl": "Prvi koraki v svet umetne inteligence in podatkov: kako Netflix, YouTube in TikTok vedo, kaj mi je všeč?",
+    "titleEn": "",
+    "descSl": "",
+    "descEn": "",
+    "descriptionForCatalogueSl": "A si se kdaj vprašal, zakaj ti TikTok pokaže točno tisti video, ki te nasmeji? Kako Netflix ve, katera serija te bo zasvojila? In kako YouTube ugane, kaj si želiš gledati naslednje? Včasih se zdi, kot da nas tehnologija pozna bolje, kot se poznamo sami … Na delavnici bomo spoznali, kako računalniki opazujejo svet skozi podatke, kako se učijo prepoznavati vzorce v podatkih – podobno kot človek – in kako na tej podlagi sprejemajo »pametne« odločitve ter ustvarjajo priporočila. Raziskali bomo, kako umetna inteligenca in podatki vplivajo na naš vsakdan – pogosto, ne da bi se tega sploh zavedali. Ustvarjali bomo svoje lastne modele umetne inteligence s pomočjo orodja Teachable Machine, raziskovali svet povezanih podatkov z orodjem Neo4J ter odkrivali, kako iz podatkov nastanejo priporočila, kot jih vidimo na TikToku, YouTubu in Netflixu. ",
+    "descriptionForCatalogueEn": "",
+    "faculty": {
+      "code": 703,
+      "title": "Fakulteta za elektrotehniko, računalništvo in informatiko",
+      "acronym": "FERI",
+      "titleEn": "Faculty of Electrical Engineering and Computer Science"
+    },
+    "qualificationLevelSoksqf": 0,
+    "educationClassificationKlasiusp16": "111",
+    "ects": 1,
+    "learningEnvironment": "synchronous_physical",
+    "learningEnvironmentSl": "Sinhrona izvedba - izvedba s kontaktnimi urami, v živo",
+    "learningEnvironmentEn": "Synchronous instruction - instruction with in person contact hours",
+    "hours": [],
+    "minParticipants": 5,
+    "imagePath": "b03e37d6-03a6-4f66-81a4-c5824afde564",
+    "keywords": [
+      "UmetnaInteligenca",
+      "StrojnoUčenje",
+      "PriporočilniSistemi",
+      "TeachableMachine",
+      "PodatkovnaAnaliza"
+    ],
+    "intended": [
+      "osnovnošolci",
+      "dijaki"
+    ],
+    "modifiedBy": "cvetanka.pasinechka@student.um.si",
+    "englishTranslation": false,
+    "intendedFor": "14-19 let",
+    "prerequisite": "Udeleženci ne potrebujejo ničesar.",
+    "executions": [
+      {
+        "id": "34006c3a-9711-4d36-9e77-46ffc8e3fe75",
+        "note": "Udeleženci po zaključku počitniške šole prejmejo potrdilo o opravljenih 22 OIV urah.",
+        "filled": false,
+        "endDate": "2025-07-30T00:00:00+00:00",
+        "executed": "scheduled",
+        "location": "Počitniška šola bo potekala na UM FERI v Mariboru (Koroška cesta 46).",
+        "courseId": "b03e37d6-03a6-4f66-81a4-c5824afde564",
+        "startDate": "2025-07-28T00:00:00+00:00",
+        "maxParticipants": 13,
+        "minParticipants": 5,
+        "executionDataEn": null,
+        "executionDataSl": "28. 7. 2025 – 30. 7. 2025 med 9:00 - 15:00 uro."
+      }
+    ]
+  },
+  {
+    "layout": "course",
+    "url": "/PP:OPyPLKB",
+    "image": "https://upravljanje-katalog.lpm.feri.um.si/images//5d433614-68d3-4cc1-b5f0-a999dd858df6",
+    "field": [
+      "KLASIUS-P-16 (111)"
+    ],
+    "implementation": "Predavanja: 22 ur",
+    "publishDate": "2025-05-28T00:00:00.000Z",
+    "deleteDate": null,
+    "id": "5d433614-68d3-4cc1-b5f0-a999dd858df6",
+    "createdDate": "2025-05-28T13:23:52.568Z",
+    "validityDate": null,
+    "parentId": null,
+    "cmsSyncId": null,
+    "lecturers": [
+      "Nina Murks"
+    ],
+    "lecturersStr": "Nina Murks",
+    "contact": "nina.murks@um.si; tomaz.kosar@um.si",
+    "moderators": [
+      {
+        "email": "nina.murks@um.si",
+        "notify": false
+      },
+      {
+        "email": "cvetanka.pasinechka@student.um.si",
+        "notify": false
+      },
+      {
+        "email": "tomaz.kosar@um.si",
+        "notify": false
+      }
+    ],
+    "acronym": "PP:OPyPLKB",
+    "titleSl": "Python programerke: Od osnov Python programiranja do lastnega klepetalnega bot-a",
+    "titleEn": "",
+    "descSl": "",
+    "descEn": "",
+    "descriptionForCatalogueSl": "Delavnica se bo začela s spoznavanjem osnovnih programerskih konceptov, kjer se bomo najprej posvetili spremenljivkam, vpisu in izpisu iz konzole, pogojnim stavkom, zankam, poljem in na koncu še funkcijam. Posamezne sklope bodo udeleženke in udeleženci spoznavali postopoma in jih utrjevali s kopico zabavnih programov, kot so: kalkulator, vislice, generator zgodbic, igra kamen-škarje-papir, in še mnoge druge. Nazadnje pa bomo vse do takrat napisane programe povezali v večji izdelek - klepetalni bot, ki bo po delovanju podoben ChatGPT. ",
+    "descriptionForCatalogueEn": "",
+    "faculty": {
+      "code": 703,
+      "title": "Fakulteta za elektrotehniko, računalništvo in informatiko",
+      "acronym": "FERI",
+      "titleEn": "Faculty of Electrical Engineering and Computer Science"
+    },
+    "qualificationLevelSoksqf": 0,
+    "educationClassificationKlasiusp16": "111",
+    "ects": 1,
+    "learningEnvironment": "synchronous_physical",
+    "learningEnvironmentSl": "Sinhrona izvedba - izvedba s kontaktnimi urami, v živo",
+    "learningEnvironmentEn": "Synchronous instruction - instruction with in person contact hours",
+    "hours": [
+      {
+        "type": "PRE",
+        "value": 22,
+        "typeEn": "Lectures",
+        "typeSl": "Predavanja"
+      }
+    ],
+    "minParticipants": 5,
+    "imagePath": "5d433614-68d3-4cc1-b5f0-a999dd858df6",
+    "keywords": [
+      "Programiranje",
+      "OsnoveKodiranja",
+      "ZabavniProgrami",
+      "KlepetalniBot",
+      "UčenjeSkoziIgro",
+      "DekletaVTeknologiji"
+    ],
+    "intended": [
+      "dijaki",
+      "dekleta",
+      "osnovnošolci"
+    ],
+    "modifiedBy": "cvetanka.pasinechka@student.um.si",
+    "englishTranslation": false,
+    "intendedFor": "13-17 let",
+    "prerequisite": "Udeleženci naj imajo urejen dostop do Google računov zaradi uporabe spletnih Python lupin. ",
+    "executions": [
+      {
+        "id": "6b4afc5d-dd7b-44fb-84ef-1d76172e9e92",
+        "note": "Udeleženci po zaključku počitniške šole prejmejo potrdilo o opravljenih 22 OIV urah.",
+        "filled": false,
+        "endDate": "2025-07-16T00:00:00+00:00",
+        "executed": "scheduled",
+        "location": "Počitniška šola bo potekala na UM FERI v Mariboru (Koroška cesta 46).",
+        "courseId": "5d433614-68d3-4cc1-b5f0-a999dd858df6",
+        "startDate": "2025-07-14T00:00:00+00:00",
+        "maxParticipants": 13,
+        "minParticipants": 5,
+        "executionDataEn": null,
+        "executionDataSl": "14. 7. 2025 - 16. 7. 2025 med 9:00 - 15:00 uro."
       }
     ]
   }
