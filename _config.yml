@@ -1,6 +1,6 @@
 # Site Settings
-name: Poletne počitniške šole UM FERI
-title: Poletne počitniške šole UM FERI
+name: Počitniške šole UM FERI
+title: Počitniške šole UM FERI
 description: >
   <a href="/vec/" style="text-decoration: none; font-weight: bold; color: #DBA40B;">Preberi več...</a>
   
@@ -26,7 +26,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 google_analytics: "UA-XXXXXXXX-X"
 language: "si"
-catalog_url: "https://upravljanje.poletne-sole.feri.um.si/course/"
+catalog_url: "https://upravljanje.pocitniske-sole.feri.um.si/course/"
 
 defaults:
   - scope:
