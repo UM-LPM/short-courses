@@ -10,6 +10,15 @@ author:
   - "doc. dr. Miloš Beković"
   - "dr. Primož Sukič"
 contact: "milos.bekovic@um.si"
+notifyData:
+  - notifyEmail: "milos.bekovic@um.si"
+    notify: false
+  - notifyEmail: "p.sukic@um.si"
+    notify: false
+  - notifyEmail: "gorazd.stumberger@um.si"
+    notify: false
+  - notifyEmail: "cvetanka.pasinechka@student.um.si"
+    notify: false
 title: "Aktivna omrežja za zeleni prehod"
 image: "https://unsplash.com/photos/fbi-woman-works-on-a-case-NxOQWmoYr9k"
 type: "Krajše izobraževanje"
