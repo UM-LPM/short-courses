@@ -9,7 +9,7 @@ author:
   - "prof. dr. Gorazd Štumberger"
   - "doc. dr. Miloš Beković"
   - "dr. Primož Sukič"
-contact: "milos.bekovic@um.si"
+contact: "katarina.dezan@um.si"
 notifyData:
   - notifyEmail: "milos.bekovic@um.si"
     notify: false
@@ -47,7 +47,9 @@ execution: "Mešana"
 ects: "1"
 implementation: |
   Predavanja: 10 ur 
-  Vaje: 10 ur 
+  Vaje: 5 ur 
   Samostojno delo: 10 ur 
 cType: "1"
+filledCourse: true
+executionStartDate: "2025-07-08"
 ---

@@ -30,17 +30,21 @@
                         {% endif %}
                     </p>
                     {% if page.executionStartDate and page.executionStartDate != "" %}
-                        {% assign executionDate = page.executionStartDate | date: "%Y-%m-%d" %}
-                        {% assign formattedExecutionDate = executionDate | date: "%d. %m. %Y" %}
-                        {% assign currentDate = 'now' | date: "%Y-%m-%d" %}
-                        {% if executionDate >= currentDate %}
-                            {% if page.approximateExecutionStartDate != true %}
+                    {% assign executionDate = page.executionStartDate | date: "%Y-%m-%d" %}
+                    {% assign formattedExecutionDate = executionDate | date: "%d. %m. %Y" %}
+                    {% assign currentDate = 'now' | date: "%Y-%m-%d" %}
+                    {% if executionDate >= currentDate %}
+                        {% if page.approximateExecutionStartDate != true %}
                             <p class="course-title">
-                                <b>Predviden začetek izvedbe: {{ formattedExecutionDate }}</b>
+                                {% if page.filledCourse %}
+                                    <b style="color: #8B0000;">Zaseden termin: {{ formattedExecutionDate }}</b>
+                                {% else %}
+                                    <b>Predviden začetek izvedbe: {{ formattedExecutionDate }}</b>
+                                {% endif %}
                             </p>
-                            {% endif %}
                         {% endif %}
                     {% endif %}
+                {% endif %}
                 </header>
                 <section>
                     <div class="box-info">
