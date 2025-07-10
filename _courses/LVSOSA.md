@@ -31,7 +31,7 @@ intended:
 difficulty: "Začetni nivo"
 requisite: ""
 description: |
-    Udeleženci bodo spoznali osnove lahke virtualizacije z uporabo zmogljivega in dostopnega orodja Singularity/Apptainer. Orodje omogoča ustvarjanje in zagon kontejnerjev na poenostavljen, varen in prenosljiv način – brez potrebe po skrbniških pravicah. Udeleženci bodo pridobili praktične izkušnje z delom v okolju Linux, kar je bistveno za razumevanje in učinkovito uporabo orodja. Z vodenimi vajami in primeri iz resničnega sveta bodo udeleženci spoznali ukazno vrstico operacijskega sistema Linux, ustvarjanje, zagon in upravljanja vsebnikov ter spoznali razlike med orodjem Singularity/Apptainer in drugimi orodji za vsebnike, kot je npr. Docker. Povdarek bo na uporabi orodja Singularity/Apptainer v okolju superračunalnika.
+    Udeleženci bodo spoznali osnove lahke virtualizacije z uporabo zmogljivega in dostopnega orodja Singularity/Apptainer. Orodje omogoča ustvarjanje in zagon vsebnikov na poenostavljen, varen in prenosljiv način – brez potrebe po skrbniških pravicah. Udeleženci bodo pridobili praktične izkušnje z delom v okolju Linux, kar je bistveno za razumevanje in učinkovito uporabo orodja. Z vodenimi vajami in primeri iz resničnega sveta bodo udeleženci spoznali ukazno vrstico operacijskega sistema Linux, ustvarjanje, zagon in upravljanja vsebnikov ter spoznali razlike med orodjem Singularity/Apptainer in drugimi orodji za vsebnike, kot je npr. Docker. Povdarek bo na uporabi orodja Singularity/Apptainer v okolju superračunalnika.
 state: "1. pilotna izvedba"
 execution: "Sinhrona"
 ects: "1"
