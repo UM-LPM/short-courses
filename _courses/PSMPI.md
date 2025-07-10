@@ -1,7 +1,7 @@
 ---
 date: "2024-10-16" 
 version: "0.1.0"
-lastUpdate: "2024-10-16 10:30:00"
+lastUpdate: "2025-07-10 10:30:00"
 layout: "course"
 id: "PSMPI"
 permalink: "PSMPI"
@@ -33,7 +33,7 @@ difficulty: "Začetni nivo"
 requisite: ""
 description: |
     Udeleženci bodo spoznali osnovne principe paralelnega in porazdeljenega računanja s pomočjo pošiljanja sporočil v programskem jeziku C++. Predstavljeni bodo vidiki sočasnosti, delovanje porazdeljenih računalniških sistemov, koncept pošiljanja sporočil, itd. S pomočjo MPI bo prikazan način paralelnega in porazdeljenega računanja. Udeleženci bodo reševali kombinatorični problem s pomočjo pošiljanja sporočil in stohastičnega algoritma, ki se bo izvajal porazdeljeno.
-state: "1. pilotna izvedba"
+state: "2. pilotna izvedba"
 execution: "Sinhrona"
 ects: "1"
 implementation: |
@@ -41,4 +41,8 @@ implementation: |
     Vaje: 6 ur
     Samostojno delo: 18 ur
 cType: "1"
+approximateExecutionStartDate: true
+executionStartDate: "2025-09-01"
+executionData: |
+    Začetek izvedbe je načrtovan v septembru/oktobru.
 ---
