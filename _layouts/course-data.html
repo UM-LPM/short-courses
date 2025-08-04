@@ -19,7 +19,8 @@
       {% if course.executions and course.executions[0] %}
         "unparsedExecutionStartDate": "{{ course.executions[0].startDate }}",
         "executionStartDate": "{{ course.executions[0].startDate | date: "%d. %m. %Y" }}",
-        "executionEndDate": "{{ course.executions[0].endDate | date: "%d. %m. %Y" }}"
+        "executionEndDate": "{{ course.executions[0].endDate | date: "%d. %m. %Y" }}",
+        "filled": "{{ course.executions[0].filled }}"
       {% else %}
         "executionStartDate": null,
         "executionEndDate": null
