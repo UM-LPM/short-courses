@@ -41,4 +41,7 @@ implementation: |
     Vaje: 6 ur
     Samostojno delo: 20 ur
 cType: "1"
+executionStartDate: "2025-10-13"
+executionData: |
+    Izvedba od 13. do 16. oktobra 2025, vsak dan med 16. in 18. uro
 ---
