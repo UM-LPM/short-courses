@@ -42,4 +42,11 @@ implementation: |
     Vaje: 6 ur
     Samostojno delo: 18 ur
 cType: "1"
+executionStartDate: "2025-09-22"
+executionData: |
+    ponedeljek, 22. 9. 2025, v času med 16.00-18.30h (predavanja)
+    torek, 23. 9. 2025 2025, v času med 16.00-18.30h (vaje)
+    sreda, 24. 9. 2025, v času med 16.00-18.30h (predavanja)
+    četrtek, 25. 9. 2025, v času med 16.00-18.30h (vaje)
+    ponedeljek, 29. 9. 2025, v času med 16.00-18.30h (zagovori vaj)
 ---
