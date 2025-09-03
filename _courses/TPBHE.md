@@ -43,6 +43,7 @@ implementation: |
   Vaje: 5 ur 
   Samostojno delo: 10 ur 
 cType: "1"
-filledCourse: true
-executionStartDate: "2025-07-09"
+executionStartDate: "2025-09-16"
+executionData: |
+    Izvedba 16. 9. 2025
 ---

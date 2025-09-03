@@ -1,7 +1,7 @@
 ---
 date: "2025-06-18"
 version: "0.1.0"
-lastUpdate: "2025-06-18 08:05:00"
+lastUpdate: "2025-09-03 12:45:00"
 layout: "course"
 id: "AOZP"
 permalink: "AOZP"
@@ -50,6 +50,7 @@ implementation: |
   Vaje: 5 ur 
   Samostojno delo: 10 ur 
 cType: "1"
-filledCourse: true
-executionStartDate: "2025-07-08"
+executionStartDate: "2025-09-08"
+executionData: |
+    Izvedba 8. 9. 2025 in 7. 10. 2025
 ---
