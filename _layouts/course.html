@@ -134,6 +134,7 @@
                                 </div>
                             </div>
                         </div>
+
                         {% endif %}
 
                     
@@ -154,7 +155,33 @@
                 {% assign backup_courses = "" | split: "," %}
                 {% assign related_courses_count = 0 %}
                 
-                {% assign courses = site.data.courses | shuffle %}
+                {% assign now = site.time | date: '%s' %}
+                {% assign filtered_courses = "" | split: "" %}
+
+                {% for course in site.data.courses %}
+                {% if course.publishDate and course.executions and course.executions.size > 0 and course.executions[0].startDate %}
+                    {% assign pub_ts = course.publishDate | date: "%s" %}
+                    {% assign start_ts = course.executions[0].startDate | date: "%s" %}
+
+                    {% if pub_ts < now and start_ts >= now %}
+                    {% if course.deleteDate == nil or course.deleteDate == "" %}
+                        {%- assign filtered_courses = filtered_courses | push: course -%}
+                    {% else %}
+                        {% assign del_ts = course.deleteDate | date: "%s" %}
+                        {% if del_ts > now %}
+                        {%- assign filtered_courses = filtered_courses | push: course -%}
+                        {% endif %}
+                    {% endif %}
+                    {% endif %}
+                {% endif %}
+                {% endfor %}
+
+                {% assign courses = filtered_courses | shuffle %}
+
+                {% assign courses = filtered_courses | shuffle %}
+
+
+                {% assign courses = filtered_courses | shuffle %}
                 
                 {% for course in courses %}
                 {% assign page_url = page.url | strip | remove: '/' %}

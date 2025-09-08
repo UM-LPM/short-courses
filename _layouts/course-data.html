@@ -16,6 +16,8 @@
       "execution": "{{ course.learningEnvironmentSl }}",
       "intendedFor": "{{ course.intendedFor }}",
       "prerequisite": "{{ course.prerequisite }}",
+      "publishDate": "{{ course.publishDate }}",
+      "removalDate": "{{ course.deleteDate }}",
       {% if course.executions and course.executions[0] %}
         "unparsedExecutionStartDate": "{{ course.executions[0].startDate }}",
         "executionStartDate": "{{ course.executions[0].startDate | date: "%d. %m. %Y" }}",
