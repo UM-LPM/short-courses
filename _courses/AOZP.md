@@ -50,7 +50,7 @@ implementation: |
   Vaje: 5 ur 
   Samostojno delo: 10 ur 
 cType: "1"
-executionStartDate: "2025-09-08"
+executionStartDate: "2025-10-07"
 executionData: |
-    Izvedba 8. 9. 2025 in 7. 10. 2025
+    Izvedba 7. 10. 2025
 ---
