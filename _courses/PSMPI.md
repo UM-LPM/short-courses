@@ -42,7 +42,7 @@ implementation: |
     Samostojno delo: 18 ur
 cType: "1"
 approximateExecutionStartDate: true
-executionStartDate: "2025-09-01"
+executionStartDate: "2025-10-01"
 executionData: |
-    Začetek izvedbe je načrtovan v septembru/oktobru.
+    1.10 - 3.10 (od 16 do 20 ure)
 ---
