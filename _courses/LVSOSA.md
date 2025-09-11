@@ -40,7 +40,6 @@ implementation: |
     Vaje: 6 ur
     Samostojno delo: 18 ur
 cType: "1"
-approximateExecutionStartDate: true
 executionStartDate: "2025-10-27"
 executionData: |
     27.10 - 29.10 (od 16 do 20 ure)
