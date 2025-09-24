@@ -53,4 +53,5 @@ cType: "1"
 executionStartDate: "2025-10-07"
 executionData: |
     Izvedba 7. 10. 2025
+filledCourse: true
 ---
