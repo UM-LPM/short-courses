@@ -44,4 +44,7 @@ implementation: |
     Vaje: 10 ur
     Samostojno delo: 10 ur
 cType: "1"
+executionStartDate: "2025-10-13"
+executionData: |
+    Izvedba 13. 10. 2025
 ---
