@@ -1,7 +1,7 @@
 ---
 date: "2024-08-12" 
 version: "0.1.1"
-lastUpdate: "2024-09-04 16:00:00"
+lastUpdate: "2025-09-29 11:30:00"
 layout: "course"
 id: "UKP"
 permalink: "UKP"
@@ -13,6 +13,8 @@ contact: "nina.murks@um.si"
 notifyData:
   - notifyEmail: "nina.murks@um.si"
     notify: true
+  - notifyEmail: "cvetanka.pasinechka@student.um.si"
+    notify: false
 title: "Uvod v kvantno programiranje"
 image: "https://images.unsplash.com/photo-1517148815978-75f6acaaf32c"
 type: "Krajše izobraževanje s preverjanjem (pilotno mikrodokazilo)"
@@ -35,12 +37,18 @@ difficulty: "Začetni nivo"
 requisite: ""
 description: |
     Udeleženci bodo v poljudni obliki spoznali osnovne principe kvantnega sveta, kot so superpozicija, kvantno prepletanje in tuneljenje. Spoznali bodo, kako ti osnovni principi nadgrajujejo klasične bite in registre v kvantne bite in kvantne registre. Seznanili se bodo z osnovami delovanja kvantnih vrat in kvantnih vezij. Spoznali, preučili in ovrednotili bodo najbolj znane kvantne algoritme in primerjali njihove računske kompleksnosti s kompleksnostmi klasičnih algoritmov. Spoznali bodo delo v kvantnih simulatorjih in programskih orodij za kvantno programiranje. Osvojeno znanje bodo preizkusili na praktičnih primerih uporabe kvantnih algoritmov, predvsem na področju kriptografije in kibernetske varnosti.
-state: "1. pilotna izvedba"
+state: "2. pilotna izvedba"
 execution: "Mešana"
 ects: "1"
 implementation: |
     Predavanja: 10 ur
     Vaje: 10 ur
     Samostojno delo: 10 ur
-cType: "0"
+cType: "1"
+executionStartDate: "2025-10-13"
+executionData: |
+    ponedeljek, 13. 10. 2025, v času med 15.00-20.00h
+    sreda, 15. 10. 2025, v času med 17.00-20.00h
+    četrtek, 16. 10. 2025, v času med 15.00-20.00h
+    petek, 17. 10. 2025, v času med 15.00-19.00h
 ---
