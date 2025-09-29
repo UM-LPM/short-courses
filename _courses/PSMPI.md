@@ -43,5 +43,5 @@ implementation: |
 cType: "1"
 executionStartDate: "2025-10-01"
 executionData: |
-    1.10 - 3.10 (od 16 do 20 ure)
+    1.10 - 3.10 (od 16 do 20 ure) v učilnici F-102
 ---
