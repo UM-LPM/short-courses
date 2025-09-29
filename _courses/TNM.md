@@ -34,7 +34,7 @@ intended:
 - "vsi"
 difficulty: "Začetni nivo"
 requisite: |
-    Uvod v Python za neprogramerje
+    Uvod v Python za neprogramerje <br/>
     Globoke nevronske mreže in prepoznavanje objektov v digitalnih slikah
 description: |
     Udeleženci bodo spoznali teoretične in praktične osnove delovanja ter uporabe tenzorskih nevronskih mrež. Naučili se bodo pretvoriti običajno nevronsko mrežo v tenzorsko nevronsko mrežo. S pomočjo učne in testne množice bodo naučili dve preprosti tenzorski nevronski mreži, ter testirali njuno delovanje pri različnih parametrih “tenzoriranja”. Omejili se bodo na reševanje problemov razvrščanja slik v razrede. V okvirju izobraževanja bodo udeleženci najprej spoznali zaledje pri “tenzoriranju” nevronskih mrež, nato bo sledil pregled razvijalskih ogrodij za implementacijo tenzorskih nevronskih mrež, spoznali pa bodo tudi osnovne napotke za “tenzoriranje” nevronskih mrež, njihove prednosti ter slabosti napram klasičnim konvolucijskim nevronskim mrežam.
