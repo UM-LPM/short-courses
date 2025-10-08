@@ -9,6 +9,13 @@ author:
   - "red. prof. dr. Jožef Ritonja"
   - "Mitja Hribernik"
 contact: "mitja.hribernik@um.si"
+notifyData:
+  - notifyEmail: "mitja.hribernik@um.si"
+    notify: true
+  - notifyEmail: "katarina.dezan@um.si"
+    notify: true
+  - notifyEmail: "cvetanka.pasinechka@student.um.si"
+    notify: false
 title: "Uporaba frekvenčnih pretvornikov za napredne električne pogone "
 image: "https://as2.ftcdn.net/jpg/10/67/88/11/1000_F_1067881167_GtWuwewa7UOhKHQNz9wIClYtor2pNXDF.jpg"
 type: "Krajše izobraževanje"
@@ -35,5 +42,9 @@ implementation: |
   Predavanja: 5 ur
   Vaje: 15 ur
   Samostojno delo: 5 ur
-cType: "0"
+cType: "1"
+executionStartDate: "2025-11-30"
+executionData: |
+    Izvedba v mesecu novembru.
+approximateExecutionStartDate: true
 ---
