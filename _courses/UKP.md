@@ -45,10 +45,5 @@ implementation: |
     Vaje: 10 ur
     Samostojno delo: 10 ur
 cType: "1"
-executionStartDate: "2025-10-13"
-executionData: |
-    ponedeljek, 13. 10. 2025, v času med 15.00-20.00h
-    sreda, 15. 10. 2025, v času med 17.00-20.00h
-    četrtek, 16. 10. 2025, v času med 15.00-20.00h
-    petek, 17. 10. 2025, v času med 15.00-19.00h
+executionStartDate: "2025-11-10"
 ---
