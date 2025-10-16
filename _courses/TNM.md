@@ -46,4 +46,11 @@ implementation: |
     Vaje: 6 ur
     Samostojno delo: 18 ur
 cType: "1"
+executionStartDate: "2025-11-07"
+executionData: |
+    petek, 7. 11. 2025, v času med 16.00-18.30h, predavanja
+    ponedeljek, 10. 11. 2025, v času med 16.00-18.30h, vaje
+    petek, 14. 11. 2025, v času med 16.00-18.30h, predavanja
+    ponedeljek, 17. 11. 2025, v času med 16.00-18.30h, vaje
+    petek, 28. 11. 2025, v času med 16.00-18.30h, preverjanje znanja in zagovori samostojnih domačih nalog
 ---
