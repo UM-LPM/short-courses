@@ -11,6 +11,10 @@ contact: "bozidar.potocnik@um.si"
 notifyData:
   - notifyEmail: "bozidar.potocnik@um.si"
     notify: true
+  - notifyEmail: "nina.murks@um.si"
+    notify: false
+  - notifyEmail: "anze.fercec1@um.si"
+    notify: true
   - notifyEmail: "cvetanka.pasinechka@student.um.si"
     notify: false
   - notifyEmail: "matej.crepinsek@um.si"
