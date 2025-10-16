@@ -43,8 +43,7 @@ implementation: |
   Vaje: 15 ur
   Samostojno delo: 5 ur
 cType: "1"
-executionStartDate: "2025-11-30"
+executionStartDate: "2025-11-12"
 executionData: |
-    Izvedba v mesecu novembru.
-approximateExecutionStartDate: true
+    Izvedba bo potekala 12. in 13. novembra 2025.
 ---
