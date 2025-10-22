@@ -1,7 +1,7 @@
 ---
 date: "2025-07-10" 
 version: "0.1.0"
-lastUpdate: "2025-07-10 10:30:00"
+lastUpdate: "2025-10-22 17:50:00"
 layout: "course"
 id: "LVSOSA"
 permalink: "LVSOSA"
@@ -40,7 +40,9 @@ implementation: |
     Vaje: 6 ur
     Samostojno delo: 18 ur
 cType: "1"
-executionStartDate: "2025-10-27"
+executionStartDate: "2025-10-29"
 executionData: |
-    27.10 - 29.10 (od 16 do 20 ure)
+    - sreda, 29. 10. 2025, od 13:00 do 17:00
+    - sreda, 5. 11. 2025, od 13:00 do 17:00
+    - sreda, 12. 11. 2025, od 13:00 do 17:00
 ---
