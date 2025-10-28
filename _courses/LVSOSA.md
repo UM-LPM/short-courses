@@ -42,7 +42,7 @@ implementation: |
 cType: "1"
 executionStartDate: "2025-10-29"
 executionData: |
-    - sreda, 29. 10. 2025, od 13:00 do 17:00
-    - sreda, 5. 11. 2025, od 13:00 do 17:00
-    - sreda, 12. 11. 2025, od 13:00 do 17:00
+    - sreda, 29. 10. 2025, od 13:00 do 17:00, F-102
+    - sreda, 5. 11. 2025, od 13:00 do 17:00, F-102
+    - sreda, 12. 11. 2025, od 13:00 do 17:00, F-102
 ---
