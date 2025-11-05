@@ -40,15 +40,14 @@ requisite: ""
 description: |
     Udeleženci bodo najprej spoznali osnove delovanja generativne umetne inteligence (LLM, difuzijski modeli, …) in aktualne predstavnike orodij. Sledil bo pregled zakonskih podlag v svetu in razprava ter primeri prednosti, tveganj, etičnih vidikov in zlorab uporabe generativne umetne inteligence. Poseben poudarek bo namenjen tudi transparentnosti delovanja sistemov umetne inteligence ter razložljivi umetni inteligenci (XAI), ki omogoča boljše razumevanje odločitev modelov umetne inteligence in strojnega učenja. Udeleženci bodo obravnavali problematiko rizičnih področij, kjer je uporaba generativne umetne inteligence in nasploh umetne inteligence posebej občutljiva (npr. zdravstvo, pravo, izobraževanje, varnost), ter se seznanili z dobrimi praksami, ki spodbujajo odgovorno, pregledno in varno uporabo teh tehnologij.
 state: "1. pilotna izvedba"
-execution: "Sinhrona"
+execution: "Hibridna"
 ects: "1"
 implementation: |
     Predavanja: 6 ur
     Vaje: 6 ur
     Samostojno delo: 18 ur
 cType: "1"
-executionStartDate: "2025-11-30"
+executionStartDate: "2025-11-19"
 executionData: |
-    Izvedba v mesecu novembru.
-approximateExecutionStartDate: true
+    Izvedba se bo začela 19. 11. 2025 z uvodnim predavanjem ob 12:00 v učilnici G3 – sejna soba 48, 1. nadstropje.
 ---
