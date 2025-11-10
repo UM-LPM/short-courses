@@ -45,5 +45,12 @@ implementation: |
     Vaje: 10 ur
     Samostojno delo: 10 ur
 cType: "1"
-executionStartDate: "2025-11-10"
+executionStartDate: "2025-11-17"
+executionData: |
+    ponedeljek, 17. 11. 2025, v času med 16.00-19.00h, predavanja
+    torek, 18. 11. 2025, v času med 17.00-20.00h, predavanja 
+    sreda, 19. 11. 2025, v času med 17.00-20.00h, predavanja
+    petek, 21. 11. 2025, v času med 15.00-20.00h, predavanja
+    torek, 25. 11. 2025, v času med 17.00-20.00h, vaje
+    petek, 28. 11. 2025, v času med 17.00-20.00h, vaje
 ---
