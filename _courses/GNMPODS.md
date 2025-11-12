@@ -42,11 +42,11 @@ implementation: |
     Vaje: 6 ur
     Samostojno delo: 18 ur
 cType: "1"
-executionStartDate: "2025-09-22"
+executionStartDate: "2025-12-02"
 executionData: |
-    ponedeljek, 22. 9. 2025, v času med 16.00-18.30h (predavanja)
-    torek, 23. 9. 2025 2025, v času med 16.00-18.30h (vaje)
-    sreda, 24. 9. 2025, v času med 16.00-18.30h (predavanja)
-    četrtek, 25. 9. 2025, v času med 16.00-18.30h (vaje)
-    ponedeljek, 29. 9. 2025, v času med 16.00-18.30h (zagovori vaj)
+    2. 12. 2025, v času med 16:00-19:00h, v učilnici ALFA
+    3. 12. 2025, v času med 16:00-18:00h, v učilnici F-102 in 18.00-19.00h v učilnici C-202
+    9. 12. 2025, v času med 16:00-19:00h, v učilnici G2-seminarska soba, 2. nad.
+    10. 12. 2025, v času med 16:00-17:00h, v učilnici G2-4N.11, 4. nad. in 17.00-19.00h v učilnici G2-seminarska soba, 2. nad.
+    12. 12. 2025, v času med 16:00-19:00h, v učilnici G2-seminarska soba, 2. nad.
 ---
