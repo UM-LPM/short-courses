@@ -15,7 +15,7 @@ module Jekyll
     def initialize(site, base, course)
       @site = site
       @base = base
-      @dir = course["url"]
+      @dir = course["acronym"]
       @name = "index.html"
 
       self.process(@name)

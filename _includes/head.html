@@ -5,9 +5,9 @@
 
     {% assign title = '' %}
     {% if page.title %}
-        {% assign title = page.title | append: " | " | append: site.name %}
+        {% assign title = page.title | append: " | " | append: site.data.catalog.titleSl %}
     {% else %}
-        {% assign title = site.title %}
+        {% assign title = site.data.catalog.titleSl %}
     {% endif %}
 
     {% assign image = '' %}
@@ -28,7 +28,7 @@
 
     <link rel="stylesheet" href="{{ '/assets/css/styles.css' | prepend: site.baseurl }}">
     <link rel="canonical" href="{{ url }}">
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.data.catalog.titleSl }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}" />
     <!-- Include extra styles -->
     {% include extra-css.html %}
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>

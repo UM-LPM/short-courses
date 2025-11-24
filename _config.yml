@@ -1,10 +1,7 @@
 # Site Settings
-name: Mini akademija UM FERI
-title: Mini akademija UM FERI
-description: >
-  <a href="/vec/" style="text-decoration: none; font-weight: bold; color: #DBA40B;">Preberi več...</a>
-  
-  <br>Kontaktna točka: nina.murks@um.si in tomaz.kosar@um.si</br>
+name: Template
+title: Template
+description: Template
 
 show_hero: true
 menu:
@@ -26,7 +23,6 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 google_analytics: "UA-XXXXXXXX-X"
 language: "si"
-catalog_url: "https://upravljanje.mini-akademija.feri.um.si/course/"
 
 defaults:
   - scope:

@@ -1,7 +1,7 @@
 <div class="footer-wrapper">
-  <p class="footer-intro">Delavnice se izvajajo v sklopu projektov, ki jih sofinancira Ministrstvo za digitalno preobrazbo, vendar vsebina ne odraža stališč Ministrstva za digitalno preobrazbo.</p>
+  <p class="footer-intro">{{site.data.catalog.sponsoredText}}</p>
   <footer>
-    <img src="{{site.baseurl}}/assets/img/logo-feri.png" alt="logo" class="footer-logo" />
+    <img src="{{site.data.catalog.logosCombined}}" alt="logo" class="footer-logo" />
   </footer>
 </div>
 
@@ -9,8 +9,8 @@
 {
   "@context": "http://schema.org",
   "@type": "Organization",
-  "name": "{{ site.name }}",
-  "description": "{{ site.description }}",
+  "name": "{{ site.data.catalog.titleSl }}",
+  "description": "{{ site.data.catalog.descriptionSl }}",
   "url": "{{ site.url }}{{site.baseurl}}/",
   "logo": {
       "@type": "ImageObject",

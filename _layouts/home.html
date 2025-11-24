@@ -18,13 +18,12 @@ layout: main
     {% if site.show_hero and paginator == nil or paginator.page == 1 %}
         <!-- Hero -->
         {% assign featured = courses.first %}
-        <section class="hero" style="background-image: url('/assets/img/p-sole.jpg');">
+        <section class="hero" style="background-image: url('{{ site.data.catalog.backgroundPicture }}');">
             <div class="pixels"></div>
             <div class="gradient"></div>
             <div class="content">
-                <h1 class="title">{{ site.title }}</h1>
-                <p class="description">{{ site.description }}</p>
-                <p class="description">{{ site.contact }}</p>
+                <h1 class="title">{{ site.data.catalog.titleSl }}</h1>
+                <p class="description">{{ site.data.catalog.descriptionSl }}</p>
                 <div class="buttons">
                     <!--
                     <a href="{{ featured.url | prepend: site.baseurl }}" role="button" class="button">
@@ -53,15 +52,15 @@ layout: main
   "@type": "WebPage",
   "mainEntity": {
     "@type": "Blog",
-    "name": "{{ site.name }}",
-    "headline": "{{ site.title }}",
-    "description": "{{ site.description }}",
+    "name": "{{ site.data.catalog.titleSl }}",
+    "headline": "{{ site.data.catalog.titleSl }}",
+    "description": "{{ site.data.catalog.descriptionSl }}",
     "url": "{{ site.url }}{{site.baseurl}}/",
     "inLanguage": "{{ site.language }}",
     "isFamilyFriendly": "true",
     "creator": {
         "@type": "Organization",
-        "name": "{{ site.name }}",
+        "name": "{{ site.data.catalog.titleSl }}",
         "url": "{{ site.url }}{{site.baseurl}}/",
         "sameAs": [
             {{ social_urls | split: "," | join: "," }}
