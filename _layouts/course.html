@@ -1,267 +1,295 @@
 <!DOCTYPE html>
 <html lang="{{ site.language }}" class="no-js">
-    {% include head.html %}
-    <body class="has-push-menu">
-        {% include minutes-to-read.html %}
-        {% include svg-icons.html %}
-        {% include feri-header.html %}
-        {% include header.html %}
-        <section class="course {% if site.two_columns_layout %}two-columns{% else %}one-column{% endif %}">
-            <article role="article" class="course-content">
-                <header>
-                    <h3>
-                        {{ field }}
-                    </h3>
-                    <h1 class="course-title">{{ page.titleSl }}</h1>
-                    <p class="course-author" style="color:rgb(83, 83, 83); margin-top:0; padding-top: 0;">
-                        {{ page.lecturersStr }}
-                    </p>
-                    <!-- {% if page.executionStartDate and page.executionStartDate != "" %}
-                        {% assign executionDate = page.executionStartDate | date: "%Y-%m-%d" %}
-                        {% assign formattedExecutionDate = executionDate | date: "%d. %m. %Y" %}
-                        {% assign currentDate = 'now' | date: "%Y-%m-%d" %}
-                        {% if executionDate >= currentDate %}
-                            <p class="course-title">
-                                <b>Načrtovan začetek izvedbe: {{ formattedExecutionDate }}</b>
-                            </p>
-                        {% endif %}
-                    {% endif %} -->
-                </header>
-                <section>
-                    {% if page.image %}
-                        <img style="margin-bottom: 0;" src="{{ page.image }}/1024/{{ page.acronym }}.png" alt="Featured image" class="course-cover">
-                        <!-- <span style="padding-top: 0; font-style: italic;">Vir: {{ page.image }}</span> -->
-                    {% endif %}
-                    <p class="course-description">{{ page.descriptionForCatalogueSl | newline_to_br | replace: "  ", "&nbsp;&nbsp;&nbsp;&nbsp;" }}</p>
-                    {{ content }}
-                    <div class="box-info">
-                        <div class="tags">
-                            {% for tag in page.keywords %}
-                                {% if tag != "" %}
-                                    <a href="{{ site.baseurl }}/tags/#{{ tag | slugify }}">#{{ tag }}</a>
-                                {% endif %}
+{% include head.html %}
+
+<body class="has-push-menu">
+    {% include feri-header.html %}
+    {% include header.html %}
+    <section class="course {% if site.two_columns_layout %}two-columns{% else %}one-column{% endif %}">
+        <article role="article" class="course-content">
+
+            <header>
+
+                {%- comment -%} FIELD (IF NOT PSMA) OR ADD MARGIN FOR PSMA {%- endcomment -%}
+
+                {% if page.catalogType != "PSMA" and page.field %}
+                {% assign fields = page.field %}
+                    {% if fields %}
+                        <h3>
+                            {% for f in fields %}
+                            {{ f }}{% unless forloop.last %}, {% endunless %}
                             {% endfor %}
+                        </h3>
+                    {% endif %}
+                {% else %}
+                    <div style="margin-top:40px;"></div>
+                {% endif %}
+
+
+                <h1 class="course-title">{{ page.titleSl }}</h1>
+
+                <p class="course-author" style="color:rgb(83, 83, 83); margin-top:0; padding-top: 0;">
+                    {{ page.lecturersStr }}
+                </p>
+            </header>
+
+            <section>
+
+                {% if page.image %}
+                <img style="margin-bottom: 0;" src="{{ page.image }}/1024/{{ page.acronym }}.png" alt="Featured image"
+                    class="course-cover">
+                {% endif %}
+
+                <p class="course-description">
+                    {{ page.descriptionSl | newline_to_br | replace: " ", "&nbsp;&nbsp;&nbsp;&nbsp;" }}
+                </p>
+
+                {{ content }}
+
+                <div class="box-info">
+                    <div class="tags">
+                        {% for tag in page.keywords %}
+                        {% if tag != "" %}
+                        <a href="{{ site.baseurl }}/tags/#{{ tag | slugify }}">#{{ tag }}</a>
+                        {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+
+                {% if page.intended contains "dekleta" %}
+                <p class="warning">To izobraževanje je namenjeno zgolj dekletom</p>
+                {% endif %}
+
+                <div class="data-container">
+
+                    {%- comment -%} STAROSTNA SKUPINA {%- endcomment -%}
+                    {% if page.intendedFor and page.intendedFor != "" %}
+                    <div class="icon-description-container">
+                        <div class="inside-icon-description">
+                            <i class="fas fa-paperclip"></i>
+                            <div class="description-data">
+                                <p class="desc"><strong>Predvidena starostna skupina</strong></p>
+                                <p>{{ page.intendedFor }}</p>
+                            </div>
                         </div>
                     </div>
-                    {% if page.intended contains "dekleta" %}
-                        <p class="warning">To izobraževanje je namenjeno zgolj dekletom</p>
                     {% endif %}
-                    <div class="data-container">
-                        <!-- <div class="icon-description-container">
-                            <div class="inside-icon-description">
-                                <i class="fas fa-paperclip"></i>
-                                <div class="description-data">
-                                    <p class="desc"><strong>Vrsta izobraževanja</strong></p>
-                                    <p>{{ page.type }}</p>
-                                </div>
-                            </div>
-                        </div> -->
-                        <!-- <div class="icon-description-container">
-                            <div class="inside-icon-description">
-                                <i class="fas fa-paperclip"></i>
-                                <div class="description-data">
-                                    <p class="desc"><strong>Področje</strong></p>
-                                    <p>{{ page.field }}</p>
-                                </div>
-                            </div>
-                        </div> -->
-                        {% if page.intendedFor and page.prerequisite != "" %}
-                        <div class="icon-description-container">
-                            <div class="inside-icon-description">
-                                <i class="fas fa-paperclip"></i>
-                                <div class="description-data">
-                                    <p class="desc"><strong>Predvidena starostna skupina</strong></p>
-                                    <p>{{ page.intendedFor }}</p>
-                                </div>
-                            </div>
-                        </div>
-                        {% endif %}
-                        {% if page.prerequisite and page.prerequisite != "" %}
-                        <div class="icon-description-container">
-                            <div class="inside-icon-description">
-                                <i class="fas fa-paperclip"></i>
-                                <div class="description-data">
-                                    <p class="desc"><strong>Pred udeležbo potrebujete</strong></p>
-                                    <p>{{ page.prerequisite }}</p>
-                                </div>
-                            </div>
-                        </div>
-                        {% endif %}
-                        <!-- <div class="icon-description-container">
-                            <div class="inside-icon-description">
-                                <i class="fas fa-paperclip"></i>
-                                <div class="description-data">
-                                    <p class="desc"><strong>Obseg izobraževanja glede števila ECTS</strong></p>
-                                    <p>{{ page.ects | times: 25 }} - {{ page.ects | times: 30 }} ur dela</p>
-                                </div>
-                            </div>
-                        </div> -->
-                        <div class="icon-description-container">
-                            <div class="inside-icon-description">
-                                <i class="fas fa-paperclip"></i>
-                                <div class="description-data">
-                                    <p class="desc"><strong>Kontakt</strong></p>
-                                    <p>{{ page.contact }}</p>
-                                </div>
-                            </div>
-                        </div>
 
-                        <div class="icon-description-container">
-                            <div class="inside-icon-description">
-                                <i class="fas fa-paperclip"></i>
-                                <div class="description-data">
-                                    <p class="desc"><strong>Cena</strong></p>
-                                    <p>Udeležba na počitniški šoli je brezplačna. Prav tako bo poskrbljeno za hrano in pijačo.</p>
-                                </div>
+                    {%- comment -%} PREREQUISITES {%- endcomment -%}
+                    {% if page.prerequisite and page.prerequisite != "" %}
+                    <div class="icon-description-container">
+                        <div class="inside-icon-description">
+                            <i class="fas fa-paperclip"></i>
+                            <div class="description-data">
+                                <p class="desc"><strong>Pred udeležbo potrebujete</strong></p>
+                                <p>{{ page.prerequisite }}</p>
                             </div>
                         </div>
-                        
-                        {% if page.executions and page.executions.size > 0 %}
-                        <div class="icon-description-container">
-                            <div class="inside-icon-description">
-                                <i class="fas fa-calendar-alt"></i>
-                                <div class="description-data">
-                                    <p class="desc"><strong>Izvedba</strong></p>
-                                    {% for execution in page.executions %}
-                                        <div style="margin-bottom: 1em;">
-                                            <p><i class="fas fa-clock"></i> {{ execution.executionDataSl }}</p>
-                                            <p><i class="fas fa-map-marker-alt"></i> {{ execution.location }}</p>
-                                            {% if execution.note %}
-                                                <p><i class="fas fa-sticky-note"></i> {{ execution.note }}</p>
-                                            {% endif %}
-                                        </div>
-                                    {% endfor %}
-                                </div>
+                    </div>
+                    {% endif %}
+
+                    {%- comment -%} HOURS TOTAL (ECTS) {%- endcomment -%}
+                    <div class="icon-description-container">
+                        <div class="inside-icon-description">
+                            <i class="fas fa-paperclip"></i>
+                            <div class="description-data">
+                                <p class="desc"><strong>Obseg izobraževanja glede števila ECTS</strong></p>
+                                <p>{{ page.ects | times: 25 }} - {{ page.ects | times: 30 }} ur dela</p>
                             </div>
                         </div>
-                        {% endif %}
+                    </div>
 
-                    
-                    </div>   
-                    <p style="text-align: center;"  class="course-button">
-                        {% if page.executions %}
-                        <button class="course-button"><a href="{{site.catalog_url}}{{page.id}}">Prijava</a></button>
-                        {% endif %}
-                    </p>                                               
-                </section>                
-                {% include pagination-course.html %}
-            </article>
+                    {%- comment -%} CONTACT {%- endcomment -%}
+                    <div class="icon-description-container">
+                        <div class="inside-icon-description">
+                            <i class="fas fa-paperclip"></i>
+                            <div class="description-data">
+                                <p class="desc"><strong>Kontakt</strong></p>
+                                <p>{{ page.contact }}</p>
+                            </div>
+                        </div>
+                    </div>
 
-            {% if site.two_columns_layout %}
-            <aside class="see-also">
-                
-                {% assign related_courses = "" | split: "," %}
-                {% assign backup_courses = "" | split: "," %}
-                {% assign related_courses_count = 0 %}
-                
-                {% assign courses = site.data.courses | shuffle %}
-                
-                {% for course in courses %}
-                {% assign page_url = page.url | strip | remove: '/' %}
-                {% assign course_url = course.url | strip | remove: '/' %}
 
-                    {% unless course_url == page_url %}
-                        {% assign has_shared_keyword = false %}
-                        
-                        {% for keyword in page.keywords %}
-                            {% if course.keywords contains keyword %}
-                                {% assign has_shared_keyword = true %}
-                                {% break %}
-                            {% endif %}
-                        {% endfor %}
-            
-                        {% if has_shared_keyword %}
-                            {% unless related_courses contains course.url %}
-                                {% assign related_courses = related_courses | push: course %}
-                                {% assign related_courses_count = related_courses_count | plus: 1 %}
-                            {% endunless %}
-                        {% else %}
-                            {% unless backup_courses contains course.url %}
-                                {% assign backup_courses = backup_courses | push: course %}
-                            {% endunless %}
-                        {% endif %}
-            
-                        {% if related_courses_count == 3 %}
-                            {% break %}
-                        {% endif %}
-                    {% endunless %}
-                {% endfor %}
-            
-                {% if related_courses_count < 3 %}
-                    {% for course in backup_courses %}
-                        {% unless related_courses contains course.url %}
-                            {% assign related_courses = related_courses | push: course %}
-                            {% assign related_courses_count = related_courses_count | plus: 1 %}
-                        {% endunless %}
-                        {% if related_courses_count == 3 %}
-                            {% break %}
-                        {% endif %}
-                    {% endfor %}
-                {% endif %}
-                
-                {% if related_courses_count != 0 %} 
-                <h3 style="margin-left: 30px;">Poglej tudi</h3>
-                {% endif %}
-                {% for course in related_courses %}
-                    <div class="side-course">
-                        <a style="text-decoration: none;" href="{{ course.url | prepend: site.baseurl }}">
-                            <div class="related-article-item">
-                                <h3>{{ course.titleSl }}</h3>
-                                <div class="image-container">
-                                    <img src="{{ course.image }}/256{{ course.url }}.png" alt="{{ course.titleSl }} image" class="related-article-image">
-                                </div>
+                    {%- comment -%}
+                    CENA — only for PSMA
+                    {%- endcomment -%}
+                    {% if page.catalogType == "PSMA" %}
+                    <div class="icon-description-container">
+                        <div class="inside-icon-description">
+                            <i class="fas fa-paperclip"></i>
+                            <div class="description-data">
+                                <p class="desc"><strong>Cena</strong></p>
+                                <p>Udeležba je brezplačna. Prav tako bo poskrbljeno za hrano in pijačo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    {% else %}
+
+                    {%- comment -%}
+                    VRSTA IZOBRAŽEVANJA: mapped depending on catalogType
+                    {%- endcomment -%}
+                    {% assign educationType = "" %}
+                    {% if page.catalogType == "KI" %}
+                    {% assign educationType = "Krajše izobraževanje s preverjanjem (pilotno mikrodokazilo)" %}
+                    {% elsif page.catalogType == "CMS_KI" %}
+                    {% assign educationType = "Akreditirano CMS krajše izobraževanje" %}
+                    {% elsif page.catalogType == "CMS_KIM" %}
+                    {% assign educationType = "Akreditirano CMS krajše izobraževanje z mikrodokazilom" %}
+                    {% else %}
+                    {% assign educationType = page.type %}
+                    {% endif %}
+
+                    <div class="icon-description-container">
+                        <div class="inside-icon-description">
+                            <i class="fas fa-paperclip"></i>
+                            <div class="description-data">
+                                <p class="desc"><strong>Vrsta izobraževanja</strong></p>
+                                <p>{{ educationType }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+
+
+                    {%- comment -%}
+                    FIELD / PODROČJE — Only if not PSMA
+                    {%- endcomment -%}
+                    {% if page.catalogType != "PSMA" and page.field %}
+                    <div class="icon-description-container">
+                        <div class="inside-icon-description">
+                            <i class="fas fa-paperclip"></i>
+                            <div class="description-data">
+                                <p class="desc"><strong>Področje</strong></p>
                                 <p>
-                                    {{ course.lecturersStr }}
+                                    {% for f in page.field %}
+                                    {{ f }}{% unless forloop.last %}, {% endunless %}
+                                    {% endfor %}
                                 </p>
                             </div>
-                        </a>
+                        </div>
                     </div>
-                {% endfor %}
-            </aside>                           
+                    {% endif %}
+
+                    {%- comment -%} HOURS BREAKDOWN {%- endcomment -%}
+                    {% if page.hours %}
+                    <div class="icon-description-container">
+                        <div class="inside-icon-description">
+                            <i class="fas fa-paperclip"></i>
+                            <div class="description-data">
+                                <p class="desc"><strong>Načrt izvedbe</strong></p>
+                                {% for h in page.hours %}
+                                <p>{{ h.typeSl }}: {{ h.value }} ur</p>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+
+                    {%- comment -%} EXECUTIONS (dates + details) {%- endcomment -%}
+                    {% if page.executions and page.executions.size > 0 %}
+                    <div class="icon-description-container">
+                        <div class="inside-icon-description">
+                            <i class="fas fa-calendar-alt"></i>
+                            <div class="description-data">
+                                <p class="desc"><strong>Izvedba</strong></p>
+                                {% for execution in page.executions %}
+                                <div style="margin-bottom: 1em;">
+                                    <p><i class="fas fa-clock"></i> {{ execution.executionDataSl }}</p>
+                                    <p><i class="fas fa-map-marker-alt"></i> {{ execution.location }}</p>
+                                    {% if execution.note %}
+                                    <p><i class="fas fa-sticky-note"></i> {{ execution.note }}</p>
+                                    {% endif %}
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+
+                </div>
+
+                <p style="text-align: center;" class="course-button">
+                    {% if page.executions %}
+                    <button class="course-button">
+                        <a href="{{site.catalog_url}}{{page.id}}">Prijava</a>
+                    </button>
+                    {% endif %}
+                </p>
+
+            </section>
+
+            {% include pagination-course.html %}
+        </article>
+
+
+
+        {% if site.two_columns_layout %}
+        <aside class="see-also">
+
+            {% assign related_courses = "" | split: "," %}
+            {% assign backup_courses = "" | split: "," %}
+            {% assign related_courses_count = 0 %}
+
+            {% assign courses = site.data.courses | shuffle %}
+
+            {% for course in courses %}
+            {% assign page_url = page.url | strip | remove: '/' %}
+            {% assign course_url = site.baseurl | append: '/' | append: course.acronym | strip | remove: '/' %}
+
+            {% unless course_url == page_url %}
+            {% assign has_shared_keyword = false %}
+
+            {% for keyword in page.keywords %}
+            {% if course.keywords contains keyword %}
+            {% assign has_shared_keyword = true %}
+            {% break %}
             {% endif %}
-        </section>
+            {% endfor %}
 
+            {% if has_shared_keyword %}
+            {% unless related_courses contains course.url %}
+            {% assign related_courses = related_courses | push: course %}
+            {% assign related_courses_count = related_courses_count | plus: 1 %}
+            {% endunless %}
+            {% else %}
+            {% unless backup_courses contains course.url %}
+            {% assign backup_courses = backup_courses | push: course %}
+            {% endunless %}
+            {% endif %}
 
-        {% include footer.html %}
+            {% if related_courses_count == 3 %}
+            {% break %}
+            {% endif %}
+            {% endunless %}
+            {% endfor %}
 
-        <script type="application/ld+json">
-        {
-            "@context": "http://schema.org",
-            "@type": "Blogcourseing",
-            "name": "{{ page.title }}",
-            "headline": "{{ page.subtitle }}",
-            "description": "{{ page.description }}",
-            "image": "{{ page.image }}",
-            "url": "{{ page.url | prepend: site.baseurl | prepend: site.url }}",
-            "articleBody": "{{ content | strip_html | xml_escape }}",
-            "wordcount": "{{ content | number_of_words }}",
-            "inLanguage": "{{ site.language }}",
-            "dateCreated": "{{ page.date | date: '%Y-%m-%d/' }}",
-            "datePublished": "{{ page.date | date: '%Y-%m-%d/' }}",
-            "dateModified": "{{ page.date | date: '%Y-%m-%d/' }}",
-            "author": {
-                "@type": "Person",
-                "name": "{{ page.author }}",
-                "image": "{{ '/assets/img/user.jpg' | prepend: site.baseurl | prepend: site.url }}",
-                "jobTitle": "Author Position", // You might need to adjust this part
-                "url": "{{ '/author-url/' | prepend: site.baseurl | prepend: site.url }}" // Adjust based on actual author URL structure
-            },
-            "publisher": {
-                "@type": "Organization",
-                "name": "{{ site.name }}",
-                "url": "{{ site.url }}{{site.baseurl}}/",
-                "logo": {
-                    "@type": "ImageObject",
-                    "url": "{{ site.url }}{{site.baseurl}}/assets/img/blog-image.png",
-                    "width": "600",
-                    "height": "315"
-                }
-            },
-            "mainEntityOfPage": "True",
-            "genre": "{{ page.category }}",
-            "articleSection": "{{ page.category }}",
-            "keywords": [{{ page.tags | join: '","' | append: '"' | prepend: '"' }}]
-        }
-        </script>
-    </body>
+            {% if related_courses_count < 3 %} {% for course in backup_courses %} {% unless related_courses contains
+                course.url %} {% assign related_courses=related_courses | push: course %} {% assign
+                related_courses_count=related_courses_count | plus: 1 %} {% endunless %} {% if related_courses_count==3
+                %} {% break %} {% endif %} {% endfor %} {% endif %} {% if related_courses_count !=0 %} <h3
+                style="margin-left: 30px;">Poglej tudi</h3>
+                {% endif %}
+
+                {% for course in related_courses %}
+                <div class="side-course">
+                    <a style="text-decoration: none;" href="{{ course.url | prepend: site.baseurl }}">
+                        <div class="related-article-item">
+                            <h3>{{ course.titleSl }}</h3>
+                            <div class="image-container">
+                                <img src="{{ course.image }}/256{{ course.url }}.png" alt="{{ course.titleSl }} image"
+                                    class="related-article-image">
+                            </div>
+                            <p>{{ course.lecturersStr }}</p>
+                        </div>
+                    </a>
+                </div>
+                {% endfor %}
+        </aside>
+        {% endif %}
+    </section>
+
+    {% include footer.html %}
+</body>
+
 </html>
