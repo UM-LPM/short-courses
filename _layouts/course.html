@@ -14,15 +14,15 @@
 
                 {% if page.catalogType != "PSMA" and page.field %}
                 {% assign fields = page.field %}
-                    {% if fields %}
-                        <h3>
-                            {% for f in fields %}
-                            {{ f }}{% unless forloop.last %}, {% endunless %}
-                            {% endfor %}
-                        </h3>
-                    {% endif %}
+                {% if fields %}
+                <h3>
+                    {% for f in fields %}
+                    {{ f }}{% unless forloop.last %}, {% endunless %}
+                    {% endfor %}
+                </h3>
+                {% endif %}
                 {% else %}
-                    <div style="margin-top:40px;"></div>
+                <div style="margin-top:40px;"></div>
                 {% endif %}
 
 
@@ -59,7 +59,7 @@
                 {% if page.intended contains "dekleta" %}
                 <p class="warning">To izobraževanje je namenjeno zgolj dekletom</p>
                 {% endif %}
-
+                
                 <div class="data-container">
 
                     {%- comment -%} STAROSTNA SKUPINA {%- endcomment -%}
@@ -227,64 +227,101 @@
         {% if site.two_columns_layout %}
         <aside class="see-also">
 
-            {% assign related_courses = "" | split: "," %}
-            {% assign backup_courses = "" | split: "," %}
-            {% assign related_courses_count = 0 %}
+        {% assign now = "now" | date: "%s" %}
+        {% assign filtered_courses = "" | split: "," %}
 
-            {% assign courses = site.data.courses | shuffle %}
+        {% for course in site.data.courses %}
+            {% assign publishDate = course.publishDate | date: "%s" %}
+            {% assign removalDate = course.removalDate | date: "%s" %}
 
-            {% for course in courses %}
-            {% assign page_url = page.url | strip | remove: '/' %}
+            {% if publishDate and publishDate != "" %}
+            {% if publishDate > now %}
+                {% continue %}
+            {% endif %}
+            {% else %}
+            {% continue %}
+            {% endif %}
+
+            {% if removalDate and removalDate != "" and removalDate <= now %}
+            {% continue %}
+            {% endif %}
+
+            {% assign filtered_courses = filtered_courses | push: course %}
+        {% endfor %}
+
+        {% assign courses = filtered_courses | shuffle %}
+
+        {% assign related_courses = "" | split: "," %}
+        {% assign backup_courses = "" | split: "," %}
+        {% assign related_courses_count = 0 %}
+
+        {% assign page_url = page.url | strip | remove: '/' %}
+
+        {% for course in courses %}
             {% assign course_url = site.baseurl | append: '/' | append: course.acronym | strip | remove: '/' %}
 
             {% unless course_url == page_url %}
+
             {% assign has_shared_keyword = false %}
 
             {% for keyword in page.keywords %}
-            {% if course.keywords contains keyword %}
-            {% assign has_shared_keyword = true %}
-            {% break %}
-            {% endif %}
+                {% if course.keywords contains keyword %}
+                {% assign has_shared_keyword = true %}
+                {% break %}
+                {% endif %}
             {% endfor %}
 
             {% if has_shared_keyword %}
-            {% unless related_courses contains course.url %}
-            {% assign related_courses = related_courses | push: course %}
-            {% assign related_courses_count = related_courses_count | plus: 1 %}
-            {% endunless %}
+                {% unless related_courses contains course.url %}
+                {% assign related_courses = related_courses | push: course %}
+                {% assign related_courses_count = related_courses_count | plus: 1 %}
+                {% endunless %}
             {% else %}
-            {% unless backup_courses contains course.url %}
-            {% assign backup_courses = backup_courses | push: course %}
-            {% endunless %}
+                {% unless backup_courses contains course.url %}
+                {% assign backup_courses = backup_courses | push: course %}
+                {% endunless %}
             {% endif %}
 
             {% if related_courses_count == 3 %}
-            {% break %}
+                {% break %}
             {% endif %}
+
             {% endunless %}
+        {% endfor %}
+
+        {% if related_courses_count < 3 %}
+            {% for course in backup_courses %}
+            {% unless related_courses contains course.url %}
+                {% assign related_courses = related_courses | push: course %}
+                {% assign related_courses_count = related_courses_count | plus: 1 %}
+            {% endunless %}
+            {% if related_courses_count == 3 %}
+                {% break %}
+            {% endif %}
             {% endfor %}
+        {% endif %}
 
-            {% if related_courses_count < 3 %} {% for course in backup_courses %} {% unless related_courses contains
-                course.url %} {% assign related_courses=related_courses | push: course %} {% assign
-                related_courses_count=related_courses_count | plus: 1 %} {% endunless %} {% if related_courses_count==3
-                %} {% break %} {% endif %} {% endfor %} {% endif %} {% if related_courses_count !=0 %} <h3
-                style="margin-left: 30px;">Poglej tudi</h3>
-                {% endif %}
+        {% if related_courses_count != 0 %}
+            <h3 style="margin-left: 30px;">Poglej tudi</h3>
+        {% endif %}
 
-                {% for course in related_courses %}
-                <div class="side-course">
-                    <a style="text-decoration: none;" href="{{ course.url | prepend: site.baseurl }}">
-                        <div class="related-article-item">
-                            <h3>{{ course.titleSl }}</h3>
-                            <div class="image-container">
-                                <img src="{{ course.image }}/256{{ course.url }}.png" alt="{{ course.titleSl }} image"
-                                    class="related-article-image">
-                            </div>
-                            <p>{{ course.lecturersStr }}</p>
-                        </div>
-                    </a>
+        {% for course in related_courses %}
+            <div class="side-course">
+            <a style="text-decoration: none;" href="{{ site.baseurl }}/{{ course.acronym }}">
+                <div class="related-article-item">
+                    
+                <h3>{{ course.titleSl }}</h3>
+                <div class="image-container">
+                    <img src="{{ course.image }}/256/{{ course.acronym }}.png"
+                        alt="{{ course.titleSl }} image"
+                        class="related-article-image">
                 </div>
-                {% endfor %}
+                <p>{{ course.lecturersStr }}</p>
+                </div>
+            </a>
+            </div>
+        {% endfor %}
+
         </aside>
         {% endif %}
     </section>
