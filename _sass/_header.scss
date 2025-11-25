@@ -148,7 +148,7 @@ body.light:not(.main-page) {
   bottom: 0;
   pointer-events: none;
   background: rgba(0, 0, 0, 0.6);
-  z-index: 17;
+  z-index: 6000;
   opacity: 0;
   transition: all 0.3s;
 

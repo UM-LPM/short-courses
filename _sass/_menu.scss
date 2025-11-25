@@ -31,7 +31,7 @@ aside.sidebar {
   top: 0;
   left: rem(-240px);
   background-color: $accentDark;
-  z-index: 20;
+  z-index: 70000;
 
   @include media(">=sm") {
     padding: rem(10px) 0 0;
