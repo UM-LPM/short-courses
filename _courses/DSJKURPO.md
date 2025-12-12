@@ -1,7 +1,7 @@
 ---
 date: "2025-04-05" 
 version: "0.1.0"
-lastUpdate: "2025-04-05 33:00:00"
+lastUpdate: "2025-12-12 12:00:00"
 layout: "course"
 id: "DSJKURPO"
 permalink: "DSJKURPO"
@@ -36,8 +36,7 @@ implementation: |
     Vaje: 10 ur
     Samostojno delo: 10 ur
 cType: "1"
-executionStartDate: "2025-05-26"
+executionStartDate: "2025-12-15"
 executionData: |
-    26. 05. - 30. 05. 2025 (10 ur predavanj)
-    02. 06. - 06. 06. 2025 (10 ur vaj)
+    Izvedba se začne 15. 12. 2025.
 ---
