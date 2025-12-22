@@ -41,7 +41,7 @@
                 {% endif %}
 
                 <p class="course-description">
-                    {{ page.descriptionSl | newline_to_br | replace: " ", "&nbsp;&nbsp;&nbsp;&nbsp;" }}
+                    {{ page.descriptionSl | newline_to_br | replace: "  ", "&nbsp;&nbsp;&nbsp;&nbsp;" }}
                 </p>
 
                 {{ content }}
