@@ -210,11 +210,17 @@
                 </div>
 
                 <p style="text-align: center;" class="course-button">
-                    {% if page.executions %}
+                {% if page.executions %}
+                    {% assign domain = site.data.catalog.catalogDomain %}
+                    {% assign prefix = domain | slice: 0, 8 %}
+                    {% unless prefix == "https://" %}
+                    {% assign domain = "https://" | append: domain %}
+                    {% endunless %}
+
                     <button class="course-button">
-                        <a href="{{site.catalog_url}}{{page.id}}">Prijava</a>
+                    <a href="{{ domain }}/{{ page.id }}">Prijava</a>
                     </button>
-                    {% endif %}
+                {% endif %}
                 </p>
 
             </section>
