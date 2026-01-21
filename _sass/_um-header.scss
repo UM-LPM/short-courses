@@ -2889,8 +2889,7 @@ input:-webkit-autofill {
 
 @font-face {
     font-family: "icomoon";
-    src: url("https://www.um.si/wp-content/themes/um_si/assets/fonts/icomoon/icomoon.eot?frbusn&x20630");
-    src: url("https://www.um.si/wp-content/themes/um_si/assets/fonts/icomoon/icomoon.eot?frbusn#iefix&x20630") format("embedded-opentype"), url("https://www.um.si/wp-content/themes/um_si/assets/fonts/icomoon/icomoon.ttf?frbusn&x20630") format("truetype"), url("/wp-content/themes/um_si/assets/fonts/icomoon/icomoon.woff?frbusn&x20630") format("woff"), url("/wp-content/themes/um_si/assets/fonts/icomoon/icomoon.svg?frbusn#icomoon&x20630") format("svg");
+    src: url("../fonts/icomoon.eot") format("embedded-opentype"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.woff") format("woff");
     font-weight: normal;
     font-style: normal;
     font-display: block
