@@ -3,7 +3,11 @@
 {% include head.html %}
 
 <body class="has-push-menu">
-    {% include feri-header.html %}
+    {% if site.data.catalog.faculty.acronym == "FERI" %}
+        {% include feri-header.html %}
+    {% else %}
+        {% include um-header.html %}
+    {% endif %}
     {% include header.html %}
     <section class="course {% if site.two_columns_layout %}two-columns{% else %}one-column{% endif %}">
         <article role="article" class="course-content">
