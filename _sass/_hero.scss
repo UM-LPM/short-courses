@@ -1,11 +1,11 @@
 .hero {
-  position: relative;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: calc(100vh - 10vw);
   min-height: fit-content;
+  padding-bottom: calc(20vh + 5vw);
+  padding-top: 10%;
 
   +#grid {
     margin-top: calc(-20vh + -5vw);
@@ -31,7 +31,6 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    position: absolute;
     width: 80%;
     height: 70%;
     min-height: fit-content;
