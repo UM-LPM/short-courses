@@ -1,25 +1,24 @@
 ---
 layout: page
 menu: false
-date: "2025-05-15 13:53:59"
+date: "2026-02-24 17:24:00"
 title: Več
 description: Več
 permalink: /vec/
 ---
 
-## Počitniške šole
+## Strokovne dejavnosti
 
-Na Fakulteti za elektrotehniko, računalništvo in informatiko Univerze v Mariboru v času zimskih in poletnih počitnic organiziramo [**POČITNIŠKE ŠOLE**](https://feri.um.si/akademija-feri/pocitniske-sole/) za osnovnošolce in srednješolce.
+Razvoj družbe narekuje nenehno posodabljanje strokovnih znanj in kompetenc za obvladovanje tako obstoječih kot prihodnjih izzivov. S **Katalogom strokovnih dejavnosti** naslavljamo potrebe po sistematičnem spremljanju strokovnih ekskurzij, konferenc in drugih dogodkov, ki spodbujajo strokovno rast, povezovanje in prenos znanja.
 
-Na počitniških šolah omogočimo mladim stik z aktualnimi vsebinami tehniških področij.
+Katalog omogoča:
 
-Počitniške šole vodijo profesorji in asistenti, vključujemo pa tudi študente, saj z njimi mladi še lažje vzpostavijo dialog, s katerim spodbujamo udeležence h kritičnemu mišljenju. Z aktivnim sodelovanjem lahko mladi nadgradijo svoja znanja ter morebiti dobijo navdih za izbiro svoje strokovne poti.
+- **enotno prijavo in evidenco udeležb** na strokovnih dogodkih,
+- **pregled načrtovanih aktivnosti** (konference, seminarji, ekskurzije itd.),
+- **arhiv izvedenih dejavnosti** za potrebe evalvacije in načrtovanja,
+- lažjo organizacijo in komunikacijo med organizatorji ter udeleženci.
 
-Z obiskom fakultete bodo osnovnošolci in srednješolci spoznali delovno okolje, pogoje dela, pridobili pa bodo lahko tudi dodatne informacije o različnih dejavnostih fakultete, o študiju, raziskovalnem delu, obštudijskih dejavnostih in študentskem življenju.
-
-Počitniške šole bodo potekale v dopoldanskem ter deloma v popoldanskem času.
-
-**Udeležba na vseh počitniških šolah je brezplačna.**
+Katalog je odprt za vse zaposlene in študente, ki želijo vpisati dogodek, povezati svojo strokovno pot ali omogočiti drugim vpogled v ponujene priložnosti.
 
 ---
 
