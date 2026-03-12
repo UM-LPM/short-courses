@@ -10,22 +10,23 @@ layout: minimal
 {% for course in site.data.courses %}
   {% if course.keywords %}
     {% for keyword in course.keywords %}
-      {% unless all_keywords_str contains keyword %}
+      {% unless all_keywords_str contains keyword.name %}
         {% if all_keywords_str == "" %}
-          {% assign all_keywords_str = keyword %}
+          {% assign all_keywords_str = keyword.name %}
         {% else %}
-          {% assign all_keywords_str = all_keywords_str | append: "|" | append: keyword %}
+          {% assign all_keywords_str = all_keywords_str | append: "|" | append: keyword.name %}
         {% endif %}
       {% endunless %}
     {% endfor %}
   {% endif %}
+
   {% if course.intended %}
-    {% for word in course.intended %}
-      {% unless all_intended_str contains word %}
+    {% for item in course.intended %}
+      {% unless all_intended_str contains item.name %}
         {% if all_intended_str == "" %}
-          {% assign all_intended_str = word %}
+          {% assign all_intended_str = item.name %}
         {% else %}
-          {% assign all_intended_str = all_intended_str | append: "|" | append: word %}
+          {% assign all_intended_str = all_intended_str | append: "|" | append: item.name %}
         {% endif %}
       {% endunless %}
     {% endfor %}
@@ -48,11 +49,21 @@ layout: minimal
   {% for keyword in all_keywords %}
     <h3 class="tag-display" id="{{ keyword | slugify }}">{{ keyword }}</h3>
     <ul>
-    {% for course in site.data.courses %}
-      {% if course.keywords contains keyword %}
-        <li><a href="{{ site.url }}{{ site.baseurl }}/{{ course.acronym }}">{{ course.titleSl }}</a></li>
-      {% endif %}
-    {% endfor %}
+      {% for course in site.data.courses %}
+        {% assign has_keyword = false %}
+        {% if course.keywords %}
+          {% for item in course.keywords %}
+            {% if item.name == keyword %}
+              {% assign has_keyword = true %}
+              {% break %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+
+        {% if has_keyword %}
+          <li><a href="{{ site.url }}{{ site.baseurl }}/{{ course.acronym }}">{{ course.titleSl }}</a></li>
+        {% endif %}
+      {% endfor %}
     </ul>
   {% endfor %}
 </div>
@@ -61,11 +72,21 @@ layout: minimal
   {% for word in all_intended %}
     <h3 class="tag-display" id="{{ word | slugify }}">{{ word }}</h3>
     <ul>
-    {% for course in site.data.courses %}
-      {% if course.intended contains word %}
-        <li><a href="{{ site.url }}{{ site.baseurl }}/{{ course.acronym }}">{{ course.titleSl }}</a></li>
-      {% endif %}
-    {% endfor %}
+      {% for course in site.data.courses %}
+        {% assign has_intended = false %}
+        {% if course.intended %}
+          {% for item in course.intended %}
+            {% if item.name == word %}
+              {% assign has_intended = true %}
+              {% break %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+
+        {% if has_intended %}
+          <li><a href="{{ site.url }}{{ site.baseurl }}/{{ course.acronym }}">{{ course.titleSl }}</a></li>
+        {% endif %}
+      {% endfor %}
     </ul>
   {% endfor %}
 </div>

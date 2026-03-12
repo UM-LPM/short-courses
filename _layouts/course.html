@@ -53,17 +53,27 @@
                 <div class="box-info">
                     <div class="tags">
                         {% for tag in page.keywords %}
-                        {% if tag != "" %}
-                        <a href="{{ site.baseurl }}/tags/#{{ tag | slugify }}">#{{ tag }}</a>
+                        {% if tag.name != "" %}
+                        <a href="{{ site.baseurl }}/tags/#{{ tag.name | slugify }}">#{{ tag.name }}</a>
                         {% endif %}
                         {% endfor %}
                     </div>
                 </div>
 
-                {% if page.intended contains "dekleta" %}
+                {% assign girls_only = false %}
+                {% if page.intended %}
+                  {% for item in page.intended %}
+                    {% if item.name == "dekleta" %}
+                      {% assign girls_only = true %}
+                    {% break %}
+                  {% endif %}
+                {% endfor %}
+                {% endif %}
+
+                {% if girls_only %}
                 <p class="warning">To izobraževanje je namenjeno zgolj dekletom</p>
                 {% endif %}
-                
+
                 <div class="data-container">
 
                     {%- comment -%} STAROSTNA SKUPINA {%- endcomment -%}
@@ -222,7 +232,7 @@
                     {% endunless %}
 
                     <button class="course-button">
-                    <a href="{{ domain }}/course/{{ page.id }}">Prijava</a>
+                        <a href="{{ domain }}/course/{{ page.id }}">Prijava</a>
                     </button>
                 {% endif %}
                 </p>
@@ -253,84 +263,88 @@
             {% endif %}
 
             {% if removalDate and removalDate != "" and removalDate <= now %}
-            {% continue %}
+              {% continue %}
             {% endif %}
 
             {% assign filtered_courses = filtered_courses | push: course %}
         {% endfor %}
 
         {% assign courses = filtered_courses | shuffle %}
-
         {% assign related_courses = "" | split: "," %}
         {% assign backup_courses = "" | split: "," %}
         {% assign related_courses_count = 0 %}
-
         {% assign page_url = page.url | strip | remove: '/' %}
 
         {% for course in courses %}
             {% assign course_url = site.baseurl | append: '/' | append: course.acronym | strip | remove: '/' %}
 
             {% unless course_url == page_url %}
-
             {% assign has_shared_keyword = false %}
 
-            {% for keyword in page.keywords %}
-                {% if course.keywords contains keyword %}
-                {% assign has_shared_keyword = true %}
-                {% break %}
-                {% endif %}
-            {% endfor %}
+            {% if page.keywords and course.keywords %}
+                {% for page_keyword in page.keywords %}
+                    {% for course_keyword in course.keywords %}
+                    {% if page_keyword.name == course_keyword.name %}
+                        {% assign has_shared_keyword = true %}
+                        {% break %}
+                    {% endif %}
+                    {% endfor %}
+
+                    {% if has_shared_keyword %}
+                    {% break %}
+                    {% endif %}
+                {% endfor %}
+            {% endif %}
 
             {% if has_shared_keyword %}
+                {% unless related_courses contains course.url %}
+                    {% assign related_courses = related_courses | push: course %}
+                    {% assign related_courses_count = related_courses_count | plus: 1 %}
+                {% endunless %}
+            {% else %}
+                {% unless backup_courses contains course.url %}
+                    {% assign backup_courses = backup_courses | push: course %}
+                {% endunless %}
+            {% endif %}
+
+            {% if related_courses_count == 3 %}
+                {% break %}
+            {% endif %}
+            {% endunless %}
+            {% endfor %}
+
+            {% if related_courses_count < 3 %}
+            {% for course in backup_courses %}
                 {% unless related_courses contains course.url %}
                 {% assign related_courses = related_courses | push: course %}
                 {% assign related_courses_count = related_courses_count | plus: 1 %}
                 {% endunless %}
-            {% else %}
-                {% unless backup_courses contains course.url %}
-                {% assign backup_courses = backup_courses | push: course %}
-                {% endunless %}
-            {% endif %}
 
-            {% if related_courses_count == 3 %}
+                {% if related_courses_count == 3 %}
                 {% break %}
-            {% endif %}
-
-            {% endunless %}
-        {% endfor %}
-
-        {% if related_courses_count < 3 %}
-            {% for course in backup_courses %}
-            {% unless related_courses contains course.url %}
-                {% assign related_courses = related_courses | push: course %}
-                {% assign related_courses_count = related_courses_count | plus: 1 %}
-            {% endunless %}
-            {% if related_courses_count == 3 %}
-                {% break %}
-            {% endif %}
+                {% endif %}
             {% endfor %}
-        {% endif %}
+            {% endif %}
 
-        {% if related_courses_count != 0 %}
+            {% if related_courses_count != 0 %}
             <h3 style="margin-left: 30px;">Poglej tudi</h3>
-        {% endif %}
+            {% endif %}
 
-        {% for course in related_courses %}
-            <div class="side-course">
-            <a style="text-decoration: none;" href="{{ site.baseurl }}/{{ course.acronym }}">
-                <div class="related-article-item">
-                    
-                <h3>{{ course.titleSl }}</h3>
-                <div class="image-container">
-                    <img src="{{ course.image }}/256/{{ course.acronym }}.png"
-                        alt="{{ course.titleSl }} image"
-                        class="related-article-image">
+                {% for course in related_courses %}
+                <div class="side-course">
+                    <a style="text-decoration: none;" href="{{ site.baseurl }}/{{ course.acronym }}">
+                        <div class="related-article-item">
+
+                            <h3>{{ course.titleSl }}</h3>
+                            <div class="image-container">
+                                <img src="{{ course.image }}/256/{{ course.acronym }}.png"
+                                    alt="{{ course.titleSl }} image" class="related-article-image">
+                            </div>
+                            <p>{{ course.lecturersStr }}</p>
+                        </div>
+                    </a>
                 </div>
-                <p>{{ course.lecturersStr }}</p>
-                </div>
-            </a>
-            </div>
-        {% endfor %}
+                {% endfor %}
 
         </aside>
         {% endif %}

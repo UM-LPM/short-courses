@@ -1,25 +1,28 @@
 ---
 ---
-  {% assign courses = site.data.courses | where_exp:"course", "course.is_generated != true" %}
-  {% for course in site.data.courses %}
+{% assign all_keywords_str = "" %}
+{% assign all_intended_str = "" %}
+
+{% for course in site.data.courses %}
   {% if course.keywords %}
     {% for keyword in course.keywords %}
-      {% unless all_keywords_str contains keyword %}
+      {% unless all_keywords_str contains keyword.name %}
         {% if all_keywords_str == "" %}
-          {% assign all_keywords_str = keyword %}
+          {% assign all_keywords_str = keyword.name %}
         {% else %}
-          {% assign all_keywords_str = all_keywords_str | append: "|" | append: keyword %}
+          {% assign all_keywords_str = all_keywords_str | append: "|" | append: keyword.name %}
         {% endif %}
       {% endunless %}
     {% endfor %}
   {% endif %}
+
   {% if course.intended %}
-    {% for word in course.intended %}
-      {% unless all_intended_str contains word %}
+    {% for item in course.intended %}
+      {% unless all_intended_str contains item.name %}
         {% if all_intended_str == "" %}
-          {% assign all_intended_str = word %}
+          {% assign all_intended_str = item.name %}
         {% else %}
-          {% assign all_intended_str = all_intended_str | append: "|" | append: word %}
+          {% assign all_intended_str = all_intended_str | append: "|" | append: item.name %}
         {% endif %}
       {% endunless %}
     {% endfor %}
@@ -28,7 +31,21 @@
 
 {% assign all_keywords = all_keywords_str | split: "|" %}
 {% assign all_intended = all_intended_str | split: "|" %}
-{ "tags": [{% for keyword in all_keywords %}{% if keyword != "" %}
-    "{{ keyword}}",{% endif %}{% endfor %}{% for word in all_intended %}{% if word != "" %}
-    "{{ word}}"{% unless forloop.last %},{% endunless %}{% endif %}{% endfor %}
+
+{ "tags": [
+  {% assign first = true %}
+  {% for keyword in all_keywords %}
+    {% if keyword != "" %}
+      {% unless first %},{% endunless %}
+      "{{ keyword }}"
+      {% assign first = false %}
+    {% endif %}
+  {% endfor %}
+  {% for word in all_intended %}
+    {% if word != "" %}
+      {% unless first %},{% endunless %}
+      "{{ word }}"
+      {% assign first = false %}
+    {% endif %}
+  {% endfor %}
 ]}

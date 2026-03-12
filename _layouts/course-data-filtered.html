@@ -12,15 +12,15 @@
         | replace: "Š","S" | replace: "Č","C" | replace: "Ž","Z"
       }}",
 
-      "keywords": "{{ course.keywords | join: ', ' 
-        | replace: "š","s" | replace: "č","c" | replace: "ž","z"
-        | replace: "Š","S" | replace: "Č","C" | replace: "Ž","Z"
-      }}",
+      "keywords": "{% if course.keywords %}{% for keyword in course.keywords %}{{ keyword.name
+        | replace: 'š','s' | replace: 'č','c' | replace: 'ž','z'
+        | replace: 'Š','S' | replace: 'Č','C' | replace: 'Ž','Z'
+      }}{% unless forloop.last %}, {% endunless %}{% endfor %}{% endif %}",
 
-      "intended": "{{ course.intended | join: ', ' 
-        | replace: "š","s" | replace: "č","c" | replace: "ž","z"
-        | replace: "Š","S" | replace: "Č","C" | replace: "Ž","Z"
-      }}",
+      "intended": "{% if course.intended %}{% for item in course.intended %}{{ item.name
+        | replace: 'š','s' | replace: 'č','c' | replace: 'ž','z'
+        | replace: 'Š','S' | replace: 'Č','C' | replace: 'Ž','Z'
+      }}{% unless forloop.last %}, {% endunless %}{% endfor %}{% endif %}",
 
       "lecturersStr": "{{ course.lecturersStr 
         | escape
