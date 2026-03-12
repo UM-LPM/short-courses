@@ -22,7 +22,7 @@
         | replace: 'Š','S' | replace: 'Č','C' | replace: 'Ž','Z'
       }}{% unless forloop.last %}, {% endunless %}{% endfor %}{% endif %}",
 
-      "lecturersStr": "{{ course.lecturersStr 
+      "lecturersStrSl": "{{ course.lecturersStrSl
         | escape
         | replace: "š","s" | replace: "č","c" | replace: "ž","z"
         | replace: "Š","S" | replace: "Č","C" | replace: "Ž","Z"

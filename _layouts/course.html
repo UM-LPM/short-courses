@@ -4,9 +4,9 @@
 
 <body class="has-push-menu">
     {% if site.data.catalog.faculty.acronym == "FERI" %}
-        {% include feri-header.html %}
+    {% include feri-header.html %}
     {% else %}
-        {% include um-header.html %}
+    {% include um-header.html %}
     {% endif %}
     {% include header.html %}
     <section class="course {% if site.two_columns_layout %}two-columns{% else %}one-column{% endif %}">
@@ -28,13 +28,39 @@
                 {% else %}
                 <div style="margin-top:40px;"></div>
                 {% endif %}
-
+                
 
                 <h1 class="course-title">{{ page.titleSl }}</h1>
 
-                <p class="course-author" style="color:rgb(83, 83, 83); margin-top:0; padding-top: 0;">
-                    {{ page.lecturersStr }}
+                <p class="course-author" style="color:rgb(83, 83, 83); font-weight: bold; margin-top:0; padding-top: 0;">
+                    {{ page.lecturersStrSl }}
                 </p>
+                <p class="course-author" style="margin-top:0; font-size: larger; padding-top: 0;">
+                    {{ page.faculty.title }}
+                </p>
+
+                {% if page.pdfVisible and page.pdfUrl %}
+                <div style="margin-top:20px; margin-left: 20px;">
+                    <a href="{{ site.baseurl }}/syllabus/{{ page.acronym }}.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style="
+                            display:inline-flex;
+                            align-items:center;
+                            gap:8px;
+                            padding:12px 18px;
+                            background:#005e7d;
+                            color:white;
+                            text-decoration:none;
+                            border-radius:6px;
+                            font-size:15px;
+                            box-shadow:0 2px 6px rgba(0,0,0,0.15);
+                    ">
+                        <i class="fas fa-file-pdf"></i>
+                        Poglej celotni učni načrt
+                    </a>
+                </div>
+                {% endif %}
             </header>
 
             <section>
@@ -62,11 +88,11 @@
 
                 {% assign girls_only = false %}
                 {% if page.intended %}
-                  {% for item in page.intended %}
-                    {% if item.name == "dekleta" %}
-                      {% assign girls_only = true %}
-                    {% break %}
-                  {% endif %}
+                {% for item in page.intended %}
+                {% if item.name == "dekleta" %}
+                {% assign girls_only = true %}
+                {% break %}
+                {% endif %}
                 {% endfor %}
                 {% endif %}
 
@@ -75,6 +101,204 @@
                 {% endif %}
 
                 <div class="data-container">
+
+
+                    {% assign isCMS = false %}
+                    {% if page.catalogType == "CMS_KI" or page.catalogType == "CMS_KIM" %}
+                    {% assign isCMS = true %}
+                    {% endif %}
+
+                    {%- comment -%}
+                    VRSTA IZOBRAŽEVANJA: mapped depending on catalogType
+                    {%- endcomment -%}
+                    {% assign educationType = "" %}
+                    {% if page.catalogType == "KI" %}
+                    {% assign educationType = "Krajše izobraževanje s preverjanjem (pilotno mikrodokazilo)" %}
+                    {% elsif page.catalogType == "CMS_KI" %}
+                    {% assign educationType = "Akreditirano CMS krajše izobraževanje" %}
+                    {% elsif page.catalogType == "CMS_KIM" %}
+                    {% assign educationType = "Akreditirano krajše izobraževanje in usposabljanje za pridobitev mikrodokazila" %}
+                    {% else %}
+                    {% assign educationType = page.type %}
+                    {% endif %}
+
+                    <div class="icon-description-container">
+                        <div class="inside-icon-description">
+                            <i class="fas fa-paperclip"></i>
+                            <div class="description-data">
+                                <p class="desc"><strong>Vrsta izobraževanja</strong></p>
+                                <p>{{ educationType }}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                     {%- comment -%} CONTACT {%- endcomment -%}
+                    <div class="icon-description-container">
+                        <div class="inside-icon-description">
+                            <i class="fas fa-paperclip"></i>
+                            <div class="description-data">
+                                <p class="desc"><strong>Kontakt</strong></p>
+                                <p>{{ page.contact }}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    {% if isCMS %}
+
+                    {% if page.metadata.owner %}
+                    <div class="icon-description-container">
+                        <div class="inside-icon-description">
+                            <i class="fas fa-paperclip"></i>
+                            <div class="description-data">
+                                <p class="desc"><strong>Nosilec</strong></p>
+                                <p>{{ page.metadata.owner.fullTitle }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+
+                    {% if page.targetGroupDefinition and page.targetGroupDefinition.targetGroupDefinitionSl != "" %}
+                    <div class="icon-description-container">
+                        <div class="inside-icon-description">
+                            <i class="fas fa-paperclip"></i>
+                            <div class="description-data">
+                                <p class="desc"><strong>Ciljna skupina</strong></p>
+                                <p>{{ page.targetGroupDefinition.targetGroupDefinitionSl | newline_to_br }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+
+                    {% if page.prerequisites and page.prerequisites.size > 0 %}
+                    <div class="icon-description-container">
+                        <div class="inside-icon-description">
+                            <i class="fas fa-paperclip"></i>
+                            <div class="description-data">
+                                <p class="desc"><strong>Pogoji za vključitev v izobraževanje</strong></p>
+                                {% for item in page.prerequisites %}
+                                {% if item.prerequisiteSl %}
+                                <p>{{ item.prerequisiteSl }}</p>
+                                {% elsif item.text %}
+                                <p>{{ item.text }}</p>
+                                {% endif %}
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+
+
+                    {% if page.metadata.qualificationLevels %}
+                    <div class="icon-description-container">
+                        <div class="inside-icon-description">
+                            <i class="fas fa-paperclip"></i>
+                            <div class="description-data">
+                                <p class="desc"><strong>Raven in stopnja kvalifikacije po SOK/SQF in EOK/EQF</strong>
+                                </p>
+                                <p>
+                                    {% if page.metadata.qualificationLevels.soksqf %}
+                                    SOK/SQF: {{ page.metadata.qualificationLevels.soksqf.valueSl }}
+                                    {% endif %}
+                                    {% if page.metadata.qualificationLevels.eokeqf %}
+                                    <br>EOK/EQF: {{ page.metadata.qualificationLevels.eokeqf.valueSl }}
+                                    {% endif %}
+                                    {% if page.metadata.qualificationLevels.eovkqfehea %}
+                                    <br>Stopnja: {{ page.metadata.qualificationLevels.eovkqfehea.valueSl }}
+                                    {% endif %}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+
+                    {%- comment -%} HOURS BREAKDOWN {%- endcomment -%}
+                    {% if page.hours %}
+                    <div class="icon-description-container">
+                        <div class="inside-icon-description">
+                            <i class="fas fa-paperclip"></i>
+                            <div class="description-data">
+                                <p class="desc"><strong>Ure</strong></p>
+                                {% for h in page.hours %}
+                                <p>{{ h.typeSl }}: {{ h.value }} ur</p>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+
+                    
+                    {%- comment -%} HOURS TOTAL (ECTS) {%- endcomment -%}
+                    <div class="icon-description-container">
+                        <div class="inside-icon-description">
+                            <i class="fas fa-paperclip"></i>
+                            <div class="description-data">
+                                <p class="desc"><strong>Obseg izobraževanja glede števila ECTS</strong></p>
+                                <p>{{ page.ects | times: 25 }} - {{ page.ects | times: 30 }} ur dela</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    {% if page.metadata.needsVerification and page.metadata.needsVerification.size > 0 %}
+                    <div class="icon-description-container">
+                        <div class="inside-icon-description">
+                            <i class="fas fa-paperclip"></i>
+                            <div class="description-data">
+                                <p class="desc"><strong>Opredelitev zasnove krajšega izobraževanja glede na potrebe trga
+                                        dela</strong></p>
+                                {% for item in page.metadata.needsVerification %}
+                                {% if item.valueSl %}
+                                <p>{{ item.valueSl }}</p>
+                                {% endif %}
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+
+                    {% if page.metadata.collaborationFaculties and page.metadata.collaborationFaculties.size > 0 %}
+                    <div class="icon-description-container">
+                        <div class="inside-icon-description">
+                            <i class="fas fa-paperclip"></i>
+                            <div class="description-data">
+                                <p class="desc"><strong>Krajše izobraževanje se izvaja v sodelovanju s fakulteto
+                                        UM:</strong></p>
+                                {% for item in page.metadata.collaborationFaculties %}
+                                <p>
+                                    {% if item.title %}
+                                    {{ item.title }}
+                                    {% elsif item.name %}
+                                    {{ item.name }}
+                                    {% endif %}
+                                </p>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+
+                    {% if page.metadata.collaborationInstitutions and page.metadata.collaborationInstitutions.size > 0
+                    %}
+                    <div class="icon-description-container">
+                        <div class="inside-icon-description">
+                            <i class="fas fa-paperclip"></i>
+                            <div class="description-data">
+                                <p class="desc"><strong>Krajše izobraževanje se izvaja v sodelovanju z drugo
+                                        institucijo:</strong></p>
+                                {% for item in page.metadata.collaborationInstitutions %}
+                                <p>
+                                    {% if item.title %}
+                                    {{ item.title }}
+                                    {% elsif item.name %}
+                                    {{ item.name }}
+                                    {% endif %}
+                                </p>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+
+                    {% endif %}
 
                     {%- comment -%} STAROSTNA SKUPINA {%- endcomment -%}
                     {% if page.intendedFor and page.intendedFor != "" %}
@@ -88,42 +312,6 @@
                         </div>
                     </div>
                     {% endif %}
-
-                    {%- comment -%} PREREQUISITES {%- endcomment -%}
-                    {% if page.prerequisite and page.prerequisite != "" %}
-                    <div class="icon-description-container">
-                        <div class="inside-icon-description">
-                            <i class="fas fa-paperclip"></i>
-                            <div class="description-data">
-                                <p class="desc"><strong>Pred udeležbo potrebujete</strong></p>
-                                <p>{{ page.prerequisite }}</p>
-                            </div>
-                        </div>
-                    </div>
-                    {% endif %}
-
-                    {%- comment -%} HOURS TOTAL (ECTS) {%- endcomment -%}
-                    <div class="icon-description-container">
-                        <div class="inside-icon-description">
-                            <i class="fas fa-paperclip"></i>
-                            <div class="description-data">
-                                <p class="desc"><strong>Obseg izobraževanja glede števila ECTS</strong></p>
-                                <p>{{ page.ects | times: 25 }} - {{ page.ects | times: 30 }} ur dela</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    {%- comment -%} CONTACT {%- endcomment -%}
-                    <div class="icon-description-container">
-                        <div class="inside-icon-description">
-                            <i class="fas fa-paperclip"></i>
-                            <div class="description-data">
-                                <p class="desc"><strong>Kontakt</strong></p>
-                                <p>{{ page.contact }}</p>
-                            </div>
-                        </div>
-                    </div>
-
 
                     {%- comment -%}
                     CENA — only for PSMA
@@ -140,64 +328,6 @@
                     </div>
                     {% else %}
 
-                    {%- comment -%}
-                    VRSTA IZOBRAŽEVANJA: mapped depending on catalogType
-                    {%- endcomment -%}
-                    {% assign educationType = "" %}
-                    {% if page.catalogType == "KI" %}
-                    {% assign educationType = "Krajše izobraževanje s preverjanjem (pilotno mikrodokazilo)" %}
-                    {% elsif page.catalogType == "CMS_KI" %}
-                    {% assign educationType = "Akreditirano CMS krajše izobraževanje" %}
-                    {% elsif page.catalogType == "CMS_KIM" %}
-                    {% assign educationType = "Akreditirano CMS krajše izobraževanje z mikrodokazilom" %}
-                    {% else %}
-                    {% assign educationType = page.type %}
-                    {% endif %}
-
-                    <div class="icon-description-container">
-                        <div class="inside-icon-description">
-                            <i class="fas fa-paperclip"></i>
-                            <div class="description-data">
-                                <p class="desc"><strong>Vrsta izobraževanja</strong></p>
-                                <p>{{ educationType }}</p>
-                            </div>
-                        </div>
-                    </div>
-                    {% endif %}
-
-
-                    {%- comment -%}
-                    FIELD / PODROČJE — Only if not PSMA
-                    {%- endcomment -%}
-                    {% if page.catalogType != "PSMA" and page.field %}
-                    <div class="icon-description-container">
-                        <div class="inside-icon-description">
-                            <i class="fas fa-paperclip"></i>
-                            <div class="description-data">
-                                <p class="desc"><strong>Področje</strong></p>
-                                <p>
-                                    {% for f in page.field %}
-                                    {{ f }}{% unless forloop.last %}, {% endunless %}
-                                    {% endfor %}
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    {% endif %}
-
-                    {%- comment -%} HOURS BREAKDOWN {%- endcomment -%}
-                    {% if page.hours %}
-                    <div class="icon-description-container">
-                        <div class="inside-icon-description">
-                            <i class="fas fa-paperclip"></i>
-                            <div class="description-data">
-                                <p class="desc"><strong>Načrt izvedbe</strong></p>
-                                {% for h in page.hours %}
-                                <p>{{ h.typeSl }}: {{ h.value }} ur</p>
-                                {% endfor %}
-                            </div>
-                        </div>
-                    </div>
                     {% endif %}
 
                     {%- comment -%} EXECUTIONS (dates + details) {%- endcomment -%}
@@ -224,7 +354,7 @@
                 </div>
 
                 <p style="text-align: center;" class="course-button">
-                {% if page.executions %}
+                    {% if page.executions %}
                     {% assign domain = site.data.catalog.catalogDomain %}
                     {% assign prefix = domain | slice: 0, 8 %}
                     {% unless prefix == "https://" %}
@@ -234,7 +364,7 @@
                     <button class="course-button">
                         <a href="{{ domain }}/course/{{ page.id }}">Prijava</a>
                     </button>
-                {% endif %}
+                    {% endif %}
                 </p>
 
             </section>
@@ -247,88 +377,41 @@
         {% if site.two_columns_layout %}
         <aside class="see-also">
 
-        {% assign now = "now" | date: "%s" %}
-        {% assign filtered_courses = "" | split: "," %}
+            {% assign now = "now" | date: "%s" %}
+            {% assign filtered_courses = "" | split: "," %}
 
-        {% for course in site.data.courses %}
+            {% for course in site.data.courses %}
             {% assign publishDate = course.publishDate | date: "%s" %}
             {% assign removalDate = course.removalDate | date: "%s" %}
 
             {% if publishDate and publishDate != "" %}
             {% if publishDate > now %}
-                {% continue %}
+            {% continue %}
             {% endif %}
             {% else %}
             {% continue %}
             {% endif %}
 
-            {% if removalDate and removalDate != "" and removalDate <= now %}
-              {% continue %}
-            {% endif %}
-
-            {% assign filtered_courses = filtered_courses | push: course %}
-        {% endfor %}
-
-        {% assign courses = filtered_courses | shuffle %}
-        {% assign related_courses = "" | split: "," %}
-        {% assign backup_courses = "" | split: "," %}
-        {% assign related_courses_count = 0 %}
-        {% assign page_url = page.url | strip | remove: '/' %}
-
-        {% for course in courses %}
-            {% assign course_url = site.baseurl | append: '/' | append: course.acronym | strip | remove: '/' %}
-
-            {% unless course_url == page_url %}
-            {% assign has_shared_keyword = false %}
-
-            {% if page.keywords and course.keywords %}
-                {% for page_keyword in page.keywords %}
-                    {% for course_keyword in course.keywords %}
-                    {% if page_keyword.name == course_keyword.name %}
-                        {% assign has_shared_keyword = true %}
-                        {% break %}
-                    {% endif %}
-                    {% endfor %}
-
-                    {% if has_shared_keyword %}
-                    {% break %}
-                    {% endif %}
-                {% endfor %}
-            {% endif %}
-
-            {% if has_shared_keyword %}
-                {% unless related_courses contains course.url %}
-                    {% assign related_courses = related_courses | push: course %}
-                    {% assign related_courses_count = related_courses_count | plus: 1 %}
-                {% endunless %}
-            {% else %}
-                {% unless backup_courses contains course.url %}
-                    {% assign backup_courses = backup_courses | push: course %}
-                {% endunless %}
-            {% endif %}
-
-            {% if related_courses_count == 3 %}
-                {% break %}
-            {% endif %}
-            {% endunless %}
-            {% endfor %}
-
-            {% if related_courses_count < 3 %}
-            {% for course in backup_courses %}
-                {% unless related_courses contains course.url %}
-                {% assign related_courses = related_courses | push: course %}
-                {% assign related_courses_count = related_courses_count | plus: 1 %}
-                {% endunless %}
-
-                {% if related_courses_count == 3 %}
-                {% break %}
+            {% if removalDate and removalDate != "" and removalDate <= now %} {% continue %} {% endif %} {% assign
+                filtered_courses=filtered_courses | push: course %} {% endfor %} {% assign courses=filtered_courses |
+                shuffle %} {% assign related_courses="" | split: "," %} {% assign backup_courses="" | split: "," %} {%
+                assign related_courses_count=0 %} {% assign page_url=page.url | strip | remove: '/' %} {% for course in
+                courses %} {% assign course_url=site.baseurl | append: '/' | append: course.acronym | strip |
+                remove: '/' %} {% unless course_url==page_url %} {% assign has_shared_keyword=false %} {% if
+                page.keywords and course.keywords %} {% for page_keyword in page.keywords %} {% for course_keyword in
+                course.keywords %} {% if page_keyword.name==course_keyword.name %} {% assign has_shared_keyword=true %}
+                {% break %} {% endif %} {% endfor %} {% if has_shared_keyword %} {% break %} {% endif %} {% endfor %} {%
+                endif %} {% if has_shared_keyword %} {% unless related_courses contains course.url %} {% assign
+                related_courses=related_courses | push: course %} {% assign related_courses_count=related_courses_count
+                | plus: 1 %} {% endunless %} {% else %} {% unless backup_courses contains course.url %} {% assign
+                backup_courses=backup_courses | push: course %} {% endunless %} {% endif %} {% if
+                related_courses_count==3 %} {% break %} {% endif %} {% endunless %} {% endfor %} {% if
+                related_courses_count < 3 %} {% for course in backup_courses %} {% unless related_courses contains
+                course.url %} {% assign related_courses=related_courses | push: course %} {% assign
+                related_courses_count=related_courses_count | plus: 1 %} {% endunless %} {% if related_courses_count==3
+                %} {% break %} {% endif %} {% endfor %} {% endif %} {% if related_courses_count !=0 %} <h3
+                style="margin-left: 30px;">Poglej tudi</h3>
                 {% endif %}
-            {% endfor %}
-            {% endif %}
-
-            {% if related_courses_count != 0 %}
-            <h3 style="margin-left: 30px;">Poglej tudi</h3>
-            {% endif %}
 
                 {% for course in related_courses %}
                 <div class="side-course">
@@ -340,7 +423,7 @@
                                 <img src="{{ course.image }}/256/{{ course.acronym }}.png"
                                     alt="{{ course.titleSl }} image" class="related-article-image">
                             </div>
-                            <p>{{ course.lecturersStr }}</p>
+                            <p>{{ course.lecturersStrSl }}</p>
                         </div>
                     </a>
                 </div>
