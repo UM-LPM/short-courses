@@ -8,7 +8,7 @@
       "title": "{{ course.titleSl | escape }}",
       "keywords": "{% if course.keywords %}{% for keyword in course.keywords %}{{ keyword.name }}{% unless forloop.last %}, {% endunless %}{% endfor %}{% endif %}",
       "intended": "{% if course.intended %}{% for item in course.intended %}{{ item.name }}{% unless forloop.last %}, {% endunless %}{% endfor %}{% endif %}",
-      "lecturersStr": "{{ course.lecturersStr }}",
+      "lecturersStrSl": "{{ course.lecturersStrSl }}",
       "acronym": "{{ course.acronym }}",
       "url": "{{ site.url }}/{{ course.acronym }}",
       "descriptionSl": "{{ course.descriptionSl | strip_newlines | lstrip | replace: '"', '' }}",
@@ -17,6 +17,25 @@
       "prerequisite": "{{ course.prerequisite }}",
       "publishDate": "{{ course.publishDate }}",
       "removalDate": "{{ course.removalDate }}",
+
+      "educationClassificationKLASIUSP16": [
+        {% if course.educationClassificationKLASIUSP16 %}
+          {% for item in course.educationClassificationKLASIUSP16 %}
+            {
+              "klasius": "{{ item.klasius }}"
+            }{% unless forloop.last %},{% endunless %}
+          {% endfor %}
+        {% endif %}
+      ],
+
+      "faculty": {
+        "code": {{ course.faculty.code }},
+        "acronym": "{{ course.faculty.acronym }}",
+        "title": "{{ course.faculty.title }}",
+        "titleEn": "{{ course.faculty.titleEn }}"
+      },
+      "klasiusCodes": "{% if course.educationClassificationKLASIUSP16 %}{% for item in course.educationClassificationKLASIUSP16 %}{{ item.klasius }}{% unless forloop.last %}, {% endunless %}{% endfor %}{% endif %}",
+      "facultyStr": "{{ course.faculty.acronym }} - {{ course.faculty.title }}",
       {% if course.executions and course.executions[0] %}
         "unparsedExecutionStartDate": "{{ course.executions[0].startDate }}",
         "executionStartDate": "{{ course.executions[0].startDate | date: "%d. %m. %Y" }}",
