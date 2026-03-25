@@ -39,9 +39,10 @@
                     {{ page.faculty.title }}
                 </p>
 
+
                 {% if page.pdfVisible and page.pdfUrl %}
                 <div style="margin-top:20px; margin-left: 20px;">
-                    <a href="{{ site.baseurl }}/syllabus/{{ page.acronym }}.pdf"
+                    <a href="{{ page.pdfUrl }}"
                     target="_blank"
                     rel="noopener noreferrer"
                     style="

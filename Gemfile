@@ -9,4 +9,3 @@ gem "jekyll-paginate-content"
 gem "json"
 gem 'webrick'
 gem "jekyll-datapage-generator"
-gem "dotenv"
