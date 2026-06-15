@@ -67,6 +67,28 @@
                     {% endif %}
                     <p class="course-description">{{ page.description | newline_to_br | replace: "  ", "&nbsp;&nbsp;&nbsp;&nbsp;" }}</p>
                     {{ content }}
+                    {% if page.pdfUrl and page.pdfUrl != "" %}
+                    <div style="margin-top:20px; margin-left: 20px;">
+                        <a href="{{ page.pdfUrl }}"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style="
+                                display:inline-flex;
+                                align-items:center;
+                                gap:8px;
+                                padding:12px 18px;
+                                background:#005e7d;
+                                color:white;
+                                text-decoration:none;
+                                border-radius:6px;
+                                font-size:15px;
+                                box-shadow:0 2px 6px rgba(0,0,0,0.15);
+                        ">
+                            <i class="fas fa-file-pdf"></i>
+                            Poglej podrobnosti
+                        </a>
+                    </div>
+                    {% else %}
                     <div class="data-container">
                         <div class="icon-description-container">
                             <div class="inside-icon-description">
@@ -151,7 +173,8 @@
                             {% endif %}
                         {% endif %}
                     {% endif %}
-                    </div>   
+                    </div>
+                    {% endif %}
                     <p style="text-align: center;"  class="course-button">
                         {% if page.cType == "1" %}
                         <button class="course-button"><a href="{{site.catalog_url}}{{page.id}}">Zanima me</a></button>
