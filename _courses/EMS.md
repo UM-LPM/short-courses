@@ -13,7 +13,7 @@ notifyData:
     notify: false
 title: "Enodnevni masterclass o supraharmonikih"
 document:
-pdfUrl: "/assets/docs/EMS.docx"
+pdfUrl: "/assets/docs/EMS.pdf"
 image: "https://unsplash.com/photos/fbi-woman-works-on-a-case-NxOQWmoYr9k"
 field:
   - "KLASIUS-P-16 (0713)"
