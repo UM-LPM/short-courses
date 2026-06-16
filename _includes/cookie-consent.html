@@ -1,0 +1,179 @@
+<!-- Cookie Banner -->
+<div id="cc-banner" class="cc-banner" role="alert">
+  <p class="cc-banner__text">
+    <span data-sl>Ta spletna stran uporablja piškotke za izboljšanje vaše izkušnje. Ali soglašate z namestitvijo piškotkov na omenjenih straneh?</span>
+    <span data-en>This website uses cookies to improve your experience. Do you agree to the installation of cookies on the mentioned pages?</span>
+  </p>
+  <div class="cc-banner__actions">
+    <button class="cc-btn cc-btn--ghost" onclick="ccOpenModal()">
+      <span data-sl>Več informacij</span><span data-en>More info</span>
+    </button>
+    <button class="cc-btn cc-btn--primary" onclick="ccAcceptEssential()">
+      <span data-sl>Razumem</span><span data-en>I understand</span>
+    </button>
+  </div>
+</div>
+
+<!-- Cookie Settings Modal -->
+<div id="cc-modal" class="cc-modal" role="dialog" aria-modal="true" aria-labelledby="cc-modal-title">
+  <div class="cc-modal__overlay" onclick="ccCloseModal()"></div>
+  <div class="cc-modal__box" tabindex="-1">
+    <button class="cc-modal__close" onclick="ccCloseModal()" aria-label="Zapri / Close">&times;</button>
+
+    <h2 class="cc-modal__title" id="cc-modal-title">
+      <span data-sl>Ta spletna stran uporablja piškotke.</span>
+      <span data-en>This website uses cookies.</span>
+    </h2>
+    <p class="cc-modal__intro">
+      <span data-sl>Piškotek je majhna tekstovna datoteka, ki se prenese na računalnik ob obisku spletne strani. Piškotke uporabljamo, da izboljšamo vašo izkušnjo. Izberete lahko, katere vrste dovolite. Onemogočanje piškotkov lahko vpliva na vašo izkušnjo.</span>
+      <span data-en>A cookie is a small text file transferred to your computer when you visit a website. We use cookies to improve your experience. You can choose which types you allow. Disabling cookies may affect your experience on this website.</span>
+    </p>
+
+    <!-- Essential cookies accordion -->
+    <div class="cc-section">
+      <button class="cc-section__header" onclick="ccToggle('cc-essential')" aria-expanded="false" aria-controls="cc-essential">
+        <span class="cc-section__arrow" aria-hidden="true">&#9650;</span>
+        <span class="cc-section__name">
+          <span data-sl>Nujno potrebni piškotki (3)</span>
+          <span data-en>Strictly necessary cookies (3)</span>
+        </span>
+        <span class="cc-switch cc-switch--locked" aria-label="Vedno vklopljeno / Always on">
+          <span class="cc-switch__thumb"></span>
+        </span>
+      </button>
+      <div class="cc-section__body" id="cc-essential" hidden>
+        <p class="cc-section__desc">
+          <span data-sl>Piškotki, potrebni za omogočanje osnovne funkcionalnosti spletnega mesta.</span>
+          <span data-en>Cookies required to enable the basic functionality of the website.</span>
+        </p>
+        <div class="cc-table-wrap">
+          <table class="cc-table">
+            <thead>
+              <tr>
+                <th><span data-sl>Ime piškotka</span><span data-en>Cookie name</span></th>
+                <th><span data-sl>Namen in opis</span><span data-en>Purpose</span></th>
+                <th><span data-sl>Osebni podatki</span><span data-en>Personal data</span></th>
+                <th><span data-sl>Trajanje</span><span data-en>Duration</span></th>
+                <th><span data-sl>Soglasje</span><span data-en>Consent</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>pll_language</code></td>
+                <td><span data-sl>Jezikovne nastavitve spletišča.</span><span data-en>Website language settings.</span></td>
+                <td>/</td>
+                <td><span data-sl>1 leto</span><span data-en>1 year</span></td>
+                <td>/</td>
+              </tr>
+              <tr>
+                <td><code>cookieControlPrefs</code></td>
+                <td><span data-sl>Shranjuje vašo izbiro glede piškotkov, da se baner ne prikaže ob vsakem obisku.</span><span data-en>Stores your cookie preference so the banner does not appear on every visit.</span></td>
+                <td>/</td>
+                <td><span data-sl>1 leto</span><span data-en>1 year</span></td>
+                <td>/</td>
+              </tr>
+              <tr>
+                <td><code>viewedOuibounceModal</code></td>
+                <td><span data-sl>Preprečuje večkratno prikazovanje pojavnega okna ob zaključku vsebine.</span><span data-en>Prevents the completion pop-up from appearing repeatedly.</span></td>
+                <td>/</td>
+                <td><span data-sl>do konca seje</span><span data-en>session</span></td>
+                <td>/</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="cc-modal__footer">
+      <button class="cc-btn cc-btn--primary" onclick="ccAcceptEssential()">
+        <span data-sl>Razumem</span><span data-en>I understand</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  var PREF = 'cookieControlPrefs';
+  var YEAR = 365;
+
+  function getCookie(name) {
+    var m = document.cookie.match('(?:^|;)\\s*' + name + '\\s*=\\s*([^;]+)');
+    return m ? decodeURIComponent(m[1]) : null;
+  }
+
+  function setCookie(name, value, days) {
+    var exp = new Date(Date.now() + days * 864e5).toUTCString();
+    document.cookie = name + '=' + encodeURIComponent(value) + '; expires=' + exp + '; path=/; SameSite=Lax';
+  }
+
+  function showBanner() {
+    document.getElementById('cc-banner').classList.add('cc-banner--visible');
+  }
+
+  function hideBanner() {
+    document.getElementById('cc-banner').classList.remove('cc-banner--visible');
+  }
+
+  window.ccOpenModal = function () {
+    document.getElementById('cc-modal').classList.add('cc-modal--visible');
+    document.querySelector('.cc-modal__box').focus();
+  };
+
+  window.ccCloseModal = function () {
+    document.getElementById('cc-modal').classList.remove('cc-modal--visible');
+  };
+
+  window.ccToggle = function (id) {
+    var body = document.getElementById(id);
+    var header = body.previousElementSibling;
+    var arrow = header.querySelector('.cc-section__arrow');
+    var isOpen = !body.hasAttribute('hidden');
+    if (isOpen) {
+      body.setAttribute('hidden', '');
+      header.setAttribute('aria-expanded', 'false');
+      arrow.classList.remove('cc-section__arrow--open');
+    } else {
+      body.removeAttribute('hidden');
+      header.setAttribute('aria-expanded', 'true');
+      arrow.classList.add('cc-section__arrow--open');
+    }
+  };
+
+  window.ccAcceptAll = function () {
+    setCookie(PREF, 'all', YEAR);
+    window.ccLoadGA && window.ccLoadGA();
+    hideBanner();
+    window.ccCloseModal();
+  };
+
+  window.ccAcceptEssential = function () {
+    setCookie(PREF, 'essential', YEAR);
+    hideBanner();
+    window.ccCloseModal();
+  };
+
+  window.ccRejectAll = function () {
+    setCookie(PREF, 'essential', YEAR);
+    hideBanner();
+    window.ccCloseModal();
+  };
+
+  window.ccSaveSettings = function () {
+    var analytics = document.getElementById('cc-analytics-toggle').checked;
+    setCookie(PREF, analytics ? 'all' : 'essential', YEAR);
+    if (analytics) window.ccLoadGA && window.ccLoadGA();
+    hideBanner();
+    window.ccCloseModal();
+  };
+
+  if (!getCookie(PREF)) {
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', showBanner);
+    } else {
+      showBanner();
+    }
+  }
+}());
+</script>
