@@ -24,14 +24,14 @@ intended:
   - "vsi"
 requisite: ""
 description: |
-  Prijazno vas vabimo na enodnevni masterclass o supraharmonikih, ki bo potekal v četrtek, 2. 7. 2026, od 8.00 do 15.00 na Fakulteti za elektrotehniko, računalništvo in informatiko Univerze v Mariboru (FERI).
+  Prijazno vas vabimo na enodnevni masterclass o supraharmonikih, ki bo potekal v torek, 22. septembra 2026, od 8.00 do 15.00 na Fakulteti za elektrotehniko, računalništvo in informatiko Univerze v Mariboru (FERI).
 
   Supraharmoniki (SH) predstavljajo vse pomembnejši izziv v sodobnih električnih omrežjih. Zaradi hitrega naraščanja števila naprav z močnostno elektroniko, kot so sončne elektrarne, baterijski hranilniki energije, polnilnice za električna vozila, frekvenčni pretvorniki in druga nelinearna bremena, postaja njihovo razumevanje, merjenje ter učinkovito obvladovanje ključnega pomena. Le z ustreznim poznavanjem teh pojavov lahko zagotovimo zanesljivo, varno in kakovostno delovanje električnega omrežja ter nemoteno obratovanje naprav v gospodinjstvih in industriji.
   Izobraževanje je namenjeno tako udeležencem, ki se s področjem supraharmonikov šele spoznavajo, kot tudi izkušenim inženirjem, ki želijo svoje znanje poglobiti z meritvami v praksi in konkretnimi primeri iz industrije. Program je zasnovan tako, da vas od temeljnih konceptov postopoma vodi do naprednejših vsebin, praktičnih meritev in inženirskega vrednotenja rezultatov.
 
   Izobraževanje bo izvajal dr. Primož Sukič z ekipo.
 
-  Prijave sprejemamo do 26.junija 2026 na e-mail: patricija.simonic1@um.si
+  Prijave sprejemamo do 16. septembra 2026 na e-mail: patricija.simonic1@um.si
 implementation: "" 
 cType: "0"
 ---
@@ -65,7 +65,7 @@ Kotizacija za to aktualno in praktično usmerjeno izobraževanje znaša **450 �
 --- 
 **Prijave**
 
-Prijave sprejemamo do **26. junija 2026** na elektronski naslov:
+Prijave sprejemamo do **16. septembra 2026** na elektronski naslov:
 
 **patricija.simonic1@um.si**
 
