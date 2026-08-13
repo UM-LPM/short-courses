@@ -4,8 +4,11 @@ description: Cilj spodnjega nabora vsebin je preveriti zainteresiranost za razvo
 show_hero: true
 menu:
   - title: Domov
+    title_en: Home
     url: /
   - title: O nas
+    title_en: About us
     url: /o-nas
   - title: Kontakt
+    title_en: Contact
     url: /kontakt

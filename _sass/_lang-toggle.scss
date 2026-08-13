@@ -1,0 +1,9 @@
+/* Language toggle (SL/EN) */
+
+html.lang-en [data-sl] {
+  display: none !important;
+}
+
+html.lang-sl [data-en] {
+  display: none !important;
+}

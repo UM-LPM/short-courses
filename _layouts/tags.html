@@ -61,7 +61,7 @@ layout: minimal
         {% endif %}
 
         {% if has_keyword %}
-          <li><a href="{{ site.url }}{{ site.baseurl }}/{{ course.acronym }}">{{ course.titleSl }}</a></li>
+          <li><a href="{{ site.url }}{{ site.baseurl }}/{{ course.acronym }}"><span data-sl>{{ course.titleSl }}</span><span data-en>{{ course.titleEn | default: course.titleSl }}</span></a></li>
         {% endif %}
       {% endfor %}
     </ul>
@@ -84,7 +84,7 @@ layout: minimal
         {% endif %}
 
         {% if has_intended %}
-          <li><a href="{{ site.url }}{{ site.baseurl }}/{{ course.acronym }}">{{ course.titleSl }}</a></li>
+          <li><a href="{{ site.url }}{{ site.baseurl }}/{{ course.acronym }}"><span data-sl>{{ course.titleSl }}</span><span data-en>{{ course.titleEn | default: course.titleSl }}</span></a></li>
         {% endif %}
       {% endfor %}
     </ul>

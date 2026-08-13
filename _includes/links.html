@@ -2,7 +2,7 @@
   {% for item in site.menu %}
     {% if item.title and item.url %}
       <li class="list-menu">
-        <a href="{{ site.url }}{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
+        <a href="{{ site.url }}{{ site.baseurl }}{{ item.url }}"><span data-sl>{{ item.title }}</span><span data-en>{{ item.title_en | default: item.title }}</span></a>
       </li>
     {% endif %}
   {% endfor %}

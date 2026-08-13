@@ -10,6 +10,8 @@
         {% assign title = site.data.catalog.titleSl %}
     {% endif %}
 
+    <title>{{ title }}</title>
+
     {% assign image = '' %}
     {% if page.image %}
         {% assign image = page.image %}
@@ -35,5 +37,12 @@
     <!-- JavaScript enabled/disabled -->
     <script>
         document.querySelector('html').classList.remove('no-js');
+    </script>
+    <!-- Apply saved language before render to avoid flash -->
+    <script>
+        (function() {
+            var lang = localStorage.getItem('lang') || 'sl';
+            document.documentElement.classList.add('lang-' + lang);
+        })();
     </script>
 </head>

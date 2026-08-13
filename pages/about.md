@@ -7,9 +7,10 @@ description: Več
 permalink: /vec/
 ---
 
-{{site.data.catalog.info}}
+<span data-sl>{{ site.data.catalog.info }}</span><span data-en>{{ site.data.catalog.infoEn | default: site.data.catalog.info }}</span>
 
-### Viri
+### <span data-sl>Viri</span><span data-en>Sources</span>
 
-Slike: [Unsplash - Free for commercial use](https://unsplash.com)  
-Predloga: [Jekflix Template - MIT license](https://github.com/thiagorossener/jekflix-template)
+<span data-sl>Slike:</span><span data-en>Images:</span> [Unsplash - Free for commercial use](https://unsplash.com)
+
+<span data-sl>Predloga:</span><span data-en>Template:</span> [Jekflix Template - MIT license](https://github.com/thiagorossener/jekflix-template)

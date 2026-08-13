@@ -6,10 +6,13 @@ description: Template
 show_hero: true
 menu:
   - title: Domov
+    title_en: Home
     url: /
   - title: Več
+    title_en: More
     url: /vec
   - title: Kontakt
+    title_en: Contact
     url: /kontakt
 
 # Posts Settings
@@ -22,7 +25,7 @@ two_columns_layout: true
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 google_analytics: "UA-XXXXXXXX-X"
-language: "si"
+language: "sl"
 
 defaults:
   - scope:

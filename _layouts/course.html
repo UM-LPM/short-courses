@@ -30,13 +30,13 @@
                 {% endif %}
                 
 
-                <h1 class="course-title">{{ page.titleSl }}</h1>
+                <h1 class="course-title"><span data-sl>{{ page.titleSl }}</span><span data-en>{{ page.titleEn | default: page.titleSl }}</span></h1>
 
                 <p class="course-author" style="color:rgb(83, 83, 83); font-weight: bold; margin-top:0; padding-top: 0;">
-                    {{ page.lecturersStrSl }}
+                    <span data-sl>{{ page.lecturersStrSl }}</span><span data-en>{{ page.lecturersStrEn | default: page.lecturersStrSl }}</span>
                 </p>
                 <p class="course-author" style="margin-top:0; font-size: larger; padding-top: 0;">
-                    {{ page.faculty.title }}
+                    <span data-sl>{{ page.faculty.title }}</span><span data-en>{{ page.faculty.titleEn | default: page.faculty.title }}</span>
                 </p>
 
 
@@ -58,7 +58,7 @@
                             box-shadow:0 2px 6px rgba(0,0,0,0.15);
                     ">
                         <i class="fas fa-file-pdf"></i>
-                        Poglej celotni učni načrt
+                        <span data-sl>Poglej celotni učni načrt</span><span data-en>View the full syllabus</span>
                     </a>
                 </div>
                 {% endif %}
@@ -72,7 +72,7 @@
                 {% endif %}
 
                 <p class="course-description">
-                    {{ page.descriptionSl | newline_to_br | replace: "  ", "&nbsp;&nbsp;&nbsp;&nbsp;" }}
+                    <span data-sl>{{ page.descriptionSl | newline_to_br | replace: "  ", "&nbsp;&nbsp;&nbsp;&nbsp;" }}</span><span data-en>{{ page.descriptionEn | default: page.descriptionSl | newline_to_br | replace: "  ", "&nbsp;&nbsp;&nbsp;&nbsp;" }}</span>
                 </p>
 
                 {{ content }}
@@ -81,7 +81,7 @@
                     <div class="tags">
                         {% for tag in page.keywords %}
                         {% if tag.name != "" %}
-                        <a href="{{ site.baseurl }}/tags/#{{ tag.name | slugify }}">#{{ tag.name }}</a>
+                        <a href="{{ site.baseurl }}/tags/#{{ tag.name | slugify }}"><span data-sl>#{{ tag.name }}</span><span data-en>#{{ tag.nameEn | default: tag.name }}</span></a>
                         {% endif %}
                         {% endfor %}
                     </div>
@@ -98,7 +98,7 @@
                 {% endif %}
 
                 {% if girls_only %}
-                <p class="warning">To izobraževanje je namenjeno zgolj dekletom</p>
+                <p class="warning"><span data-sl>To izobraževanje je namenjeno zgolj dekletom</span><span data-en>This course is intended for girls only</span></p>
                 {% endif %}
 
                 <div class="data-container">
@@ -113,22 +113,27 @@
                     VRSTA IZOBRAŽEVANJA: mapped depending on catalogType
                     {%- endcomment -%}
                     {% assign educationType = "" %}
+                    {% assign educationTypeEn = "" %}
                     {% if page.catalogType == "KI" %}
                     {% assign educationType = "Krajše izobraževanje s preverjanjem (pilotno mikrodokazilo)" %}
+                    {% assign educationTypeEn = "Short course with assessment (pilot micro-credential)" %}
                     {% elsif page.catalogType == "CMS_KI" %}
                     {% assign educationType = "Akreditirano CMS krajše izobraževanje" %}
+                    {% assign educationTypeEn = "Accredited CMS short course" %}
                     {% elsif page.catalogType == "CMS_KIM" %}
                     {% assign educationType = "Akreditirano krajše izobraževanje in usposabljanje za pridobitev mikrodokazila" %}
+                    {% assign educationTypeEn = "Accredited short course and training for obtaining a micro-credential" %}
                     {% else %}
                     {% assign educationType = page.type %}
+                    {% assign educationTypeEn = page.type %}
                     {% endif %}
 
                     <div class="icon-description-container">
                         <div class="inside-icon-description">
                             <i class="fas fa-paperclip"></i>
                             <div class="description-data">
-                                <p class="desc"><strong>Vrsta izobraževanja</strong></p>
-                                <p>{{ educationType }}</p>
+                                <p class="desc"><strong><span data-sl>Vrsta izobraževanja</span><span data-en>Type of education</span></strong></p>
+                                <p><span data-sl>{{ educationType }}</span><span data-en>{{ educationTypeEn }}</span></p>
                             </div>
                         </div>
                     </div>
@@ -138,7 +143,7 @@
                         <div class="inside-icon-description">
                             <i class="fas fa-paperclip"></i>
                             <div class="description-data">
-                                <p class="desc"><strong>Kontakt</strong></p>
+                                <p class="desc"><strong><span data-sl>Kontakt</span><span data-en>Contact</span></strong></p>
                                 <p>{{ page.contact }}</p>
                             </div>
                         </div>
@@ -151,8 +156,8 @@
                         <div class="inside-icon-description">
                             <i class="fas fa-paperclip"></i>
                             <div class="description-data">
-                                <p class="desc"><strong>Nosilec</strong></p>
-                                <p>{{ page.metadata.owner.fullTitle }}</p>
+                                <p class="desc"><strong><span data-sl>Nosilec</span><span data-en>Course leader</span></strong></p>
+                                <p><span data-sl>{{ page.metadata.owner.fullTitle }}</span><span data-en>{{ page.metadata.owner.fullTitleEn | default: page.metadata.owner.fullTitle }}</span></p>
                             </div>
                         </div>
                     </div>
@@ -163,8 +168,8 @@
                         <div class="inside-icon-description">
                             <i class="fas fa-paperclip"></i>
                             <div class="description-data">
-                                <p class="desc"><strong>Ciljna skupina</strong></p>
-                                <p>{{ page.targetGroupDefinition.targetGroupDefinitionSl | newline_to_br }}</p>
+                                <p class="desc"><strong><span data-sl>Ciljna skupina</span><span data-en>Target group</span></strong></p>
+                                <p><span data-sl>{{ page.targetGroupDefinition.targetGroupDefinitionSl | newline_to_br }}</span><span data-en>{{ page.targetGroupDefinition.targetGroupDefinitionEn | default: page.targetGroupDefinition.targetGroupDefinitionSl | newline_to_br }}</span></p>
                             </div>
                         </div>
                     </div>
@@ -175,10 +180,10 @@
                         <div class="inside-icon-description">
                             <i class="fas fa-paperclip"></i>
                             <div class="description-data">
-                                <p class="desc"><strong>Pogoji za vključitev v izobraževanje</strong></p>
+                                <p class="desc"><strong><span data-sl>Pogoji za vključitev v izobraževanje</span><span data-en>Enrolment requirements</span></strong></p>
                                 {% for item in page.prerequisites %}
                                 {% if item.prerequisiteSl %}
-                                <p>{{ item.prerequisiteSl }}</p>
+                                <p><span data-sl>{{ item.prerequisiteSl }}</span><span data-en>{{ item.prerequisiteEn | default: item.prerequisiteSl }}</span></p>
                                 {% elsif item.text %}
                                 <p>{{ item.text }}</p>
                                 {% endif %}
@@ -194,17 +199,17 @@
                         <div class="inside-icon-description">
                             <i class="fas fa-paperclip"></i>
                             <div class="description-data">
-                                <p class="desc"><strong>Raven in stopnja kvalifikacije po SOK/SQF in EOK/EQF</strong>
+                                <p class="desc"><strong><span data-sl>Raven in stopnja kvalifikacije po SOK/SQF in EOK/EQF</span><span data-en>Qualification level according to SOK/SQF and EOK/EQF</span></strong>
                                 </p>
                                 <p>
                                     {% if page.metadata.qualificationLevels.soksqf %}
-                                    SOK/SQF: {{ page.metadata.qualificationLevels.soksqf.valueSl }}
+                                    SOK/SQF: <span data-sl>{{ page.metadata.qualificationLevels.soksqf.valueSl }}</span><span data-en>{{ page.metadata.qualificationLevels.soksqf.valueEn | default: page.metadata.qualificationLevels.soksqf.valueSl }}</span>
                                     {% endif %}
                                     {% if page.metadata.qualificationLevels.eokeqf %}
-                                    <br>EOK/EQF: {{ page.metadata.qualificationLevels.eokeqf.valueSl }}
+                                    <br>EOK/EQF: <span data-sl>{{ page.metadata.qualificationLevels.eokeqf.valueSl }}</span><span data-en>{{ page.metadata.qualificationLevels.eokeqf.valueEn | default: page.metadata.qualificationLevels.eokeqf.valueSl }}</span>
                                     {% endif %}
                                     {% if page.metadata.qualificationLevels.eovkqfehea %}
-                                    <br>Stopnja: {{ page.metadata.qualificationLevels.eovkqfehea.valueSl }}
+                                    <br><span data-sl>Stopnja:</span><span data-en>Level:</span> <span data-sl>{{ page.metadata.qualificationLevels.eovkqfehea.valueSl }}</span><span data-en>{{ page.metadata.qualificationLevels.eovkqfehea.valueEn | default: page.metadata.qualificationLevels.eovkqfehea.valueSl }}</span>
                                     {% endif %}
                                 </p>
                             </div>
@@ -218,9 +223,9 @@
                         <div class="inside-icon-description">
                             <i class="fas fa-paperclip"></i>
                             <div class="description-data">
-                                <p class="desc"><strong>Ure</strong></p>
+                                <p class="desc"><strong><span data-sl>Ure</span><span data-en>Hours</span></strong></p>
                                 {% for h in page.hours %}
-                                <p>{{ h.typeSl }}: {{ h.value }} ur</p>
+                                <p><span data-sl>{{ h.typeSl }}: {{ h.value }} ur</span><span data-en>{{ h.typeEn | default: h.typeSl }}: {{ h.value }} hours</span></p>
                                 {% endfor %}
                             </div>
                         </div>
@@ -233,8 +238,8 @@
                         <div class="inside-icon-description">
                             <i class="fas fa-paperclip"></i>
                             <div class="description-data">
-                                <p class="desc"><strong>Obseg izobraževanja glede števila ECTS</strong></p>
-                                <p>{{ page.ects | times: 25 }} - {{ page.ects | times: 30 }} ur dela</p>
+                                <p class="desc"><strong><span data-sl>Obseg izobraževanja glede števila ECTS</span><span data-en>Course workload in ECTS</span></strong></p>
+                                <p>{{ page.ects | times: 25 }} - {{ page.ects | times: 30 }} <span data-sl>ur dela</span><span data-en>hours of work</span></p>
                             </div>
                         </div>
                     </div>
@@ -244,11 +249,11 @@
                         <div class="inside-icon-description">
                             <i class="fas fa-paperclip"></i>
                             <div class="description-data">
-                                <p class="desc"><strong>Opredelitev zasnove krajšega izobraževanja glede na potrebe trga
-                                        dela</strong></p>
+                                <p class="desc"><strong><span data-sl>Opredelitev zasnove krajšega izobraževanja glede na potrebe trga
+                                        dela</span><span data-en>Definition of the short course design with regard to labour market needs</span></strong></p>
                                 {% for item in page.metadata.needsVerification %}
                                 {% if item.valueSl %}
-                                <p>{{ item.valueSl }}</p>
+                                <p><span data-sl>{{ item.valueSl }}</span><span data-en>{{ item.valueEn | default: item.valueSl }}</span></p>
                                 {% endif %}
                                 {% endfor %}
                             </div>
@@ -261,12 +266,12 @@
                         <div class="inside-icon-description">
                             <i class="fas fa-paperclip"></i>
                             <div class="description-data">
-                                <p class="desc"><strong>Krajše izobraževanje se izvaja v sodelovanju s fakulteto
-                                        UM:</strong></p>
+                                <p class="desc"><strong><span data-sl>Krajše izobraževanje se izvaja v sodelovanju s fakulteto
+                                        UM:</span><span data-en>The short course is delivered in cooperation with a UM faculty:</span></strong></p>
                                 {% for item in page.metadata.collaborationFaculties %}
                                 <p>
                                     {% if item.title %}
-                                    {{ item.title }}
+                                    <span data-sl>{{ item.title }}</span><span data-en>{{ item.titleEn | default: item.title }}</span>
                                     {% elsif item.name %}
                                     {{ item.name }}
                                     {% endif %}
@@ -283,12 +288,12 @@
                         <div class="inside-icon-description">
                             <i class="fas fa-paperclip"></i>
                             <div class="description-data">
-                                <p class="desc"><strong>Krajše izobraževanje se izvaja v sodelovanju z drugo
-                                        institucijo:</strong></p>
+                                <p class="desc"><strong><span data-sl>Krajše izobraževanje se izvaja v sodelovanju z drugo
+                                        institucijo:</span><span data-en>The short course is delivered in cooperation with another institution:</span></strong></p>
                                 {% for item in page.metadata.collaborationInstitutions %}
                                 <p>
                                     {% if item.title %}
-                                    {{ item.title }}
+                                    <span data-sl>{{ item.title }}</span><span data-en>{{ item.titleEn | default: item.title }}</span>
                                     {% elsif item.name %}
                                     {{ item.name }}
                                     {% endif %}
@@ -307,7 +312,7 @@
                         <div class="inside-icon-description">
                             <i class="fas fa-paperclip"></i>
                             <div class="description-data">
-                                <p class="desc"><strong>Predvidena starostna skupina</strong></p>
+                                <p class="desc"><strong><span data-sl>Predvidena starostna skupina</span><span data-en>Intended age group</span></strong></p>
                                 <p>{{ page.intendedFor }}</p>
                             </div>
                         </div>
@@ -322,8 +327,8 @@
                         <div class="inside-icon-description">
                             <i class="fas fa-paperclip"></i>
                             <div class="description-data">
-                                <p class="desc"><strong>Cena</strong></p>
-                                <p>Udeležba je brezplačna. Prav tako bo poskrbljeno za hrano in pijačo.</p>
+                                <p class="desc"><strong><span data-sl>Cena</span><span data-en>Price</span></strong></p>
+                                <p><span data-sl>Udeležba je brezplačna. Prav tako bo poskrbljeno za hrano in pijačo.</span><span data-en>Participation is free of charge. Food and drinks will also be provided.</span></p>
                             </div>
                         </div>
                     </div>
@@ -337,11 +342,13 @@
                         <div class="inside-icon-description">
                             <i class="fas fa-calendar-alt"></i>
                             <div class="description-data">
-                                <p class="desc"><strong>Izvedba</strong></p>
+                                <p class="desc"><strong><span data-sl>Izvedba</span><span data-en>Execution</span></strong></p>
                                 {% for execution in page.executions %}
                                 <div style="margin-bottom: 1em;">
-                                    <p><i class="fas fa-clock"></i> {{ execution.executionDataSl }}</p>
+                                    <p><i class="fas fa-clock"></i> <span data-sl>{{ execution.executionDataSl }}</span><span data-en>{{ execution.executionDataEn | default: execution.executionDataSl }}</span></p>
+                                    {% if execution.location %}
                                     <p><i class="fas fa-map-marker-alt"></i> {{ execution.location }}</p>
+                                    {% endif %}
                                     {% if execution.note %}
                                     <p><i class="fas fa-sticky-note"></i> {{ execution.note }}</p>
                                     {% endif %}
@@ -362,9 +369,7 @@
                     {% assign domain = "https://" | append: domain %}
                     {% endunless %}
 
-                    <button class="course-button">
-                        <a href="{{ domain }}/course/{{ page.id }}">Prijava</a>
-                    </button>
+                    <a class="course-button" href="{{ domain }}/course/{{ page.id }}"><span data-sl>Prijava</span><span data-en>Register</span></a>
                     {% endif %}
                 </p>
 
@@ -411,7 +416,7 @@
                 course.url %} {% assign related_courses=related_courses | push: course %} {% assign
                 related_courses_count=related_courses_count | plus: 1 %} {% endunless %} {% if related_courses_count==3
                 %} {% break %} {% endif %} {% endfor %} {% endif %} {% if related_courses_count !=0 %} <h3
-                style="margin-left: 30px;">Poglej tudi</h3>
+                style="margin-left: 30px;"><span data-sl>Poglej tudi</span><span data-en>See also</span></h3>
                 {% endif %}
 
                 {% for course in related_courses %}
@@ -419,12 +424,12 @@
                     <a style="text-decoration: none;" href="{{ site.baseurl }}/{{ course.acronym }}">
                         <div class="related-article-item">
 
-                            <h3>{{ course.titleSl }}</h3>
+                            <h3><span data-sl>{{ course.titleSl }}</span><span data-en>{{ course.titleEn | default: course.titleSl }}</span></h3>
                             <div class="image-container">
                                 <img src="{{ course.image }}/256/{{ course.acronym }}.png"
                                     alt="{{ course.titleSl }} image" class="related-article-image">
                             </div>
-                            <p>{{ course.lecturersStrSl }}</p>
+                            <p><span data-sl>{{ course.lecturersStrSl }}</span><span data-en>{{ course.lecturersStrEn | default: course.lecturersStrSl }}</span></p>
                         </div>
                     </a>
                 </div>

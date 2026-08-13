@@ -1,5 +1,5 @@
 <div class="bar-header">
-    <a id="menu" role="button">
+    <a id="menu" role="button" aria-label="Odpri meni / Open menu">
         <svg id="open" class="icon-menu"><use xlink:href="#icon-menu"></use></svg>
     </a>
     <h1 class="logo">
@@ -7,11 +7,11 @@
             {% if site.use_logo %}
                 {% include logo.html %}
             {% else %}
-                {{ site.data.catalog.titleSl }}</span>
+                <span data-sl>{{ site.data.catalog.titleSl }}</span><span data-en>{{ site.data.catalog.titleEn | default: site.data.catalog.titleSl }}</span>
             {% endif %}
         </a>
     </h1>
-    <a id="search" class="dosearch" role="button">
+    <a id="search" class="dosearch" role="button" aria-label="Išči / Search">
         <svg class="icon-search"><use xlink:href="#icon-search"></use></svg>
     </a>
 </div>

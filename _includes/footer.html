@@ -1,5 +1,5 @@
 <div class="footer-wrapper">
-  <p class="footer-intro">{{site.data.catalog.sponsoredText}}</p>
+  <p class="footer-intro"><span data-sl>{{ site.data.catalog.sponsoredText }}</span><span data-en>{{ site.data.catalog.sponsoredTextEn | default: site.data.catalog.sponsoredText }}</span></p>
   <footer>
     <img src="{{site.data.catalog.logosCombined}}" alt="logo" class="footer-logo" />
   </footer>
@@ -26,6 +26,9 @@
 
 <!-- Include the script that allows Netlify CMS login -->
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+<!-- Include the cookie consent banner -->
+{% include cookie-consent.html %}
 
 <!-- Include the website scripts -->
 <script src="{{ '/assets/js/scripts.min.js' | prepend: site.baseurl }}"></script>

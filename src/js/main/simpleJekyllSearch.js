@@ -76,4 +76,4 @@
             searchResults.children().remove();
         }
     }
-}(jQuery || Zepto));
+}(typeof jQuery !== 'undefined' ? jQuery : Zepto));

@@ -120,7 +120,8 @@
     }
   }
 
-  button.course-button {
+  a.course-button {
+    display: inline-block;
     background-color: $themeColor;
     padding: rem(2px);
     padding-left: rem(32px);
@@ -128,17 +129,13 @@
     border: rem(1px);
     border-radius: rem(4px);
     box-shadow: 0 4px 6px rgba(107, 107, 107, 0.8);
+    color: $accentDark;
+    font-size: rem(16px);
+    font-family: "Titillium Web", "Helvetica Neue", Helvetica, sans-serif;
 
-    a {
-      color: $accentDark;
-      font-size: rem(16px);
-      font-family: "Titillium Web", "Helvetica Neue", Helvetica, sans-serif;
-
-      &:hover {
-        color: $themeOrange;
-      }
+    &:hover {
+      color: $themeOrange;
     }
-
   }
 
   p.course-info {
