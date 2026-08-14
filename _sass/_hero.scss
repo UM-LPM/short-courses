@@ -9,6 +9,11 @@
 
   +#grid {
     margin-top: calc(-20vh + -5vw);
+    padding-top: rem(40px);
+
+    @include media(">=sm") {
+      padding-top: rem(70px);
+    }
 
     @media (max-height: rem(600px)) {
       position: relative;
@@ -75,9 +80,10 @@
       font-size: rem(40px);
       color: #fff;
       margin: rem(10px) 0;
+      line-height: 1.6;
 
       .highlight {
-        background-color: rgb(40, 40, 40);
+        background-color: $heroPanel;
         padding: rem(4px) rem(12px);
         border-radius: rem(10px);
         box-decoration-break: clone;
@@ -90,9 +96,9 @@
     }
 
     .description {
-      font-size: rem(24px);
+      font-size: rem(19px);
       color: #fff;
-      background-color: rgb(40, 40, 40);
+      background-color: $heroPanel;
       text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
       padding: rem(8px);
       margin: 0;
@@ -101,14 +107,14 @@
       width: fit-content;
       max-width: 100%;
       align-self: flex-start;
-      font-weight: bolder;
+      font-weight: 400;
 
       @include media("<=md") {
-        font-size: rem(22px);
+        font-size: rem(18px);
       }
 
       @include media("<=sm") {
-        font-size: rem(22px);
+        font-size: rem(17px);
       }
     }
 

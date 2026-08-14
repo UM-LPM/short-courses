@@ -15,8 +15,9 @@ $darkThemeBlue: map-get($theme, darkThemeBlue) !default;
 $darkThemeOrange: map-get($theme, darkThemeOrange) !default;
 $darkThemeGreen: map-get($theme, darkThemeGreen) !default;
 $texts: map-get($theme, texts) !default;
+$pageTexts: lighten($texts, 20%) !default;
+$heroPanel: rgba(20, 20, 20, 0.65) !default;
 
-// Breakpoints
 $breakpoints: (
   sm: 37.5rem,
   md: 48rem,   
