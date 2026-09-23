@@ -4,7 +4,7 @@ body {
 }
 
 .bar-header {
-  background-color: $themeColor;
+  background-color: $umBlue;
   padding: rem(10px) rem(15px);
   left: 0;
   width: 100%;
@@ -114,7 +114,7 @@ body.main-page {
   background-color: $accentDark;
 
   .bar-header {
-    background-color: $themeColor;
+    background-color: $umBlue;
   }
 }
 

@@ -336,23 +336,33 @@
 
                     {% endif %}
 
-                    {%- comment -%} EXECUTIONS (dates + details) {%- endcomment -%}
+                    {%- comment -%} DOCUMENTS (repository files offered with this course) {%- endcomment -%}
+                    {% if page.documents and page.documents.size > 0 %}
+                    <div class="icon-description-container">
+                        <div class="inside-icon-description">
+                            <i class="fas fa-paperclip"></i>
+                            <div class="description-data">
+                                <p class="desc"><strong><span data-sl>Dokumenti</span><span data-en>Documents</span></strong></p>
+                                {% include documents.html documents=page.documents %}
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+
+                    {%- comment -%} EXECUTIONS (dates + details); each links straight to its registration page on the catalog frontend {%- endcomment -%}
+                    {% assign domain = site.data.catalog.catalogDomain %}
+                    {% unless domain contains "://" %}
+                    {% assign domain = "https://" | append: domain %}
+                    {% endunless %}
+
                     {% if page.executions and page.executions.size > 0 %}
                     <div class="icon-description-container">
                         <div class="inside-icon-description">
                             <i class="fas fa-calendar-alt"></i>
                             <div class="description-data">
-                                <p class="desc"><strong><span data-sl>Izvedba</span><span data-en>Execution</span></strong></p>
+                                <p class="desc"><strong>{% if page.executions.size > 1 %}<span data-sl>Izvedbe</span><span data-en>Executions</span>{% else %}<span data-sl>Izvedba</span><span data-en>Execution</span>{% endif %}</strong></p>
                                 {% for execution in page.executions %}
-                                <div style="margin-bottom: 1em;">
-                                    <p><i class="fas fa-clock"></i> <span data-sl>{{ execution.executionDataSl }}</span><span data-en>{{ execution.executionDataEn | default: execution.executionDataSl }}</span></p>
-                                    {% if execution.location %}
-                                    <p><i class="fas fa-map-marker-alt"></i> {{ execution.location }}</p>
-                                    {% endif %}
-                                    {% if execution.note %}
-                                    <p><i class="fas fa-sticky-note"></i> {{ execution.note }}</p>
-                                    {% endif %}
-                                </div>
+                                {% include execution.html execution=execution courseId=page.id domain=domain %}
                                 {% endfor %}
                             </div>
                         </div>
@@ -363,12 +373,6 @@
 
                 <p style="text-align: center;" class="course-button">
                     {% if page.executions %}
-                    {% assign domain = site.data.catalog.catalogDomain %}
-                    {% assign prefix = domain | slice: 0, 8 %}
-                    {% unless prefix == "https://" %}
-                    {% assign domain = "https://" | append: domain %}
-                    {% endunless %}
-
                     <a class="course-button" href="{{ domain }}/course/{{ page.id }}"><span data-sl>Prijava</span><span data-en>Register</span></a>
                     {% endif %}
                 </p>

@@ -23,7 +23,7 @@
 .footer-wrapper {
   @include center(rem(800px));
   padding: 0 rem(25px);
-  margin-bottom: rem(120px);
+  margin-bottom: rem(40px);
   padding-top: rem(20px); 
 
   @include media(">=sm") {
@@ -114,5 +114,111 @@
         color: $accentDark;
       }
     }
+  }
+}
+
+.site-footer {
+  @include mainFont(400);
+  background: $umBlue;
+  color: $accentDark;
+  padding: rem(40px) rem(20px) rem(20px);
+
+  @include media(">=sm") {
+    padding: rem(60px) rem(40px) rem(20px);
+  }
+
+  a {
+    color: $accentDark;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+
+  i {
+    margin-right: rem(2px);
+  }
+
+  .site-footer__inner {
+    @include center(rem(1200px));
+    display: flex;
+    flex-direction: column;
+    gap: rem(30px);
+
+    @include media(">=md") {
+      flex-direction: row;
+      gap: rem(50px);
+    }
+  }
+
+  .site-footer__brand {
+    @include media(">=md") {
+      flex: 0 0 rem(300px);
+    }
+  }
+
+  .site-footer__title {
+    @include mainFont(700);
+    font-size: rem(18px);
+    line-height: 1.3;
+    text-transform: uppercase;
+  }
+
+  .site-footer__faculty {
+    margin-top: rem(10px);
+    font-size: rem(15px);
+  }
+
+  .site-footer__documents {
+    display: flex;
+    flex-direction: column;
+    gap: rem(30px);
+
+    @include media(">=md") {
+      flex: 1;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: rem(40px);
+      padding-left: rem(40px);
+      border-left: 1px solid rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  .documents-group {
+    @include media(">=md") {
+      flex: 1 1 rem(240px);
+      max-width: rem(360px);
+    }
+  }
+
+  .documents-group__title {
+    @include mainFont(700);
+    margin: 0 0 rem(12px);
+    font-size: rem(15px);
+    line-height: 1.3;
+    text-transform: uppercase;
+  }
+
+  .site-footer__contact {
+    @include center(rem(1200px));
+    display: flex;
+    flex-wrap: wrap;
+    gap: rem(10px) rem(30px);
+    margin-top: rem(40px);
+    padding-top: rem(20px);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    font-size: rem(15px);
+  }
+
+  .site-footer__copyright {
+    @include center(rem(1200px));
+    margin-top: rem(20px);
+    font-size: rem(13px);
+    color: rgba(255, 255, 255, 0.8);
   }
 }

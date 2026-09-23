@@ -1,0 +1,38 @@
+{%- comment -%}
+Links to the repository documents the catalog backend offers with a course or
+with the catalog as a whole (`documents` from the courses/catalog feed). Each
+opens the hosted file (`url`) in a new tab. Pass `class` for a context variant,
+e.g. `documents--footer` for the dark footer band. Usage:
+{% include documents.html documents=page.documents %}
+{%- endcomment -%}
+{% if include.documents and include.documents.size > 0 %}
+<ul class="documents{% if include.class %} {{ include.class }}{% endif %}">
+    {% for document in include.documents %}
+    {% assign mime = document.mimeType | default: "" %}
+    {% if mime == "application/pdf" %}
+        {% assign icon = "fa-file-pdf" %}
+    {% elsif mime contains "spreadsheet" or mime contains "excel" %}
+        {% assign icon = "fa-file-excel" %}
+    {% elsif mime contains "presentation" or mime contains "powerpoint" %}
+        {% assign icon = "fa-file-powerpoint" %}
+    {% elsif mime contains "word" or mime contains "opendocument.text" %}
+        {% assign icon = "fa-file-word" %}
+    {% else %}
+        {% assign icon = "fa-file-alt" %}
+    {% endif %}
+    <li class="documents__item">
+        <a class="documents__link" href="{{ document.url }}" target="_blank" rel="noopener noreferrer">
+            <i class="fas {{ icon }}"></i>
+            <span>
+                <span data-sl>{{ document.titleSl }}</span><span data-en>{{ document.titleEn | default: document.titleSl }}</span>{% if document.versionLabel %} ({{ document.versionLabel }}){% endif %}
+            </span>
+        </a>
+        {% if document.descriptionSl %}
+        <p class="documents__description">
+            <span data-sl>{{ document.descriptionSl }}</span><span data-en>{{ document.descriptionEn | default: document.descriptionSl }}</span>
+        </p>
+        {% endif %}
+    </li>
+    {% endfor %}
+</ul>
+{% endif %}

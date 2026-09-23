@@ -1,0 +1,110 @@
+{%- comment -%}
+One course execution ("izvedba") from the courses feed: the details a prospective
+participant needs (schedule, place, delivery mode, language, lecturers, price,
+group size, registration deadline, note) plus a link straight to that execution's
+registration page on the catalog frontend (`/execution/:courseId/:executionId`).
+Instants in the feed are UTC; the `date: "%s" | date: ...` round-trip re-renders
+them in `site.timezone`. Usage: {% include execution.html execution=execution courseId=page.id domain=domain %}
+{%- endcomment -%}
+{% assign execution = include.execution %}
+{% assign status = execution.status | default: execution.executed | default: "" | downcase %}
+{% assign closed = false %}
+{% if status == "cancelled" or status == "canceled" or status == "completed" or status == "finished" or status == "executed" %}
+    {% assign closed = true %}
+{% endif %}
+{% assign startDate = execution.startDate | date: "%s" | date: "%-d. %-m. %Y" %}
+{% assign endDate = execution.endDate | date: "%s" | date: "%-d. %-m. %Y" %}
+{% assign deadline = execution.initialDeadlineDate | date: "%s" | date: "%-d. %-m. %Y, %H:%M" %}
+{% assign scheduleRows = execution.metadata.scheduleRows %}
+{% assign lang = execution.executionLanguage | default: "" | downcase %}
+<div class="execution{% if closed %} is-closed{% endif %}">
+
+    {%- comment -%} HEADING: date range + status badges {%- endcomment -%}
+    <p class="execution-heading">
+        <i class="fas fa-calendar-alt"></i>
+        {% if startDate and startDate != "" %}
+        <strong>{{ startDate }}{% if endDate and endDate != "" and endDate != startDate %} – {{ endDate }}{% endif %}</strong>
+        {% else %}
+        <strong><span data-sl>Termin</span><span data-en>Schedule</span></strong>
+        {% endif %}
+        {% if status == "cancelled" or status == "canceled" %}
+        <span class="execution-badge is-warning"><span data-sl>Odpovedana</span><span data-en>Cancelled</span></span>
+        {% elsif status == "completed" or status == "finished" or status == "executed" %}
+        <span class="execution-badge"><span data-sl>Zaključena</span><span data-en>Completed</span></span>
+        {% elsif status == "in_progress" or status == "ongoing" or status == "running" %}
+        <span class="execution-badge"><span data-sl>V teku</span><span data-en>In progress</span></span>
+        {% endif %}
+        {% if execution.filled %}
+        <span class="execution-badge is-warning"><span data-sl>Zapolnjena</span><span data-en>Full</span></span>
+        {% endif %}
+    </p>
+
+    {%- comment -%} SCHEDULE: structured rows when the backend has them, otherwise the free-text version {%- endcomment -%}
+    {% if scheduleRows and scheduleRows.size > 0 %}
+    <ul class="execution-schedule">
+        {% for row in scheduleRows %}
+        <li>
+            {%- if row.date %}{{ row.date | date: "%-d. %-m. %Y" }}{% endif -%}
+            {%- if row.timeFrom %}, {{ row.timeFrom }}{% if row.timeTo %}–{{ row.timeTo }}{% endif %}{% endif -%}
+            {%- if row.classroom %}, {{ row.classroom }}{% endif -%}
+            {%- if row.descriptionSl %}: <span data-sl>{{ row.descriptionSl }}</span><span data-en>{{ row.descriptionEn | default: row.descriptionSl }}</span>{% endif -%}
+        </li>
+        {% endfor %}
+    </ul>
+    {% elsif execution.executionDataSl %}
+    <p><span data-sl>{{ execution.executionDataSl | newline_to_br }}</span><span data-en>{{ execution.executionDataEn | default: execution.executionDataSl | newline_to_br }}</span></p>
+    {% endif %}
+
+    {% if execution.location %}
+    <p><i class="fas fa-map-marker-alt"></i> {{ execution.location }}</p>
+    {% endif %}
+
+    {% if execution.learningEnvironment.descriptionSl %}
+    <p><span class="execution-label"><span data-sl>Način izvedbe</span><span data-en>Delivery mode</span>:</span> <span data-sl>{{ execution.learningEnvironment.descriptionSl }}</span><span data-en>{{ execution.learningEnvironment.descriptionEn | default: execution.learningEnvironment.descriptionSl }}</span></p>
+    {% endif %}
+
+    {% if lang != "" %}
+    <p><span class="execution-label"><span data-sl>Jezik izvedbe</span><span data-en>Language</span>:</span>
+        {% case lang %}
+        {% when "slovenian", "slovene", "sl", "slo" %}<span data-sl>slovenščina</span><span data-en>Slovenian</span>
+        {% when "english", "en", "eng" %}<span data-sl>angleščina</span><span data-en>English</span>
+        {% when "german", "de", "ger" %}<span data-sl>nemščina</span><span data-en>German</span>
+        {% else %}{{ execution.executionLanguage }}
+        {% endcase %}
+    </p>
+    {% endif %}
+
+    {% if execution.assignedLecturersStrSl %}
+    <p><span class="execution-label"><span data-sl>Izvajalci</span><span data-en>Lecturers</span>:</span> <span data-sl>{{ execution.assignedLecturersStrSl }}</span><span data-en>{{ execution.assignedLecturersStrEn | default: execution.assignedLecturersStrSl }}</span></p>
+    {% endif %}
+
+    {%- comment -%} PRICE: PSMA courses are free and say so in the course-level "Cena" block {%- endcomment -%}
+    {% if page.catalogType != "PSMA" and execution.pricelist %}
+    {% assign price = execution.pricelist %}
+    {% assign currency = price.currency | default: "EUR" %}
+    {% if price.priceInclTax == 0 %}
+    <p><span class="execution-label"><span data-sl>Cena</span><span data-en>Price</span>:</span> <span data-sl>Brezplačno</span><span data-en>Free of charge</span></p>
+    {% elsif price.priceInclTax %}
+    <p><span class="execution-label"><span data-sl>Cena</span><span data-en>Price</span>:</span>
+        <span data-sl>{{ price.priceInclTax | replace: ".", "," }} {{ currency }} z DDV{% if price.priceExclTax %} ({{ price.priceExclTax | replace: ".", "," }} {{ currency }} brez DDV){% endif %}</span><span data-en>{{ price.priceInclTax }} {{ currency }} incl. VAT{% if price.priceExclTax %} ({{ price.priceExclTax }} {{ currency }} excl. VAT){% endif %}</span>
+    </p>
+    {% endif %}
+    {% endif %}
+
+    {% if execution.maxParticipants %}
+    <p><span class="execution-label"><span data-sl>Število udeležencev</span><span data-en>Participants</span>:</span> {% if execution.minParticipants and execution.minParticipants != execution.maxParticipants %}{{ execution.minParticipants }}–{% endif %}{{ execution.maxParticipants }}</p>
+    {% endif %}
+
+    {% if deadline and deadline != "" %}
+    <p><span class="execution-label"><span data-sl>Rok za prijavo</span><span data-en>Registration deadline</span>:</span> {{ deadline }}</p>
+    {% endif %}
+
+    {% if execution.note %}
+    <p><i class="fas fa-sticky-note"></i> {{ execution.note }}</p>
+    {% endif %}
+
+    {%- comment -%} Direct link to this execution on the catalog frontend (route `/execution/:courseId/:executionId`) {%- endcomment -%}
+    {% if execution.id and closed == false %}
+    <p><a class="execution-register" href="{{ include.domain }}/execution/{{ include.courseId }}/{{ execution.id }}"><span data-sl>Prijava na to izvedbo</span><span data-en>Register for this session</span> <i class="fas fa-arrow-right"></i></a></p>
+    {% endif %}
+</div>

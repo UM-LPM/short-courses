@@ -351,6 +351,11 @@
           margin-right: 8px;
         }
 
+        .documents__link i {
+          color: inherit;
+          margin: 0;
+        }
+
         .description-data {
           display: flex;
           flex-direction: column;
@@ -363,6 +368,81 @@
             text-transform: uppercase;
           }
         }
+      }
+    }
+  }
+
+  .inside-icon-description .execution {
+    margin: rem(6px) 0 rem(18px);
+    padding: rem(2px) 0 rem(2px) rem(14px);
+    border-left: rem(3px) solid $themeGreen;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &.is-closed {
+      border-left-color: $lightGray;
+    }
+
+    i {
+      margin-top: 0;
+    }
+
+    .execution-heading {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: rem(8px);
+    }
+
+    .execution-badge {
+      display: inline-block;
+      padding: 0 rem(8px);
+      border-radius: rem(10px);
+      background: $lightGray;
+      color: $primaryDark;
+      font-size: rem(12px);
+      font-weight: bold;
+      line-height: rem(20px);
+      text-transform: uppercase;
+
+      &.is-warning {
+        background: $themeOrange;
+        color: $accentDark;
+      }
+    }
+
+    .execution-schedule {
+      list-style: none;
+      margin: rem(2px) 0 rem(6px);
+      padding: 0 rem(20px);
+
+      li {
+        margin: 0;
+        padding: 0;
+      }
+    }
+
+    .execution-label {
+      font-weight: bold;
+    }
+
+    .execution-register {
+      display: inline-flex;
+      align-items: center;
+      gap: rem(6px);
+      color: $themeColor;
+      font-weight: bold;
+      text-decoration: none;
+
+      i {
+        color: inherit;
+        margin: 0;
+      }
+
+      &:hover {
+        color: $themeOrange;
       }
     }
   }
