@@ -1,7 +1,7 @@
 {%- comment -%}
 One course execution ("izvedba") from the courses feed: the details a prospective
 participant needs (schedule, place, delivery mode, language, lecturers, price,
-group size, registration deadline, note) plus a link straight to that execution's
+registration deadline, note) plus a register (or, when full, waiting-list) button straight to that execution's
 registration page on the catalog frontend (`/execution/:courseId/:executionId`).
 Instants in the feed are UTC; the `date: "%s" | date: ...` round-trip re-renders
 them in `site.timezone`. Usage: {% include execution.html execution=execution courseId=page.id domain=domain %}
@@ -17,15 +17,14 @@ them in `site.timezone`. Usage: {% include execution.html execution=execution co
 {% assign deadline = execution.initialDeadlineDate | date: "%s" | date: "%-d. %-m. %Y, %H:%M" %}
 {% assign scheduleRows = execution.metadata.scheduleRows %}
 {% assign lang = execution.executionLanguage | default: "" | downcase %}
-<div class="execution{% if closed %} is-closed{% endif %}">
+<div class="execution{% if closed %} is-closed{% endif %}{% if execution.filled %} is-filled{% endif %}">
 
-    {%- comment -%} HEADING: date range + status badges {%- endcomment -%}
-    <p class="execution-heading">
-        <i class="fas fa-calendar-alt"></i>
+    {%- comment -%} HEADING: date range + status badges (the section heading already carries the calendar icon) {%- endcomment -%}
+    <div class="execution-heading">
         {% if startDate and startDate != "" %}
-        <strong>{{ startDate }}{% if endDate and endDate != "" and endDate != startDate %} – {{ endDate }}{% endif %}</strong>
+        <span class="execution-dates">{{ startDate }}{% if endDate and endDate != "" and endDate != startDate %} – {{ endDate }}{% endif %}</span>
         {% else %}
-        <strong><span data-sl>Termin</span><span data-en>Schedule</span></strong>
+        <span class="execution-dates"><span data-sl>Termin</span><span data-en>Schedule</span></span>
         {% endif %}
         {% if status == "cancelled" or status == "canceled" %}
         <span class="execution-badge is-warning"><span data-sl>Odpovedana</span><span data-en>Cancelled</span></span>
@@ -37,74 +36,82 @@ them in `site.timezone`. Usage: {% include execution.html execution=execution co
         {% if execution.filled %}
         <span class="execution-badge is-warning"><span data-sl>Zapolnjena</span><span data-en>Full</span></span>
         {% endif %}
-    </p>
+    </div>
 
     {%- comment -%} SCHEDULE: structured rows when the backend has them, otherwise the free-text version {%- endcomment -%}
     {% if scheduleRows and scheduleRows.size > 0 %}
     <ul class="execution-schedule">
         {% for row in scheduleRows %}
         <li>
+            <i class="far fa-clock"></i>
+            <span>
             {%- if row.date %}{{ row.date | date: "%-d. %-m. %Y" }}{% endif -%}
             {%- if row.timeFrom %}, {{ row.timeFrom }}{% if row.timeTo %}–{{ row.timeTo }}{% endif %}{% endif -%}
             {%- if row.classroom %}, {{ row.classroom }}{% endif -%}
             {%- if row.descriptionSl %}: <span data-sl>{{ row.descriptionSl }}</span><span data-en>{{ row.descriptionEn | default: row.descriptionSl }}</span>{% endif -%}
+            </span>
         </li>
         {% endfor %}
     </ul>
     {% elsif execution.executionDataSl %}
-    <p><span data-sl>{{ execution.executionDataSl | newline_to_br }}</span><span data-en>{{ execution.executionDataEn | default: execution.executionDataSl | newline_to_br }}</span></p>
+    <p class="execution-schedule-text"><span data-sl>{{ execution.executionDataSl | newline_to_br }}</span><span data-en>{{ execution.executionDataEn | default: execution.executionDataSl | newline_to_br }}</span></p>
     {% endif %}
 
-    {% if execution.location %}
-    <p><i class="fas fa-map-marker-alt"></i> {{ execution.location }}</p>
-    {% endif %}
+    {%- comment -%} DETAILS: label/value pairs {%- endcomment -%}
+    <dl class="execution-details">
+        {% if execution.location %}
+        <div><dt><span data-sl>Lokacija</span><span data-en>Location</span></dt><dd>{{ execution.location }}</dd></div>
+        {% endif %}
 
-    {% if execution.learningEnvironment.descriptionSl %}
-    <p><span class="execution-label"><span data-sl>Način izvedbe</span><span data-en>Delivery mode</span>:</span> <span data-sl>{{ execution.learningEnvironment.descriptionSl }}</span><span data-en>{{ execution.learningEnvironment.descriptionEn | default: execution.learningEnvironment.descriptionSl }}</span></p>
-    {% endif %}
+        {% if execution.learningEnvironment.descriptionSl %}
+        <div><dt><span data-sl>Način izvedbe</span><span data-en>Delivery mode</span></dt><dd><span data-sl>{{ execution.learningEnvironment.descriptionSl }}</span><span data-en>{{ execution.learningEnvironment.descriptionEn | default: execution.learningEnvironment.descriptionSl }}</span></dd></div>
+        {% endif %}
 
-    {% if lang != "" %}
-    <p><span class="execution-label"><span data-sl>Jezik izvedbe</span><span data-en>Language</span>:</span>
-        {% case lang %}
-        {% when "slovenian", "slovene", "sl", "slo" %}<span data-sl>slovenščina</span><span data-en>Slovenian</span>
-        {% when "english", "en", "eng" %}<span data-sl>angleščina</span><span data-en>English</span>
-        {% when "german", "de", "ger" %}<span data-sl>nemščina</span><span data-en>German</span>
-        {% else %}{{ execution.executionLanguage }}
-        {% endcase %}
-    </p>
-    {% endif %}
+        {% if lang != "" %}
+        <div><dt><span data-sl>Jezik</span><span data-en>Language</span></dt><dd>
+            {% case lang %}
+            {% when "slovenian", "slovene", "sl", "slo" %}<span data-sl>slovenščina</span><span data-en>Slovenian</span>
+            {% when "english", "en", "eng" %}<span data-sl>angleščina</span><span data-en>English</span>
+            {% when "german", "de", "ger" %}<span data-sl>nemščina</span><span data-en>German</span>
+            {% else %}{{ execution.executionLanguage }}
+            {% endcase %}
+        </dd></div>
+        {% endif %}
 
-    {% if execution.assignedLecturersStrSl %}
-    <p><span class="execution-label"><span data-sl>Izvajalci</span><span data-en>Lecturers</span>:</span> <span data-sl>{{ execution.assignedLecturersStrSl }}</span><span data-en>{{ execution.assignedLecturersStrEn | default: execution.assignedLecturersStrSl }}</span></p>
-    {% endif %}
+        {% if execution.assignedLecturersStrSl %}
+        <div><dt><span data-sl>Izvajalci</span><span data-en>Lecturers</span></dt><dd><span data-sl>{{ execution.assignedLecturersStrSl }}</span><span data-en>{{ execution.assignedLecturersStrEn | default: execution.assignedLecturersStrSl }}</span></dd></div>
+        {% endif %}
 
-    {%- comment -%} PRICE: PSMA courses are free and say so in the course-level "Cena" block {%- endcomment -%}
-    {% if page.catalogType != "PSMA" and execution.pricelist %}
-    {% assign price = execution.pricelist %}
-    {% assign currency = price.currency | default: "EUR" %}
-    {% if price.priceInclTax == 0 %}
-    <p><span class="execution-label"><span data-sl>Cena</span><span data-en>Price</span>:</span> <span data-sl>Brezplačno</span><span data-en>Free of charge</span></p>
-    {% elsif price.priceInclTax %}
-    <p><span class="execution-label"><span data-sl>Cena</span><span data-en>Price</span>:</span>
-        <span data-sl>{{ price.priceInclTax | replace: ".", "," }} {{ currency }} z DDV{% if price.priceExclTax %} ({{ price.priceExclTax | replace: ".", "," }} {{ currency }} brez DDV){% endif %}</span><span data-en>{{ price.priceInclTax }} {{ currency }} incl. VAT{% if price.priceExclTax %} ({{ price.priceExclTax }} {{ currency }} excl. VAT){% endif %}</span>
-    </p>
-    {% endif %}
-    {% endif %}
+        {%- comment -%} PRICE: PSMA courses are free and say so in the course-level "Cena" block {%- endcomment -%}
+        {% if page.catalogType != "PSMA" and execution.pricelist %}
+        {% assign price = execution.pricelist %}
+        {% assign currency = price.currency | default: "EUR" %}
+        {% if price.priceInclTax == 0 %}
+        <div><dt><span data-sl>Cena</span><span data-en>Price</span></dt><dd><span data-sl>Brezplačno</span><span data-en>Free of charge</span></dd></div>
+        {% elsif price.priceInclTax %}
+        <div><dt><span data-sl>Cena</span><span data-en>Price</span></dt><dd>
+            <span data-sl>{{ price.priceInclTax | replace: ".", "," }} {{ currency }} z DDV{% if price.priceExclTax %} <small>({{ price.priceExclTax | replace: ".", "," }} {{ currency }} brez DDV)</small>{% endif %}</span><span data-en>{{ price.priceInclTax }} {{ currency }} incl. VAT{% if price.priceExclTax %} <small>({{ price.priceExclTax }} {{ currency }} excl. VAT)</small>{% endif %}</span>
+        </dd></div>
+        {% endif %}
+        {% endif %}
 
-    {% if execution.maxParticipants %}
-    <p><span class="execution-label"><span data-sl>Število udeležencev</span><span data-en>Participants</span>:</span> {% if execution.minParticipants and execution.minParticipants != execution.maxParticipants %}{{ execution.minParticipants }}–{% endif %}{{ execution.maxParticipants }}</p>
-    {% endif %}
-
-    {% if deadline and deadline != "" %}
-    <p><span class="execution-label"><span data-sl>Rok za prijavo</span><span data-en>Registration deadline</span>:</span> {{ deadline }}</p>
-    {% endif %}
+        {% if deadline and deadline != "" %}
+        <div><dt><span data-sl>Prijave do</span><span data-en>Register by</span></dt><dd>{{ deadline }}</dd></div>
+        {% endif %}
+    </dl>
 
     {% if execution.note %}
-    <p><i class="fas fa-sticky-note"></i> {{ execution.note }}</p>
+    <p class="execution-note"><i class="fas fa-info-circle"></i> {{ execution.note }}</p>
     {% endif %}
 
-    {%- comment -%} Direct link to this execution on the catalog frontend (route `/execution/:courseId/:executionId`) {%- endcomment -%}
+    {%- comment -%} Registration for this execution on the catalog frontend (route `/execution/:courseId/:executionId`) {%- endcomment -%}
     {% if execution.id and closed == false %}
-    <p><a class="execution-register" href="{{ include.domain }}/execution/{{ include.courseId }}/{{ execution.id }}"><span data-sl>Prijava na to izvedbo</span><span data-en>Register for this session</span> <i class="fas fa-arrow-right"></i></a></p>
+    <div class="execution-actions">
+        {% if execution.filled %}
+        <a class="execution-register" href="{{ include.domain }}/execution/{{ include.courseId }}/{{ execution.id }}"><span data-sl>Prijava v čakalno vrsto</span><span data-en>Join the waiting list</span> <i class="fas fa-arrow-right"></i></a>
+        {% else %}
+        <a class="execution-register" href="{{ include.domain }}/execution/{{ include.courseId }}/{{ execution.id }}"><span data-sl>Prijava na termin</span><span data-en>Register for this session</span> <i class="fas fa-arrow-right"></i></a>
+        {% endif %}
+    </div>
     {% endif %}
 </div>

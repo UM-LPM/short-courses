@@ -373,15 +373,39 @@
   }
 
   .inside-icon-description .execution {
-    margin: rem(6px) 0 rem(18px);
-    padding: rem(2px) 0 rem(2px) rem(14px);
-    border-left: rem(3px) solid $themeGreen;
+    margin: rem(10px) 0 rem(20px);
+    padding: rem(16px) rem(20px);
+    border: rem(1px) solid rgba($lightGray, 0.9);
+    border-left: rem(4px) solid $themeGreen;
+    border-radius: rem(6px);
+    background: rgba($lightGray, 0.18);
+    @include mainFont(400);
+    font-size: rem(16px);
+    line-height: 1.5;
+    letter-spacing: 0.01rem;
+    text-align: left;
+
+    @include media(">=sm") {
+      font-size: rem(18px);
+    }
+
+    p,
+    ul,
+    dl {
+      max-width: none;
+      width: auto;
+      padding: 0;
+      margin: 0;
+      font-size: inherit;
+      line-height: inherit;
+    }
 
     &:last-child {
       margin-bottom: 0;
     }
 
-    &.is-closed {
+    &.is-closed,
+    &.is-filled {
       border-left-color: $lightGray;
     }
 
@@ -393,13 +417,19 @@
       display: flex;
       flex-wrap: wrap;
       align-items: center;
-      gap: rem(8px);
+      gap: rem(10px);
+      margin-bottom: rem(10px);
+    }
+
+    .execution-dates {
+      font-weight: bold;
+      font-size: 1.1em;
     }
 
     .execution-badge {
       display: inline-block;
       padding: 0 rem(8px);
-      border-radius: rem(10px);
+      border-radius: rem(4px); // matches the catalog (Flutter) buttons
       background: $lightGray;
       color: $primaryDark;
       font-size: rem(12px);
@@ -415,17 +445,81 @@
 
     .execution-schedule {
       list-style: none;
-      margin: rem(2px) 0 rem(6px);
-      padding: 0 rem(20px);
+      margin: 0 0 rem(12px);
+      font-size: 0.9em;
 
       li {
+        display: flex;
+        align-items: baseline;
+        gap: rem(8px);
         margin: 0;
         padding: 0;
       }
+
+      i {
+        width: auto;
+        margin: 0;
+        font-size: 0.85em;
+        color: $themeGreen;
+      }
     }
 
-    .execution-label {
-      font-weight: bold;
+    .execution-schedule-text {
+      margin-bottom: rem(12px);
+      font-size: 0.9em;
+    }
+
+    .execution-details {
+      margin: 0;
+      padding-top: rem(10px);
+      border-top: rem(1px) solid rgba($lightGray, 0.9);
+
+      > div {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-bottom: rem(6px);
+
+        @include media(">=sm") {
+          grid-template-columns: rem(150px) 1fr;
+          gap: rem(12px);
+          margin-bottom: rem(2px);
+        }
+      }
+
+      dt {
+        font-weight: bold;
+        font-size: 0.85em;
+
+        @include media(">=sm") {
+          font-size: 1em;
+        }
+      }
+
+      dd {
+        margin: 0;
+      }
+
+      small {
+        font-size: 0.85em;
+        opacity: 0.75;
+      }
+    }
+
+    .execution-note {
+      margin-top: rem(10px);
+      font-size: 0.9em;
+
+      i {
+        width: auto;
+        margin-right: rem(4px);
+        color: $themeGreen;
+      }
+    }
+
+    .execution-actions {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: rem(12px);
     }
 
     .execution-register {
@@ -437,13 +531,40 @@
       text-decoration: none;
 
       i {
+        width: auto;
         color: inherit;
         margin: 0;
+        transition: transform 0.15s ease;
       }
 
-      &:hover {
-        color: $themeOrange;
+      &:hover i {
+        transform: translateX(rem(3px));
       }
+    }
+  }
+
+  .course-notify {
+    @include mainFont(400);
+    margin: 0 auto rem(40px);
+    padding: 0 rem(20px);
+    font-size: rem(15px);
+    text-align: center;
+
+    @include media(">=sm") {
+      font-size: rem(16px);
+    }
+
+    a {
+      color: $themeColor;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    i {
+      margin-right: rem(4px);
     }
   }
 
