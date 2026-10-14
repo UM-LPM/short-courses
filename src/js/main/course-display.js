@@ -97,13 +97,9 @@
     function formatLocalDate(dateString) {
         if (!dateString) return null;
         const d = new Date(dateString);
-        return d.toLocaleString([], {
-            year: "numeric",
-            month: "2-digit",
-            day: "2-digit",
-            hour: "2-digit",
-            minute: "2-digit"
-        });
+        const pad = n => String(n).padStart(2, "0");
+        return d.getDate() + ". " + (d.getMonth() + 1) + ". " + d.getFullYear() +
+            ", " + pad(d.getHours()) + ":" + pad(d.getMinutes());
     }
 
     function createCourseElement(course) {
