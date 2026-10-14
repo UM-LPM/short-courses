@@ -1,20 +1,9 @@
-<div class="footer-wrapper">
-  <p class="footer-intro"><span data-sl>{{ site.data.catalog.sponsoredText }}</span><span data-en>{{ site.data.catalog.sponsoredTextEn | default: site.data.catalog.sponsoredText }}</span></p>
-  <footer>
-    <img src="{{site.data.catalog.logosCombined}}" alt="logo" class="footer-logo" />
-  </footer>
-</div>
-
-{%- comment -%}
-SITE FOOTER: the catalog's repository documents (from the catalog feed) with the
-catalog's contact details, in a full-width band like the one on um.si. Rendered
-only when the catalog actually offers documents.
-{%- endcomment -%}
 {% assign catalogDocuments = site.data.catalog.documents %}
-{% if catalogDocuments and catalogDocuments.size > 0 %}
 {% assign catalogFaculty = site.data.catalog.faculty %}
+{% assign hasDocuments = false %}
+{% if catalogDocuments and catalogDocuments.size > 0 %}{% assign hasDocuments = true %}{% endif %}
 <footer class="site-footer">
-  <div class="site-footer__inner">
+  <div class="site-footer__inner{% unless hasDocuments %} site-footer__inner--single{% endunless %}">
 
     <div class="site-footer__brand">
       <p class="site-footer__title"><span data-sl>{{ site.data.catalog.titleSl }}</span><span data-en>{{ site.data.catalog.titleEn | default: site.data.catalog.titleSl }}</span></p>
@@ -25,27 +14,43 @@ only when the catalog actually offers documents.
         {% if catalogFaculty.website %}</a>{% endif %}
       </p>
       {% endif %}
+      {% if catalogFaculty.address or catalogFaculty.phone or catalogFaculty.email %}
+      <ul class="site-footer__contact">
+        {% if catalogFaculty.address %}<li><i class="fas fa-map-marker-alt" aria-hidden="true"></i><span>{{ catalogFaculty.address }}</span></li>{% endif %}
+        {% if catalogFaculty.phone %}<li><i class="fas fa-phone" aria-hidden="true"></i><a href="tel:{{ catalogFaculty.phone | remove: ' ' }}">{{ catalogFaculty.phone }}</a></li>{% endif %}
+        {% if catalogFaculty.email %}<li><i class="fas fa-envelope" aria-hidden="true"></i><a href="mailto:{{ catalogFaculty.email }}">{{ catalogFaculty.email }}</a></li>{% endif %}
+      </ul>
+      {% endif %}
     </div>
 
+    {% if hasDocuments %}
     <nav class="site-footer__documents" aria-label="Dokumenti">
-      {% include catalog-documents.html documents=catalogDocuments class="documents--footer" %}
+      <p class="site-footer__heading"><span data-sl>Dokumenti</span><span data-en>Documents</span></p>
+      <div class="site-footer__document-groups">
+        {% include catalog-documents.html documents=catalogDocuments class="documents--footer" %}
+      </div>
     </nav>
+    {% endif %}
 
   </div>
 
-  {% if catalogFaculty.address or catalogFaculty.phone or catalogFaculty.email %}
-  <div class="site-footer__contact">
-    {% if catalogFaculty.address %}<span><i class="fas fa-map-marker-alt"></i> {{ catalogFaculty.address }}</span>{% endif %}
-    {% if catalogFaculty.phone %}<span><i class="fas fa-phone"></i> <a href="tel:{{ catalogFaculty.phone | remove: ' ' }}">{{ catalogFaculty.phone }}</a></span>{% endif %}
-    {% if catalogFaculty.email %}<span><i class="fas fa-envelope"></i> <a href="mailto:{{ catalogFaculty.email }}">{{ catalogFaculty.email }}</a></span>{% endif %}
+  {% if site.data.catalog.sponsoredText or site.data.catalog.logosCombined %}
+  <div class="site-footer__sponsors">
+    {% if site.data.catalog.sponsoredText %}
+    <p class="site-footer__sponsored-text"><span data-sl>{{ site.data.catalog.sponsoredText }}</span><span data-en>{{ site.data.catalog.sponsoredTextEn | default: site.data.catalog.sponsoredText }}</span></p>
+    {% endif %}
+    {% if site.data.catalog.logosCombined %}
+    <img src="{{ site.data.catalog.logosCombined }}" alt="Logotipi sofinancerjev" class="site-footer__logos" loading="lazy" />
+    {% endif %}
   </div>
   {% endif %}
 
+  {% if catalogFaculty.title %}
   <p class="site-footer__copyright">
     &copy; {{ 'now' | date: "%Y" }} <span data-sl>{{ catalogFaculty.title }}, vse pravice pridržane.</span><span data-en>{{ catalogFaculty.titleEn | default: catalogFaculty.title }}, all rights reserved.</span>
   </p>
+  {% endif %}
 </footer>
-{% endif %}
 
 <script type="application/ld+json">
 {

@@ -22,9 +22,10 @@ e.g. `documents--footer` for the dark footer band. Usage:
     {% endif %}
     <li class="documents__item">
         <a class="documents__link" href="{{ document.url }}" target="_blank" rel="noopener noreferrer">
-            <i class="fas {{ icon }}"></i>
-            <span>
-                <span data-sl>{{ document.titleSl }}</span><span data-en>{{ document.titleEn | default: document.titleSl }}</span>{% if document.versionLabel %} ({{ document.versionLabel }}){% endif %}
+            <i class="fas {{ icon }}" aria-hidden="true"></i>
+            <span class="documents__title">
+                <span data-sl>{{ document.titleSl }}</span><span data-en>{{ document.titleEn | default: document.titleSl }}</span>
+                {% if document.versionLabel %}<span class="documents__version">{{ document.versionLabel }}</span>{% endif %}
             </span>
         </a>
         {% if document.descriptionSl %}

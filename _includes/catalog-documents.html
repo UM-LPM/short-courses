@@ -1,37 +1,13 @@
-{%- comment -%}
-The catalog-wide repository documents (`documents` from the catalog feed),
-grouped by `catalogType`: the general documents (no type) first, then one group
-per type in feed order. Headings only appear when there is more than one group.
-Usage: {% include catalog-documents.html documents=site.data.catalog.documents class="documents--footer" %}
-{%- endcomment -%}
-{%- comment -%} group_by turns a null catalogType into the group named "" {%- endcomment -%}
-{% assign documentGroups = include.documents | group_by: "catalogType" %}
-{% assign generalGroup = documentGroups | where: "name", "" | first %}
+{% assign documentGroups = include.documents | group_by: "section" | sort: "name" %}
 {% assign groupCount = documentGroups.size %}
-{% if generalGroup %}
-<div class="documents-group">
-    {% if groupCount > 1 %}
-    <h3 class="documents-group__title"><span data-sl>Splošni dokumenti</span><span data-en>General documents</span></h3>
-    {% endif %}
-    {% include documents.html documents=generalGroup.items class=include.class %}
-</div>
-{% endif %}
 {% for group in documentGroups %}
-{% if group.name == "" %}{% continue %}{% endif %}
+{% assign groupDocuments = group.items | sort: "titleSl" %}
 <div class="documents-group">
     {% if groupCount > 1 %}
     <h3 class="documents-group__title">
-        {% case group.name %}
-        {% when "PSMA" %}<span data-sl>Počitniška šola / Mini akademija</span><span data-en>Summer school / Mini academy</span>
-        {% when "KI" %}<span data-sl>Krajše izobraževanje</span><span data-en>Short course</span>
-        {% when "CMS_KI" %}<span data-sl>Krajše izobraževanje in usposabljanje</span><span data-en>Short education and training</span>
-        {% when "CMS_KIM" %}<span data-sl>Krajše izobraževanje in usposabljanje za pridobitev mikrodokazila</span><span data-en>Short education and training for a microcredential</span>
-        {% when "NTD" %}<span data-sl>Naravoslovno-tehniški dnevi</span><span data-en>Science and technology days</span>
-        {% when "SD" %}<span data-sl>Strokovne dejavnosti</span><span data-en>Professional activities</span>
-        {% else %}{{ group.name }}
-        {% endcase %}
+        {% if group.name == "" %}<span data-sl>Splošni dokumenti</span><span data-en>General documents</span>{% else %}{{ group.name }}{% endif %}
     </h3>
     {% endif %}
-    {% include documents.html documents=group.items class=include.class %}
+    {% include documents.html documents=groupDocuments class=include.class %}
 </div>
 {% endfor %}
