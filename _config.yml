@@ -11,6 +11,9 @@ menu:
   - title: Več
     title_en: More
     url: /vec
+  - title: Pomoč uporabnikom
+    title_en: User support
+    url: /pomoc-uporabnikom
   - title: Kontakt
     title_en: Contact
     url: /kontakt

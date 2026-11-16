@@ -3,7 +3,7 @@
 {% assign hasDocuments = false %}
 {% if catalogDocuments and catalogDocuments.size > 0 %}{% assign hasDocuments = true %}{% endif %}
 <footer class="site-footer">
-  <div class="site-footer__inner{% unless hasDocuments %} site-footer__inner--single{% endunless %}">
+  <div class="site-footer__inner">
 
     <div class="site-footer__brand">
       <p class="site-footer__title"><span data-sl>{{ site.data.catalog.titleSl }}</span><span data-en>{{ site.data.catalog.titleEn | default: site.data.catalog.titleSl }}</span></p>
@@ -23,14 +23,23 @@
       {% endif %}
     </div>
 
-    {% if hasDocuments %}
-    <nav class="site-footer__documents" aria-label="Dokumenti">
-      <p class="site-footer__heading"><span data-sl>Dokumenti</span><span data-en>Documents</span></p>
-      <div class="site-footer__document-groups">
-        {% include catalog-documents.html documents=catalogDocuments class="documents--footer" %}
+    <nav class="site-footer__documents" aria-label="Pomoč uporabnikom">
+      <p class="site-footer__heading"><a href="{{ site.baseurl }}/pomoc-uporabnikom/"><span data-sl>Pomoč uporabnikom</span><span data-en>User support</span></a></p>
+      {% if hasDocuments %}
+      {% assign footerDocuments = catalogDocuments | sort: "titleSl" %}
+      <ul class="site-footer__help-links">
+        {% for document in footerDocuments %}
+        <li><a href="{{ document.url }}" target="_blank" rel="noopener noreferrer"><span data-sl>{{ document.titleSl }}</span><span data-en>{{ document.titleEn | default: document.titleSl }}</span></a></li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+      <div class="site-footer__support">
+        <p class="site-footer__faculty"><span data-sl>Tehnična pomoč pri prijavi</span><span data-en>Technical help with registration</span></p>
+        <ul class="site-footer__contact">
+          <li><i class="fas fa-envelope" aria-hidden="true"></i>{% include protected-email.html encoded="aXMubXVAZWpuYWpsdmFycHUuZ29sYXRhaw==" %}</li>
+        </ul>
       </div>
     </nav>
-    {% endif %}
 
   </div>
 

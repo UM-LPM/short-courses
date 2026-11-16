@@ -1,8 +1,8 @@
 {%- comment -%}
 Links to the repository documents the catalog backend offers with a course or
 with the catalog as a whole (`documents` from the courses/catalog feed). Each
-opens the hosted file (`url`) in a new tab. Pass `class` for a context variant,
-e.g. `documents--footer` for the dark footer band. Usage:
+opens the hosted file (`url`) in a new tab. Pass `class` for a context variant.
+Usage:
 {% include documents.html documents=page.documents %}
 {%- endcomment -%}
 {% if include.documents and include.documents.size > 0 %}

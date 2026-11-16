@@ -188,6 +188,12 @@
                                 <p>{{ item.text }}</p>
                                 {% endif %}
                                 {% endfor %}
+                                {% if page.catalogType == "CMS_KIM" and page.faculty.address and page.faculty.address != "" %}
+                                <p class="faculty-postal-address">
+                                    <span data-sl>Dokazila, ki jih ni mogoče predložiti v elektronsko podpisani obliki, pošljite po pošti na naslov fakultete: {{ page.faculty.title }}, {{ page.faculty.address }}. Na ovojnici navedite pripis: »Dokazilo o izpolnjevanju pogojev za vpis v krajše izobraževanje in usposabljanje za pridobitev mikrodokazila.«</span>
+                                    <span data-en>Supporting documents that cannot be submitted in an electronically signed form must be sent by post to the address of the faculty: {{ page.faculty.titleEn | default: page.faculty.title }}, {{ page.faculty.address }}. Please mark the envelope with the following: “Supporting document confirming fulfilment of the admission requirements for short-term education and training to obtain a micro-credential.”</span>
+                                </p>
+                                {% endif %}
                             </div>
                         </div>
                     </div>
@@ -388,7 +394,7 @@
 
                 {%- comment -%} Course-level interest registration (catalog `/course/:courseId/interest-registration`): notified about new sessions {%- endcomment -%}
                 {% if closedCourse == false %}
-                <p class="course-notify"><a href="{{ domain }}/course/{{ page.id }}/interest-registration"><i class="far fa-bell"></i> <span data-sl>Obveščajte me o novih terminih</span><span data-en>Notify me about new sessions</span></a></p>
+                <p class="course-notify"><a data-pass-lang href="{{ domain }}/course/{{ page.id }}/interest-registration"><i class="far fa-bell"></i> <span data-sl>Obveščajte me o novih terminih</span><span data-en>Notify me about new sessions</span></a></p>
                 {% endif %}
 
             </section>

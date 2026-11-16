@@ -1,6 +1,13 @@
-html,
-body {
+html {
   height: 100%;
+  background-color: $umBlue;
+  overscroll-behavior-y: none;
+}
+
+body {
+  min-height: 0;
+  background-color: #fff;
+  overscroll-behavior-y: none;
 }
 
 .bar-header {

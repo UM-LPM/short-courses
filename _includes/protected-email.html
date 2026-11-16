@@ -1,0 +1,26 @@
+{%- comment -%}
+Spam-protected e-mail link. The address never appears in the HTML source: it is
+stored reversed and base64-encoded in `data-protected-email` and assembled into a
+mailto link by JavaScript in the browser. Generate the value with:
+  python3 -c "import base64;print(base64.b64encode('user@domain.si'[::-1].encode()).decode())"
+Usage:
+{% include protected-email.html encoded="aXMubXVAZWpuYWpsdmFycHUuZ29sYXRhaw==" %}
+{%- endcomment -%}
+<span class="protected-email" data-protected-email="{{ include.encoded }}">
+    <noscript><span data-sl>Za prikaz e-poštnega naslova omogočite JavaScript.</span><span data-en>Enable JavaScript to see the e-mail address.</span></noscript>
+</span>
+<script>
+(function () {
+    var nodes = document.querySelectorAll('[data-protected-email]:not([data-ready])');
+    for (var i = 0; i < nodes.length; i++) {
+        var node = nodes[i];
+        var address = atob(node.getAttribute('data-protected-email')).split('').reverse().join('');
+        var link = document.createElement('a');
+        link.href = 'mai' + 'lto:' + address;
+        link.textContent = address;
+        node.innerHTML = '';
+        node.appendChild(link);
+        node.setAttribute('data-ready', '');
+    }
+})();
+</script>

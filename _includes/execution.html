@@ -105,13 +105,45 @@ them in `site.timezone`. Usage: {% include execution.html execution=execution co
     {% endif %}
 
     {%- comment -%} Registration for this execution on the catalog frontend (route `/execution/:courseId/:executionId`) {%- endcomment -%}
+    {%- comment -%}
+    Rok prijave = initialDeadlineDate, for both the regular prijava and the čakalna
+    vrsta (the confirmation dates are for vpis, not prijava). Passed at build time →
+    no button; passing after the build → the script below swaps the button for the
+    notice, so a page that has not been rebuilt yet still stops offering it.
+    {%- endcomment -%}
+    {% assign deadlineEpoch = "" %}
+    {% if execution.initialDeadlineDate %}{% assign deadlineEpoch = execution.initialDeadlineDate | date: "%s" | plus: 0 %}{% endif %}
+    {% assign buildEpoch = site.time | date: "%s" | plus: 0 %}
+    {% assign deadlinePassed = false %}
+    {% if deadlineEpoch != "" and buildEpoch >= deadlineEpoch %}{% assign deadlinePassed = true %}{% endif %}
     {% if execution.id and closed == false %}
-    <div class="execution-actions">
+    <div class="execution-actions"{% if deadlineEpoch != "" %} data-deadline-epoch="{{ deadlineEpoch }}"{% endif %}>
+        {% unless deadlinePassed %}
         {% if execution.filled %}
-        <a class="execution-register" href="{{ include.domain }}/execution/{{ include.courseId }}/{{ execution.id }}"><span data-sl>Prijava v čakalno vrsto</span><span data-en>Join the waiting list</span> <i class="fas fa-arrow-right"></i></a>
+        <a class="execution-register" data-pass-lang href="{{ include.domain }}/execution/{{ include.courseId }}/{{ execution.id }}"><span data-sl>Prijava v čakalno vrsto</span><span data-en>Join the waiting list</span> <i class="fas fa-arrow-right"></i></a>
         {% else %}
-        <a class="execution-register" href="{{ include.domain }}/execution/{{ include.courseId }}/{{ execution.id }}"><span data-sl>Prijava na termin</span><span data-en>Register for this session</span> <i class="fas fa-arrow-right"></i></a>
+        <a class="execution-register" data-pass-lang href="{{ include.domain }}/execution/{{ include.courseId }}/{{ execution.id }}"><span data-sl>Prijava na termin</span><span data-en>Register for this session</span> <i class="fas fa-arrow-right"></i></a>
         {% endif %}
+        {% endunless %}
+        <p class="execution-deadline-passed"{% unless deadlinePassed %} hidden{% endunless %}><i class="fas fa-info-circle"></i> <span data-sl>Rok za prijavo je potekel.</span><span data-en>The registration deadline has passed.</span></p>
     </div>
     {% endif %}
 </div>
+{%- comment -%} Emitted once per page (Jekyll include vars are page-scoped via the flag). {%- endcomment -%}
+{% unless executionDeadlineScriptEmitted %}
+{% assign executionDeadlineScriptEmitted = true %}
+<script>
+(function () {
+    var now = Date.now() / 1000;
+    var blocks = document.querySelectorAll('.execution-actions[data-deadline-epoch]');
+    for (var i = 0; i < blocks.length; i++) {
+        var block = blocks[i];
+        if (now < Number(block.getAttribute('data-deadline-epoch'))) continue;
+        var link = block.querySelector('.execution-register');
+        if (link) link.remove();
+        var notice = block.querySelector('.execution-deadline-passed');
+        if (notice) notice.hidden = false;
+    }
+})();
+</script>
+{% endunless %}
