@@ -11,6 +11,20 @@ function updatePlaceholders(lang) {
   });
 }
 
+function updateLangLinks(lang) {
+  document.querySelectorAll('a[data-pass-lang]').forEach(function (link) {
+    try {
+      var url = new URL(link.href);
+      if ('en' === lang) {
+        url.searchParams.set('lang', 'en');
+      } else {
+        url.searchParams.delete('lang');
+      }
+      link.href = url.toString();
+    } catch (e) {}
+  });
+}
+
 function toggleLang() {
   var root = document.documentElement;
   var lang = root.classList.contains('lang-en') ? 'sl' : 'en';
@@ -19,8 +33,10 @@ function toggleLang() {
   localStorage.setItem('lang', lang);
   setLangCookie(lang);
   updatePlaceholders(lang);
+  updateLangLinks(lang);
 }
 
 var _initLang = localStorage.getItem('lang') || 'sl';
 setLangCookie(_initLang);
 updatePlaceholders(_initLang);
+updateLangLinks(_initLang);
