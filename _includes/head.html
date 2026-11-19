@@ -4,13 +4,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     {% assign title = '' %}
+    {% assign catalogTitleEn = site.data.catalog.titleEn | default: site.data.catalog.titleSl %}
     {% if page.title %}
-        {% assign title = page.title | append: " | " | append: site.data.catalog.titleSl %}
+        {% assign pageTitleSl = page.titleSl | default: page.title %}
+        {% assign pageTitleEn = page.title_en | default: page.titleEn | default: pageTitleSl %}
+        {% assign title = pageTitleSl | append: " | " | append: site.data.catalog.titleSl %}
+        {% assign titleEn = pageTitleEn | append: " | " | append: catalogTitleEn %}
     {% else %}
         {% assign title = site.data.catalog.titleSl %}
+        {% assign titleEn = catalogTitleEn %}
     {% endif %}
 
-    <title>{{ title }}</title>
+    <title data-title-sl="{{ title | escape }}" data-title-en="{{ titleEn | escape }}">{{ title }}</title>
 
     {% assign image = '' %}
     {% if page.image %}
@@ -38,10 +43,20 @@
     <script>
         document.querySelector('html').classList.remove('no-js');
     </script>
-    <!-- Apply saved language before render to avoid flash -->
     <script>
         (function() {
-            var lang = localStorage.getItem('lang') || 'sl';
+            var lang = null;
+            try {
+                var param = new URLSearchParams(window.location.search).get('lang');
+                if (param === 'sl' || param === 'en') {
+                    lang = param;
+                    localStorage.setItem('lang', lang);
+                }
+            } catch (e) {}
+            if (!lang) {
+                try { lang = localStorage.getItem('lang'); } catch (e) {}
+            }
+            if (lang !== 'en') lang = 'sl';
             document.documentElement.classList.add('lang-' + lang);
         })();
     </script>

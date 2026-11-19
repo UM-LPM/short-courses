@@ -68,7 +68,7 @@ them in `site.timezone`. Usage: {% include execution.html execution=execution co
         {% endif %}
 
         {% if lang != "" %}
-        <div><dt><span data-sl>Jezik</span><span data-en>Language</span></dt><dd>
+        <div><dt><span data-sl>Jezik izvedbe</span><span data-en>Language of instruction</span></dt><dd>
             {% case lang %}
             {% when "slovenian", "slovene", "sl", "slo" %}<span data-sl>slovenščina</span><span data-en>Slovenian</span>
             {% when "english", "en", "eng" %}<span data-sl>angleščina</span><span data-en>English</span>
@@ -79,7 +79,7 @@ them in `site.timezone`. Usage: {% include execution.html execution=execution co
         {% endif %}
 
         {% if execution.assignedLecturersStrSl %}
-        <div><dt><span data-sl>Izvajalci</span><span data-en>Lecturers</span></dt><dd><span data-sl>{{ execution.assignedLecturersStrSl }}</span><span data-en>{{ execution.assignedLecturersStrEn | default: execution.assignedLecturersStrSl }}</span></dd></div>
+        <div><dt><span data-sl>Izvajalci</span><span data-en>Instructors</span></dt><dd><span data-sl>{{ execution.assignedLecturersStrSl }}</span><span data-en>{{ execution.assignedLecturersStrEn | default: execution.assignedLecturersStrSl }}</span></dd></div>
         {% endif %}
 
         {%- comment -%} PRICE: PSMA courses are free and say so in the course-level "Cena" block {%- endcomment -%}

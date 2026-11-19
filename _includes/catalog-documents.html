@@ -5,7 +5,9 @@
 <div class="documents-group">
     {% if groupCount > 1 %}
     <h3 class="documents-group__title">
-        {% if group.name == "" %}<span data-sl>Splošni dokumenti</span><span data-en>General documents</span>{% else %}{{ group.name }}{% endif %}
+        {%- comment -%} The EN heading is the first English sklop name (sectionEn) found in the group, else the Slovenian one. {%- endcomment -%}
+        {% assign namedEn = group.items | where_exp: "item", "item.sectionEn" | first %}
+        {% if group.name == "" %}<span data-sl>Splošni dokumenti</span><span data-en>General documents</span>{% else %}<span data-sl>{{ group.name }}</span><span data-en>{{ namedEn.sectionEn | default: group.name }}</span>{% endif %}
     </h3>
     {% endif %}
     {% include documents.html documents=groupDocuments class=include.class %}

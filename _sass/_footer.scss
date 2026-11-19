@@ -79,6 +79,14 @@
     }
   }
 
+  .site-footer__support {
+    margin-top: rem(24px);
+
+    .site-footer__contact {
+      margin-top: rem(8px);
+    }
+  }
+
   .site-footer__documents {
     @include media(">=md") {
       padding-left: rem(56px);

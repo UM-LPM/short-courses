@@ -14,31 +14,24 @@
         {% if catalogFaculty.website %}</a>{% endif %}
       </p>
       {% endif %}
-      {% if catalogFaculty.address or catalogFaculty.phone or catalogFaculty.email %}
-      <ul class="site-footer__contact">
-        {% if catalogFaculty.address %}<li><i class="fas fa-map-marker-alt" aria-hidden="true"></i><span>{{ catalogFaculty.address }}</span></li>{% endif %}
-        {% if catalogFaculty.phone %}<li><i class="fas fa-phone" aria-hidden="true"></i><a href="tel:{{ catalogFaculty.phone | remove: ' ' }}">{{ catalogFaculty.phone }}</a></li>{% endif %}
-        {% if catalogFaculty.email %}<li><i class="fas fa-envelope" aria-hidden="true"></i><a href="mailto:{{ catalogFaculty.email }}">{{ catalogFaculty.email }}</a></li>{% endif %}
-      </ul>
-      {% endif %}
-    </div>
-
-    <nav class="site-footer__documents" aria-label="Pomoč uporabnikom">
-      <p class="site-footer__heading"><a href="{{ site.baseurl }}/pomoc-uporabnikom/"><span data-sl>Pomoč uporabnikom</span><span data-en>User support</span></a></p>
-      {% if hasDocuments %}
-      {% assign footerDocuments = catalogDocuments | sort: "titleSl" %}
-      <ul class="site-footer__help-links">
-        {% for document in footerDocuments %}
-        <li><a href="{{ document.url }}" target="_blank" rel="noopener noreferrer"><span data-sl>{{ document.titleSl }}</span><span data-en>{{ document.titleEn | default: document.titleSl }}</span></a></li>
-        {% endfor %}
-      </ul>
-      {% endif %}
       <div class="site-footer__support">
         <p class="site-footer__faculty"><span data-sl>Tehnična pomoč pri prijavi</span><span data-en>Technical help with registration</span></p>
         <ul class="site-footer__contact">
           <li><i class="fas fa-envelope" aria-hidden="true"></i>{% include protected-email.html encoded="aXMubXVAZWpuYWpsdmFycHUuZ29sYXRhaw==" %}</li>
         </ul>
       </div>
+    </div>
+
+    <nav class="site-footer__documents" aria-label="Pomoč uporabnikom" data-aria-label-sl="Pomoč uporabnikom" data-aria-label-en="User support">
+      <p class="site-footer__heading"><a href="{{ site.baseurl }}/pomoc-uporabnikom/"><span data-sl>Pomoč uporabnikom</span><span data-en>User support</span></a></p>
+      {% if hasDocuments %}
+      {% assign footerDocuments = catalogDocuments | sort: "titleSl" %}
+      <ul class="site-footer__help-links">
+        {% for document in footerDocuments %}
+        <li><a data-sl href="{{ document.url }}" target="_blank" rel="noopener noreferrer">{{ document.titleSl }}</a><a data-en href="{{ document.urlEn | default: document.url }}" target="_blank" rel="noopener noreferrer">{{ document.titleEn | default: document.titleSl }}</a></li>
+        {% endfor %}
+      </ul>
+      {% endif %}
     </nav>
 
   </div>
@@ -49,7 +42,7 @@
     <p class="site-footer__sponsored-text"><span data-sl>{{ site.data.catalog.sponsoredText }}</span><span data-en>{{ site.data.catalog.sponsoredTextEn | default: site.data.catalog.sponsoredText }}</span></p>
     {% endif %}
     {% if site.data.catalog.logosCombined %}
-    <img src="{{ site.data.catalog.logosCombined }}" alt="Logotipi sofinancerjev" class="site-footer__logos" loading="lazy" />
+    <img src="{{ site.data.catalog.logosCombined }}" alt="Logotipi sofinancerjev" data-alt-sl="Logotipi sofinancerjev" data-alt-en="Co-funders' logos" class="site-footer__logos" loading="lazy" />
     {% endif %}
   </div>
   {% endif %}

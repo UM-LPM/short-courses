@@ -7,14 +7,14 @@
                 {% if include.progressBar %}
                     {% include progress-bar.html %}
                 {% endif %}
-                <span class="text">{{ site.translations.pagination.next_page | default: "Next Page" }} <svg class="arrow"><use xlink:href="#icon-arrow-right"></use></svg></span>
+                <span class="text"><span data-sl>Naslednja stran</span><span data-en>Next page</span> <svg class="arrow"><use xlink:href="#icon-arrow-right"></use></svg></span>
             </a>
         {% else if next_courses.first %}
             <a href="{{ next_courses.first.url }}">
                 {% if include.progressBar %}
                     {% include progress-bar.html finished=true %}
                 {% endif %}
-                <span class="text">{{ site.translations.pagination.next_course | default: "Next course" }} <svg class="arrow"><use xlink:href="#icon-arrow-right"></use></svg></span>
+                <span class="text"><span data-sl>Naslednje izobraževanje</span><span data-en>Next education and training</span> <svg class="arrow"><use xlink:href="#icon-arrow-right"></use></svg></span>
             </a>
         {% endif %}
     </div>

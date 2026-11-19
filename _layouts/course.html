@@ -132,7 +132,7 @@
                         <div class="inside-icon-description">
                             <i class="fas fa-paperclip"></i>
                             <div class="description-data">
-                                <p class="desc"><strong><span data-sl>Vrsta izobraževanja</span><span data-en>Type of education</span></strong></p>
+                                <p class="desc"><strong><span data-sl>Vrsta izobraževanja</span><span data-en>Form of education</span></strong></p>
                                 <p><span data-sl>{{ educationType }}</span><span data-en>{{ educationTypeEn }}</span></p>
                             </div>
                         </div>
@@ -156,7 +156,7 @@
                         <div class="inside-icon-description">
                             <i class="fas fa-paperclip"></i>
                             <div class="description-data">
-                                <p class="desc"><strong><span data-sl>Nosilec</span><span data-en>Course leader</span></strong></p>
+                                <p class="desc"><strong><span data-sl>Nosilec</span><span data-en>Coordinator</span></strong></p>
                                 <p><span data-sl>{{ page.metadata.owner.fullTitle }}</span><span data-en>{{ page.metadata.owner.fullTitleEn | default: page.metadata.owner.fullTitle }}</span></p>
                             </div>
                         </div>
@@ -180,7 +180,7 @@
                         <div class="inside-icon-description">
                             <i class="fas fa-paperclip"></i>
                             <div class="description-data">
-                                <p class="desc"><strong><span data-sl>Pogoji za vključitev v izobraževanje</span><span data-en>Enrolment requirements</span></strong></p>
+                                <p class="desc"><strong><span data-sl>Pogoji za vključitev v izobraževanje</span><span data-en>Prerequisites for enrolling</span></strong></p>
                                 {% for item in page.prerequisites %}
                                 {% if item.prerequisiteSl %}
                                 <p><span data-sl>{{ item.prerequisiteSl }}</span><span data-en>{{ item.prerequisiteEn | default: item.prerequisiteSl }}</span></p>
@@ -205,7 +205,7 @@
                         <div class="inside-icon-description">
                             <i class="fas fa-paperclip"></i>
                             <div class="description-data">
-                                <p class="desc"><strong><span data-sl>Raven in stopnja kvalifikacije po SOK/SQF in EOK/EQF</span><span data-en>Qualification level according to SOK/SQF and EOK/EQF</span></strong>
+                                <p class="desc"><strong><span data-sl>Raven in stopnja kvalifikacije po SOK in EOK</span><span data-en>Level and degree of qualification according to SQF and EQF</span></strong>
                                 </p>
                                 <p>
                                     {% if page.metadata.qualificationLevels.soksqf %}
@@ -244,7 +244,7 @@
                         <div class="inside-icon-description">
                             <i class="fas fa-paperclip"></i>
                             <div class="description-data">
-                                <p class="desc"><strong><span data-sl>Obseg izobraževanja glede števila ECTS</span><span data-en>Course workload in ECTS</span></strong></p>
+                                <p class="desc"><strong><span data-sl>Obremenitev, potrebna za dosego učnih izidov (v ECTS)</span><span data-en>Workload required to achieve learning outcomes (in ECTS)</span></strong></p>
                                 <p>{{ page.ects | times: 25 }} - {{ page.ects | times: 30 }} <span data-sl>ur dela</span><span data-en>hours of work</span></p>
                             </div>
                         </div>
@@ -256,7 +256,7 @@
                             <i class="fas fa-paperclip"></i>
                             <div class="description-data">
                                 <p class="desc"><strong><span data-sl>Opredelitev zasnove krajšega izobraževanja glede na potrebe trga
-                                        dela</span><span data-en>Definition of the short course design with regard to labour market needs</span></strong></p>
+                                        dela</span><span data-en>Defining the design of the short-term education in relation to the needs of the labor market</span></strong></p>
                                 {% for item in page.metadata.needsVerification %}
                                 {% if item.valueSl %}
                                 <p><span data-sl>{{ item.valueSl }}</span><span data-en>{{ item.valueEn | default: item.valueSl }}</span></p>
@@ -273,7 +273,7 @@
                             <i class="fas fa-paperclip"></i>
                             <div class="description-data">
                                 <p class="desc"><strong><span data-sl>Krajše izobraževanje se izvaja v sodelovanju s fakulteto
-                                        UM:</span><span data-en>The short course is delivered in cooperation with a UM faculty:</span></strong></p>
+                                        UM:</span><span data-en>Short-term education will be carried out in cooperation with UM faculties:</span></strong></p>
                                 {% for item in page.metadata.collaborationFaculties %}
                                 <p>
                                     {% if item.title %}
@@ -295,7 +295,7 @@
                             <i class="fas fa-paperclip"></i>
                             <div class="description-data">
                                 <p class="desc"><strong><span data-sl>Krajše izobraževanje se izvaja v sodelovanju z drugo
-                                        institucijo:</span><span data-en>The short course is delivered in cooperation with another institution:</span></strong></p>
+                                        institucijo:</span><span data-en>Short-term education will be carried out in cooperation with external institutions:</span></strong></p>
                                 {% for item in page.metadata.collaborationInstitutions %}
                                 <p>
                                     {% if item.title %}
@@ -371,8 +371,8 @@
                         <div class="inside-icon-description">
                             <i class="fas fa-lock"></i>
                             <div class="description-data">
-                                <p class="desc"><strong><span data-sl>Izvedbe</span><span data-en>Executions</span></strong></p>
-                                <p><span data-sl>Izobraževanje je namenjeno izključno vnaprej dogovorjenim skupinam udeležencev. Prijava je mogoča le za predhodno dogovorjen zaprt termin izvedbe.</span><span data-en>This course is intended exclusively for pre-arranged groups of participants. Registration is only possible for a previously agreed closed session.</span></p>
+                                <p class="desc"><strong><span data-sl>Izvedbe</span><span data-en>Sessions</span></strong></p>
+                                <p><span data-sl>Izobraževanje je namenjeno izključno vnaprej dogovorjenim skupinam udeležencev. Prijava je mogoča le za predhodno dogovorjen zaprt termin izvedbe.</span><span data-en>This education and training is intended exclusively for pre-arranged groups of participants. Registration is only possible for a closed session agreed upon in advance.</span></p>
                             </div>
                         </div>
                     </div>
@@ -381,7 +381,7 @@
                         <div class="inside-icon-description">
                             <i class="fas fa-calendar-alt"></i>
                             <div class="description-data">
-                                <p class="desc"><strong>{% if page.executions.size > 1 %}<span data-sl>Izvedbe</span><span data-en>Executions</span>{% else %}<span data-sl>Izvedba</span><span data-en>Execution</span>{% endif %}</strong></p>
+                                <p class="desc"><strong>{% if page.executions.size > 1 %}<span data-sl>Izvedbe</span><span data-en>Sessions</span>{% else %}<span data-sl>Izvedba</span><span data-en>Session</span>{% endif %}</strong></p>
                                 {% for execution in page.executions %}
                                 {% include execution.html execution=execution courseId=page.id domain=domain %}
                                 {% endfor %}
