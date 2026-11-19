@@ -142,9 +142,12 @@
 
   .site-footer__logos {
     display: block;
+    width: auto;
     max-width: 100%;
-    max-height: rem(90px);
     height: auto;
+    min-height: rem(120px);
+    max-height: rem(160px);
+    object-fit: contain;
   }
 
   .site-footer__copyright {
