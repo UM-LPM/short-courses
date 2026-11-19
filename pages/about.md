@@ -3,6 +3,7 @@ layout: page
 menu: false
 date: "2025-05-15 13:53:59"
 title: Več
+title_en: More
 description: Več
 permalink: /vec/
 ---

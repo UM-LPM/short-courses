@@ -3,6 +3,7 @@ layout: page
 menu: false
 date: "2026-11-12 10:00:00"
 title: Pomoč uporabnikom
+title_en: User support
 description: Pomoč uporabnikom
 permalink: /pomoc-uporabnikom/
 ---
@@ -21,15 +22,15 @@ permalink: /pomoc-uporabnikom/
 
     {% for group in helpGroups %}
     {% if helpGroups.size > 1 %}
-    <h3 class="help-page__group-title">{% if group.name == "" %}<span data-sl>Splošni dokumenti</span><span data-en>General documents</span>{% else %}{{ group.name }}{% endif %}</h3>
+    {% assign namedEn = group.items | where_exp: "item", "item.sectionEn" | first %}
+    <h3 class="help-page__group-title">{% if group.name == "" %}<span data-sl>Splošni dokumenti</span><span data-en>General documents</span>{% else %}<span data-sl>{{ group.name }}</span><span data-en>{{ namedEn.sectionEn | default: group.name }}</span>{% endif %}</h3>
     {% endif %}
     {% assign groupDocuments = group.items | sort: "titleSl" %}
     <ul class="help-cards">
         {% for document in groupDocuments %}
         {% assign mime = document.mimeType | default: "" %}
         {% if mime == "application/pdf" %}{% assign icon = "fa-file-pdf" %}{% elsif mime contains "word" or mime contains "opendocument.text" %}{% assign icon = "fa-file-word" %}{% elsif mime contains "spreadsheet" or mime contains "excel" %}{% assign icon = "fa-file-excel" %}{% elsif mime contains "presentation" or mime contains "powerpoint" %}{% assign icon = "fa-file-powerpoint" %}{% else %}{% assign icon = "fa-file-alt" %}{% endif %}
-        <li class="help-cards__item">
-            <a class="help-card" href="{{ document.url }}" target="_blank" rel="noopener noreferrer">
+        {% capture cardBody %}
                 <span class="help-card__icon" aria-hidden="true"><i class="fas {{ icon }}"></i></span>
                 <span class="help-card__body">
                     <span class="help-card__title"><span data-sl>{{ document.titleSl }}</span><span data-en>{{ document.titleEn | default: document.titleSl }}</span></span>
@@ -37,7 +38,14 @@ permalink: /pomoc-uporabnikom/
                 </span>
                 <span class="help-card__open" aria-hidden="true"><i class="fas fa-external-link-alt"></i></span>
                 <span class="screen-reader-only"><span data-sl>(odpre se v novem zavihku)</span><span data-en>(opens in a new tab)</span></span>
-            </a>
+        {% endcapture %}
+        <li class="help-cards__item">
+            {% if document.urlEn %}
+            <a class="help-card" data-sl href="{{ document.url }}" target="_blank" rel="noopener noreferrer">{{ cardBody }}</a>
+            <a class="help-card" data-en href="{{ document.urlEn }}" target="_blank" rel="noopener noreferrer">{{ cardBody }}</a>
+            {% else %}
+            <a class="help-card" href="{{ document.url }}" target="_blank" rel="noopener noreferrer">{{ cardBody }}</a>
+            {% endif %}
         </li>
         {% endfor %}
     </ul>
