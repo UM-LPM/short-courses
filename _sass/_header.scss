@@ -11,6 +11,8 @@ body {
 }
 
 .bar-header {
+  display: flex;
+  align-items: center;
   background-color: $umBlue;
   padding: rem(10px) rem(15px);
   left: 0;
@@ -22,11 +24,22 @@ body {
     padding: rem(15px) rem(0px);
   }
 
+  > a {
+    flex-shrink: 0;
+  }
+
   .logo {
     display: inline-block;
+    flex: 1 1 auto;
+    min-width: 0;
     margin: 0;
-    height: rem(32px);
+    height: auto;
+    min-height: rem(32px);
     line-height: rem(32px);
+
+    @include media("<=sm") {
+      line-height: 1.3;
+    }
 
     a {
       display: block;

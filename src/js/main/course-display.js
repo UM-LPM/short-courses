@@ -28,17 +28,18 @@
                 const now = new Date();
 
                 data.forEach(course => {
-                    if (course.unparsedExecutionStartDate) {
-                        const localDate = new Date(course.unparsedExecutionStartDate);
+                    const current = (course.executions || [])
+                        .filter(execution => !execution.end || new Date(execution.end) > now)
+                        .sort((a, b) => new Date(a.start) - new Date(b.start))[0];
 
-                        if (localDate >= now) {
-                            course.executionStartDate = formatLocalDate(course.unparsedExecutionStartDate);
-                            course.executionEndDate = formatLocalDate(course.unparsedExecutionEndDate);
-                            coursesWithDate.push(course);
-                        } else {
-                            coursesWithoutDate.push(course);
-                        }
+                    if (current) {
+                        course.unparsedExecutionStartDate = current.start;
+                        course.executionStartDate = formatLocalDate(current.start);
+                        course.executionEndDate = formatLocalDate(current.end || current.start);
+                        coursesWithDate.push(course);
                     } else {
+                        course.executionStartDate = null;
+                        course.executionEndDate = null;
                         coursesWithoutDate.push(course);
                     }
                 });

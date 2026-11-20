@@ -8,10 +8,14 @@ description: Več
 permalink: /vec/
 ---
 
-<span data-sl>{{ site.data.catalog.info }}</span><span data-en>{{ site.data.catalog.infoEn | default: site.data.catalog.info }}</span>
+<div data-sl="" markdown="1">
 
-### <span data-sl>Viri</span><span data-en>Sources</span>
+{{ site.data.catalog.info }}
 
-<span data-sl>Slike:</span><span data-en>Images:</span> [Unsplash - Free for commercial use](https://unsplash.com)
+</div>
 
-<span data-sl>Predloga:</span><span data-en>Template:</span> [Jekflix Template - MIT license](https://github.com/thiagorossener/jekflix-template)
+<div data-en="" markdown="1">
+
+{{ site.data.catalog.infoEn | default: site.data.catalog.info }}
+
+</div>

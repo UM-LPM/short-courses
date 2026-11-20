@@ -59,6 +59,7 @@
       "publishDate": "{{ course.publishDate }}",
       "removalDate": "{{ course.removalDate }}",
 
+      "executions": [{% assign firstExecution = true %}{% for execution in course.executions %}{% if execution.startDate %}{% unless firstExecution %}, {% endunless %}{"start": "{{ execution.startDate }}", "end": "{{ execution.endDate }}", "filled": {% if execution.filled %}true{% else %}false{% endif %}}{% assign firstExecution = false %}{% endif %}{% endfor %}],
       {% if course.executions and course.executions[0] %}
         "unparsedExecutionStartDate": "{{ course.executions[0].startDate }}",
         "executionStartDate": "{{ course.executions[0].startDate | date: "%-d. %-m. %Y" }}",

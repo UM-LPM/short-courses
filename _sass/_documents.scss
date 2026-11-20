@@ -201,3 +201,88 @@ p.documents__description {
     transition: color 0.2s, transform 0.2s;
   }
 }
+
+.course:has(.legal-page) {
+  top: 0;
+}
+
+.course-content.fullwidth:has(.legal-page) {
+  padding-top: rem(32px);
+}
+
+.course-content .legal-page {
+  @include center(rem(800px));
+  padding: 0 rem(20px) rem(40px);
+  font-size: rem(16px);
+  line-height: 1.65;
+  overflow-wrap: anywhere;
+
+  h1,
+  h2,
+  h3,
+  p,
+  ul,
+  ol {
+    max-width: none;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  h1,
+  h2,
+  h3 {
+    padding-top: 0;
+
+    @include media(">=sm") {
+      padding-top: 0;
+    }
+  }
+
+  h1 {
+    @include mainFont(700);
+    margin: 0 0 rem(20px);
+    font-size: rem(24px);
+    line-height: 1.25;
+
+    @include media(">=sm") {
+      font-size: rem(28px);
+    }
+  }
+
+  h2 {
+    @include mainFont(700);
+    margin: rem(32px) 0 rem(10px);
+    font-size: rem(20px);
+    line-height: 1.3;
+  }
+
+  h3 {
+    @include mainFont(700);
+    margin: rem(24px) 0 rem(8px);
+    font-size: rem(17px);
+    line-height: 1.3;
+  }
+
+  p {
+    margin: 0 0 rem(14px);
+  }
+
+  ul {
+    margin: 0 0 rem(14px);
+    padding-left: rem(22px);
+
+    ul {
+      margin: rem(4px) 0 0;
+    }
+  }
+
+  li {
+    margin: 0 0 rem(4px);
+    padding: 0;
+  }
+
+  a {
+    color: $themeColor;
+    text-decoration: underline;
+  }
+}

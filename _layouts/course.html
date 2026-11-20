@@ -3,6 +3,7 @@
 {% include head.html %}
 
 <body class="has-push-menu">
+    {% include svg-icons.html %}
     {% if site.data.catalog.faculty.acronym == "FERI" %}
     {% include feri-header.html %}
     {% else %}
@@ -366,6 +367,14 @@
                     {% assign closedCourse = false %}
                     {% if page.metadata.closedExecutions == true %}{% assign closedCourse = true %}{% endif %}
 
+                    {% assign buildEpoch = site.time | date: "%s" | plus: 0 %}
+                    {% assign visibleExecutions = "" | split: "," %}
+                    {% for execution in page.executions %}
+                    {% assign executionEndEpoch = 0 %}
+                    {% if execution.endDate %}{% assign executionEndEpoch = execution.endDate | date: "%s" | plus: 0 %}{% endif %}
+                    {% if executionEndEpoch == 0 or executionEndEpoch > buildEpoch %}{% assign visibleExecutions = visibleExecutions | push: execution %}{% endif %}
+                    {% endfor %}
+
                     {% if closedCourse %}
                     <div class="icon-description-container">
                         <div class="inside-icon-description">
@@ -376,13 +385,13 @@
                             </div>
                         </div>
                     </div>
-                    {% elsif page.executions and page.executions.size > 0 %}
-                    <div class="icon-description-container">
+                    {% elsif visibleExecutions.size > 0 %}
+                    <div class="icon-description-container course-executions">
                         <div class="inside-icon-description">
                             <i class="fas fa-calendar-alt"></i>
                             <div class="description-data">
-                                <p class="desc"><strong>{% if page.executions.size > 1 %}<span data-sl>Izvedbe</span><span data-en>Sessions</span>{% else %}<span data-sl>Izvedba</span><span data-en>Session</span>{% endif %}</strong></p>
-                                {% for execution in page.executions %}
+                                <p class="desc"><strong><span class="executions-plural"{% if visibleExecutions.size < 2 %} hidden{% endif %}><span data-sl>Izvedbe</span><span data-en>Sessions</span></span><span class="executions-single"{% if visibleExecutions.size >= 2 %} hidden{% endif %}><span data-sl>Izvedba</span><span data-en>Session</span></span></strong></p>
+                                {% for execution in visibleExecutions %}
                                 {% include execution.html execution=execution courseId=page.id domain=domain %}
                                 {% endfor %}
                             </div>

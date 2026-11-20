@@ -17,7 +17,9 @@ them in `site.timezone`. Usage: {% include execution.html execution=execution co
 {% assign deadline = execution.initialDeadlineDate | date: "%s" | date: "%-d. %-m. %Y, %H:%M" %}
 {% assign scheduleRows = execution.metadata.scheduleRows %}
 {% assign lang = execution.executionLanguage | default: "" | downcase %}
-<div class="execution{% if closed %} is-closed{% endif %}{% if execution.filled %} is-filled{% endif %}">
+{% assign endEpoch = "" %}
+{% if execution.endDate %}{% assign endEpoch = execution.endDate | date: "%s" | plus: 0 %}{% endif %}
+<div class="execution{% if closed %} is-closed{% endif %}{% if execution.filled %} is-filled{% endif %}"{% if endEpoch != "" %} data-end-epoch="{{ endEpoch }}"{% endif %}>
 
     {%- comment -%} HEADING: date range + status badges (the section heading already carries the calendar icon) {%- endcomment -%}
     <div class="execution-heading">
@@ -133,8 +135,9 @@ them in `site.timezone`. Usage: {% include execution.html execution=execution co
 {% unless executionDeadlineScriptEmitted %}
 {% assign executionDeadlineScriptEmitted = true %}
 <script>
-(function () {
+document.addEventListener('DOMContentLoaded', function () {
     var now = Date.now() / 1000;
+
     var blocks = document.querySelectorAll('.execution-actions[data-deadline-epoch]');
     for (var i = 0; i < blocks.length; i++) {
         var block = blocks[i];
@@ -144,6 +147,20 @@ them in `site.timezone`. Usage: {% include execution.html execution=execution co
         var notice = block.querySelector('.execution-deadline-passed');
         if (notice) notice.hidden = false;
     }
-})();
+
+    var executions = document.querySelectorAll('.execution[data-end-epoch]');
+    for (var j = 0; j < executions.length; j++) {
+        if (now >= Number(executions[j].getAttribute('data-end-epoch'))) executions[j].remove();
+    }
+    var sections = document.querySelectorAll('.course-executions');
+    for (var k = 0; k < sections.length; k++) {
+        var left = sections[k].querySelectorAll('.execution').length;
+        if (left === 0) { sections[k].remove(); continue; }
+        var plural = sections[k].querySelector('.executions-plural');
+        var single = sections[k].querySelector('.executions-single');
+        if (plural) plural.hidden = left < 2;
+        if (single) single.hidden = left >= 2;
+    }
+});
 </script>
 {% endunless %}

@@ -9,7 +9,9 @@ Usage:
 <ul class="documents{% if include.class %} {{ include.class }}{% endif %}">
     {% for document in include.documents %}
     {% assign mime = document.mimeType | default: "" %}
-    {% if mime == "application/pdf" %}
+    {% if document.pageUrl %}
+        {% assign icon = "fa-align-left" %}
+    {% elsif mime == "application/pdf" %}
         {% assign icon = "fa-file-pdf" %}
     {% elsif mime contains "spreadsheet" or mime contains "excel" %}
         {% assign icon = "fa-file-excel" %}
@@ -29,7 +31,9 @@ Usage:
             </span>
     {% endcapture %}
     <li class="documents__item">
-        {% if document.urlEn %}
+        {% if document.pageUrl %}
+        <a class="documents__link" href="{{ document.pageUrl | prepend: site.baseurl }}">{{ linkBody }}</a>
+        {% elsif document.urlEn %}
         <a class="documents__link" data-sl href="{{ document.url }}" target="_blank" rel="noopener noreferrer">{{ linkBody }}</a>
         <a class="documents__link" data-en href="{{ document.urlEn }}" target="_blank" rel="noopener noreferrer">{{ linkBody }}</a>
         {% else %}

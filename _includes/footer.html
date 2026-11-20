@@ -22,27 +22,34 @@
       </div>
     </div>
 
-    <nav class="site-footer__documents" aria-label="Pomoč uporabnikom" data-aria-label-sl="Pomoč uporabnikom" data-aria-label-en="User support">
-      <p class="site-footer__heading"><a href="{{ site.baseurl }}/pomoc-uporabnikom/"><span data-sl>Pomoč uporabnikom</span><span data-en>User support</span></a></p>
+    <nav class="site-footer__documents" aria-label="Pogoji, politika zasebnosti in dostopnost" data-aria-label-sl="Pogoji, politika zasebnosti in dostopnost" data-aria-label-en="Terms, privacy policy and accessibility">
+      <p class="site-footer__heading"><a href="{{ site.baseurl }}/pomoc-uporabnikom/"><span data-sl>Pogoji, politika zasebnosti in dostopnost</span><span data-en>Terms, privacy policy and accessibility</span></a></p>
       {% if hasDocuments %}
       {% assign footerDocuments = catalogDocuments | sort: "titleSl" %}
       <ul class="site-footer__help-links">
         {% for document in footerDocuments %}
+        {% if document.pageUrl %}
+        <li><a href="{{ document.pageUrl | prepend: site.baseurl }}"><span data-sl>{{ document.titleSl }}</span><span data-en>{{ document.titleEn | default: document.titleSl }}</span></a></li>
+        {% else %}
         <li><a data-sl href="{{ document.url }}" target="_blank" rel="noopener noreferrer">{{ document.titleSl }}</a><a data-en href="{{ document.urlEn | default: document.url }}" target="_blank" rel="noopener noreferrer">{{ document.titleEn | default: document.titleSl }}</a></li>
+        {% endif %}
         {% endfor %}
       </ul>
       {% endif %}
     </nav>
 
+    {% if site.data.catalog.logosCombined %}
+    <div class="site-footer__corner">
+      <img src="{{ site.data.catalog.logosCombined }}" alt="Logotipi sofinancerjev" data-alt-sl="Logotipi sofinancerjev" data-alt-en="Co-funders' logos" class="site-footer__logos" />
+    </div>
+    {% endif %}
+
   </div>
 
   {% if site.data.catalog.sponsoredText or site.data.catalog.logosCombined %}
-  <div class="site-footer__sponsors">
+  <div class="site-footer__sponsors"{% unless site.data.catalog.sponsoredText %} hidden{% endunless %}>
     {% if site.data.catalog.sponsoredText %}
     <p class="site-footer__sponsored-text"><span data-sl>{{ site.data.catalog.sponsoredText }}</span><span data-en>{{ site.data.catalog.sponsoredTextEn | default: site.data.catalog.sponsoredText }}</span></p>
-    {% endif %}
-    {% if site.data.catalog.logosCombined %}
-    <img src="{{ site.data.catalog.logosCombined }}" alt="Logotipi sofinancerjev" data-alt-sl="Logotipi sofinancerjev" data-alt-en="Co-funders' logos" class="site-footer__logos" loading="lazy" />
     {% endif %}
   </div>
   {% endif %}

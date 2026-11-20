@@ -456,7 +456,7 @@ header, #content{
         }
     }
 
-    .bar-header {
+    body:has(#main-nav-wrap) .bar-header {
         display: none;
     }
 
